@@ -22,12 +22,16 @@ SCHEMA = (
 )
 
 
-def _ask(user: str, max_tokens: int = 2500) -> str:
+def _ask(user: str, max_tokens: int = 8000) -> str:
     r = client.messages.create(
         model=MODEL, max_tokens=max_tokens, system=SYSTEM,
         messages=[{"role": "user", "content": user}],
     )
-    return r.content[0].text
+    # La respuesta puede traer bloques de razonamiento antes del texto: se concatenan solo los de tipo "text".
+    text = "".join(b.text for b in r.content if getattr(b, "type", "") == "text")
+    if not text.strip():
+        raise RuntimeError(f"Respuesta sin texto (stop_reason={r.stop_reason}); sube max_tokens o baja el esfuerzo.")
+    return text
 
 
 def _json(text: str) -> dict:
@@ -70,7 +74,7 @@ def _verify(content: dict) -> dict:
         '{"ok": true|false, "issues": ["..."]}. Marca ok=false ante CUALQUIER error o ambigüedad matemática.\n\n'
         + json.dumps(content, ensure_ascii=False)
     )
-    return _json(_ask(prompt, max_tokens=1500))
+    return _json(_ask(prompt, max_tokens=6000))
 
 
 def generate(kind: str, area: str, avoid: list[str], nivel: str = "uni", estilo: str = "problema", retries: int = 3) -> dict:
