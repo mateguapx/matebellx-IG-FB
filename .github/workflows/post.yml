@@ -13,7 +13,7 @@ concurrency: bot
 permissions: { contents: write }
 jobs:
   post:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
@@ -35,6 +35,12 @@ jobs:
           echo "T=$T" >> $GITHUB_ENV
       - name: Generar y renderizar
         run: python -m bot.main --type $T ${{ github.event.inputs.dry == 'true' && '--dry' || '' }}
+      - name: Guardar imágenes de prueba
+        if: ${{ github.event.inputs.dry == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: imagenes-prueba
+          path: out/
       - name: Subir imágenes a rama media (URLs públicas para Meta)
         if: ${{ github.event.inputs.dry != 'true' }}
         run: |
