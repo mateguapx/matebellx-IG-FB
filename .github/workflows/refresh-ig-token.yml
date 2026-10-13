@@ -1,0 +1,20 @@
+name: refresh-ig-token
+# OPCIONAL. Requiere el secret GH_PAT (token fine-grained con permiso "Secrets: read and write" sobre este repo).
+on:
+  schedule: [{ cron: "0 12 1,15 * *" }]
+  workflow_dispatch:
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - run: |
+          NEW=$(python -m bot.refresh_token)
+          echo "::add-mask::$NEW"
+          gh secret set IG_TOKEN --body "$NEW" --repo "${{ github.repository }}"
