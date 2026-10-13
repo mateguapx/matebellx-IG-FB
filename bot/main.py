@@ -62,17 +62,33 @@ def main() -> None:
 
 
 def publish_step() -> None:
-    """Segunda fase (tras subir imágenes a la rama media): publica en IG y FB y registra posts de palabra clave."""
+    """Segunda fase (tras subir imágenes a la rama media): publica en IG y FB de forma independiente.
+    Si una red falla, la otra se publica igual y el estado se guarda; el fallo queda como advertencia visible."""
     d = json.loads((OUT / "urls.json").read_text())
-    ig = meta.publish_instagram(d["urls"], d["caption"])
-    fb = meta.publish_facebook(d["urls"], d["caption"])
-    print("IG:", ig, "FB:", fb)
+    ig = fb = None
+    errores = []
+    try:
+        ig = meta.publish_instagram(d["urls"], d["caption"])
+        print("IG:", ig)
+    except Exception as e:
+        errores.append(f"Instagram: {e}")
+    try:
+        fb = meta.publish_facebook(d["urls"], d["caption"])
+        print("FB:", fb)
+    except Exception as e:
+        errores.append(f"Facebook: {e}")
+    for err in errores:
+        print(f"::warning title=Fallo de publicación::{err}")
     if d["cta"] == "keyword":
         p = STATE / "kw_posts.json"
         posts = json.loads(p.read_text())
-        posts["ig"].append(ig)
-        posts["fb"].append(fb)
+        if ig:
+            posts["ig"].append(ig)
+        if fb:
+            posts["fb"].append(fb)
         p.write_text(json.dumps(posts))
+    if not ig and not fb:
+        raise RuntimeError("No se publicó en ninguna red: " + " | ".join(errores))
 
 
 if __name__ == "__main__":
