@@ -22,7 +22,7 @@ SYSTEM = (
 # ---------------------------------------------------------------------------
 SCHEMA = (
     '{"dificultad": "* (fácil-media), ** (difícil) o cadena vacía", '
-    '"caption": "texto del pie de post, máx 300 caracteres, con 3-5 hashtags al final", '
+    '"caption": "texto del pie de post, máx 300 caracteres, con 3-5 hashtags al final. Incluye siempre #mateguapo y #matebellx", '
     '"slides": [{"kicker": "etiqueta corta en mayúsculas", "title": "título corto (máx 60 caracteres)", '
     '"text": "texto breve (máx 220 caracteres), puede incluir $latex$", "display": "latex opcional o cadena vacía"}]}'
 )
@@ -31,13 +31,13 @@ SCHEMA = (
 # 3) FORMA DEL POST
 # ---------------------------------------------------------------------------
 FORMA_CARRUSEL = (
-    "Carrusel de entre 4 y 6 slides. Slide 1 = gancho (pregunta o dato que obligue a deslizar). "
+    "Carrusel de entre 4 y 6 slides. Slide 1 = gancho (pregunta o dato que obligue a deslizar). Ideas geniales pero simples, mientras menos texto mejor. NO escribas literalmente 'gancho'. "
     "Slides intermedios = desarrollo paso a paso. Último slide = conclusión o regla para recordar. "
     "NO incluyas slide de 'síguenos' ni de llamada a la acción: eso se agrega aparte."
 )
 
 FORMA_IMAGEN = (
-    "UNA sola slide autocontenida: un problema corto con su respuesta final, un error común o un dato "
+    "UNA sola slide autocontenida: un problema corto con su respuesta final, un error común o un dato. Estilo limpio. "
     "sorprendente, que se entienda sin más contexto. NO incluyas llamada a la acción."
 )
 
