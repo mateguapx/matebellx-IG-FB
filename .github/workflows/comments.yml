@@ -18,7 +18,11 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - run: pip install requests
-      - run: python -m bot.comments
+      - run: |
+          python -u -m bot.comments 2>&1 | tee out.txt
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          cat out.txt >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
       - run: |
           git config user.name bot && git config user.email bot@users.noreply.github.com
           git add state && git commit -qm "state" || true
