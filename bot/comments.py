@@ -49,8 +49,17 @@ def run() -> int:
     done = set(_load("processed.json", []))
     recent = _load("last_replies.json", [])
     sent = 0
+    print(f"[diag] posts IG registrados: {len(posts['ig'])} -> {posts['ig'][-30:]}")
+    print(f"[diag] posts FB registrados: {len(posts['fb'])}; ya procesados: {len(done)}")
     for pid in posts["ig"][-30:]:
-        for c in meta.ig_comments(pid):
+        try:
+            comms = meta.ig_comments(pid)
+        except Exception as e:
+            print(f"[diag] ERROR leyendo comentarios de {pid}: {e}")
+            continue
+        print(f"[diag] post {pid}: {len(comms)} comentarios")
+        for c in comms:
+            print(f"[diag]   {c.get('username')!r}: {c.get('text')!r} | ya_procesado={c['id'] in done} | coincide={matches(c.get('text', ''))}")
             if c["id"] in done or not matches(c.get("text", "")):
                 continue
             try:
