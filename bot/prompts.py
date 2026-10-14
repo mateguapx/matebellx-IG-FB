@@ -79,7 +79,7 @@ CORRECCION = "\nCorrige estos errores detectados en el intento anterior: {errore
 # 7) VERIFICACIÓN MATEMÁTICA (segunda llamada, antes de publicar). Variable: {contenido}
 #    Debe seguir pidiendo un JSON con "ok" (true/false) y "issues" (lista).
 # ---------------------------------------------------------------------------
-VERIFICACION = """Revisa este contenido de matemáticas como un corrector estricto. Resuelve de forma independiente cada problema o cálculo, comprueba cada afirmación y la notación LaTeX. Responde SOLO con JSON: {"ok": true|false, "issues": ["..."]}. Marca ok=false ante CUALQUIER error o ambigüedad matemática.
+VERIFICACION = """Revisa este contenido de matemáticas. Resuelve de forma independiente cada problema o cálculo, comprueba cada afirmación y la notación LaTeX. Responde SOLO con JSON: {"ok": true|false, "issues": ["..."]}. Marca ok=false ante CUALQUIER error o ambigüedad matemática, NO de redacción.
 
 {contenido}"""
 
