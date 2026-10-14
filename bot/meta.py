@@ -74,6 +74,11 @@ def ig_private_reply(comment_id: str, text: str) -> None:
     _check(r, "IG private reply")
 
 
+def ig_reply_comment(comment_id: str, text: str) -> None:
+    """Respuesta pública al comentario (permiso instagram_business_manage_comments)."""
+    _ig_post(f"{comment_id}/replies", message=text)
+
+
 def refresh_ig_token() -> str:
     """Renueva el token de larga duración (válido 60 días; renovable después de 24 h de emitido)."""
     r = requests.get("https://graph.instagram.com/refresh_access_token",
@@ -89,8 +94,13 @@ def publish_facebook(image_urls: list[str], caption: str) -> str:
 
 
 def fb_comments(post_id: str) -> list[dict]:
-    return _fb_get(f"{post_id}/comments", fields="id,message,from", limit=100).get("data", [])
+    return _fb_get(f"{post_id}/comments", fields="id,message,from", filter="toplevel", limit=100).get("data", [])
 
 
 def fb_private_reply(comment_id: str, text: str) -> None:
     _fb_post(f"{comment_id}/private_replies", message=text)
+
+
+def fb_reply_comment(comment_id: str, text: str) -> None:
+    """Respuesta pública al comentario (requiere pages_manage_engagement)."""
+    _fb_post(f"{comment_id}/comments", message=text)

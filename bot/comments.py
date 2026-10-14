@@ -1,10 +1,12 @@
 """Sondea comentarios en posts de palabra clave y envía UN mensaje privado con el link. Corre cada ~10 min por cron."""
 import json
 import os
+import random
 import re
 import unicodedata
 from .config import BOOKS, DM_TEXT, LINK, ROOT
 from . import meta
+from .replies import NO_REPETIR_ULTIMAS, REPLY_POOL
 
 STATE = ROOT / "state"
 
@@ -31,9 +33,21 @@ def _save(name: str, data) -> None:
     (STATE / name).write_text(json.dumps(data, ensure_ascii=False, indent=1))
 
 
+def pick_reply(recent: list[int]) -> int:
+    """Elige un índice del pool que no esté entre los últimos usados; actualiza `recent` en sitio."""
+    n = len(REPLY_POOL)
+    ventana = min(NO_REPETIR_ULTIMAS, n - 1)
+    candidatos = [i for i in range(n) if i not in recent[-ventana:]] if ventana > 0 else list(range(n))
+    i = random.choice(candidatos)
+    recent.append(i)
+    del recent[:-20]
+    return i
+
+
 def run() -> int:
     posts = _load("kw_posts.json", {"ig": [], "fb": []})
     done = set(_load("processed.json", []))
+    recent = _load("last_replies.json", [])
     sent = 0
     for pid in posts["ig"][-30:]:
         for c in meta.ig_comments(pid):
@@ -43,6 +57,10 @@ def run() -> int:
                 name = f", @{c['username']}" if c.get("username") else ""
                 meta.ig_private_reply(c["id"], DM_TEXT.format(name=name, link=LINK))
                 sent += 1
+                try:  # la respuesta pública es un extra: si falla, el DM ya salió
+                    meta.ig_reply_comment(c["id"], REPLY_POOL[pick_reply(recent)])
+                except Exception as e:
+                    print("IG public reply error:", e)
             except Exception as e:  # no reintentar en bucle: se marca igualmente
                 print("IG reply error:", e)
             done.add(c["id"])
@@ -55,10 +73,15 @@ def run() -> int:
                 n = (c.get("from") or {}).get("name", "").split(" ")[0]
                 meta.fb_private_reply(c["id"], DM_TEXT.format(name=f", {n}" if n else "", link=LINK))
                 sent += 1
+                try:
+                    meta.fb_reply_comment(c["id"], REPLY_POOL[pick_reply(recent)])
+                except Exception as e:
+                    print("FB public reply error:", e)
             except Exception as e:
                 print("FB reply error:", e)
             done.add(c["id"])
     _save("processed.json", sorted(done)[-5000:])
+    _save("last_replies.json", recent)
     print(f"Mensajes enviados: {sent}")
     return sent
 
