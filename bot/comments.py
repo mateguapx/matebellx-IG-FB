@@ -74,8 +74,16 @@ def run() -> int:
                 print("IG reply error:", e)
             done.add(c["id"])
     fb_on = os.getenv("ENABLE_FB_DM", "false").lower() == "true"
+    print(f"[diag] Facebook activo (ENABLE_FB_DM): {fb_on}")
     for pid in (posts["fb"][-30:] if fb_on else []):
-        for c in meta.fb_comments(pid):
+        try:
+            fcomms = meta.fb_comments(pid)
+        except Exception as e:
+            print(f"[diag] ERROR leyendo comentarios FB de {pid}: {e}")
+            continue
+        print(f"[diag] post FB {pid}: {len(fcomms)} comentarios")
+        for c in fcomms:
+            print(f"[diag]   FB {(c.get('from') or {}).get('name')!r}: {c.get('message')!r} | ya_procesado={c['id'] in done} | coincide={matches(c.get('message', ''))}")
             if c["id"] in done or not matches(c.get("message", "")):
                 continue
             try:
