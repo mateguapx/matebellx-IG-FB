@@ -98,7 +98,21 @@ def fb_comments(post_id: str) -> list[dict]:
 
 
 def fb_private_reply(comment_id: str, text: str) -> None:
-    _fb_post(f"{comment_id}/private_replies", message=text)
+    """Respuesta privada a un comentario de la Página. Primero la Send API de Messenger
+    (POST /{page-id}/messages con recipient.comment_id); si falla, el edge /{comment-id}/private_replies."""
+    r = requests.post(
+        f"{FB_BASE}/{PAGE_ID()}/messages",
+        params={"access_token": PAGE_TOKEN()},
+        json={"recipient": {"comment_id": comment_id}, "message": {"text": text}, "messaging_type": "RESPONSE"},
+        timeout=60,
+    )
+    if r.ok:
+        return
+    first = f"FB send API -> {r.status_code}: {r.text}"
+    try:
+        _fb_post(f"{comment_id}/private_replies", message=text)
+    except Exception as e:
+        raise RuntimeError(f"{first} || {e}") from e
 
 
 def fb_reply_comment(comment_id: str, text: str) -> None:
