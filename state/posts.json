@@ -1,1 +1,23 @@
-[]
+[
+ {
+  "id": "20261015-0135-t1",
+  "ts": "2026-10-15T01:35:43+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "dato",
+  "hook": "pregunta",
+  "tema_clave": "números complejos y la constante e",
+  "area": "números complejos y la constante e",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "inicial",
+  "tema": "Interés compuesto continuo: 1 peso al 100 % anual en un año se acerca a e y nunca llega a 3",
+  "titulo": "¿Por qué 1 peso al 100 % anual **nunca** llega a 3, ni capitalizando cada segundo? 💰",
+  "respuesta": "Para cualquier número n de capitalizaciones en un año, (1+1/n)^n < e ≈ 2.71828 < 3. Con n=1 da 2, con n=12 da ≈2.613, con n=365 da ≈2.714, y al capitalizar de forma continua el valor se acerca a e sin pasarlo.",
+  "puntaje_idea": 8.25,
+  "ig_id": null,
+  "fb_id": "1382195514976052_122108633979500466"
+ }
+]
