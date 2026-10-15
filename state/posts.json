@@ -82,5 +82,30 @@
   "puntaje_idea": 8.5,
   "ig_id": "18448466389132906",
   "fb_id": "1382195514976052_122108718153500466"
+ },
+ {
+  "id": "20261015-0559-t3",
+  "ts": "2026-10-15T06:00:52+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:hipotrocoide",
+  "area": "espirógrafo interior (hipotrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": "hipotrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "tema": "Hipotrocoide con R=11, r=4, d=6: once lazos en un solo trazo que se cierra tras cuatro vueltas",
+  "titulo": "Sin levantar el lápiz, un solo **trazo** dibuja 11 lazos",
+  "respuesta": "",
+  "puntaje_idea": 8.3,
+  "ig_id": "18020036441937895",
+  "fb_id": "1382195514976052_122108779131500466",
+  "th_id": "18371344102215808"
  }
 ]
