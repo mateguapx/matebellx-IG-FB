@@ -201,12 +201,11 @@ CORRECCION = "\n\nEl intento anterior tenía estos problemas; corrígelos: {erro
 # 6) PASO 3 — VERIFICACIÓN MATEMÁTICA. Variables: {formato} {contenido}
 #    Debe seguir pidiendo un JSON con "ok" (true/false) y "issues" (lista).
 # ---------------------------------------------------------------------------
-VERIFICACION = """Revisa este post de matemáticas (formato: {formato}) como un corrector estricto.
+VERIFICACION = """Revisa este post de matemáticas (formato: {formato}).
 Resuelve de forma independiente cada problema, reto o cálculo y comprueba cada afirmación y la notación LaTeX.
 Ten en cuenta que en el formato "error" la expresión de 'display' es A PROPÓSITO la fórmula equivocada; lo que debe ser correcto es la corrección del texto.
 Marca ok=false ÚNICAMENTE si hay:
 - un error matemático real (cálculo, afirmación falsa, respuesta incorrecta, el campo "respuesta" no coincide con tu solución),
-- un reto o acertijo con enunciado incompleto, con más de una respuesta válida o que depende de notación ambigua,
 - un reto que revela la respuesta en la imagen o en el caption,
 - LaTeX inválido que se vería roto.
 NO marques ok=false por estilo, redacción mejorable o recomendaciones; si es correcto, responde ok=true y deja issues vacío.
