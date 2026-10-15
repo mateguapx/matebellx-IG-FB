@@ -1,0 +1,39 @@
+name: tokens
+# Cada lunes: renueva IG_TOKEN y THREADS_TOKEN (otros 60 días) y revisa META_PAGE_TOKEN (bot/tokens.py).
+# Para renovar automáticamente necesita el secret GH_PAT (token de GitHub con permiso "Secrets: Read and write" sobre este repo).
+# Si algo falla, la corrida queda en rojo y GitHub avisa por correo.
+on:
+  schedule: [{ cron: "10 14 * * 1" }]   # lunes 08:10 México
+  workflow_dispatch:
+concurrency: bot
+jobs:
+  tokens:
+    runs-on: ubuntu-24.04
+    env:
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      GH_TOKEN: ${{ secrets.GH_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install requests
+      - name: Renovar y revisar
+        run: |
+          set -o pipefail
+          ARCH="$RUNNER_TEMP/ig_token.txt"; ARCH_TH="$RUNNER_TEMP/th_token.txt"
+          if [ -n "$GH_TOKEN" ]; then OPC="--renovar-ig $ARCH --renovar-th $ARCH_TH"; else OPC=""; echo "::warning title=Falta GH_PAT::Sin el secret GH_PAT solo se revisan los tokens; no se renuevan solos."; fi
+          status=0
+          python -u -m bot.tokens $OPC 2>&1 | tee out.txt || status=$?
+          if [ -s "$ARCH" ]; then
+            gh secret set IG_TOKEN --repo "${{ github.repository }}" < "$ARCH" && echo "Secret IG_TOKEN actualizado"
+            rm -f "$ARCH"
+          fi
+          if [ -s "$ARCH_TH" ]; then
+            gh secret set THREADS_TOKEN --repo "${{ github.repository }}" < "$ARCH_TH" && echo "Secret THREADS_TOKEN actualizado"
+            rm -f "$ARCH_TH"
+          fi
+          { echo '```'; cat out.txt; echo '```'; } >> $GITHUB_STEP_SUMMARY
+          exit $status

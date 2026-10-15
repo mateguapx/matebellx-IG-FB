@@ -19,6 +19,8 @@ jobs:
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
       IG_TOKEN: ${{ secrets.IG_TOKEN }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
       FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
       PAGE_HANDLE: ${{ vars.PAGE_HANDLE }}
     steps:

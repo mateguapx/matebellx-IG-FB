@@ -3,6 +3,7 @@ Flujo: ideas -> elegir la mejor -> escribir -> verificar (con reintentos y, si h
 import json
 import re
 import anthropic
+from . import curvas
 from . import prompts as P
 from .config import MODEL, N_IDEAS, PESOS_IDEA, slides_rango
 
@@ -63,12 +64,18 @@ def contexto_rendimiento(insights: dict | None) -> str:
 
 
 def _comun(plan: dict) -> dict:
+    extra = []
+    if plan.get("curva_tipo"):
+        extra.append(P.render(P.CURVA, curva=plan["curva_tipo"], catalogo=curvas.descripcion_catalogo()))
+    if plan.get("serie"):
+        extra.append(P.render(P.SERIE, serie=plan["serie"]))
     return dict(
         manual=P.MANUAL,
         formato=P.FORMATOS[plan["formato"]],
         forma=P.FORMA[plan["kind"]],
         audiencia=P.AUDIENCIA.get(plan["nivel"], P.AUDIENCIA["general"]),
         area=plan["area"],
+        extra="\n".join(extra),
     )
 
 
@@ -80,7 +87,7 @@ def ideas(plan: dict, evitar: list[str], contexto: str = "") -> list[dict]:
     lista = [i for i in data.get("ideas", []) if isinstance(i, dict) and i.get("gancho")]
     if not lista:
         raise RuntimeError("Claude no devolvió ideas válidas")
-    w = PESOS_IDEA["reto" if plan["formato"].startswith("reto") else "default"]
+    w = PESOS_IDEA.get(plan["formato"], PESOS_IDEA["default"])
     for i in lista:
         i["_puntaje"] = round(sum(_num(i.get(k)) * peso for k, peso in w.items()), 2)
     return sorted(lista, key=lambda i: i["_puntaje"], reverse=True)
@@ -93,25 +100,24 @@ def _normalizar(plan: dict, content: dict) -> list[str]:
         return ["El campo slides debe ser una lista de objetos"]
     lo, hi = slides_rango(plan["kind"], plan["formato"])
     if not lo <= len(slides) <= hi:
-        return [f"Número de slides inválido: {len(slides)} (debe ser exactamente {lo})" if lo == hi
-                else f"Número de slides inválido: {len(slides)} (debe ser entre {lo} y {hi})"]
-    for s in slides:
-        for k in ("title", "text", "display"):
-            s[k] = str(s.get(k) or "").strip()
-        s.pop("kicker", None)
-        if not s["title"]:
-            return ["Falta el título (title) de la imagen"]
+        return [f"Número de slides inválido: {len(slides)} (debe ser exactamente {lo})"]
     s = slides[0]
-    if plan["formato"].startswith("reto"):
-        s["layout"] = "reto"
-        if not s["title"].upper().startswith("RETO"):
-            s["title"] = "RETO: " + s["title"]
-    elif plan["formato"] == "error":
-        s["layout"] = "error"
-        if not s["display"]:
-            return ["En el formato error, 'display' debe tener la fórmula equivocada"]
+    for k in ("title", "text", "display"):
+        s[k] = str(s.get(k) or "").strip()
+    for k in ("kicker", "layout"):
+        s.pop(k, None)
+    if not s["title"]:
+        return ["Falta el título (title) de la imagen"]
+    if plan.get("curva_tipo"):
+        spec = s.get("curva") if isinstance(s.get("curva"), dict) else {}
+        s["curva"] = curvas.normalizar({"tipo": plan["curva_tipo"], "params": spec.get("params") or {}})
+        s["display"] = curvas.latex(s["curva"])  # la ecuación sale del código: siempre coincide con el dibujo
+        s["layout"] = "curva"
     else:
+        s.pop("curva", None)
         s["layout"] = "normal"
+        if not s["display"] and not s["text"]:
+            return ["Falta la fórmula protagonista (display) o la línea de apoyo (text)"]
     if not content.get("caption"):
         return ["Falta el caption"]
     return []

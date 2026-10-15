@@ -6,6 +6,7 @@ import requests
 from .config import GRAPH_VERSION
 
 IG_BASE = f"https://graph.instagram.com/{GRAPH_VERSION}"
+TH_BASE = "https://graph.threads.net/v1.0"
 FB_BASE = f"https://graph.facebook.com/{GRAPH_VERSION}"
 IG_TOKEN = lambda: os.environ["IG_TOKEN"]          # token de usuario de Instagram (larga duración, 60 días)
 PAGE_TOKEN = lambda: os.environ["META_PAGE_TOKEN"]  # token de Página (solo Facebook)
@@ -141,3 +142,32 @@ def fb_private_reply(comment_id: str, text: str) -> None:
 def fb_reply_comment(comment_id: str, text: str) -> None:
     """Respuesta pública al comentario (requiere pages_manage_engagement)."""
     _fb_post(f"{comment_id}/comments", message=text)
+
+
+# --- Threads ---
+TH_TOKEN = lambda: os.environ.get("THREADS_TOKEN", "")
+TH_ID = lambda: os.environ.get("THREADS_USER_ID") or "me"
+
+
+def threads_activo() -> bool:
+    return bool(TH_TOKEN())
+
+
+def _th(method: str, path: str, **params) -> dict:
+    r = requests.request(method, f"{TH_BASE}/{path}", params={**params, "access_token": TH_TOKEN()}, timeout=60)
+    return _check(r, f"Threads {method} {path}")
+
+
+def publish_threads(image_url: str, text: str) -> str:
+    """Post de una imagen en Threads: contenedor -> esperar a que termine de procesar -> publicar."""
+    cont = _th("POST", f"{TH_ID()}/threads", media_type="IMAGE", image_url=image_url, text=text)["id"]
+    time.sleep(10)
+    for _ in range(18):  # hasta ~2 min
+        st = _th("GET", cont, fields="status,error_message")
+        if st.get("status") == "FINISHED":
+            break
+        if st.get("status") in ("ERROR", "EXPIRED"):
+            raise RuntimeError(f"Contenedor de Threads en estado {st.get('status')}: {st.get('error_message')}")
+        time.sleep(7)
+    return _th("POST", f"{TH_ID()}/threads_publish", creation_id=cont)["id"]
+
