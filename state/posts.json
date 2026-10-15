@@ -19,5 +19,26 @@
   "puntaje_idea": 8.25,
   "ig_id": null,
   "fb_id": "1382195514976052_122108633979500466"
+ },
+ {
+  "id": "20261015-0203-t1",
+  "ts": "2026-10-15T02:04:41+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "wow",
+  "hook": "pregunta",
+  "tema_clave": "el infinito y sus paradojas",
+  "area": "el infinito y sus paradojas",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "inicial",
+  "tema": "0.999… es exactamente 1",
+  "titulo": "¿Sabías que $0.999\\ldots$ es **exactamente** igual a 1? 🤯",
+  "respuesta": "0.999… = 1 exactamente: como 1/3 = 0.333…, al multiplicar por 3 se obtiene 0.999… = 3/3 = 1. También, entre dos números distintos siempre cabe otro, y entre 0.999… y 1 no cabe ninguno.",
+  "puntaje_idea": 9.05,
+  "ig_id": "18191052682405039",
+  "fb_id": "1382195514976052_122108648589500466"
  }
 ]
