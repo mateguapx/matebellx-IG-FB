@@ -5,7 +5,7 @@ Uso: python -m bot.learn   (corre 1 vez al día con .github/workflows/learn.yml)
 2) Calcula un puntaje relativo: 1.0 = un post normal de su mismo tipo; 2.0 = el doble de bueno.
    60% calidad (interacciones valiosas por cada 1000 personas alcanzadas) + 40% alcance.
    En posts con palabra clave no cuentan los comentarios, porque se piden a propósito.
-3) Promedia el puntaje por formato, gancho, tema y fondo -> state/weights.json (lo usa bot/planner.py).
+3) Promedia el puntaje por formato, gancho, tema, fondo y curva -> state/weights.json (lo usa bot/planner.py).
 4) Guarda los mejores y peores posts -> state/insights.json (se le muestran a Claude para que aprenda el patrón).
 5) Escribe un informe legible en state/informe.md."""
 import json
@@ -16,7 +16,7 @@ from .config import (MAX_EDAD_DIAS, MIN_EDAD_H, PESO_ALCANCE, PESOS_METRICAS, RO
 
 STATE = ROOT / "state"
 METRICAS = ["reach", "shares", "saved", "follows", "profile_visits", "views", "likes", "comments"]
-DIMENSIONES = ["formato", "hook", "tema_clave", "fondo"]
+DIMENSIONES = ["formato", "hook", "tema_clave", "fondo", "curva_tipo"]
 
 
 def _load(name: str, default):
@@ -120,7 +120,7 @@ def calcular_pesos(medidos: list[dict]) -> dict:
             if p.get(dim):
                 acum.setdefault(p[dim], []).append(p["score"])
         # Promedio "prudente": con pocos datos se queda cerca de 1.0 (neutral)
-        pesos["tema" if dim == "tema_clave" else dim] = {
+        pesos[{"tema_clave": "tema", "curva_tipo": "curva"}.get(dim, dim)] = {
             v: round((sum(s) + SHRINK_K * 1.0) / (len(s) + SHRINK_K), 3) for v, s in acum.items()}
     return pesos
 
@@ -147,7 +147,7 @@ def informe(medidos: list[dict], pesos: dict, avisos: list[str]) -> str:
             l.append(f"| {p['score']:.2f} | {p.get('tipo')} | {p.get('formato')} | {p.get('hook')} | "
                      f"{(p.get('titulo') or '')[:40]} | {m.get('reach', '')} | {m.get('shares', '')} | "
                      f"{m.get('saved', '')} | {m.get('follows', '')} | {m.get('comments', '')} |")
-    for dim, nombre in (("formato", "Formatos"), ("hook", "Ganchos"), ("tema", "Temas"), ("fondo", "Fondos")):
+    for dim, nombre in (("formato", "Formatos"), ("hook", "Ganchos"), ("tema", "Temas"), ("fondo", "Fondos"), ("curva", "Curvas")):
         if pesos.get(dim):
             l += ["", f"## {nombre} (>1 = funciona mejor que el promedio)", ""]
             l += [f"- {v}: {w:.2f}" for v, w in sorted(pesos[dim].items(), key=lambda x: -x[1])]

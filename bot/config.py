@@ -9,8 +9,9 @@ GRAPH_VERSION = os.getenv("GRAPH_VERSION", "v26.0")
 HANDLE = os.getenv("PAGE_HANDLE", "@matebellx")
 LINK = "https://www.mateguapo.com/materiales-de-estudio"
 
-# Paleta Mateguapo
-BRAND = {"bg": "#000000", "fg": "#FFFFFF", "accent": "#ffde59", "alert": "#ff3131"}
+# Paleta Bellxs: negro profundo, crema y dorado
+BRAND = {"bg": "#060608", "fg": "#F3EAD7", "accent": "#D9B56C", "alert": "#E06A5A"}
+ESLOGAN = "Porque las Matemáticas son Bellxs"
 
 # keyword -> libro. nivel: "uni" | "bach". El DM lleva siempre el mismo link, así que cualquier keyword dispara la misma respuesta.
 BOOKS = {
@@ -66,106 +67,114 @@ BOOKS = {
 }
 
 # ---------------------------------------------------------------------------
-# MEZCLA DE CONTENIDO POR HORARIO (tipo de post). Todos los posts son de UNA imagen:
+# CONCEPTO: "Porque las Matemáticas son Bellxs". Todos los posts son de UNA imagen:
 #   Instagram: la imagen + la imagen final (Síguenos / Comenta PALABRA) como carrusel de 2.
-#   Facebook: solo la imagen; la invitación (seguir / palabra clave) va al final del texto.
-#   cta:  "follow" (Síguenos) | "keyword" (Comenta PALABRA)
-#   tema: "libre" (temas virales de cualquier área) | "libro" (área de uno de los libros, para que la palabra clave tenga sentido)
-#   formatos: peso base de cada formato. El aprendizaje automático multiplica estos pesos según el rendimiento.
-#   Para forzar un formato, deja solo ese (ej. tipo 3 = siempre reto básico).
+#   Facebook: solo la imagen; la invitación va al final del texto.
+# Formatos (pilares):
+#   identidad   fórmula o identidad que enamora (e^{iπ}+1=0, Basilea, Gauss, Ramanujan…)
+#   curva       la ecuación y su dibujo exacto (rosas polares, mariposa, espirógrafos, fractales…)
+#   demostracion demostración bella y corta, a veces casi sin palabras
+#   naturaleza  matemáticas en la naturaleza, la música y el arte (sin mitos)
+#   historia    historias humanas de matemáticas y matemáticos
+#   infinito    el infinito y lo inalcanzable (tamaños de infinito, irracionales, incompletitud)
+# Cada tipo de post (horario): cta = "follow" | "keyword"; tema = "libre" | "libro"; formatos con su peso base.
 # ---------------------------------------------------------------------------
 SLOTS = {
-    1: {"kind": "single", "cta": "follow", "tema": "libre",
-        "formatos": {"wow": 3, "reto_logico": 2, "error": 2, "dato": 1, "motivacion": 1, "tips": 1, "chiste": 1}},
-    2: {"kind": "single", "cta": "keyword", "tema": "libro",
-        "formatos": {"problema": 3, "error": 2, "wow": 1, "dato": 1}},
-    3: {"kind": "single", "cta": "follow", "tema": "libre",
-        "formatos": {"reto_basico": 1}},  # 1 reto de matemática básica al día
-    4: {"kind": "single", "cta": "keyword", "tema": "libro",
-        "formatos": {"error": 2, "problema": 2, "dato": 1}},
+    1: {"kind": "single", "cta": "follow", "tema": "libre",            # 09:00 México
+        "formatos": {"identidad": 3, "infinito": 2, "naturaleza": 2, "historia": 1}},
+    2: {"kind": "single", "cta": "keyword", "tema": "libro",           # 13:00 · el único post de venta del día (tono suave)
+        "formatos": {"demostracion": 2, "identidad": 2, "curva": 1}},
+    3: {"kind": "single", "cta": "follow", "tema": "libre",            # 18:00 · "Ecuación del día": siempre una curva
+        "formatos": {"curva": 1}},
+    4: {"kind": "single", "cta": "follow", "tema": "libre",            # 20:00
+        "formatos": {"historia": 2, "naturaleza": 2, "infinito": 1, "demostracion": 1}},
 }
 POST_TYPES = {k: (v["kind"], v["cta"]) for k, v in SLOTS.items()}
 
+# Series semanales (día de la semana en México: 0 = lunes … 6 = domingo): {día: {tipo: (formato, nombre de la serie)}}
+SERIES = {
+    2: {4: ("historia", "Bellxs de la historia")},
+    6: {1: ("demostracion", "Domingo de demostraciones"), 4: ("demostracion", "Domingo de demostraciones")},
+}
+SERIE_DIARIA = {3: "Ecuación del día"}
+
 # Texto que se agrega al final del caption SOLO en Facebook (ahí no va la imagen final). {key} = palabra clave
 FB_CTA = {
-    "follow": "Síguenos para un reto y un dato nuevo cada día 🧠",
-    "keyword": "📚 ¿Quieres 1,000 ejercicios con soluciones paso a paso? Comenta {key} y te mando el link.",
+    "follow": "Síguenos: una dosis diaria de belleza matemática ✨",
+    "keyword": "¿Te enamoraste? Comenta {key} y te mando 1,000 ejercicios con soluciones paso a paso 📚",
 }
 
-# Temas para los posts de tema "libre" (alcance amplio, cualquier persona)
-TEMAS_LIBRES = [
-    "aritmética y orden de operaciones", "porcentajes y fracciones en la vida diaria", "el infinito y sus paradojas",
-    "números complejos y la constante e", "probabilidad que engaña a la intuición", "lógica y acertijos",
-    "números primos y teoría de números", "geometría con resultados curiosos", "conteo y combinatoria cotidiana",
-    "matemáticas del dinero (descuentos, interés, ofertas)", "historias de genios de las matemáticas",
-    "demostraciones elegantes y cortas", "errores comunes de álgebra", "teoría de juegos y estrategia",
-    "patrones y sucesiones sorprendentes", "matemáticas en la naturaleza, la música y el arte",
-]
-# Temas para los retos (se rotan para no repetir)
-TEMAS_RETO_BASICO = [
-    "orden de operaciones con trampa", "porcentajes que engañan", "fracciones y decimales", "potencias y signos",
-    "problemas de razonamiento con números (máquinas, trabajadores, precios)", "ecuaciones de una incógnita en la vida diaria",
-    "promedios y velocidades medias", "cuál es mayor (comparar números o expresiones)", "patrones numéricos: el número que sigue",
-]
-TEMAS_RETO_LOGICO = [
-    "monedas y balanzas", "cajas con etiquetas equivocadas", "los 100 focos o las 100 puertas", "dilema del prisionero y teoría de juegos",
-    "Monty Hall y probabilidad condicional", "prisioneros y sombreros de colores", "cruzar el río con restricciones",
-    "caballeros que dicen la verdad y bribones que mienten", "relojes, calendarios y edades", "contar cuadrados, triángulos o caminos",
-]
+# Bancos de temas por formato (el banco de ideas automático agrega ideas concretas encima de estos)
+TEMAS = {
+    "identidad": [
+        "la identidad de Euler", "el problema de Basilea", "la integral de Gauss", "la fórmula de Euler para poliedros",
+        "las series de Ramanujan para π", "la fracción continua del número áureo", "el producto de Wallis",
+        "la serie de Leibniz para π", "la fórmula de Stirling", "e como límite y como serie", "la identidad de Vieta para π",
+        "suma de cubos igual al cuadrado de la suma", "el número 1729 de Hardy y Ramanujan", "la fórmula de De Moivre",
+    ],
+    "infinito": [
+        "hay infinitos más grandes que otros (Cantor)", "el hotel infinito de Hilbert", "0.999… = 1",
+        "los números irracionales nunca se repiten", "el teorema de incompletitud de Gödel", "la paradoja de Zenón",
+        "la serie armónica diverge", "hay tantos pares como naturales", "los números trascendentes", "los decimales de π",
+        "la curva de Koch: perímetro infinito, área finita", "la trompeta de Gabriel",
+    ],
+    "naturaleza": [
+        "espirales de Fibonacci en girasoles y piñas", "fractales en helechos, romanescos y costas", "hexágonos en los panales",
+        "la armonía musical y las razones de frecuencias", "la catenaria en puentes y arcos", "simetrías en copos de nieve",
+        "teselados de Escher", "el ángulo áureo en las plantas", "ondas, sonido y series de Fourier",
+        "la geometría de las conchas de nautilo (sin mitos)", "las manchas animales y las ecuaciones de Turing",
+    ],
+    "historia": [
+        "Srinivasa Ramanujan", "Emmy Noether", "Évariste Galois y la noche antes del duelo", "Sophie Germain",
+        "Leonhard Euler escribiendo ciego", "Hipatia de Alejandría", "Kurt Gödel", "Georg Cantor", "Maryam Mirzakhani",
+        "Carl Friedrich Gauss de niño", "Ada Lovelace", "Alan Turing", "Grigori Perelman y la conjetura de Poincaré",
+        "Andrew Wiles y el último teorema de Fermat", "Paul Erdős", "Katherine Johnson",
+    ],
+    "demostracion": [
+        "la suma de impares da un cuadrado", "√2 es irracional", "hay infinitos números primos", "el teorema de Pitágoras sin palabras",
+        "la suma de Gauss 1+2+…+n", "la serie geométrica 1/2+1/4+… = 1", "los ángulos de un triángulo suman 180°",
+        "el área del círculo desenrollando anillos", "suma de cubos sin palabras",
+    ],
+}
 
-TEMAS_MOTIVACION = [
-    "estudiar lo que te apasiona aunque otros no lo entiendan", "la cultura de la mediocridad y conformarse",
-    "reprobar un examen no te define", "disciplina contra motivación", "por qué vale la pena aprender matemáticas de verdad",
-    "el síndrome del impostor en estudiantes", "compararte con otros en la escuela", "elegir carrera por pasión o por dinero",
-]
-TEMAS_TIPS = [
-    "cómo estudiar para un examen de matemáticas", "la técnica Feynman", "repetición espaciada", "no bloquearte en un examen",
-    "cómo tomar apuntes de matemáticas", "practicar con ejercicios en vez de solo leer teoría", "estudiar en bloques (pomodoro)",
-    "cómo entender una demostración", "qué hacer cuando no entiendes una clase",
-]
-
-# Tipos de gancho para el primer slide (el aprendizaje ajusta cuál funciona mejor)
-HOOKS = ["pregunta", "numero_impactante", "mito_vs_realidad", "paradoja", "error_comun", "historia_curiosa", "desafio", "humor"]
-HOOK_RETO = "desafio"  # los retos siempre usan gancho de desafío
-# Ganchos permitidos por formato (los que no aparecen aquí usan todos menos desafio y humor)
+# Ganchos de la primera línea (el aprendizaje ajusta cuál funciona mejor)
+HOOKS = ["pregunta", "asombro", "metafora", "historia", "dato_preciso"]
 HOOKS_POR_FORMATO = {
-    "reto_basico": ["desafio"], "reto_logico": ["desafio"], "chiste": ["humor"],
-    "motivacion": ["pregunta", "mito_vs_realidad", "historia_curiosa"], "tips": ["pregunta", "error_comun", "mito_vs_realidad"],
+    "historia": ["historia", "asombro", "pregunta"],
+    "curva": ["asombro", "pregunta", "metafora"],
 }
 
 # Cómo se elige la mejor de las ideas que propone Claude (pesos de sus autoevaluaciones 1-10)
-PESOS_IDEA = {"default": {"compartible": 0.45, "curiosidad": 0.25, "comentable": 0.30},
-              "reto": {"compartible": 0.30, "curiosidad": 0.20, "comentable": 0.50}}
+PESOS_IDEA = {"default": {"compartible": 0.50, "curiosidad": 0.30, "comentable": 0.20}}
 N_IDEAS = 6
 
 
 def slides_rango(kind: str, formato: str) -> tuple[int, int]:
-    """Número de slides de contenido (sin contar la imagen final de CTA). Hoy todos los posts son de 1 imagen."""
+    """Número de slides de contenido (sin contar la imagen final de CTA). Todos los posts son de 1 imagen."""
     return (1, 1)
 
 
 # ---------------------------------------------------------------------------
 # FONDOS (arte matemático generado en bot/fondos.js). Se elige según palabras del tema;
-# si no hay coincidencia, uno de FONDOS_DEFAULT. El aprendizaje también mide qué fondos funcionan mejor.
+# si no hay coincidencia, uno de FONDOS_DEFAULT. En los posts de curva, uno discreto de FONDOS_CURVA.
 # ---------------------------------------------------------------------------
 FONDOS_POR_TEMA = [
-    (["probab", "combinat", "conteo", "estadist", "bayes", "binomial", "normal", "monty", "varianza", "cumplea"], ["probabilidad", "red"]),
-    (["complej", "constante e", "euler"], ["fractal", "formulas"]),
-    (["infinit", "paradoj", "sucesion", "serie", "patron"], ["fractal", "espiral"]),
-    (["primo", "teoria de numeros"], ["primos"]),
-    (["geometr", "circunferencia", "parabola", "elipse", "hiperbola", "recta", "lugar", "cuadrado", "triangul"], ["geometria"]),
-    (["trigonom", "seno", "coseno", "circulo unitario", "radian", "angulo", "reloj"], ["trig"]),
-    (["derivad", "integral", "limite", "calculo", "funcion", "optimiz", "continuidad", "epsilon", "gradiente",
-      "lagrange", "parcial", "multivariable", "green", "stokes", "jacobiano"], ["funciones"]),
-    (["diferencial", "calor", "onda", "laplace", "fourier", "separab", "exacta", "caracteristica", "coeficientes"], ["ondas"]),
-    (["matri", "vector", "lineal", "determinante", "transformacion", "propio", "gram", "espacio"], ["rejilla"]),
-    (["logic", "acertijo", "juego", "prisioner", "caballero", "moneda", "caja", "foco", "puerta", "rio", "sombrero"], ["red", "formulas"]),
-    (["dinero", "interes", "financ", "porcentaje", "descuento", "anualidad", "amortiz", "inflacion", "valor presente", "tasa"], ["funciones", "formulas"]),
-    (["naturaleza", "musica", "arte", "fibonacci", "aureo", "elegante"], ["espiral", "lissajous"]),
-    (["aritmetica", "operacion", "fraccion", "decimal", "potencia", "signo", "promedio", "razonamiento", "mayor",
-      "ecuacion", "factoriz", "exponente", "radical", "logaritmo", "algebra", "desigualdad"], ["formulas", "rejilla", "funciones"]),
+    (["probab", "combinat", "conteo", "estadist", "bayes", "binomial", "normal", "gauss", "campana"], ["probabilidad", "red"]),
+    (["complej", "euler", "de moivre", "constante e", " e como"], ["fractal", "formulas"]),
+    (["infinit", "cantor", "hilbert", "zenon", "godel", "koch", "fractal", "trompeta", "irracional", "trascend"], ["fractal", "espiral"]),
+    (["primo", "teoria de numeros", "1729", "erdos", "fermat"], ["primos"]),
+    (["geometr", "circunferencia", "parabola", "elipse", "hiperbola", "recta", "pitagoras", "triangul", "poincare", "poliedro", "area"], ["geometria"]),
+    (["trigonom", "seno", "coseno", "radian", "angulo"], ["trig"]),
+    (["derivad", "integral", "limite", "calculo", "funcion", "optimiz", "gradiente", "lagrange", "multivariable", "stirling"], ["funciones"]),
+    (["diferencial", "calor", "onda", "laplace", "fourier", "musica", "sonido", "armonia", "turing"], ["ondas"]),
+    (["matri", "vector", "lineal", "determinante", "transformacion", "noether", "simetr"], ["rejilla", "geometria"]),
+    (["fibonacci", "aure", "girasol", "nautilo", "espiral", "planta", "pina"], ["espiral", "lissajous"]),
+    (["naturaleza", "arte", "escher", "tesel", "panal", "hexagon", "copo", "catenaria", "helecho"], ["geometria", "lissajous"]),
+    (["ramanujan", "serie", "basilea", "wallis", "leibniz", "vieta", "producto", "suma"], ["formulas", "espiral"]),
+    (["algebra", "ecuacion", "factoriz", "exponente", "logaritmo", "aritmet", "potencia"], ["formulas", "funciones"]),
 ]
 FONDOS_DEFAULT = ["formulas", "lissajous", "espiral", "fractal", "geometria"]
+FONDOS_CURVA = ["formulas", "geometria", "rejilla"]
 
 
 # ---------------------------------------------------------------------------

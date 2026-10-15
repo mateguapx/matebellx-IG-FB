@@ -2,18 +2,25 @@
 
 Bot en GitHub Actions: 4 posts/día en Instagram + Facebook, respuesta automática a comentarios con palabra clave y aprendizaje automático del contenido.
 
+**Concepto: "Porque las Matemáticas son Bellxs".** Mostrar la belleza de las matemáticas, romantizándolas con medida.
 Todos los posts son de **una imagen**. Instagram: la imagen + la imagen final ("Síguenos" o "Comenta PALABRA"). Facebook: solo la imagen, con la invitación al final del texto.
 
 | Tipo | Hora (México) | Contenido (mezcla en `bot/config.py` → `SLOTS`) | Cierre |
 |---|---|---|---|
-| 1 | 09:00 | Resultado sorprendente, reto de lógica, error común o dato | Síguenos |
-| 2 | 13:00 | Tema de un libro: problema exprés, error, dato o resultado sorprendente | Comenta PALABRA |
-| 3 | 18:00 | Reto de matemática básica ("RETO: …", sin la respuesta) | Síguenos |
-| 4 | 20:00 | Tema de un libro: error, problema exprés o dato | Comenta PALABRA |
+| 1 | 09:00 | Identidad que enamora, infinito, naturaleza y arte, historia | Síguenos |
+| 2 | 13:00 | Tema de un libro: demostración bella, identidad o curva (único post de venta, tono suave) | Comenta PALABRA |
+| 3 | 18:00 | **Ecuación del día**: una curva dibujada con exactitud y su ecuación | Síguenos |
+| 4 | 20:00 | Historia, naturaleza y arte, infinito, demostración | Síguenos |
 
-**Estilo de imagen**: sin etiquetas; un título gancho grande (puede llevar fórmulas `$...$`, palabras en amarillo con `**así**` y un emoji), una línea de apoyo y, si aporta, la expresión protagonista. Los errores muestran la fórmula equivocada en rojo con ✗. Fondo de arte matemático generado por código según el tema (`bot/fondos.js`: fractales, espirales, primos, campanas de Gauss, redes, etc.), oscurecido para que el texto se lea.
+Series semanales: miércoles 20:00 **Bellxs de la historia**; domingo **Domingo de demostraciones** (09:00 y 20:00).
 
-**Cómo se genera cada post**: `planner.py` elige formato, gancho, tema y fondo (70% lo que mejor funciona, 30% exploración, sin repetir temas recientes) → Claude propone 6 ideas y las puntúa → se escribe la mejor → una segunda llamada verifica las matemáticas. Todos los textos de los prompts están en `bot/prompts.py`.
+**Estilo**: Playfair Display + Cormorant Garamond, dorado sobre negro, composición centrada, marco fino y el eslogan como firma. Título con alma (fórmulas `$...$`, énfasis `**así**` en cursiva dorada), fórmula protagonista y una línea de apoyo. Curvas exactas desde el catálogo de `bot/curvas.py` (rosas polares, cardioide, corazón, lemniscata, espirales, mariposa de Fay, Lissajous, espirógrafos, astroide, Mandelbrot, Julia, Fourier, campana); la ecuación la escribe el código, así siempre coincide con el dibujo. Fondos de arte matemático según el tema (`bot/fondos.js`).
+
+**Cómo se genera cada post**: `planner.py` elige formato, gancho, tema, curva y fondo (series semanales, 70% lo que mejor funciona, 30% exploración, sin repetir temas recientes, y ideas del banco) → Claude propone 6 ideas y las puntúa → se escribe la mejor → una segunda llamada verifica matemáticas y datos históricos. Los prompts están en `bot/prompts.py`.
+
+**Banco de ideas** (`ideas.yml`, domingos 07:20 México): `bot/ideas.py` mantiene `state/ideas.json` con ideas concretas pendientes por formato; el planificador las usa y se marcan como usadas al publicar.
+
+**Tokens** (`tokens.yml`, lunes 08:10 México): `bot/tokens.py` renueva `IG_TOKEN` otros 60 días (requiere el secret `GH_PAT`) y revisa `META_PAGE_TOKEN`. Si algo falla, la corrida queda en rojo. Si Meta invalida las sesiones (cambio de contraseña, cuentas nuevas, revisión de seguridad) hay que generar los tokens a mano.
 
 **Aprendizaje** (`learn.yml`, diario 07:40 México): `bot/learn.py` mide los posts de Instagram con más de 48 h (alcance, compartidos, guardados, seguidores, comentarios), calcula un puntaje relativo a su tipo de post (y aprende qué formatos, ganchos, temas y fondos funcionan) y actualiza `state/weights.json` y `state/insights.json`. El informe legible queda en `state/informe.md` y en el resumen de cada corrida. Requiere el permiso `instagram_business_manage_insights` en `IG_TOKEN`.
 

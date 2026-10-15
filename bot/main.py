@@ -1,7 +1,7 @@
-"""Uso: python -m bot.main --type 1|2|3|4 [--dry]
+"""Uso: python -m bot.main --type 1|2|3|4 [--dry]   (concepto: "Porque las Matemáticas son Bellxs")
 Todos los posts son de UNA imagen. Instagram: imagen + imagen final (Síguenos / Comenta PALABRA).
 Facebook: solo la imagen, con la invitación al final del texto.
-1 seguir · 2 palabra clave · 3 reto básico + seguir · 4 palabra clave (la mezcla de formatos está en bot/config.py → SLOTS)"""
+1 y 4 seguir · 2 palabra clave (tono suave) · 3 "Ecuación del día" (curva) + seguir. Mezcla y series en bot/config.py."""
 import argparse
 import json
 import os
@@ -51,7 +51,7 @@ def main() -> None:
     a = ap.parse_args()
 
     posts = _load("posts.json", [])
-    plan = planner.elegir(a.type, posts, _load("weights.json", {}))
+    plan = planner.elegir(a.type, posts, _load("weights.json", {}), ideas=_load("ideas.json", []))
     print("Plan:", json.dumps(plan, ensure_ascii=False))
     content = llm.generate(plan, _evitar(posts), _load("insights.json", {}))
     print("Idea elegida:", json.dumps(content.get("_idea"), ensure_ascii=False))
@@ -67,14 +67,14 @@ def main() -> None:
     fb_caption = caption_facebook(content["caption"], plan["cta"], plan["key"])
     print("Renderizado:", img.name, "+", cta_dst.name, "(la imagen final solo va en Instagram)")
     print("Título:", slide.get("title"))
-    print("Respuesta (no se publica):", content.get("respuesta", ""))
+    print("Fórmula:", slide.get("display", ""))
     print("Caption IG:", content["caption"])
     print("Caption FB:", fb_caption)
 
     record = {
         "id": f"{stamp}-t{a.type}", "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        **{k: plan[k] for k in ("tipo", "kind", "cta", "formato", "hook", "tema_clave", "area", "key", "nivel",
-                                "fondo", "modo")},
+        **{k: plan.get(k) for k in ("tipo", "kind", "cta", "formato", "hook", "tema_clave", "area", "key", "nivel",
+                                    "fondo", "modo", "curva_tipo", "serie", "idea_id")},
         "tema": content.get("tema") or (content.get("_idea") or {}).get("tema", ""),
         "titulo": slide.get("title", ""), "respuesta": content.get("respuesta", ""),
         "puntaje_idea": (content.get("_idea") or {}).get("_puntaje"),
@@ -125,6 +125,12 @@ def publish_step() -> None:
         posts = _load("posts.json", [])
         posts.append(record)
         _save("posts.json", posts[-500:])
+        if record.get("idea_id"):  # la idea del banco ya se usó
+            ideas = _load("ideas.json", [])
+            for i in ideas:
+                if i.get("id") == record["idea_id"]:
+                    i["usada"] = record["ts"]
+            _save("ideas.json", ideas)
     else:
         raise RuntimeError("No se publicó en ninguna red: " + " | ".join(errores))
 

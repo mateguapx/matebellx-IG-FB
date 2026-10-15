@@ -1,7 +1,7 @@
 // Fondos de arte matemático generados por código (canvas). Oscuros a propósito para que el texto se lea.
 // drawFondo(motivo, semilla) dibuja en <canvas id="bg"> y, para "formulas", en <div id="bgf">.
 (function () {
-  const A = [255, 222, 89];            // amarillo de marca
+  const A = window.ACENTO_RGB || [255, 222, 89];   // color de acento (lo define render.py según la marca)
   const rgba = (c, a) => `rgba(${c[0]},${c[1]},${c[2]},${a})`;
   const WHITE = [255, 255, 255];
 
@@ -217,12 +217,97 @@
         if (R() < 0.5) continue;
         const el = document.createElement("div");
         el.style.cssText = `position:absolute;left:${c * cw + between(R, -60, cw * 0.4)}px;top:${r * ch + between(R, 0, ch * 0.5)}px;` +
-          `font-size:${between(R, 34, 70)}px;color:${R() < 0.4 ? rgba(A, 0.22) : rgba(WHITE, 0.11)};` +
+          `font-size:${between(R, 34, 70)}px;color:${R() < 0.4 ? rgba(A, 0.15) : rgba(WHITE, 0.07)};` +
           `transform:rotate(${between(R, -14, 14)}deg);white-space:nowrap`;
         katex.render(pick(R, F), el, { throwOnError: false });
         lay.appendChild(el);
       }
     },
+  };
+
+
+  // ------------------------------------------------------------------ CURVAS PROTAGONISTAS
+  // Devuelve una lista de trazos (cada uno lista de [x,y] en coordenadas matemáticas).
+  function trazos(tipo, p) {
+    const T = (f, t0, t1, n) => { const o = []; for (let i = 0; i <= n; i++) { const t = t0 + (t1 - t0) * i / n; o.push(f(t)); } return o; };
+    const polar = (rf, t0, t1, n) => T(t => { const r = rf(t); return [r * Math.cos(t), r * Math.sin(t)]; }, t0, t1, n);
+    const gcd = (a, b) => b ? gcd(b, a % b) : a;
+    switch (tipo) {
+      case "rosa": {
+        const k = p.k; let den = 1;
+        while (den < 12 && Math.abs(k * den - Math.round(k * den)) > 1e-6) den++;
+        return [polar(t => Math.cos(k * t), 0, 2 * Math.PI * den, 4000 * den)];
+      }
+      case "cardioide": return [polar(t => 1 - Math.cos(t), 0, 2 * Math.PI, 2000).map(([x, y]) => [-y, -x])];
+      case "corazon": return [T(t => [16 * Math.sin(t) ** 3, 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t)], 0, 2 * Math.PI, 2000)];
+      case "lemniscata": return [T(t => { const d = 1 + Math.sin(t) ** 2; return [Math.cos(t) / d, Math.sin(t) * Math.cos(t) / d]; }, 0, 2 * Math.PI, 2000)];
+      case "espiral_aurea": { const phi = (1 + Math.sqrt(5)) / 2; return [polar(t => Math.pow(phi, 2 * t / Math.PI), -6 * Math.PI, 3.2 * Math.PI, 4000)]; }
+      case "espiral_arquimedes": return [polar(t => t, 0, 12 * Math.PI, 4000)];
+      case "mariposa": return [polar(t => Math.exp(Math.sin(t)) - 2 * Math.cos(4 * t) + Math.pow(Math.sin((2 * t - Math.PI) / 24), 5), 0, 24 * Math.PI, 12000).map(([x, y]) => [x, y])];
+      case "lissajous": return [T(t => [Math.sin(p.a * t + p.delta), Math.sin(p.b * t)], 0, 2 * Math.PI, 3000)];
+      case "hipotrocoide": case "epitrocoide": {
+        const R = p.R, r = p.r, d = p.d, hipo = tipo === "hipotrocoide";
+        const A = hipo ? R - r : R + r, vueltas = r / gcd(R, r);
+        return [T(t => hipo ? [A * Math.cos(t) + d * Math.cos(A / r * t), A * Math.sin(t) - d * Math.sin(A / r * t)]
+                            : [A * Math.cos(t) - d * Math.cos(A / r * t), A * Math.sin(t) - d * Math.sin(A / r * t)],
+                  0, 2 * Math.PI * vueltas, 3000 * vueltas)];
+      }
+      case "astroide": return [T(t => [Math.cos(t) ** 3, Math.sin(t) ** 3], 0, 2 * Math.PI, 2000)];
+      case "fourier": {
+        const out = [], ns = [1, Math.max(2, Math.round(p.n / 3)), p.n];
+        for (const n of ns) out.push(T(x => { let s = 0; for (let k = 1; k <= n; k++) s += Math.sin((2 * k - 1) * x) / (2 * k - 1); return [x, 4 / Math.PI * s]; }, -2 * Math.PI, 2 * Math.PI, 3000));
+        return out;
+      }
+      case "campana": return [T(x => [x, 3.2 * Math.exp(-x * x / 2) / Math.sqrt(2 * Math.PI)], -3.6, 3.6, 800)];
+    }
+    return null;
+  }
+
+  function fractalEn(ctx, W, H, tipo, p) {
+    const img = ctx.createImageData(W, H), it = 160, julia = tipo === "julia";
+    const zoom = julia ? 1.55 : 1.35, cx = julia ? 0 : -0.62, cy = 0;
+    for (let j = 0; j < H; j++) for (let i = 0; i < W; i++) {
+      let x = cx + (i - W / 2) / H * 2 * zoom, y = cy + (j - H / 2) / H * 2 * zoom, ar, ai, n = 0;
+      if (julia) { ar = p.c_re; ai = p.c_im; } else { ar = x; ai = y; x = 0; y = 0; }
+      while (n < it && x * x + y * y < 64) { const t = x * x - y * y + ar; y = 2 * x * y + ai; x = t; n++; }
+      const q = (j * W + i) * 4;
+      if (n >= it) { img.data[q] = img.data[q + 1] = img.data[q + 2] = 0; img.data[q + 3] = 0; continue; }
+      let v = (n + 1 - Math.log(Math.log(Math.sqrt(x * x + y * y)) + 1e-9) / Math.LN2) / it;
+      v = Math.pow(Math.max(0, Math.min(1, v)), 0.42);
+      img.data[q] = A[0] * v + 40 * v * v; img.data[q + 1] = A[1] * v + 20 * v * v; img.data[q + 2] = A[2] * v * 0.8;
+      img.data[q + 3] = 255 * Math.min(1, v * 1.6);
+    }
+    ctx.putImageData(img, 0, 0);
+  }
+
+  window.drawCurva = function (cv, tipo, p) {
+    const ctx = cv.getContext("2d"), W = cv.width, H = cv.height;
+    ctx.clearRect(0, 0, W, H);
+    if (tipo === "mandelbrot" || tipo === "julia") { fractalEn(ctx, W, H, tipo, p || {}); return; }
+    const tr = trazos(tipo, p || {}); if (!tr) return;
+    let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+    for (const s of tr) for (const [x, y] of s) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }
+    const k2 = W / 900, m = 34 * k2, esc = Math.min((W - 2 * m) / (x1 - x0 || 1), (H - 2 * m) / (y1 - y0 || 1));
+    const ox = W / 2 - esc * (x0 + x1) / 2, oy = H / 2 + esc * (y0 + y1) / 2;
+    const P = ([x, y]) => [ox + esc * x, oy - esc * y];
+    const linea = (s, w, col, blur) => {
+      ctx.save(); ctx.lineJoin = ctx.lineCap = "round"; ctx.lineWidth = w * k2; ctx.strokeStyle = col;
+      ctx.shadowColor = rgba(A, 0.9); ctx.shadowBlur = blur * k2; ctx.beginPath();
+      s.forEach((pt, i) => { const [X, Y] = P(pt); i ? ctx.lineTo(X, Y) : ctx.moveTo(X, Y); }); ctx.stroke(); ctx.restore();
+    };
+    if (tipo === "fourier" || tipo === "campana") { // ejes finos
+      ctx.strokeStyle = rgba(WHITE, 0.18); ctx.lineWidth = 1.5 * k2; ctx.beginPath();
+      ctx.moveTo(0, oy); ctx.lineTo(W, oy); ctx.moveTo(ox, 0); ctx.lineTo(ox, H); ctx.stroke();
+    }
+    const g = ctx.createRadialGradient(W / 2, H / 2, 0, W / 2, H / 2, Math.min(W, H) * 0.55); // resplandor de fondo
+    g.addColorStop(0, rgba(A, 0.10)); g.addColorStop(1, rgba(A, 0)); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    tr.forEach((s, i) => {
+      const ultimo = i === tr.length - 1, w = tr.length > 1 && !ultimo ? 1.8 : 3.8;
+      const a = tr.length > 1 && !ultimo ? 0.35 : 1;
+      linea(s, w * 3.5, rgba(A, 0.10 * a), 0);         // halo ancho
+      linea(s, w, rgba(A, a), ultimo ? 22 : 0);          // trazo principal con brillo
+      if (ultimo) linea(s, w * 0.35, "rgba(255,248,230,0.85)", 0); // núcleo claro
+    });
   };
 
   window.drawFondo = function (motivo, semilla) {
