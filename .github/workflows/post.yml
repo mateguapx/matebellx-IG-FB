@@ -1,10 +1,10 @@
 name: post
 on:
   schedule:
-    - cron: "0 15 * * *"   # 09:00 México -> tipo 1
-    - cron: "0 19 * * *"   # 13:00 México -> tipo 2
-    - cron: "0 0 * * *"    # 18:00 México -> tipo 3
-    - cron: "0 2 * * *"    # 20:00 México -> tipo 4
+    - cron: "0 15 * * *"   # 09:00 México -> tipo 1 (imagen viral + Síguenos)
+    - cron: "0 19 * * *"   # 13:00 México -> tipo 2 (imagen de un libro + palabra clave)
+    - cron: "0 0 * * *"    # 18:00 México -> tipo 3 (reto básico + Síguenos)
+    - cron: "0 2 * * *"    # 20:00 México -> tipo 4 (imagen de un libro + palabra clave)
   workflow_dispatch:
     inputs:
       type: { description: "Tipo de post 1-4", required: true, default: "1" }
@@ -34,7 +34,10 @@ jobs:
           esac
           echo "T=$T" >> $GITHUB_ENV
       - name: Generar y renderizar
-        run: python -m bot.main --type $T ${{ github.event.inputs.dry == 'true' && '--dry' || '' }}
+        run: |
+          set -o pipefail
+          python -u -m bot.main --type $T ${{ github.event.inputs.dry == 'true' && '--dry' || '' }} 2>&1 | tee gen.txt
+          { echo '```'; cat gen.txt; echo '```'; } >> $GITHUB_STEP_SUMMARY
       - name: Guardar imágenes de prueba
         if: ${{ github.event.inputs.dry == 'true' }}
         uses: actions/upload-artifact@v4
@@ -46,7 +49,7 @@ jobs:
         run: |
           cd out && git init -q && git checkout -q -b media
           git config user.name bot && git config user.email bot@users.noreply.github.com
-          git add -A . ':!urls.json' && git commit -qm "media" 
+          git add -A . ':!urls.json' ':!post.json' && git commit -qm "media"
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" media
           sleep 10
       - name: Publicar en IG y FB
@@ -54,6 +57,7 @@ jobs:
         run: python -m bot.main --publish-step
         env: { GITHUB_REPOSITORY: "${{ github.repository }}" }
       - name: Guardar estado
+        if: ${{ github.event.inputs.dry != 'true' }}
         run: |
           git config user.name bot && git config user.email bot@users.noreply.github.com
           git add state && git commit -qm "state" || true

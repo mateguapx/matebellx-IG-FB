@@ -1,5 +1,9 @@
-"""HTML + KaTeX -> PNG con Playwright. Determinista: sin generadores de imagen, sin errores de notación."""
+"""HTML + KaTeX -> PNG con Playwright. Determinista: sin generadores de imagen, sin errores de notación.
+Layouts: "normal" (título gancho, línea de apoyo, expresión), "reto" (centrado, expresión grande) y
+"error" (la fórmula equivocada en rojo con ✗ y la corrección debajo).
+Fondos: arte matemático generado por código (bot/fondos.js), oscurecido para que el texto se lea."""
 import html
+import re
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from .config import BRAND, HANDLE, SIZE
@@ -20,44 +24,79 @@ def _page(inner: str) -> str:
 body{{width:{W}px;height:{H}px;background:{b['bg']};color:{b['fg']};font-family:Oswald,sans-serif;overflow:hidden;position:relative}}
 .wrap{{position:absolute;inset:0;padding:90px 80px;display:flex;flex-direction:column}}
 .top{{display:flex;justify-content:space-between;font-size:30px;letter-spacing:2px;color:{b['accent']}}}
-.main{{flex:1;display:flex;flex-direction:column;justify-content:center;gap:34px}}
+.main{{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:34px}}
 .kicker{{display:inline-block;align-self:flex-start;background:{b['accent']};color:#000;font-weight:700;font-size:32px;padding:6px 22px;letter-spacing:3px;text-transform:uppercase}}
-.title{{font-family:Anton;font-size:96px;line-height:1.05;text-transform:uppercase}}
-.title.big{{font-size:118px}}
-.text{{font-size:46px;line-height:1.35;font-weight:400}}
+.title{{font-family:Anton;font-size:104px;line-height:1.12;letter-spacing:.5px}}
+.title .katex{{font-size:1.25em}}
+.title.big{{font-size:104px}}
+.em{{color:{b['accent']}}}
+.text{{font-size:50px;line-height:1.35;font-weight:400}}
 .display{{font-size:70px;text-align:center;padding:36px 20px;border:4px solid {b['accent']};color:{b['accent']}}}
 .katex-display{{margin:0!important}}
+.text .katex{{white-space:nowrap}}
 .foot{{display:flex;justify-content:space-between;font-size:30px;color:#aaa}}
 .accent{{color:{b['accent']}}} .alert{{color:{b['alert']}}}
+#bg,#bgf{{position:absolute;inset:0;z-index:0}} #bgf{{overflow:hidden}} .wrap{{z-index:1}}
+.title,.text,.top,.foot{{text-shadow:0 0 14px #000,0 0 28px #000,0 2px 4px #000}}
+.display{{background:rgba(0,0,0,.72)}}
+.error .display{{border-color:{b['alert']};color:#fff;position:relative}}
+.error .display::after{{content:'✗';position:absolute;top:-34px;right:16px;width:68px;height:68px;border-radius:50%;background:{b['alert']};color:#fff;font:700 46px/68px Oswald,sans-serif;text-align:center}}
+.error .display .katex{{text-decoration:line-through;text-decoration-color:{b['alert']};text-decoration-thickness:5px}}
+.reto .main{{align-items:center;text-align:center;gap:44px}}
+.reto .kicker{{align-self:center;font-size:40px;padding:8px 34px}}
+.reto .title{{font-size:100px}}
+.reto .display{{font-size:124px;width:100%;padding:56px 24px;border-width:6px}}
+.reto .text{{font-size:44px}}
+.reto .text.solo{{color:{b['accent']};font-weight:700;letter-spacing:2px;text-transform:uppercase}}
 .cta-big{{font-family:Anton;font-size:128px;line-height:1.02;text-transform:uppercase}}
 .kw{{display:inline-block;font-family:Anton;font-size:150px;background:{b['accent']};color:#000;padding:6px 36px;margin:10px 0}}
 </style></head><body>{inner}
 <script src="vendor/katex/katex.min.js"></script>
 <script src="vendor/katex/contrib/auto-render.min.js"></script>
+<script src="fondos.js"></script>
 <script>
-renderMathInElement(document.body,{{delimiters:[{{left:'$$',right:'$$',display:true}},{{left:'$',right:'$',display:false}}],throwOnError:false}});
+const bgc=document.getElementById('bg');
+if(bgc&&window.drawFondo)drawFondo(bgc.dataset.motivo,+bgc.dataset.semilla);
+renderMathInElement(document.querySelector('.wrap')||document.body,{{delimiters:[{{left:'$$',right:'$$',display:true}},{{left:'$',right:'$',display:false}}],throwOnError:false}});
 document.querySelectorAll('.display').forEach(e=>katex.render(e.dataset.tex,e,{{displayMode:true,throwOnError:false}}));
+const px=e=>parseFloat(getComputedStyle(e).fontSize);
+function fitWidth(){{document.querySelectorAll('.display').forEach(e=>{{let fs=px(e);while(e.scrollWidth>e.clientWidth+1&&fs>24){{fs-=3;e.style.fontSize=fs+'px'}}}})}}
+function contentH(m){{const c=[...m.children];return c.reduce((a,x)=>a+x.offsetHeight,0)+parseFloat(getComputedStyle(m).rowGap||0)*Math.max(c.length-1,0)}}
 document.fonts.ready.then(()=>{{
-document.querySelectorAll('.display').forEach(e=>{{let fs=70;while(e.scrollWidth>e.clientWidth&&fs>24){{fs-=3;e.style.fontSize=fs+'px'}}}});
+fitWidth();
+const m=document.querySelector('.main');
+let k=0;
+while(m&&contentH(m)>m.clientHeight&&k<40){{
+  m.querySelectorAll('.title,.text,.display').forEach(e=>{{e.style.fontSize=(px(e)*0.94)+'px'}});
+  fitWidth();k++}}
 document.querySelectorAll('.kw').forEach(e=>{{let fs=150;while(e.offsetWidth>920&&fs>40){{fs-=4;e.style.fontSize=fs+'px'}}}});
 window.__ready=true}});
 </script></body></html>"""
 
 
-def slide_html(s: dict, idx: int, total: int) -> str:
+def _fmt(t: str) -> str:
+    """Escapa HTML y convierte **palabra** en énfasis amarillo. Las fórmulas $...$ las dibuja KaTeX después."""
+    t = html.escape(t)
+    t = re.sub(r"\*\*(.+?)\*\*", r'<span class="em">\1</span>', t)
+    return re.sub(r"^(RETO:)", r'<span class="em">\1</span>', t)
+
+
+def slide_html(s: dict, fondo: str | None = None, semilla: int = 1) -> str:
+    """Un post = una sola imagen: título gancho (con fórmulas y **énfasis**), una línea de apoyo y la expresión.
+    fondo: nombre de motivo de bot/fondos.js (None = negro liso)."""
     e = html.escape
-    first = idx == 0
+    layout = s.get("layout") if s.get("layout") in ("reto", "error") else "normal"
+    reto = layout == "reto"
     disp = f'<div class="display" data-tex="{e(s["display"], quote=True)}"></div>' if s.get("display") else ""
-    swipe = "DESLIZA ›" if idx < total - 1 and total > 1 else ""
-    counter = f"{idx + 1}/{total}" if total > 1 else ""
-    return f"""<div class="wrap">
-<div class="top"><span>{e(HANDLE)}</span><span>{counter}</span></div>
-<div class="main">
-<span class="kicker">{e(s.get('kicker', ''))}</span>
-<div class="title {'big' if first else ''}">{e(s.get('title', ''))}</div>
-<div class="text">{e(s.get('text', ''))}</div>{disp}
-</div>
-<div class="foot"><span>SABER MATEMÁTICAS ES DE GUAPOS</span><span class="accent">{swipe}</span></div>
+    title = f'<div class="title big">{_fmt(s["title"])}</div>' if s.get("title") else ""
+    text = f'<div class="text">{_fmt(s["text"])}</div>' if s.get("text") else ""
+    body = f"{title}{disp}{text}" if layout in ("reto", "error") else f"{title}{text}{disp}"
+    bg = (f'<canvas id="bg" width="{W}" height="{H}" data-motivo="{e(fondo)}" data-semilla="{int(semilla)}"></canvas>'
+          f'<div id="bgf"></div>') if fondo else ""
+    return f"""{bg}<div class="wrap {layout}">
+<div class="top"><span>{e(HANDLE)}</span><span></span></div>
+<div class="main">{body}</div>
+<div class="foot"><span>SABER MATEMÁTICAS ES DE GUAPOS</span><span></span></div>
 </div>"""
 
 
@@ -75,7 +114,8 @@ def cta_keyword_html(keyword: str, libro: str) -> str:
 <div class="text">Comenta la palabra</div>
 <div class="kw">{e(keyword)}</div>
 <div class="text">y te mando dónde conseguir <span class="accent">{e(libro)}</span></div>
-<div class="text" style="font-size:36px;color:#aaa">1,000 ejercicios · Con soluciones paso a paso</div></div></div>"""
+<div class="text" style="font-size:36px;color:#aaa">1,000 ejercicios · Con soluciones paso a paso</div>
+<div class="accent" style="font-size:44px;letter-spacing:2px;margin-top:10px">{e(HANDLE)}</div></div></div>"""
 
 
 def render_many(inners: list[str], out_paths: list[Path]) -> None:
