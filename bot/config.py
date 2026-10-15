@@ -104,6 +104,13 @@ FB_CTA = {
     "keyword": "¿Te enamoraste? Comenta {key} y te mando 1,000 ejercicios con soluciones paso a paso 📚",
 }
 
+# Texto que se agrega al final del post de Threads (ahí tampoco va la imagen final; Threads sí permite links)
+TH_CTA = {
+    "follow": "Síguenos para tu dosis diaria de belleza matemática 💛",
+    "keyword": "📚 1,000 ejercicios con soluciones paso a paso: {link}",
+}
+TH_LIMITE = 500  # caracteres (Threads cuenta cada emoji por sus bytes UTF-8)
+
 # Bancos de temas por formato (el banco de ideas automático agrega ideas concretas encima de estos)
 TEMAS = {
     "identidad": [

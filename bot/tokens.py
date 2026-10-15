@@ -1,8 +1,9 @@
-"""Renueva y revisa los tokens de Meta. Uso: python -m bot.tokens [--renovar-ig ARCHIVO]
+"""Renueva y revisa los tokens de Meta. Uso: python -m bot.tokens [--renovar-ig ARCHIVO] [--renovar-th ARCHIVO]
 (corre cada semana con .github/workflows/tokens.yml)
 
 - IG_TOKEN: se renueva (Meta lo extiende otros 60 días). El token nuevo se escribe en ARCHIVO para que el workflow
   actualice el secret; nunca se imprime.
+- THREADS_TOKEN: igual que IG_TOKEN (si existe el secret).
 - META_PAGE_TOKEN: no se puede renovar por API; se comprueba que funcione, que sea de la página correcta y cuándo caduca.
 Si algo falla, el workflow termina en rojo: GitHub te avisa por correo y en la pestaña Actions.
 Ojo: si Meta invalida las sesiones (cambio de contraseña, cuentas nuevas en el Centro de cuentas, revisión de seguridad),
@@ -14,6 +15,7 @@ import requests
 from .config import GRAPH_VERSION
 
 IG = "https://graph.instagram.com"
+TH = "https://graph.threads.net"
 FB = f"https://graph.facebook.com/{GRAPH_VERSION}"
 AVISO_DIAS = 14
 
@@ -50,6 +52,28 @@ def renovar_ig(destino: str | None) -> list[str]:
     return problemas
 
 
+def renovar_threads(destino: str | None) -> list[str]:
+    token = os.environ.get("THREADS_TOKEN", "")
+    if not token:
+        print("THREADS_TOKEN: no configurado (Threads desactivado)")
+        return []
+    try:
+        me = _get(f"{TH}/v1.0/me", fields="username", access_token=token)
+        print(f"THREADS_TOKEN: válido para @{me.get('username')}")
+    except Exception as e:
+        return [f"THREADS_TOKEN no funciona ({e}). Hay que generarlo de nuevo a mano."]
+    if not destino:
+        return []
+    try:
+        r = _get(f"{TH}/refresh_access_token", grant_type="th_refresh_token", access_token=token)
+        with open(destino, "w") as f:
+            f.write(r["access_token"])
+        print(f"THREADS_TOKEN: renovado, vale {int(r.get('expires_in', 0)) // 86400} días más")
+    except Exception as e:
+        return [f"No se pudo renovar THREADS_TOKEN ({e})"]
+    return []
+
+
 def revisar_pagina() -> list[str]:
     token, page_id = os.environ.get("META_PAGE_TOKEN", ""), os.environ.get("FB_PAGE_ID", "")
     try:
@@ -75,8 +99,8 @@ def revisar_pagina() -> list[str]:
 
 
 def main() -> None:
-    destino = sys.argv[sys.argv.index("--renovar-ig") + 1] if "--renovar-ig" in sys.argv else None
-    problemas = renovar_ig(destino) + revisar_pagina()
+    arg = lambda op: sys.argv[sys.argv.index(op) + 1] if op in sys.argv else None
+    problemas = renovar_ig(arg("--renovar-ig")) + renovar_threads(arg("--renovar-th")) + revisar_pagina()
     for p in problemas:
         print(f"::error title=Tokens de Meta::{p}")
     sys.exit(1 if problemas else 0)

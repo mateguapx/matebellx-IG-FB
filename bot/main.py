@@ -1,13 +1,13 @@
 """Uso: python -m bot.main --type 1|2|3|4 [--dry]   (concepto: "Porque las Matemáticas son Bellxs")
 Todos los posts son de UNA imagen. Instagram: imagen + imagen final (Síguenos / Comenta PALABRA).
-Facebook: solo la imagen, con la invitación al final del texto.
+Facebook y Threads: solo la imagen, con la invitación al final del texto (Threads lleva su propio texto con 💛).
 1 y 4 seguir · 2 palabra clave (tono suave) · 3 "Ecuación del día" (curva) + seguir. Mezcla y series en bot/config.py."""
 import argparse
 import json
 import os
 import re
 from datetime import datetime, timezone
-from .config import FB_CTA, POST_TYPES, ROOT
+from .config import FB_CTA, LINK, POST_TYPES, ROOT, TH_CTA, TH_LIMITE
 from . import llm, meta, planner
 from .render import render_many, slide_html
 
@@ -44,6 +44,21 @@ def caption_facebook(caption: str, cta: str, key: str | None) -> str:
     return caption.rstrip() + "\n\n" + linea
 
 
+def _largo_threads(t: str) -> int:
+    """Threads cuenta cada emoji por sus bytes UTF-8; el resto de los caracteres, como 1."""
+    return sum(len(c.encode()) if ord(c) >= 0x2190 else 1 for c in t)
+
+
+def texto_threads(content: dict, cta: str, key: str | None) -> str:
+    base = (content.get("threads") or "").strip()
+    if not base:  # respaldo: primer párrafo del caption, sin hashtags
+        base = re.sub(r"#\w+", "", content.get("caption", "")).strip().split("\n\n")[0].strip() + " 💛"
+    cierre = "\n\n" + TH_CTA[cta].format(link=LINK, key=key or "")
+    while _largo_threads(base + cierre) > TH_LIMITE and " " in base:
+        base = base.rsplit(" ", 1)[0].rstrip(",.;:") + "…"
+    return base + cierre
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--type", type=int, required=True, choices=POST_TYPES)
@@ -65,11 +80,13 @@ def main() -> None:
     cta_dst = OUT / f"{stamp}-t{a.type}-cta.png"
     cta_dst.write_bytes((ROOT / "assets" / "cta" / cta_name).read_bytes())
     fb_caption = caption_facebook(content["caption"], plan["cta"], plan["key"])
+    th_text = texto_threads(content, plan["cta"], plan["key"])
     print("Renderizado:", img.name, "+", cta_dst.name, "(la imagen final solo va en Instagram)")
     print("Título:", slide.get("title"))
     print("Fórmula:", slide.get("display", ""))
     print("Caption IG:", content["caption"])
     print("Caption FB:", fb_caption)
+    print("Texto Threads:", th_text)
 
     record = {
         "id": f"{stamp}-t{a.type}", "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -87,8 +104,8 @@ def main() -> None:
     url = lambda p: f"https://raw.githubusercontent.com/{repo}/{branch}/{p.name}"
     # El workflow sube out/ a la rama 'media' antes de llamar a --publish-step (ver post.yml)
     (OUT / "urls.json").write_text(json.dumps({
-        "ig_urls": [url(img), url(cta_dst)], "fb_urls": [url(img)],
-        "caption": content["caption"], "fb_caption": fb_caption, "cta": plan["cta"], "record": record,
+        "ig_urls": [url(img), url(cta_dst)], "fb_urls": [url(img)], "th_url": url(img),
+        "caption": content["caption"], "fb_caption": fb_caption, "th_text": th_text, "cta": plan["cta"], "record": record,
     }, ensure_ascii=False))
 
 
@@ -110,6 +127,13 @@ def publish_step() -> None:
         print("FB:", fb)
     except Exception as e:
         errores.append(f"Facebook: {e}")
+    th = None
+    if meta.threads_activo() and d.get("th_url"):
+        try:
+            th = meta.publish_threads(d["th_url"], d.get("th_text") or d["caption"])
+            print("Threads:", th)
+        except Exception as e:
+            errores.append(f"Threads: {e}")
     for err in errores:
         print(f"::warning title=Fallo de publicación::{err}")
     if d["cta"] == "keyword":
@@ -119,9 +143,9 @@ def publish_step() -> None:
         if fb:
             posts["fb"].append(fb)
         _save("kw_posts.json", posts)
-    if ig or fb:
+    if ig or fb or th:
         record = d.get("record") or {}
-        record.update({"ig_id": ig, "fb_id": fb, "ts": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+        record.update({"ig_id": ig, "fb_id": fb, "th_id": th, "ts": datetime.now(timezone.utc).isoformat(timespec="seconds")})
         posts = _load("posts.json", [])
         posts.append(record)
         _save("posts.json", posts[-500:])

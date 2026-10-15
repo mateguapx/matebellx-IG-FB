@@ -52,7 +52,11 @@ CAPTION (máx 500 caracteres): la primera línea es una frase que se sostiene so
 por qué es bello, con claridad y calidez; termina con UNA invitación a compartir con alguien ("Mándaselo a alguien que te hace sentir
 como $e^{i\\pi}+1=0$", "Dedícale esta curva a quien tú sabes", "Guárdalo para cuando olvides por qué amas las matemáticas").
 Al final, 3 a 5 hashtags en español que SIEMPRE incluyan #matebellx y #mateguapo. No pidas que sigan la cuenta ni menciones libros: eso se agrega aparte.
-En el caption, escribe las fórmulas con símbolos Unicode legibles (π, ∑, √, ², θ), no con LaTeX."""
+En el caption, escribe las fórmulas con símbolos Unicode legibles (π, ∑, √, ², θ), no con LaTeX.
+
+THREADS (texto aparte, máx 380 caracteres): más conversacional y personal que el caption, como quien le cuenta algo bello a un amigo.
+Usa el corazón amarillo 💛 como sello (1 o 2 veces) y como mucho 1 emoji más; sin hashtags; fórmulas en Unicode, no LaTeX.
+Termina con una pregunta corta o una invitación a compartir. No pidas que sigan la cuenta ni menciones libros: eso se agrega aparte."""
 
 # ---------------------------------------------------------------------------
 # 3) FORMATOS (las claves deben coincidir con bot/config.py → SLOTS)
@@ -160,6 +164,7 @@ Catálogo de curvas y rangos de parámetros:
 SCHEMA = (
     '{"tema": "tema concreto en pocas palabras", '
     '"caption": "pie del post según el manual, termina con 3-5 hashtags", '
+    '"threads": "texto para Threads según el manual (máx 380 caracteres, con 💛)", '
     '"slides": [{"title": "título (máx 70 caracteres), puede llevar $latex$ y **énfasis**", '
     '"text": "línea de apoyo (máx 110 caracteres) o cadena vacía", '
     '"display": "LaTeX de la fórmula protagonista, sin delimitadores, o cadena vacía (vacía en curvas)", '

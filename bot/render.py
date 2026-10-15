@@ -66,6 +66,12 @@ body{{width:{W}px;height:{H}px;background:{b['bg']};color:{b['fg']};font-family:
 .title,.text,.top,.foot{{text-shadow:0 0 18px #000,0 0 40px #000}}
 .cta-big{{font-family:Playfair;font-weight:500;font-size:104px;line-height:1.1;color:{b['fg']}}}
 .kw{{display:inline-block;font-family:Playfair;font-weight:600;font-size:118px;letter-spacing:6px;color:{b['bg']};background:{b['accent']};padding:10px 44px 18px}}
+.lay-libro .main{{gap:26px}}
+.lay-libro .main{{gap:22px}}
+.lay-libro .kw{{font-size:64px;letter-spacing:6px;padding:4px 34px 10px}}
+.libro-box{{position:relative;height:600px;width:900px;display:flex;align-items:center;justify-content:center;flex:none}}
+.libro-luz{{position:absolute;inset:40px 120px;background:radial-gradient(ellipse at 50% 55%,{b['accent']}44 0%,{b['accent']}10 45%,transparent 70%);filter:blur(10px)}}
+.libro{{position:relative;max-height:600px;max-width:900px;-webkit-mask-image:radial-gradient(ellipse 58% 60% at 50% 50%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 58% 60% at 50% 50%,#000 62%,transparent 100%)}}
 </style></head><body>{inner}
 <script src="vendor/katex/katex.min.js"></script>
 <script src="vendor/katex/contrib/auto-render.min.js"></script>
@@ -95,7 +101,7 @@ while(m&&contentH(m)>m.clientHeight&&k<60){{
   m.querySelectorAll('.title,.text,.display').forEach(e=>{{const t=e.classList.contains('title')?'title':e.classList.contains('text')?'text':'display';
     const f=px(e);if(f*0.95>=MIN[t]){{e.style.fontSize=(f*0.95)+'px';cambio=true}}}});
   fitWidth();k++;if(!cambio)break}}
-document.querySelectorAll('.kw').forEach(e=>{{let fs=px(e);while(e.offsetWidth>880&&fs>40){{fs-=4;e.style.fontSize=fs+'px'}}}});
+document.querySelectorAll('.kw').forEach(e=>{{let fs=px(e);while(e.offsetWidth>880&&fs>30){{fs-=4;e.style.fontSize=fs+'px'}}}});
 window.__ready=true}});
 </script></body></html>"""
 
@@ -149,12 +155,15 @@ def cta_follow_html() -> str:
 
 
 def cta_keyword_html(keyword: str, libro: str) -> str:
+    """Cierre de los posts de palabra clave: el mockup del libro (assets/libros/KEY.jpg) + la palabra a comentar."""
     e = html.escape
-    body = (f'<div class="cta-big" style="font-size:92px">¿Te <span class="em">enamoraste</span>?</div>{ORNAMENTO}'
-            f'<div class="text">Comenta la palabra</div><div class="kw">{e(keyword)}</div>'
-            f'<div class="text">y te mando <span class="em">{e(libro)}</span></div>'
-            f'<div class="text" style="font-size:38px;opacity:.7">1,000 ejercicios · con soluciones paso a paso</div>')
-    return _fondo("lissajous", 3) + _marco(body)
+    img = Path(__file__).resolve().parent.parent / "assets" / "libros" / f"{keyword}.jpg"
+    mockup = (f'<div class="libro-box"><div class="libro-luz"></div><img class="libro" src="{img.as_uri()}"></div>'
+              if img.exists() else ORNAMENTO)
+    body = (f'<div class="cta-big" style="font-size:84px">¿Te <span class="em">enamoraste</span>?</div>{mockup}'
+            f'<div class="text" style="font-size:42px">Comenta la palabra</div><div class="kw">{e(keyword)}</div>'
+            f'<div class="text" style="font-size:36px;opacity:.78">y te mando <span class="em">{e(libro)}</span></div>')
+    return _fondo("lissajous", 3) + _marco(body, "lay-libro")
 
 
 def render_many(inners: list[str], out_paths: list[Path]) -> None:

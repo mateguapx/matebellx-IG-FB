@@ -3,7 +3,7 @@
 Bot en GitHub Actions: 4 posts/día en Instagram + Facebook, respuesta automática a comentarios con palabra clave y aprendizaje automático del contenido.
 
 **Concepto: "Porque las Matemáticas son Bellxs".** Mostrar la belleza de las matemáticas, romantizándolas con medida.
-Todos los posts son de **una imagen**. Instagram: la imagen + la imagen final ("Síguenos" o "Comenta PALABRA"). Facebook: solo la imagen, con la invitación al final del texto.
+Todos los posts son de **una imagen**. Instagram: la imagen + la imagen final ("Síguenos" o "Comenta PALABRA", con el mockup del libro de `assets/libros/`). Facebook: solo la imagen, con la invitación al final del texto. **Threads**: solo la imagen con un texto propio, más conversacional, con 💛 (y el link a los libros en los posts de palabra clave). Threads se activa al crear los secrets `THREADS_TOKEN` (y opcional `THREADS_USER_ID`).
 
 | Tipo | Hora (México) | Contenido (mezcla en `bot/config.py` → `SLOTS`) | Cierre |
 |---|---|---|---|
@@ -20,7 +20,7 @@ Series semanales: miércoles 20:00 **Bellxs de la historia**; domingo **Domingo 
 
 **Banco de ideas** (`ideas.yml`, domingos 07:20 México): `bot/ideas.py` mantiene `state/ideas.json` con ideas concretas pendientes por formato; el planificador las usa y se marcan como usadas al publicar.
 
-**Tokens** (`tokens.yml`, lunes 08:10 México): `bot/tokens.py` renueva `IG_TOKEN` otros 60 días (requiere el secret `GH_PAT`) y revisa `META_PAGE_TOKEN`. Si algo falla, la corrida queda en rojo. Si Meta invalida las sesiones (cambio de contraseña, cuentas nuevas, revisión de seguridad) hay que generar los tokens a mano.
+**Tokens** (`tokens.yml`, lunes 08:10 México): `bot/tokens.py` renueva `IG_TOKEN` y `THREADS_TOKEN` otros 60 días (requiere el secret `GH_PAT`) y revisa `META_PAGE_TOKEN`. Si algo falla, la corrida queda en rojo. Si Meta invalida las sesiones (cambio de contraseña, cuentas nuevas, revisión de seguridad) hay que generar los tokens a mano.
 
 **Aprendizaje** (`learn.yml`, diario 07:40 México): `bot/learn.py` mide los posts de Instagram con más de 48 h (alcance, compartidos, guardados, seguidores, comentarios), calcula un puntaje relativo a su tipo de post (y aprende qué formatos, ganchos, temas y fondos funcionan) y actualiza `state/weights.json` y `state/insights.json`. El informe legible queda en `state/informe.md` y en el resumen de cada corrida. Requiere el permiso `instagram_business_manage_insights` en `IG_TOKEN`.
 
