@@ -40,5 +40,26 @@
   "puntaje_idea": 9.05,
   "ig_id": "18191052682405039",
   "fb_id": "1382195514976052_122108648589500466"
+ },
+ {
+  "id": "20261015-0325-t1",
+  "ts": "2026-10-15T03:26:11+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "chiste",
+  "hook": "humor",
+  "tema_clave": "patrones y sucesiones sorprendentes",
+  "area": "patrones y sucesiones sorprendentes",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "inicial",
+  "tema": "Sucesión ambigua: primos vs Fibonacci (2, 3, 5, …)",
+  "titulo": "«El patrón es obvio», dijo el profe. ¿**7** u **8**? 👀",
+  "respuesta": "Las dos son válidas: 7 si es la lista de primos, 8 si cada término es la suma de los dos anteriores. Tres términos no bastan para fijar una única sucesión.",
+  "puntaje_idea": 8.15,
+  "ig_id": "17904341349664842",
+  "fb_id": "1382195514976052_122108701929500466"
  }
 ]
