@@ -132,5 +132,31 @@
   "ig_id": "18123696562927748",
   "fb_id": "1382195514976052_122108780961500466",
   "th_id": "17978593337917738"
+ },
+ {
+  "id": "20261015-0700-t4",
+  "ts": "2026-10-15T07:01:01+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "suma de cubos sin palabras",
+  "area": "suma de cubos sin palabras",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Suma de cubos sin palabras: identidad de Nicómaco",
+  "titulo": "Suma los cubos del 1 al $n$ y siempre obtienes un **cuadrado**",
+  "respuesta": "",
+  "puntaje_idea": 8.3,
+  "ig_id": "17917500816462576",
+  "fb_id": "1382195514976052_122108809785500466",
+  "th_id": "17876075544650757"
  }
 ]
