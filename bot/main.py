@@ -7,7 +7,7 @@ import json
 import os
 import re
 from datetime import datetime, timezone
-from .config import FB_CTA, LINK, POST_TYPES, ROOT, TH_CTA, TH_LIMITE
+from .config import FB_CTA, LINK, POST_TYPES, PUBLICAR_DESCRIPCIONES, ROOT, TH_CTA, TH_LIMITE
 from . import llm, meta, planner
 from .render import render_many, slide_html
 
@@ -81,6 +81,10 @@ def main() -> None:
     cta_dst.write_bytes((ROOT / "assets" / "cta" / cta_name).read_bytes())
     fb_caption = caption_facebook(content["caption"], plan["cta"], plan["key"])
     th_text = texto_threads(content, plan["cta"], plan["key"])
+    ig_caption = content["caption"]
+    if not PUBLICAR_DESCRIPCIONES:  # solo la imagen, sin texto, en las tres redes
+        ig_caption = fb_caption = th_text = ""
+        print("Descripciones desactivadas (config.PUBLICAR_DESCRIPCIONES = False): se publica solo la imagen.")
     print("Renderizado:", img.name, "+", cta_dst.name, "(la imagen final solo va en Instagram)")
     print("Título:", slide.get("title"))
     print("Fórmula:", slide.get("display", ""))
@@ -105,7 +109,7 @@ def main() -> None:
     # El workflow sube out/ a la rama 'media' antes de llamar a --publish-step (ver post.yml)
     (OUT / "urls.json").write_text(json.dumps({
         "ig_urls": [url(img), url(cta_dst)], "fb_urls": [url(img)], "th_url": url(img),
-        "caption": content["caption"], "fb_caption": fb_caption, "th_text": th_text, "cta": plan["cta"], "record": record,
+        "caption": ig_caption, "fb_caption": fb_caption, "th_text": th_text, "cta": plan["cta"], "record": record,
     }, ensure_ascii=False))
 
 
@@ -123,14 +127,14 @@ def publish_step() -> None:
     except Exception as e:
         errores.append(f"Instagram: {e}")
     try:
-        fb = meta.publish_facebook(fb_urls, d.get("fb_caption") or d["caption"])
+        fb = meta.publish_facebook(fb_urls, d.get("fb_caption", d["caption"]))
         print("FB:", fb)
     except Exception as e:
         errores.append(f"Facebook: {e}")
     th = None
     if meta.threads_activo() and d.get("th_url"):
         try:
-            th = meta.publish_threads(d["th_url"], d.get("th_text") or d["caption"])
+            th = meta.publish_threads(d["th_url"], d.get("th_text", d["caption"]))
             print("Threads:", th)
         except Exception as e:
             errores.append(f"Threads: {e}")

@@ -98,6 +98,10 @@ SERIES = {
 }
 SERIE_DIARIA = {3: "Ecuación del día"}
 
+# Descripciones (caption) de los posts. False = las publicaciones salen solo con la imagen, sin texto, en las tres redes.
+# Claude las sigue escribiendo (sirven para verificar y quedan en el resumen de cada corrida), pero no se publican.
+PUBLICAR_DESCRIPCIONES = False
+
 # Texto que se agrega al final del caption SOLO en Facebook (ahí no va la imagen final). {key} = palabra clave
 FB_CTA = {
     "follow": "Síguenos: una dosis diaria de belleza matemática ✨",
