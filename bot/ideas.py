@@ -14,7 +14,7 @@ from .config import ROOT, SLOTS
 STATE = ROOT / "state"
 MINIMO = 8          # ideas pendientes deseadas por formato
 POR_LLAMADA = 30    # ideas que se piden en cada ronda
-FORMATOS = sorted({f for s in SLOTS.values() for f in s["formatos"] if f != "curva"})  # las curvas salen del catálogo
+FORMATOS = sorted({f for s in SLOTS.values() for f in s["formatos"] if f not in ("curva", "frase")})  # curvas y frases tienen su propio catálogo
 
 
 def _load(name: str, default):

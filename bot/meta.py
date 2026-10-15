@@ -55,7 +55,8 @@ def publish_instagram(image_urls: list[str], caption: str) -> str:
         c = _ig_post(f"{IG_ID()}/media", image_url=url, is_carousel_item="true")["id"]
         _wait_ready(c)
         children.append(c)
-    parent = _ig_post(f"{IG_ID()}/media", media_type="CAROUSEL", children=",".join(children), caption=caption)["id"]
+    extra = {"caption": caption} if caption else {}
+    parent = _ig_post(f"{IG_ID()}/media", media_type="CAROUSEL", children=",".join(children), **extra)["id"]
     _wait_ready(parent)
     return _ig_post(f"{IG_ID()}/media_publish", creation_id=parent)["id"]
 
@@ -110,11 +111,13 @@ def publish_facebook(image_urls: list[str], caption: str) -> str:
     """Una imagen -> foto publicada directamente (devuelve el id del post, que es el que lleva los comentarios).
     Varias imágenes -> fotos sin publicar + un post del feed que las agrupa."""
     if len(image_urls) == 1:
-        r = _fb_post(f"{PAGE_ID()}/photos", url=image_urls[0], caption=caption, published="true")
+        extra = {"caption": caption} if caption else {}
+        r = _fb_post(f"{PAGE_ID()}/photos", url=image_urls[0], published="true", **extra)
         return r.get("post_id") or r["id"]
     photo_ids = [_fb_post(f"{PAGE_ID()}/photos", url=u, published="false")["id"] for u in image_urls]
     attached = json.dumps([{"media_fbid": i} for i in photo_ids])
-    return _fb_post(f"{PAGE_ID()}/feed", message=caption, attached_media=attached)["id"]
+    extra = {"message": caption} if caption else {}
+    return _fb_post(f"{PAGE_ID()}/feed", attached_media=attached, **extra)["id"]
 
 
 def fb_comments(post_id: str) -> list[dict]:
@@ -160,7 +163,8 @@ def _th(method: str, path: str, **params) -> dict:
 
 def publish_threads(image_url: str, text: str) -> str:
     """Post de una imagen en Threads: contenedor -> esperar a que termine de procesar -> publicar."""
-    cont = _th("POST", f"{TH_ID()}/threads", media_type="IMAGE", image_url=image_url, text=text)["id"]
+    extra = {"text": text} if text else {}
+    cont = _th("POST", f"{TH_ID()}/threads", media_type="IMAGE", image_url=image_url, **extra)["id"]
     time.sleep(10)
     for _ in range(18):  # hasta ~2 min
         st = _th("GET", cont, fields="status,error_message")

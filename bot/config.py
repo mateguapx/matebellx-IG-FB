@@ -77,17 +77,18 @@ BOOKS = {
 #   naturaleza  matemáticas en la naturaleza, la música y el arte (sin mitos)
 #   historia    historias humanas de matemáticas y matemáticos
 #   infinito    el infinito y lo inalcanzable (tamaños de infinito, irracionales, incompletitud)
+#   frase       frase célebre de un matemático, tomada TAL CUAL del banco curado bot/frases.py (sin Claude)
 # Cada tipo de post (horario): cta = "follow" | "keyword"; tema = "libre" | "libro"; formatos con su peso base.
 # ---------------------------------------------------------------------------
 SLOTS = {
     1: {"kind": "single", "cta": "follow", "tema": "libre",            # 09:00 México
-        "formatos": {"identidad": 3, "infinito": 2, "naturaleza": 2, "historia": 1}},
+        "formatos": {"identidad": 3, "infinito": 2, "naturaleza": 2, "historia": 1, "frase": 1}},
     2: {"kind": "single", "cta": "keyword", "tema": "libro",           # 13:00 · el único post de venta del día (tono suave)
         "formatos": {"demostracion": 2, "identidad": 2, "curva": 1}},
     3: {"kind": "single", "cta": "follow", "tema": "libre",            # 18:00 · "Ecuación del día": siempre una curva
         "formatos": {"curva": 1}},
     4: {"kind": "single", "cta": "follow", "tema": "libre",            # 20:00
-        "formatos": {"historia": 2, "naturaleza": 2, "infinito": 1, "demostracion": 1}},
+        "formatos": {"historia": 2, "naturaleza": 2, "infinito": 1, "demostracion": 1, "frase": 1}},
 }
 POST_TYPES = {k: (v["kind"], v["cta"]) for k, v in SLOTS.items()}
 
@@ -97,6 +98,10 @@ SERIES = {
     6: {1: ("demostracion", "Domingo de demostraciones"), 4: ("demostracion", "Domingo de demostraciones")},
 }
 SERIE_DIARIA = {3: "Ecuación del día"}
+
+# Descripciones (caption) de los posts. False = las publicaciones salen solo con la imagen, sin texto, en las tres redes.
+# Claude las sigue escribiendo (sirven para verificar y quedan en el resumen de cada corrida), pero no se publican.
+PUBLICAR_DESCRIPCIONES = False
 
 # Texto que se agrega al final del caption SOLO en Facebook (ahí no va la imagen final). {key} = palabra clave
 FB_CTA = {

@@ -66,7 +66,11 @@ body{{width:{W}px;height:{H}px;background:{b['bg']};color:{b['fg']};font-family:
 .title,.text,.top,.foot{{text-shadow:0 0 18px #000,0 0 40px #000}}
 .cta-big{{font-family:Playfair;font-weight:500;font-size:104px;line-height:1.1;color:{b['fg']}}}
 .kw{{display:inline-block;font-family:Playfair;font-weight:600;font-size:118px;letter-spacing:6px;color:{b['bg']};background:{b['accent']};padding:10px 44px 18px}}
-.lay-libro .main{{gap:26px}}
+.lay-frase .main{{gap:34px}}
+.lay-frase .title{{font-style:italic;max-width:880px}}
+.comillas{{font-family:Playfair;font-weight:600;font-size:210px;line-height:.6;height:96px;color:{b['accent']};opacity:.9;text-shadow:0 0 34px {b['accent']}66}}
+.autor{{font-family:Cormorant;font-weight:600;font-size:46px;letter-spacing:7px;text-transform:uppercase;color:{b['accent']};text-shadow:0 0 18px #000}}
+.fuente{{font-family:Cormorant;font-style:italic;font-weight:500;font-size:32px;color:{b['fg']};opacity:.7;margin-top:-22px;text-shadow:0 0 18px #000}}
 .lay-libro .main{{gap:22px}}
 .lay-libro .kw{{font-size:64px;letter-spacing:6px;padding:4px 34px 10px}}
 .libro-box{{position:relative;height:600px;width:900px;display:flex;align-items:center;justify-content:center;flex:none}}
@@ -137,6 +141,13 @@ def slide_html(s: dict, fondo: str | None = None, semilla: int = 1) -> str:
     title = f'<div class="title">{_fmt(s["title"])}</div>' if s.get("title") else ""
     text = f'<div class="text">{_fmt(s["text"])}</div>' if s.get("text") else ""
     disp = f'<div class="display" data-tex="{e(s["display"], quote=True)}"></div>' if s.get("display") else ""
+    if s.get("layout") == "frase":  # frase célebre: comillas, cita en cursiva, autor y fuente
+        n = len(s.get("title", ""))
+        fs = 92 if n < 40 else 78 if n < 90 else 68 if n < 140 else 60
+        cita = f'<div class="title" style="font-size:{fs}px">{_fmt(s.get("title", ""))}</div>'
+        body = (f'<div class="comillas">“</div>{cita}{ORNAMENTO}<div class="autor">{e(s.get("autor", ""))}</div>'
+                + (f'<div class="fuente">{e(s["fuente"])}</div>' if s.get("fuente") else ""))
+        return _fondo(fondo, semilla) + _marco(body, "lay-frase")
     curva = s.get("curva") if s.get("layout") == "curva" else None
     if curva:
         cv = (f'<div class="curva-box"><canvas id="curva" width="1800" height="1280" data-tipo="{e(curva["tipo"])}" '
