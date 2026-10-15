@@ -184,5 +184,31 @@
   "ig_id": "18114942143103309",
   "fb_id": "1382195514976052_122109171867500466",
   "th_id": "18073615922738167"
+ },
+ {
+  "id": "20261015-2155-t2",
+  "ts": "2026-10-15T21:56:09+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:lissajous",
+  "area": "curva de Lissajous x = sen(a t + δ), y = sen(b t)",
+  "key": "PRECALCULO",
+  "nivel": "bach",
+  "fondo": "formulas",
+  "modo": "inicial",
+  "curva_tipo": "lissajous",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Lissajous 2:1: la octava musical dibuja un ocho",
+  "titulo": "Una **octava** musical, dibujada, es un **8**",
+  "respuesta": "",
+  "puntaje_idea": 7.6,
+  "ig_id": "18126971032867173",
+  "fb_id": "1382195514976052_122109241359500466",
+  "th_id": "18123777544919218"
  }
 ]
