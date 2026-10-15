@@ -4,6 +4,7 @@ import json
 import re
 import anthropic
 from . import curvas
+from .frases import POR_ID as FRASES
 from . import prompts as P
 from .config import MODEL, N_IDEAS, PESOS_IDEA, slides_rango
 
@@ -152,8 +153,23 @@ def write(plan: dict, idea: dict, retries: int = 3) -> tuple[dict | None, list[s
     return None, issues
 
 
+def contenido_frase(plan: dict) -> dict:
+    """Las frases célebres no pasan por Claude: se publican tal cual del banco curado (bot/frases.py)."""
+    f = FRASES[plan["frase_id"]]
+    cita = f"«{f['texto']}»\n— {f['autor']}, {f['fuente']}"
+    return {
+        "tema": f"frase de {f['autor']}",
+        "caption": f"{cita}\n\nGuárdala para cuando necesites recordar por qué amas las matemáticas.\n#matebellx #mateguapo #frasescelebres",
+        "threads": f"{cita} 💛",
+        "slides": [{"layout": "frase", "title": f["texto"], "text": "", "display": "", "autor": f["autor"], "fuente": f["fuente"]}],
+        "_idea": {"tema": f["id"], "gancho": f["texto"][:70]},
+    }
+
+
 def generate(plan: dict, evitar: list[str], insights: dict | None = None) -> dict:
     """plan viene de bot/planner.py. Devuelve el contenido verificado, con la idea elegida en '_idea'."""
+    if plan.get("formato") == "frase":
+        return contenido_frase(plan)
     # Los posts de exploración no ven los datos de rendimiento, para no sesgarlos hacia lo de siempre.
     contexto = contexto_rendimiento(insights) if plan.get("modo") != "explorar" else ""
     candidatas = ideas(plan, evitar, contexto)

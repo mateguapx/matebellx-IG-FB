@@ -77,17 +77,18 @@ BOOKS = {
 #   naturaleza  matemáticas en la naturaleza, la música y el arte (sin mitos)
 #   historia    historias humanas de matemáticas y matemáticos
 #   infinito    el infinito y lo inalcanzable (tamaños de infinito, irracionales, incompletitud)
+#   frase       frase célebre de un matemático, tomada TAL CUAL del banco curado bot/frases.py (sin Claude)
 # Cada tipo de post (horario): cta = "follow" | "keyword"; tema = "libre" | "libro"; formatos con su peso base.
 # ---------------------------------------------------------------------------
 SLOTS = {
     1: {"kind": "single", "cta": "follow", "tema": "libre",            # 09:00 México
-        "formatos": {"identidad": 3, "infinito": 2, "naturaleza": 2, "historia": 1}},
+        "formatos": {"identidad": 3, "infinito": 2, "naturaleza": 2, "historia": 1, "frase": 1}},
     2: {"kind": "single", "cta": "keyword", "tema": "libro",           # 13:00 · el único post de venta del día (tono suave)
         "formatos": {"demostracion": 2, "identidad": 2, "curva": 1}},
     3: {"kind": "single", "cta": "follow", "tema": "libre",            # 18:00 · "Ecuación del día": siempre una curva
         "formatos": {"curva": 1}},
     4: {"kind": "single", "cta": "follow", "tema": "libre",            # 20:00
-        "formatos": {"historia": 2, "naturaleza": 2, "infinito": 1, "demostracion": 1}},
+        "formatos": {"historia": 2, "naturaleza": 2, "infinito": 1, "demostracion": 1, "frase": 1}},
 }
 POST_TYPES = {k: (v["kind"], v["cta"]) for k, v in SLOTS.items()}
 

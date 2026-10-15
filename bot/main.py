@@ -95,7 +95,7 @@ def main() -> None:
     record = {
         "id": f"{stamp}-t{a.type}", "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         **{k: plan.get(k) for k in ("tipo", "kind", "cta", "formato", "hook", "tema_clave", "area", "key", "nivel",
-                                    "fondo", "modo", "curva_tipo", "serie", "idea_id")},
+                                    "fondo", "modo", "curva_tipo", "serie", "idea_id", "frase_id")},
         "tema": content.get("tema") or (content.get("_idea") or {}).get("tema", ""),
         "titulo": slide.get("title", ""), "respuesta": content.get("respuesta", ""),
         "puntaje_idea": (content.get("_idea") or {}).get("_puntaje"),

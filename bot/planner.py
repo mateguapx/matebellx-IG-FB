@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 from .config import (BOOKS, COOLDOWN_TEMA, EXPLORE_P, FONDOS_CURVA, FONDOS_DEFAULT, FONDOS_POR_TEMA, GAMMA, HOOKS,
                      HOOKS_POR_FORMATO, MIN_DATOS, SERIE_DIARIA, SERIES, SLOTS, TEMAS)
 from .curvas import CATALOGO
+from .frases import FRASES
 
 TZ = ZoneInfo("America/Mexico_City")
 P_USAR_IDEA = 0.6  # probabilidad de usar una idea del banco cuando hay alguna pendiente del formato
@@ -77,7 +78,12 @@ def elegir(tipo: int, posts: list[dict], weights: dict, rng: random.Random | Non
     # 3) Tema / área (y curva)
     curva, idea = None, None
     pendientes = [i for i in (ideas or []) if not i.get("usada") and i.get("formato") == formato]
-    if formato == "curva":
+    frase = None
+    if formato == "frase":  # del banco curado, sin repetir en los últimos 120 posts
+        usadas = {p.get("frase_id") for p in posts[-120:]}
+        frase = rng.choice([f for f in FRASES if f["id"] not in usadas] or FRASES)
+        tema_clave, area = f"frase:{frase['autor']}", frase["texto"]
+    elif formato == "curva":
         tipos = _sin_recientes(list(CATALOGO), [p.get("curva_tipo") for p in posts[-8:]])
         curva = _elegir({t: 1.0 for t in tipos}, weights, "curva", explorar, usar_pesos, rng)
         tema_clave = f"curva:{curva}"
@@ -94,7 +100,7 @@ def elegir(tipo: int, posts: list[dict], weights: dict, rng: random.Random | Non
         area = tema_clave
 
     # 4) Gancho
-    permitidos = HOOKS_POR_FORMATO.get(formato) or HOOKS
+    permitidos = ["asombro"] if formato == "frase" else (HOOKS_POR_FORMATO.get(formato) or HOOKS)
     hook = _elegir({h: 1.0 for h in permitidos}, weights, "hook", explorar, usar_pesos, rng)
 
     # 5) Fondo (sin repetir el del post anterior si hay alternativas)
@@ -105,6 +111,7 @@ def elegir(tipo: int, posts: list[dict], weights: dict, rng: random.Random | Non
         "tipo": tipo, "kind": slot["kind"], "cta": slot["cta"], "formato": formato, "hook": hook,
         "tema_clave": tema_clave, "area": area, "key": key, "nivel": nivel, "fondo": fondo,
         "curva_tipo": curva, "serie": serie, "idea_id": idea.get("id") if idea else None,
+        "frase_id": frase["id"] if frase else None,
         "semilla": rng.randrange(1, 10**6),
         "modo": "explorar" if explorar else ("explotar" if usar_pesos else "inicial"),
     }
