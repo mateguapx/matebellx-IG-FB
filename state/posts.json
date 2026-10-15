@@ -61,5 +61,26 @@
   "puntaje_idea": 8.15,
   "ig_id": "17904341349664842",
   "fb_id": "1382195514976052_122108701929500466"
+ },
+ {
+  "id": "20261015-0354-t3",
+  "ts": "2026-10-15T03:55:18+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "reto_basico",
+  "hook": "desafio",
+  "tema_clave": "promedios y velocidades medias",
+  "area": "promedios y velocidades medias",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "inicial",
+  "tema": "Velocidad media ida y vuelta (media armónica)",
+  "titulo": "RETO: ida a **60** km/h, vuelta a **40** km/h por la misma ruta. ¿Velocidad media?",
+  "respuesta": "48 km/h (media armónica: 2·60·40/(60+40) = 4800/100 = 48). Con distancia d: tiempo total = d/60 + d/40 = 5d/120 = d/24, y la distancia total 2d, así que 2d/(d/24) = 48.",
+  "puntaje_idea": 8.5,
+  "ig_id": "18448466389132906",
+  "fb_id": "1382195514976052_122108718153500466"
  }
 ]
