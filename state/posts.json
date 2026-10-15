@@ -107,5 +107,30 @@
   "ig_id": "18020036441937895",
   "fb_id": "1382195514976052_122108779131500466",
   "th_id": "18371344102215808"
+ },
+ {
+  "id": "20261015-0605-t2",
+  "ts": "2026-10-15T06:06:07+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "dato_preciso",
+  "tema_clave": "libro:GEOMETRIA",
+  "area": "la circunferencia",
+  "key": "GEOMETRIA",
+  "nivel": "bach",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "tema": "Cuerda alrededor de la Tierra: la holgura 1/(2π) m no depende del radio",
+  "titulo": "1 m extra de cuerda sube igual en la Tierra que en una **naranja**",
+  "respuesta": "",
+  "puntaje_idea": 8.8,
+  "ig_id": "18123696562927748",
+  "fb_id": "1382195514976052_122108780961500466",
+  "th_id": "17978593337917738"
  }
 ]
