@@ -79,6 +79,24 @@ def ig_reply_comment(comment_id: str, text: str) -> None:
     _ig_post(f"{comment_id}/replies", message=text)
 
 
+def ig_media_info(media_id: str) -> dict:
+    """Datos básicos del post (no requieren permiso de insights)."""
+    return _ig_get(media_id, fields="like_count,comments_count,timestamp,permalink,media_type")
+
+
+def ig_media_insight(media_id: str, metric: str) -> float | None:
+    """Una métrica de insights del post (requiere instagram_business_manage_insights).
+    Se pide de una en una porque si una no aplica a ese tipo de post, Meta rechaza toda la petición."""
+    data = _ig_get(f"{media_id}/insights", metric=metric).get("data", [])
+    if not data:
+        return None
+    d = data[0]
+    if d.get("total_value"):
+        return d["total_value"].get("value")
+    vals = d.get("values") or []
+    return vals[0].get("value") if vals else None
+
+
 def refresh_ig_token() -> str:
     """Renueva el token de larga duración (válido 60 días; renovable después de 24 h de emitido)."""
     r = requests.get("https://graph.instagram.com/refresh_access_token",
@@ -88,6 +106,11 @@ def refresh_ig_token() -> str:
 
 # --- Facebook ---
 def publish_facebook(image_urls: list[str], caption: str) -> str:
+    """Una imagen -> foto publicada directamente (devuelve el id del post, que es el que lleva los comentarios).
+    Varias imágenes -> fotos sin publicar + un post del feed que las agrupa."""
+    if len(image_urls) == 1:
+        r = _fb_post(f"{PAGE_ID()}/photos", url=image_urls[0], caption=caption, published="true")
+        return r.get("post_id") or r["id"]
     photo_ids = [_fb_post(f"{PAGE_ID()}/photos", url=u, published="false")["id"] for u in image_urls]
     attached = json.dumps([{"media_fbid": i} for i in photo_ids])
     return _fb_post(f"{PAGE_ID()}/feed", message=caption, attached_media=attached)["id"]

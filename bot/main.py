@@ -1,93 +1,131 @@
 """Uso: python -m bot.main --type 1|2|3|4 [--dry]
-1 carrusel+seguir · 2 carrusel+palabra clave · 3 imagen+seguir · 4 imagen+palabra clave"""
+Todos los posts son de UNA imagen. Instagram: imagen + imagen final (Síguenos / Comenta PALABRA).
+Facebook: solo la imagen, con la invitación al final del texto.
+1 seguir · 2 palabra clave · 3 reto básico + seguir · 4 palabra clave (la mezcla de formatos está en bot/config.py → SLOTS)"""
 import argparse
 import json
 import os
-import random
+import re
 from datetime import datetime, timezone
-from .config import BOOKS, POST_TYPES, ROOT
-from . import llm, meta
+from .config import FB_CTA, POST_TYPES, ROOT
+from . import llm, meta, planner
 from .render import render_many, slide_html
 
 OUT = ROOT / "out"
 STATE = ROOT / "state"
 
 
-def _history() -> list[str]:
-    p = STATE / "history.json"
-    return json.loads(p.read_text()) if p.exists() else []
+def _load(name: str, default):
+    p = STATE / name
+    try:
+        return json.loads(p.read_text()) if p.exists() else default
+    except json.JSONDecodeError:
+        return default
+
+
+def _save(name: str, data) -> None:
+    STATE.mkdir(exist_ok=True)
+    (STATE / name).write_text(json.dumps(data, ensure_ascii=False, indent=1))
+
+
+def _evitar(posts: list[dict]) -> list[str]:
+    """Temas y títulos ya publicados (incluye el historial antiguo)."""
+    viejos = _load("history.json", [])
+    nuevos = [x for p in posts[-80:] for x in (p.get("tema"), p.get("titulo")) if x]
+    return (viejos + nuevos)[-100:]
+
+
+def caption_facebook(caption: str, cta: str, key: str | None) -> str:
+    """En Facebook no va la imagen final, así que la invitación se agrega al texto, antes de los hashtags."""
+    linea = FB_CTA[cta].format(key=key or "")
+    m = re.search(r"(\s*(#\w+\s*)+)$", caption)
+    if m:
+        return caption[:m.start()].rstrip() + "\n\n" + linea + "\n\n" + m.group(1).strip()
+    return caption.rstrip() + "\n\n" + linea
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--type", type=int, required=True, choices=POST_TYPES)
-    ap.add_argument("--dry", action="store_true", help="genera y renderiza pero no publica")
+    ap.add_argument("--dry", action="store_true", help="genera y renderiza pero no publica ni guarda estado")
     a = ap.parse_args()
 
-    kind, cta = POST_TYPES[a.type]
-    history = _history()
+    posts = _load("posts.json", [])
+    plan = planner.elegir(a.type, posts, _load("weights.json", {}))
+    print("Plan:", json.dumps(plan, ensure_ascii=False))
+    content = llm.generate(plan, _evitar(posts), _load("insights.json", {}))
+    print("Idea elegida:", json.dumps(content.get("_idea"), ensure_ascii=False))
 
-    key = random.choice(list(BOOKS))  # libro/keyword del post (en 'follow' solo define el área temática)
-    area = random.choice(BOOKS[key]["areas"])
-    nivel = BOOKS[key]["nivel"]
-    estilos = ["problema"] * 5 + ["error"] * 2 + ["dato"] * 2 + (["demostracion"] * 2 if nivel == "uni" else [])
-    content = llm.generate(kind, area, history, nivel=nivel, estilo=random.choice(estilos))
-
-    slides = content["slides"]
-    dif = (content.get("dificultad") or "").strip()
-    if dif in ("*", "**"):
-        slides[0]["kicker"] = f"{slides[0].get('kicker', '')}  {dif}".strip()
+    slide = content["slides"][0]
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
-    paths = [OUT / f"{stamp}-t{a.type}-{i + 1}.png" for i in range(len(slides))]
-    total = len(slides) + 1  # +1 por la imagen final de CTA
-    render_many([slide_html(s, i, total) for i, s in enumerate(slides)], paths)
+    img = OUT / f"{stamp}-t{a.type}.png"
+    render_many([slide_html(slide, plan["fondo"], plan["semilla"])], [img])
 
-    cta_name = "follow.png" if cta == "follow" else f"kw_{key}.png"
-    cta_src = ROOT / "assets" / "cta" / cta_name
+    cta_name = "follow.png" if plan["cta"] == "follow" else f"kw_{plan['key']}.png"
     cta_dst = OUT / f"{stamp}-t{a.type}-cta.png"
-    cta_dst.write_bytes(cta_src.read_bytes())
-    all_files = paths + [cta_dst]
-    print("Renderizado:", [p.name for p in all_files])
+    cta_dst.write_bytes((ROOT / "assets" / "cta" / cta_name).read_bytes())
+    fb_caption = caption_facebook(content["caption"], plan["cta"], plan["key"])
+    print("Renderizado:", img.name, "+", cta_dst.name, "(la imagen final solo va en Instagram)")
+    print("Título:", slide.get("title"))
+    print("Respuesta (no se publica):", content.get("respuesta", ""))
+    print("Caption IG:", content["caption"])
+    print("Caption FB:", fb_caption)
 
-    history.append(slides[0].get("title", area))
-    (STATE / "history.json").write_text(json.dumps(history[-300:], ensure_ascii=False, indent=1))
+    record = {
+        "id": f"{stamp}-t{a.type}", "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        **{k: plan[k] for k in ("tipo", "kind", "cta", "formato", "hook", "tema_clave", "area", "key", "nivel",
+                                "fondo", "modo")},
+        "tema": content.get("tema") or (content.get("_idea") or {}).get("tema", ""),
+        "titulo": slide.get("title", ""), "respuesta": content.get("respuesta", ""),
+        "puntaje_idea": (content.get("_idea") or {}).get("_puntaje"),
+    }
+    (OUT / "post.json").write_text(json.dumps({"record": record, "content": content}, ensure_ascii=False, indent=1))
     if a.dry:
         return
 
     repo, branch = os.environ["GITHUB_REPOSITORY"], os.getenv("MEDIA_BRANCH", "media")
-    urls = [f"https://raw.githubusercontent.com/{repo}/{branch}/{p.name}" for p in all_files]
+    url = lambda p: f"https://raw.githubusercontent.com/{repo}/{branch}/{p.name}"
     # El workflow sube out/ a la rama 'media' antes de llamar a --publish-step (ver post.yml)
-    os.environ.setdefault("MEDIA_URLS", json.dumps(urls))
-    (OUT / "urls.json").write_text(json.dumps({"urls": urls, "caption": content["caption"], "cta": cta}))
+    (OUT / "urls.json").write_text(json.dumps({
+        "ig_urls": [url(img), url(cta_dst)], "fb_urls": [url(img)],
+        "caption": content["caption"], "fb_caption": fb_caption, "cta": plan["cta"], "record": record,
+    }, ensure_ascii=False))
 
 
 def publish_step() -> None:
     """Segunda fase (tras subir imágenes a la rama media): publica en IG y FB de forma independiente.
     Si una red falla, la otra se publica igual y el estado se guarda; el fallo queda como advertencia visible."""
     d = json.loads((OUT / "urls.json").read_text())
+    ig_urls = d.get("ig_urls") or d.get("urls")
+    fb_urls = d.get("fb_urls") or ig_urls[:1]
     ig = fb = None
     errores = []
     try:
-        ig = meta.publish_instagram(d["urls"], d["caption"])
+        ig = meta.publish_instagram(ig_urls, d["caption"])
         print("IG:", ig)
     except Exception as e:
         errores.append(f"Instagram: {e}")
     try:
-        fb = meta.publish_facebook(d["urls"], d["caption"])
+        fb = meta.publish_facebook(fb_urls, d.get("fb_caption") or d["caption"])
         print("FB:", fb)
     except Exception as e:
         errores.append(f"Facebook: {e}")
     for err in errores:
         print(f"::warning title=Fallo de publicación::{err}")
     if d["cta"] == "keyword":
-        p = STATE / "kw_posts.json"
-        posts = json.loads(p.read_text())
+        posts = _load("kw_posts.json", {"ig": [], "fb": []})
         if ig:
             posts["ig"].append(ig)
         if fb:
             posts["fb"].append(fb)
-        p.write_text(json.dumps(posts))
-    if not ig and not fb:
+        _save("kw_posts.json", posts)
+    if ig or fb:
+        record = d.get("record") or {}
+        record.update({"ig_id": ig, "fb_id": fb, "ts": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+        posts = _load("posts.json", [])
+        posts.append(record)
+        _save("posts.json", posts[-500:])
+    else:
         raise RuntimeError("No se publicó en ninguna red: " + " | ".join(errores))
 
 

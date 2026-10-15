@@ -1,15 +1,23 @@
 # mateguapo-math-bot
 
-Bot en GitHub Actions: 4 posts/día en Instagram + Facebook y respuesta privada automática a comentarios con palabra clave.
+Bot en GitHub Actions: 4 posts/día en Instagram + Facebook, respuesta automática a comentarios con palabra clave y aprendizaje automático del contenido.
 
-| Tipo | Contenido | Cierre |
-|---|---|---|
-| 1 | Carrusel 4-6 slides | Imagen "Síguenos" |
-| 2 | Carrusel 4-6 slides | Imagen "Comenta PALABRA" |
-| 3 | 1 imagen | Imagen "Síguenos" (se publica como carrusel de 2) |
-| 4 | 1 imagen | Imagen "Comenta PALABRA" (carrusel de 2) |
+Todos los posts son de **una imagen**. Instagram: la imagen + la imagen final ("Síguenos" o "Comenta PALABRA"). Facebook: solo la imagen, con la invitación al final del texto.
 
-**Contenido**: API de Claude (texto + LaTeX), con segunda pasada de verificación matemática. **Imágenes**: HTML + KaTeX + Playwright (sin generador de imágenes, así la notación nunca sale deformada).
+| Tipo | Hora (México) | Contenido (mezcla en `bot/config.py` → `SLOTS`) | Cierre |
+|---|---|---|---|
+| 1 | 09:00 | Resultado sorprendente, reto de lógica, error común o dato | Síguenos |
+| 2 | 13:00 | Tema de un libro: problema exprés, error, dato o resultado sorprendente | Comenta PALABRA |
+| 3 | 18:00 | Reto de matemática básica ("RETO: …", sin la respuesta) | Síguenos |
+| 4 | 20:00 | Tema de un libro: error, problema exprés o dato | Comenta PALABRA |
+
+**Estilo de imagen**: sin etiquetas; un título gancho grande (puede llevar fórmulas `$...$`, palabras en amarillo con `**así**` y un emoji), una línea de apoyo y, si aporta, la expresión protagonista. Los errores muestran la fórmula equivocada en rojo con ✗. Fondo de arte matemático generado por código según el tema (`bot/fondos.js`: fractales, espirales, primos, campanas de Gauss, redes, etc.), oscurecido para que el texto se lea.
+
+**Cómo se genera cada post**: `planner.py` elige formato, gancho, tema y fondo (70% lo que mejor funciona, 30% exploración, sin repetir temas recientes) → Claude propone 6 ideas y las puntúa → se escribe la mejor → una segunda llamada verifica las matemáticas. Todos los textos de los prompts están en `bot/prompts.py`.
+
+**Aprendizaje** (`learn.yml`, diario 07:40 México): `bot/learn.py` mide los posts de Instagram con más de 48 h (alcance, compartidos, guardados, seguidores, comentarios), calcula un puntaje relativo a su tipo de post (y aprende qué formatos, ganchos, temas y fondos funcionan) y actualiza `state/weights.json` y `state/insights.json`. El informe legible queda en `state/informe.md` y en el resumen de cada corrida. Requiere el permiso `instagram_business_manage_insights` en `IG_TOKEN`.
+
+**Imágenes**: HTML + KaTeX + Playwright (sin generador de imágenes, así la notación nunca sale deformada).
 
 ## Puesta en marcha
 1. Repo **público** en GitHub (Meta necesita URLs públicas; las imágenes viven en la rama `media`). No subas secretos.
