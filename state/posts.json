@@ -158,5 +158,31 @@
   "ig_id": "17917500816462576",
   "fb_id": "1382195514976052_122108809785500466",
   "th_id": "17876075544650757"
+ },
+ {
+  "id": "20261015-1847-t1",
+  "ts": "2026-10-15T18:48:44+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:Euclides",
+  "area": "No hay camino real hacia la geometría.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "euclides-camino",
+  "tema": "frase de Euclides",
+  "titulo": "No hay camino real hacia la geometría.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18114942143103309",
+  "fb_id": "1382195514976052_122109171867500466",
+  "th_id": "18073615922738167"
  }
 ]
