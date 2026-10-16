@@ -236,5 +236,31 @@
   "ig_id": "18630252733011500",
   "fb_id": "1382195514976052_122109334563500466",
   "th_id": "18009920300779724"
+ },
+ {
+  "id": "20261016-0646-t4",
+  "ts": "2026-10-16T06:47:23+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "pregunta",
+  "tema_clave": "Georg Cantor",
+  "area": "Georg Cantor",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Cantor y el argumento diagonal: hay infinitos de distinto tamaño",
+  "titulo": "Cantor probó que un infinito puede ser **mayor** que otro",
+  "respuesta": "",
+  "puntaje_idea": 8.8,
+  "ig_id": "17895441426427443",
+  "fb_id": "1382195514976052_122109386073500466",
+  "th_id": "18437805469197718"
  }
 ]
