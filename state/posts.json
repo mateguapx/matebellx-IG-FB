@@ -288,5 +288,31 @@
   "ig_id": "18637656418031538",
   "fb_id": "1382195514976052_122109690783500466",
   "th_id": "18147934735560803"
+ },
+ {
+  "id": "20261016-2153-t2",
+  "ts": "2026-10-16T21:54:23+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "dato_preciso",
+  "tema_clave": "libro:MULTIVARIABLE",
+  "area": "multiplicadores de Lagrange",
+  "key": "MULTIVARIABLE",
+  "nivel": "uni",
+  "fondo": "funciones",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "i elevado a i es un número real: i^i = e^(−π/2)",
+  "titulo": "Elevar $i$ a la potencia $i$ da un número **real**",
+  "respuesta": "",
+  "puntaje_idea": 8.3,
+  "ig_id": "17993567781102111",
+  "fb_id": "1382195514976052_122109758763500466",
+  "th_id": "18090338312246785"
  }
 ]
