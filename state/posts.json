@@ -262,5 +262,31 @@
   "ig_id": "17895441426427443",
   "fb_id": "1382195514976052_122109386073500466",
   "th_id": "18437805469197718"
+ },
+ {
+  "id": "20261016-1833-t1",
+  "ts": "2026-10-16T18:34:51+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "historia",
+  "tema_clave": "Grigori Perelman y la conjetura de Poincaré",
+  "area": "Grigori Perelman y la conjetura de Poincaré",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Perelman y la conjetura de Poincaré",
+  "titulo": "En 2002 subió su prueba a internet. Después rechazó el **millón**",
+  "respuesta": "",
+  "puntaje_idea": 8.5,
+  "ig_id": "18637656418031538",
+  "fb_id": "1382195514976052_122109690783500466",
+  "th_id": "18147934735560803"
  }
 ]
