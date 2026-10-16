@@ -210,5 +210,31 @@
   "ig_id": "18126971032867173",
   "fb_id": "1382195514976052_122109241359500466",
   "th_id": "18123777544919218"
+ },
+ {
+  "id": "20261016-0351-t3",
+  "ts": "2026-10-16T03:52:45+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:epitrocoide",
+  "area": "espirógrafo exterior (epitrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "inicial",
+  "curva_tipo": "epitrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Epitrocoide R=5, r=2, d=3: epiciclos de Ptolomeo y lazos de retrogradación",
+  "titulo": "Los epiciclos de Ptolomeo dibujan **epitrocoides**",
+  "respuesta": "",
+  "puntaje_idea": 7.8,
+  "ig_id": "18630252733011500",
+  "fb_id": "1382195514976052_122109334563500466",
+  "th_id": "18009920300779724"
  }
 ]
