@@ -1,6 +1,6 @@
 """Uso: python -m bot.main --type 1|2|3|4 [--dry]   (concepto: "Porque las Matemáticas son Bellxs")
-Todos los posts son de UNA imagen. Instagram: imagen + imagen final (Síguenos / Comenta PALABRA).
-Facebook y Threads: solo la imagen, con la invitación al final del texto (Threads lleva su propio texto con 💛).
+Todos los posts son carruseles de 3 a 5 imágenes: apertura + 1 a 3 de desarrollo + imagen final.
+Instagram y Facebook: imagen final Síguenos / Comenta PALABRA. Threads: imagen final Síguenos (ahí no se leen comentarios).
 1 y 4 seguir · 2 palabra clave (tono suave) · 3 "Ecuación del día" (curva) + seguir. Mezcla y series en bot/config.py."""
 import argparse
 import json
@@ -71,23 +71,27 @@ def main() -> None:
     content = llm.generate(plan, _evitar(posts), _load("insights.json", {}))
     print("Idea elegida:", json.dumps(content.get("_idea"), ensure_ascii=False))
 
-    slide = content["slides"][0]
+    slides = content["slides"]
+    slide = slides[0]
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
-    img = OUT / f"{stamp}-t{a.type}.png"
-    render_many([slide_html(slide, plan["fondo"], plan["semilla"])], [img])
+    imgs = [OUT / f"{stamp}-t{a.type}-{i + 1}.png" for i in range(len(slides))]
+    # Mismo motivo de fondo en todo el carrusel (coherencia), con una variación distinta en cada imagen
+    render_many([slide_html(s, plan["fondo"], plan["semilla"] + i) for i, s in enumerate(slides)], imgs)
 
     cta_name = "follow.png" if plan["cta"] == "follow" else f"kw_{plan['key']}.png"
     cta_dst = OUT / f"{stamp}-t{a.type}-cta.png"
     cta_dst.write_bytes((ROOT / "assets" / "cta" / cta_name).read_bytes())
+    th_cta = OUT / f"{stamp}-t{a.type}-cta-th.png"  # en Threads siempre Síguenos
+    th_cta.write_bytes((ROOT / "assets" / "cta" / "follow.png").read_bytes())
     fb_caption = caption_facebook(content["caption"], plan["cta"], plan["key"])
     th_text = texto_threads(content, plan["cta"], plan["key"])
     ig_caption = content["caption"]
     if not PUBLICAR_DESCRIPCIONES:  # solo la imagen, sin texto, en las tres redes
         ig_caption = fb_caption = th_text = ""
         print("Descripciones desactivadas (config.PUBLICAR_DESCRIPCIONES = False): se publica solo la imagen.")
-    print("Renderizado:", img.name, "+", cta_dst.name, "(la imagen final solo va en Instagram)")
-    print("Título:", slide.get("title"))
-    print("Fórmula:", slide.get("display", ""))
+    print("Renderizado:", ", ".join(i.name for i in imgs), "+", cta_dst.name, f"({len(imgs) + 1} imágenes)")
+    for i, s in enumerate(slides, start=1):
+        print(f"Imagen {i}:", s.get("title"), "|", s.get("display", ""), "|", s.get("text", ""))
     print("Caption IG:", content["caption"])
     print("Caption FB:", fb_caption)
     print("Texto Threads:", th_text)
@@ -97,7 +101,7 @@ def main() -> None:
         **{k: plan.get(k) for k in ("tipo", "kind", "cta", "formato", "hook", "tema_clave", "area", "key", "nivel",
                                     "fondo", "modo", "curva_tipo", "serie", "idea_id", "frase_id")},
         "tema": content.get("tema") or (content.get("_idea") or {}).get("tema", ""),
-        "titulo": slide.get("title", ""), "respuesta": content.get("respuesta", ""),
+        "titulo": slide.get("title", ""), "n_imagenes": len(slides) + 1, "respuesta": content.get("respuesta", ""),
         "puntaje_idea": (content.get("_idea") or {}).get("_puntaje"),
     }
     (OUT / "post.json").write_text(json.dumps({"record": record, "content": content}, ensure_ascii=False, indent=1))
@@ -108,7 +112,8 @@ def main() -> None:
     url = lambda p: f"https://raw.githubusercontent.com/{repo}/{branch}/{p.name}"
     # El workflow sube out/ a la rama 'media' antes de llamar a --publish-step (ver post.yml)
     (OUT / "urls.json").write_text(json.dumps({
-        "ig_urls": [url(img), url(cta_dst)], "fb_urls": [url(img)], "th_url": url(img),
+        "ig_urls": [url(i) for i in imgs] + [url(cta_dst)], "fb_urls": [url(i) for i in imgs] + [url(cta_dst)],
+        "th_urls": [url(i) for i in imgs] + [url(th_cta)],
         "caption": ig_caption, "fb_caption": fb_caption, "th_text": th_text, "cta": plan["cta"], "record": record,
     }, ensure_ascii=False))
 
@@ -132,9 +137,10 @@ def publish_step() -> None:
     except Exception as e:
         errores.append(f"Facebook: {e}")
     th = None
-    if meta.threads_activo() and d.get("th_url"):
+    th_urls = d.get("th_urls") or ([d["th_url"]] if d.get("th_url") else [])
+    if meta.threads_activo() and th_urls:
         try:
-            th = meta.publish_threads(d["th_url"], d.get("th_text", d["caption"]))
+            th = meta.publish_threads(th_urls, d.get("th_text", d["caption"]))
             print("Threads:", th)
         except Exception as e:
             errores.append(f"Threads: {e}")

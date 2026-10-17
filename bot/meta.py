@@ -49,7 +49,7 @@ def _wait_ready(container_id: str, tries: int = 30) -> None:
 
 # --- Instagram ---
 def publish_instagram(image_urls: list[str], caption: str) -> str:
-    """Carrusel (2-10 imágenes). Los posts 'imagen única + CTA' son carruseles de 2."""
+    """Carrusel (2-10 imágenes): las de contenido + la imagen final."""
     children = []
     for url in image_urls:
         c = _ig_post(f"{IG_ID()}/media", image_url=url, is_carousel_item="true")["id"]
@@ -161,17 +161,30 @@ def _th(method: str, path: str, **params) -> dict:
     return _check(r, f"Threads {method} {path}")
 
 
-def publish_threads(image_url: str, text: str) -> str:
-    """Post de una imagen en Threads: contenedor -> esperar a que termine de procesar -> publicar."""
-    extra = {"text": text} if text else {}
-    cont = _th("POST", f"{TH_ID()}/threads", media_type="IMAGE", image_url=image_url, **extra)["id"]
-    time.sleep(10)
-    for _ in range(18):  # hasta ~2 min
+def _th_esperar(cont: str) -> None:
+    """Espera a que Threads termine de procesar un contenedor (hasta ~2 min)."""
+    for _ in range(18):
         st = _th("GET", cont, fields="status,error_message")
         if st.get("status") == "FINISHED":
-            break
+            return
         if st.get("status") in ("ERROR", "EXPIRED"):
             raise RuntimeError(f"Contenedor de Threads en estado {st.get('status')}: {st.get('error_message')}")
         time.sleep(7)
-    return _th("POST", f"{TH_ID()}/threads_publish", creation_id=cont)["id"]
 
+
+def publish_threads(image_urls: list[str] | str, text: str) -> str:
+    """Una imagen -> post de imagen. Varias (2-20) -> carrusel: un contenedor por imagen, luego el carrusel, luego publicar."""
+    urls = [image_urls] if isinstance(image_urls, str) else list(image_urls)
+    extra = {"text": text} if text else {}
+    if len(urls) == 1:
+        cont = _th("POST", f"{TH_ID()}/threads", media_type="IMAGE", image_url=urls[0], **extra)["id"]
+    else:
+        hijos = [_th("POST", f"{TH_ID()}/threads", media_type="IMAGE", image_url=u, is_carousel_item="true")["id"]
+                 for u in urls[:20]]
+        time.sleep(10)
+        for h in hijos:
+            _th_esperar(h)
+        cont = _th("POST", f"{TH_ID()}/threads", media_type="CAROUSEL", children=",".join(hijos), **extra)["id"]
+    time.sleep(10)
+    _th_esperar(cont)
+    return _th("POST", f"{TH_ID()}/threads_publish", creation_id=cont)["id"]

@@ -6,10 +6,10 @@ Edita solo el texto entre comillas. No toques los nombres en {llaves}: el bot lo
 Concepto de @matebellx: "Porque las Matemáticas son Bellxs". Mostrar la belleza de las matemáticas, romantizándolas
 con medida: asombro honesto, nunca cursi.
 
-Flujo de cada post (todos son de UNA imagen):
+Flujo de cada post (todos son carruseles: 1 imagen de apertura + 1 a 3 de desarrollo; la imagen final la pone el código):
   1) IDEAS: Claude propone varias ideas concretas y las puntúa.
   2) El código elige la mejor idea.
-  3) ESCRIBIR: Claude escribe la imagen y el caption de esa idea.
+  3) ESCRIBIR: Claude escribe las imágenes y el caption de esa idea.
   4) VERIFICACION: otra llamada revisa las matemáticas y los datos. Si hay un error real, se corrige y se reintenta.
 Además, cada semana bot/ideas.py usa BANCO_IDEAS para proponer ideas nuevas para los próximos posts.
 """
@@ -34,19 +34,33 @@ SYSTEM = (
 # 2) MANUAL DE ESTILO (se incluye al pensar ideas y al escribir)
 # ---------------------------------------------------------------------------
 MANUAL = """MANUAL DE ESTILO DE @MATEBELLX
-Cada post es UNA imagen elegante: un título que detiene el scroll, una fórmula o curva protagonista y, si hace falta, una línea de apoyo.
-1. El título es una frase con alma, en mayúsculas y minúsculas normales (máx 70 caracteres). Puede llevar fórmulas cortas con $...$.
-2. Resalta 1 o 2 palabras clave con **dobles asteriscos** (se ven en cursiva dorada): la palabra que contiene la emoción.
+Cada post es un CARRUSEL elegante de imágenes:
+- IMAGEN 1 (apertura): detiene el scroll y deja con ganas de deslizar. Un título, una fórmula o curva protagonista y,
+  si hace falta, una línea de apoyo. Plantea el asombro, pero deja algo por descubrir en las siguientes.
+- IMÁGENES 2 a 4 (desarrollo, de 1 a 3 imágenes): cada una cuenta UNO o DOS datos curiosos, precisos y verificables
+  del mismo tema, que profundizan lo de la apertura (de dónde sale, quién lo descubrió, qué consecuencia sorprendente
+  tiene, dónde aparece, un número exacto que choca con la intuición). Cada imagen debe sumar algo nuevo, sin repetir
+  la anterior, y la última del desarrollo cierra con la idea más bella o más memorable.
+- La imagen final (Síguenos / palabra clave) la agrega el código: NO la escribas.
+El lector nunca debe ver la estructura: no escribas en las imágenes palabras como "gancho", "apertura", "desarrollo",
+"dato curioso", "dato 1", "parte 2", "slide", "imagen", "desliza" ni numeraciones. Cada título es contenido, no una etiqueta.
+1. Los títulos son frases con alma, en mayúsculas y minúsculas normales (apertura máx 70 caracteres; desarrollo máx 60).
+   Pueden llevar fórmulas cortas con $...$.
+2. Resalta 1 o 2 palabras clave por imagen con **dobles asteriscos** (se ven en cursiva dorada): la palabra que contiene la emoción.
 3. Una sola metáfora por post, como máximo. Si suena a frase de taza o de autoayuda, descártala.
-4. La línea de apoyo (máx 110 caracteres) da el dato preciso que convierte la emoción en asombro: un nombre, un año, un número exacto.
-5. Sin emojis en la imagen. Sin signos de exclamación en la imagen.
+4. En la apertura, la línea de apoyo (máx 110 caracteres) da el dato preciso que convierte la emoción en asombro.
+   En el desarrollo, el texto (máx 220 caracteres) cuenta el dato o los dos datos con claridad y calidez.
+5. Sin emojis en las imágenes. Sin signos de exclamación en las imágenes.
 6. Lo bello también es exacto: nada de "casi", "más o menos" ni exageraciones.
 
-Ejemplos del estilo exacto que buscamos:
+Ejemplos del estilo exacto que buscamos para la apertura:
 - "La ecuación más **bella** de las matemáticas" + $e^{i\\pi}+1=0$ + "Une los cinco números más importantes con una suma, un producto y una potencia."
 - "Esta flor de **8** pétalos cabe en una sola ecuación" + la curva dibujada + $r=\\cos 4\\theta$
 - "Sumas los inversos de los cuadrados y aparece… **π**" + $\\sum 1/n^2=\\pi^2/6$ + "No hay ningún círculo a la vista. Euler lo demostró en 1734."
 - "Ramanujan nunca terminó la universidad. Esta es **una** de sus fórmulas para $\\pi$" + la serie + "Cada término suma unos 8 decimales correctos."
+Ejemplo de desarrollo para $e^{i\\pi}+1=0$:
+- "Cinco números, **una** igualdad" + "0 y 1 vienen de la aritmética, π de la geometría, e del cálculo, i del álgebra. Aquí aparecen juntos, cada uno una sola vez."
+- "Girar **es** multiplicar" + $e^{i\\theta}=\\cos\\theta+i\\sin\\theta$ + "Elevar e a iθ gira un punto θ radianes sobre el círculo unitario. Con θ = π, media vuelta te lleva exactamente a −1."
 
 CAPTION (máx 500 caracteres): la primera línea es una frase que se sostiene sola; luego 2-4 líneas que cuenten la historia o expliquen
 por qué es bello, con claridad y calidez; termina con UNA invitación a compartir con alguien ("Mándaselo a alguien que te hace sentir
@@ -91,6 +105,12 @@ FORMATOS = {
         "resultado ligado a esa persona en 'display'. Fechas y anécdotas verificables; nada de leyendas dudosas presentadas "
         "como hechos (si la anécdota es famosa pero incierta, dilo con 'se cuenta que')."
     ),
+    "frase": (
+        "FRASE CÉLEBRE: la apertura es una frase real de un matemático, tomada TAL CUAL de un banco curado (te la damos "
+        "abajo; el código la pone en la imagen 1, tú no la cambies). En el desarrollo cuenta la historia detrás: quién era "
+        "esa persona, en qué momento y por qué lo dijo o escribió, y qué idea matemática bella ilumina la frase (puedes "
+        "incluir una fórmula o resultado de esa persona en 'display'). Solo hechos verificables de su vida y su obra."
+    ),
     "infinito": (
         "EL INFINITO Y LO INALCANZABLE: hay infinitos más grandes que otros, 0.999… = 1, los decimales de π, la serie "
         "armónica, Gödel, la trompeta de Gabriel. Título que dé vértigo; 'display' con la expresión clave; línea de apoyo "
@@ -99,7 +119,7 @@ FORMATOS = {
 }
 
 FORMA = {
-    "single": "Post de UNA sola imagen (exactamente 1 slide) que se entiende sin contexto.",
+    "carrusel": "Carrusel: 1 imagen de apertura que se entiende sin contexto + 1 a 3 imágenes de desarrollo, cada una con 1 o 2 datos curiosos.",
 }
 
 # Audiencia (según el libro: "uni" = universidad, "bach" = bachillerato; "general" = público amplio)
@@ -137,13 +157,14 @@ Tipo de gancho a usar: {hook}.
 {contexto}
 No repitas estos temas ya publicados: {evitar}.
 
-Cada idea debe ser específica (una fórmula, curva, demostración, historia o dato concreto, no un tema general) y correcta.
+Cada idea debe ser específica (una fórmula, curva, demostración, historia o dato concreto, no un tema general), correcta,
+y tener suficientes datos curiosos verificables para llenar el desarrollo del carrusel.
 Puntúa cada idea de 1 a 10 con honestidad, comparándolas entre sí (no pongas 9 o 10 a todas):
 - compartible: ¿alguien se la mandaría a otra persona o la guardaría?
 - curiosidad: ¿detiene el scroll?
 - comentable: ¿invita a responder?
 Responde SOLO con JSON:
-{"ideas": [{"tema": "tema concreto en pocas palabras", "gancho": "título exacto de la imagen, en el estilo del manual (máx 70 caracteres)", "por_que": "por qué se compartiría, en una frase", "compartible": 0, "curiosidad": 0, "comentable": 0}]}"""
+{"ideas": [{"tema": "tema concreto en pocas palabras", "gancho": "título exacto de la imagen de apertura, en el estilo del manual (máx 70 caracteres)", "datos": "los 2 a 4 datos curiosos que contarías en el desarrollo, muy breves", "por_que": "por qué se compartiría, en una frase", "compartible": 0, "curiosidad": 0, "comentable": 0}]}"""
 
 # Bloque que se agrega a IDEAS cuando hay datos de rendimiento. Variables: {top} {bottom}
 CONTEXTO_RENDIMIENTO = """DATOS DE RENDIMIENTO DE LA CUENTA (aprende el PATRÓN: tipo de gancho, tono, nivel de asombro; NO copies el tema):
@@ -165,10 +186,15 @@ SCHEMA = (
     '{"tema": "tema concreto en pocas palabras", '
     '"caption": "pie del post según el manual, termina con 3-5 hashtags", '
     '"threads": "texto para Threads según el manual (máx 380 caracteres, con 💛)", '
-    '"slides": [{"title": "título (máx 70 caracteres), puede llevar $latex$ y **énfasis**", '
+    '"slides": ['
+    '{"title": "APERTURA: título (máx 70 caracteres), puede llevar $latex$ y **énfasis**", '
     '"text": "línea de apoyo (máx 110 caracteres) o cadena vacía", '
     '"display": "LaTeX de la fórmula protagonista, sin delimitadores, o cadena vacía (vacía en curvas)", '
-    '"curva": {"tipo": "solo en posts de curva: el tipo indicado", "params": {}}}]}'
+    '"curva": {"tipo": "solo en posts de curva: el tipo indicado", "params": {}}}, '
+    '{"title": "DESARROLLO: título (máx 60 caracteres)", '
+    '"text": "1 o 2 datos curiosos (máx 220 caracteres)", '
+    '"display": "fórmula corta que acompaña el dato, sin delimitadores, o cadena vacía"}'
+    ']}'
 )
 
 ESCRIBIR = """{manual}
@@ -182,10 +208,12 @@ Audiencia: {audiencia}. Área: {area}.
 {extra}
 
 Reglas de los campos:
-- title: en el estilo de los ejemplos del manual. Fórmulas cortas con $...$.
-- text: una línea de apoyo con un dato preciso, o vacío si el título ya lo dice todo.
-- display: la fórmula protagonista en LaTeX sin $ (para palabras usa \\text{...}; para varias líneas \\begin{aligned} … \\end{aligned}). Vacía en curvas.
-- curva: solo en posts de curva; si no, omítela.
+- slides[0] es la apertura; slides[1:] son el desarrollo (de 1 a 3 imágenes). No incluyas la imagen final.
+- title: en el estilo de los ejemplos del manual, nunca una etiqueta de estructura. Fórmulas cortas con $...$.
+- text: en la apertura, una línea de apoyo con un dato preciso o vacío; en el desarrollo, 1 o 2 datos curiosos (obligatorio).
+- display: fórmula en LaTeX sin $ (para palabras usa \\text{...}; para varias líneas \\begin{aligned} … \\end{aligned}).
+  En la apertura es la protagonista (vacía en curvas); en el desarrollo es opcional y corta.
+- curva: solo en la apertura de los posts de curva; si no, omítela.
 
 Formato JSON exacto: {schema}"""
 
@@ -196,7 +224,8 @@ CORRECCION = "\n\nEl intento anterior tenía estos problemas; corrígelos: {erro
 # 6) PASO 3 — VERIFICACIÓN. Variables: {formato} {contenido}
 #    Debe seguir pidiendo un JSON con "ok" (true/false) y "issues" (lista).
 # ---------------------------------------------------------------------------
-VERIFICACION = """Revisa este post de matemáticas (formato: {formato}).
+VERIFICACION = """Revisa este post de matemáticas (formato: {formato}). Es un carrusel: revisa TODAS las imágenes (slides).
+Si la primera imagen es una frase célebre, su texto y su fuente vienen de un banco ya verificado: no los marques; revisa el resto.
 Comprueba cada fórmula, cálculo y afirmación, y cada dato histórico (nombres, fechas, atribuciones, anécdotas) y la notación LaTeX.
 Marca ok=false ÚNICAMENTE si hay:
 - un error matemático real (fórmula falsa, cálculo incorrecto, afirmación falsa),

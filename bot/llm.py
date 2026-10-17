@@ -1,5 +1,6 @@
 """Generación y verificación de contenido con la API de Claude. Los textos de los prompts viven en bot/prompts.py.
-Flujo: ideas -> elegir la mejor -> escribir -> verificar (con reintentos y, si hace falta, la segunda mejor idea)."""
+Flujo: ideas -> elegir la mejor -> escribir -> verificar (con reintentos y, si hace falta, la segunda mejor idea).
+Cada post es un carrusel: slides[0] = apertura, slides[1:] = desarrollo. La imagen final (CTA) la agrega bot/main.py."""
 import json
 import re
 import anthropic
@@ -70,6 +71,9 @@ def _comun(plan: dict) -> dict:
         extra.append(P.render(P.CURVA, curva=plan["curva_tipo"], catalogo=curvas.descripcion_catalogo()))
     if plan.get("serie"):
         extra.append(P.render(P.SERIE, serie=plan["serie"]))
+    if plan.get("frase_id"):
+        f = FRASES[plan["frase_id"]]
+        extra.append(f"La frase de la apertura es: «{f['texto']}» — {f['autor']} ({f['fuente']}).")
     return dict(
         manual=P.MANUAL,
         formato=P.FORMATOS[plan["formato"]],
@@ -94,22 +98,41 @@ def ideas(plan: dict, evitar: list[str], contexto: str = "") -> list[dict]:
     return sorted(lista, key=lambda i: i["_puntaje"], reverse=True)
 
 
+# Etiquetas de estructura que nunca deben verse en la imagen (por si Claude las copia del esquema)
+_ETIQUETA = re.compile(r"^\s*(apertura|desarrollo|gancho|hook|dato(\s+curioso)?(\s*\d+)?|parte\s*\d+|slide\s*\d*|imagen\s*\d*)\s*[:.\-–—]\s*",
+                       re.I)
+
+
+def _limpiar(t) -> str:
+    return _ETIQUETA.sub("", str(t or "").strip()).strip()
+
+
+def _slide_frase(plan: dict) -> dict:
+    f = FRASES[plan["frase_id"]]
+    return {"layout": "frase", "title": f["texto"], "text": "", "display": "", "autor": f["autor"], "fuente": f["fuente"]}
+
+
 def _normalizar(plan: dict, content: dict) -> list[str]:
     """Ajusta detalles de forma y devuelve los problemas que obligan a reescribir."""
     slides = content.get("slides")
     if not isinstance(slides, list) or not all(isinstance(s, dict) for s in slides):
         return ["El campo slides debe ser una lista de objetos"]
     lo, hi = slides_rango(plan["kind"], plan["formato"])
-    if not lo <= len(slides) <= hi:
-        return [f"Número de slides inválido: {len(slides)} (debe ser exactamente {lo})"]
+    if len(slides) > hi:  # si se pasa, se quedan las primeras (la apertura y el mejor desarrollo)
+        del slides[hi:]
+    if len(slides) < lo:
+        return [f"Número de imágenes inválido: {len(slides)} (deben ser de {lo} a {hi}: 1 de apertura y de {lo - 1} a {hi - 1} de desarrollo)"]
+    for s in slides:
+        for k in ("title", "text", "display"):
+            s[k] = _limpiar(s.get(k)) if k != "display" else str(s.get(k) or "").strip()
+        for k in ("kicker", "layout"):
+            s.pop(k, None)
     s = slides[0]
-    for k in ("title", "text", "display"):
-        s[k] = str(s.get(k) or "").strip()
-    for k in ("kicker", "layout"):
-        s.pop(k, None)
-    if not s["title"]:
-        return ["Falta el título (title) de la imagen"]
-    if plan.get("curva_tipo"):
+    if plan.get("frase_id"):  # la apertura es la frase tal cual del banco curado
+        slides[0] = _slide_frase(plan)
+    elif not s["title"]:
+        return ["Falta el título (title) de la imagen de apertura"]
+    elif plan.get("curva_tipo"):
         spec = s.get("curva") if isinstance(s.get("curva"), dict) else {}
         s["curva"] = curvas.normalizar({"tipo": plan["curva_tipo"], "params": spec.get("params") or {}})
         s["display"] = curvas.latex(s["curva"])  # la ecuación sale del código: siempre coincide con el dibujo
@@ -118,7 +141,12 @@ def _normalizar(plan: dict, content: dict) -> list[str]:
         s.pop("curva", None)
         s["layout"] = "normal"
         if not s["display"] and not s["text"]:
-            return ["Falta la fórmula protagonista (display) o la línea de apoyo (text)"]
+            return ["Falta la fórmula protagonista (display) o la línea de apoyo (text) de la apertura"]
+    for i, d in enumerate(slides[1:], start=2):
+        d.pop("curva", None)
+        d["layout"] = "dato"
+        if not d["text"]:
+            return [f"La imagen {i} (desarrollo) no tiene texto: debe contar 1 o 2 datos curiosos"]
     if not content.get("caption"):
         return ["Falta el caption"]
     return []
@@ -153,28 +181,17 @@ def write(plan: dict, idea: dict, retries: int = 3) -> tuple[dict | None, list[s
     return None, issues
 
 
-def contenido_frase(plan: dict) -> dict:
-    """Las frases célebres no pasan por Claude: se publican tal cual del banco curado (bot/frases.py)."""
-    f = FRASES[plan["frase_id"]]
-    cita = f"«{f['texto']}»\n— {f['autor']}, {f['fuente']}"
-    return {
-        "tema": f"frase de {f['autor']}",
-        "caption": f"{cita}\n\nGuárdala para cuando necesites recordar por qué amas las matemáticas.\n#matebellx #mateguapo #frasescelebres",
-        "threads": f"{cita} 💛",
-        "slides": [{"layout": "frase", "title": f["texto"], "text": "", "display": "", "autor": f["autor"], "fuente": f["fuente"]}],
-        "_idea": {"tema": f["id"], "gancho": f["texto"][:70]},
-    }
-
-
 def generate(plan: dict, evitar: list[str], insights: dict | None = None) -> dict:
     """plan viene de bot/planner.py. Devuelve el contenido verificado, con la idea elegida en '_idea'."""
-    if plan.get("formato") == "frase":
-        return contenido_frase(plan)
     # Los posts de exploración no ven los datos de rendimiento, para no sesgarlos hacia lo de siempre.
     contexto = contexto_rendimiento(insights) if plan.get("modo") != "explorar" else ""
-    candidatas = ideas(plan, evitar, contexto)
+    if plan.get("frase_id"):  # la frase ya está elegida del banco curado: no hace falta lluvia de ideas
+        f = FRASES[plan["frase_id"]]
+        candidatas = [{"tema": f"frase de {f['autor']}: {f['id']}", "gancho": f["texto"]}]
+    else:
+        candidatas = ideas(plan, evitar, contexto)
     ultimo: list[str] = []
-    for idea, intentos in zip(candidatas[:2], (3, 2)):  # mejor idea con 3 intentos; si falla, la segunda con 2
+    for idea, intentos in zip(candidatas[:2], (3, 2) if len(candidatas) > 1 else (4,)):  # mejor idea con 3 intentos; si falla, la segunda con 2
         content, ultimo = write(plan, idea, retries=intentos)
         if content:
             content["_idea"] = {k: v for k, v in idea.items() if k != "por_que"}

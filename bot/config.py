@@ -67,9 +67,10 @@ BOOKS = {
 }
 
 # ---------------------------------------------------------------------------
-# CONCEPTO: "Porque las Matemáticas son Bellxs". Todos los posts son de UNA imagen:
-#   Instagram: la imagen + la imagen final (Síguenos / Comenta PALABRA) como carrusel de 2.
-#   Facebook: solo la imagen; la invitación va al final del texto.
+# CONCEPTO: "Porque las Matemáticas son Bellxs". Todos los posts son carruseles de 3 a 5 imágenes:
+#   1) apertura que detiene el scroll · 2-4) desarrollo con 1 o 2 datos curiosos cada una · última) imagen final (CTA).
+#   Instagram y Facebook: imagen final Síguenos / Comenta PALABRA. Threads: imagen final Síguenos
+#   (ahí el bot no lee comentarios, así que no se ofrece el libro por palabra clave).
 # Formatos (pilares):
 #   identidad   fórmula o identidad que enamora (e^{iπ}+1=0, Basilea, Gauss, Ramanujan…)
 #   curva       la ecuación y su dibujo exacto (rosas polares, mariposa, espirógrafos, fractales…)
@@ -81,13 +82,13 @@ BOOKS = {
 # Cada tipo de post (horario): cta = "follow" | "keyword"; tema = "libre" | "libro"; formatos con su peso base.
 # ---------------------------------------------------------------------------
 SLOTS = {
-    1: {"kind": "single", "cta": "follow", "tema": "libre",            # 09:00 México
+    1: {"kind": "carrusel", "cta": "follow", "tema": "libre",            # 09:00 México
         "formatos": {"identidad": 3, "infinito": 2, "naturaleza": 2, "historia": 1, "frase": 1}},
-    2: {"kind": "single", "cta": "keyword", "tema": "libro",           # 13:00 · el único post de venta del día (tono suave)
+    2: {"kind": "carrusel", "cta": "keyword", "tema": "libro",           # 13:00 · el único post de venta del día (tono suave)
         "formatos": {"demostracion": 2, "identidad": 2, "curva": 1}},
-    3: {"kind": "single", "cta": "follow", "tema": "libre",            # 18:00 · "Ecuación del día": siempre una curva
+    3: {"kind": "carrusel", "cta": "follow", "tema": "libre",            # 18:00 · "Ecuación del día": siempre una curva
         "formatos": {"curva": 1}},
-    4: {"kind": "single", "cta": "follow", "tema": "libre",            # 20:00
+    4: {"kind": "carrusel", "cta": "follow", "tema": "libre",            # 20:00
         "formatos": {"historia": 2, "naturaleza": 2, "infinito": 1, "demostracion": 1, "frase": 1}},
 }
 POST_TYPES = {k: (v["kind"], v["cta"]) for k, v in SLOTS.items()}
@@ -162,8 +163,9 @@ N_IDEAS = 6
 
 
 def slides_rango(kind: str, formato: str) -> tuple[int, int]:
-    """Número de slides de contenido (sin contar la imagen final de CTA). Todos los posts son de 1 imagen."""
-    return (1, 1)
+    """Número de imágenes de contenido (sin contar la imagen final de CTA): 1 de apertura + 1 a 3 de desarrollo.
+    Con la imagen final, cada publicación queda de 3 a 5 imágenes."""
+    return (2, 4)
 
 
 # ---------------------------------------------------------------------------

@@ -66,6 +66,11 @@ body{{width:{W}px;height:{H}px;background:{b['bg']};color:{b['fg']};font-family:
 .title,.text,.top,.foot{{text-shadow:0 0 18px #000,0 0 40px #000}}
 .cta-big{{font-family:Playfair;font-weight:500;font-size:104px;line-height:1.1;color:{b['fg']}}}
 .kw{{display:inline-block;font-family:Playfair;font-weight:600;font-size:118px;letter-spacing:6px;color:{b['bg']};background:{b['accent']};padding:10px 44px 18px}}
+.lay-dato .main{{gap:38px}}
+.lay-dato .title{{font-size:72px}}
+.lay-dato .text{{font-size:50px;line-height:1.36;max-width:880px}}
+.lay-dato .display{{font-size:62px}}
+.sig{{position:absolute;right:62px;bottom:62px;z-index:3;font-family:Cormorant;font-weight:500;font-size:46px;line-height:1;color:{b['accent']};opacity:.75}}
 .lay-frase .main{{gap:34px}}
 .lay-frase .title{{font-style:italic;max-width:880px}}
 .comillas{{font-family:Playfair;font-weight:600;font-size:210px;line-height:.6;height:96px;color:{b['accent']};opacity:.9;text-shadow:0 0 34px {b['accent']}66}}
@@ -135,8 +140,16 @@ def _marco(body: str, clase: str = "") -> str:
 ORNAMENTO = '<div class="orn"><span></span></div>'
 
 
-def slide_html(s: dict, fondo: str | None = None, semilla: int = 1) -> str:
-    """Un post = una sola imagen. s: title, text, display, layout ('normal' | 'curva'), curva {tipo, params}."""
+SIGUE = '<div class="sig">→</div>'  # flechita discreta: hay más imágenes en el carrusel
+
+
+def slide_html(s: dict, fondo: str | None = None, semilla: int = 1, sigue: bool = True) -> str:
+    """Una imagen del carrusel. s: title, text, display, layout ('normal' | 'curva' | 'frase' | 'dato'), curva {tipo, params}.
+    sigue=True agrega la flechita de "hay más" (todas las de contenido la llevan: después viene la imagen final)."""
+    return _slide(s, fondo, semilla) + (SIGUE if sigue else "")
+
+
+def _slide(s: dict, fondo: str | None, semilla: int) -> str:
     e = html.escape
     title = f'<div class="title">{_fmt(s["title"])}</div>' if s.get("title") else ""
     text = f'<div class="text">{_fmt(s["text"])}</div>' if s.get("text") else ""
@@ -155,6 +168,8 @@ def slide_html(s: dict, fondo: str | None = None, semilla: int = 1) -> str:
         body = f"{title}{cv}{disp}{text}"
         return _fondo(fondo, semilla) + _marco(body, "lay-curva")
     partes = [title, ORNAMENTO if (disp or text) else "", disp, text] if disp else [title, ORNAMENTO if text else "", text]
+    if s.get("layout") == "dato":  # desarrollo: título, adorno, el dato y (si hay) su fórmula al final
+        return _fondo(fondo, semilla) + _marco("".join([title, ORNAMENTO, text, disp]), "lay-dato")
     return _fondo(fondo, semilla) + _marco("".join(partes))
 
 
