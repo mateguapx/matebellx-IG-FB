@@ -314,5 +314,31 @@
   "ig_id": "17993567781102111",
   "fb_id": "1382195514976052_122109758763500466",
   "th_id": "18090338312246785"
+ },
+ {
+  "id": "20261017-0340-t3",
+  "ts": "2026-10-17T03:41:34+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:cardioide",
+  "area": "cardioide r = 1 − cos θ (forma de corazón)",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "inicial",
+  "curva_tipo": "cardioide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Cardioide como huella de una moneda que rueda alrededor de otra igual",
+  "titulo": "Una moneda rueda sobre otra igual y su borde dibuja un **corazón**",
+  "respuesta": "",
+  "puntaje_idea": 8.3,
+  "ig_id": "18117274511327790",
+  "fb_id": "1382195514976052_122109853059500466",
+  "th_id": "18162991546510886"
  }
 ]
