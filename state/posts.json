@@ -438,5 +438,31 @@
   "ig_id": "18117640364330946",
   "fb_id": "1382195514976052_122109900279500466",
   "th_id": "18089527850679279"
+ },
+ {
+  "id": "20261017-1740-t1",
+  "ts": "2026-10-17T17:42:05+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "pregunta",
+  "tema_clave": "los números trascendentes",
+  "area": "los números trascendentes",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "π + e: un problema abierto sobre números trascendentes",
+  "titulo": "Nadie sabe si $\\pi+e$ es **irracional**",
+  "respuesta": "",
+  "puntaje_idea": 8.5,
+  "ig_id": "17903900340670388",
+  "fb_id": "1382195514976052_122110156047500466",
+  "th_id": "18070827149788138"
  }
 ]
