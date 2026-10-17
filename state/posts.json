@@ -340,5 +340,31 @@
   "ig_id": "18117274511327790",
   "fb_id": "1382195514976052_122109853059500466",
   "th_id": "18162991546510886"
+ },
+ {
+  "id": "20261017-0636-t4",
+  "ts": "2026-10-17T06:37:24+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "Kurt Gödel",
+  "area": "Kurt Gödel",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Gödel y los teoremas de incompletitud (1931)",
+  "titulo": "A los 25 años, Gödel mostró que ningún sistema lo prueba **todo**",
+  "respuesta": "",
+  "puntaje_idea": 8.5,
+  "ig_id": "18117640364330946",
+  "fb_id": "1382195514976052_122109900279500466",
+  "th_id": "18089527850679279"
  }
 ]
