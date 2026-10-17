@@ -464,5 +464,31 @@
   "ig_id": "17903900340670388",
   "fb_id": "1382195514976052_122110156047500466",
   "th_id": "18070827149788138"
+ },
+ {
+  "id": "20261017-2112-t2",
+  "ts": "2026-10-17T21:13:15+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "libro:PRECALCULO",
+  "area": "números complejos",
+  "key": "PRECALCULO",
+  "nivel": "bach",
+  "fondo": "funciones",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Bombelli (1572) y x³ = 15x + 4: la fórmula de Cardano pasa por √−121 y da la raíz real 4",
+  "titulo": "Para llegar al **4** hay que pasar por $\\sqrt{-121}$",
+  "respuesta": "",
+  "puntaje_idea": 7.6,
+  "ig_id": "18128186053893565",
+  "fb_id": "1382195514976052_122110240017500466",
+  "th_id": "18186789292414924"
  }
 ]
