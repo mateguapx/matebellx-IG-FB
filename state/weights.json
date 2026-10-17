@@ -1,9 +1,37 @@
 {
- "n": 0,
- "actualizado": "2026-10-16T17:41:18+00:00",
- "formato": {},
- "hook": {},
- "tema": {},
- "fondo": {},
- "curva": {}
+ "n": 6,
+ "actualizado": "2026-10-17T16:39:26+00:00",
+ "formato": {
+  "wow": 2.12,
+  "chiste": 0.82,
+  "reto_basico": 1.032,
+  "curva": 1.502,
+  "demostracion": 0.869
+ },
+ "hook": {
+  "pregunta": 2.12,
+  "humor": 0.82,
+  "desafio": 1.032,
+  "metafora": 1.502,
+  "dato_preciso": 0.992,
+  "asombro": 0.833
+ },
+ "tema": {
+  "el infinito y sus paradojas": 2.12,
+  "patrones y sucesiones sorprendentes": 0.82,
+  "promedios y velocidades medias": 1.032,
+  "curva:hipotrocoide": 1.502,
+  "libro:GEOMETRIA": 0.992,
+  "suma de cubos sin palabras": 0.833
+ },
+ "fondo": {
+  "espiral": 2.12,
+  "fractal": 0.82,
+  "rejilla": 1.032,
+  "geometria": 1.37,
+  "formulas": 0.833
+ },
+ "curva": {
+  "hipotrocoide": 1.502
+ }
 }

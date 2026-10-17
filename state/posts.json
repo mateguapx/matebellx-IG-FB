@@ -39,7 +39,19 @@
   "respuesta": "0.999… = 1 exactamente: como 1/3 = 0.333…, al multiplicar por 3 se obtiene 0.999… = 3/3 = 1. También, entre dos números distintos siempre cabe otro, y entre 0.999… y 1 no cabe ninguno.",
   "puntaje_idea": 9.05,
   "ig_id": "18191052682405039",
-  "fb_id": "1382195514976052_122108648589500466"
+  "fb_id": "1382195514976052_122108648589500466",
+  "metricas": {
+   "reach": 164,
+   "shares": 0,
+   "saved": 1,
+   "follows": 1,
+   "profile_visits": 2,
+   "views": 312,
+   "likes": 13,
+   "comments": 0
+  },
+  "medido": "2026-10-17T16:39:08+00:00",
+  "score": 4.361
  },
  {
   "id": "20261015-0325-t1",
@@ -60,7 +72,19 @@
   "respuesta": "Las dos son válidas: 7 si es la lista de primos, 8 si cada término es la suma de los dos anteriores. Tres términos no bastan para fijar una única sucesión.",
   "puntaje_idea": 8.15,
   "ig_id": "17904341349664842",
-  "fb_id": "1382195514976052_122108701929500466"
+  "fb_id": "1382195514976052_122108701929500466",
+  "metricas": {
+   "reach": 9,
+   "shares": 0,
+   "saved": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "views": 29,
+   "likes": 1,
+   "comments": 0
+  },
+  "medido": "2026-10-17T16:39:08+00:00",
+  "score": 0.459
  },
  {
   "id": "20261015-0354-t3",
@@ -81,7 +105,19 @@
   "respuesta": "48 km/h (media armónica: 2·60·40/(60+40) = 4800/100 = 48). Con distancia d: tiempo total = d/60 + d/40 = 5d/120 = d/24, y la distancia total 2d, así que 2d/(d/24) = 48.",
   "puntaje_idea": 8.5,
   "ig_id": "18448466389132906",
-  "fb_id": "1382195514976052_122108718153500466"
+  "fb_id": "1382195514976052_122108718153500466",
+  "metricas": {
+   "reach": 10,
+   "shares": 0,
+   "saved": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "views": 26,
+   "likes": 1,
+   "comments": 0
+  },
+  "medido": "2026-10-17T16:39:08+00:00",
+  "score": 1.095
  },
  {
   "id": "20261015-0559-t3",
@@ -106,7 +142,19 @@
   "puntaje_idea": 8.3,
   "ig_id": "18020036441937895",
   "fb_id": "1382195514976052_122108779131500466",
-  "th_id": "18371344102215808"
+  "th_id": "18371344102215808",
+  "metricas": {
+   "reach": 2675,
+   "shares": 1,
+   "saved": 5,
+   "follows": 4,
+   "profile_visits": 10,
+   "views": 3360,
+   "likes": 16,
+   "comments": 0
+  },
+  "medido": "2026-10-17T16:39:08+00:00",
+  "score": 2.505
  },
  {
   "id": "20261015-0605-t2",
@@ -131,7 +179,19 @@
   "puntaje_idea": 8.8,
   "ig_id": "18123696562927748",
   "fb_id": "1382195514976052_122108780961500466",
-  "th_id": "17978593337917738"
+  "th_id": "17978593337917738",
+  "metricas": {
+   "reach": 7,
+   "shares": 0,
+   "saved": 1,
+   "follows": 0,
+   "profile_visits": 0,
+   "views": 22,
+   "likes": 1,
+   "comments": 0
+  },
+  "medido": "2026-10-17T16:39:08+00:00",
+  "score": 0.975
  },
  {
   "id": "20261015-0700-t4",
@@ -157,7 +217,19 @@
   "puntaje_idea": 8.3,
   "ig_id": "17917500816462576",
   "fb_id": "1382195514976052_122108809785500466",
-  "th_id": "17876075544650757"
+  "th_id": "17876075544650757",
+  "metricas": {
+   "reach": 10,
+   "shares": 0,
+   "saved": 0,
+   "follows": 0,
+   "profile_visits": 0,
+   "views": 24,
+   "likes": 1,
+   "comments": 0
+  },
+  "medido": "2026-10-17T16:39:08+00:00",
+  "score": 0.499
  },
  {
   "id": "20261015-1847-t1",

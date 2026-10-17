@@ -1,1 +1,114 @@
-{}
+{
+ "top": [
+  {
+   "titulo": "¿Sabías que $0.999\\ldots$ es **exactamente** igual a 1? 🤯",
+   "formato": "wow",
+   "hook": "pregunta",
+   "tema": "0.999… es exactamente 1",
+   "fondo": "espiral",
+   "score": 4.361,
+   "metricas": {
+    "reach": 164,
+    "shares": 0,
+    "saved": 1,
+    "follows": 1,
+    "profile_visits": 2,
+    "views": 312,
+    "likes": 13,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Sin levantar el lápiz, un solo **trazo** dibuja 11 lazos",
+   "formato": "curva",
+   "hook": "metafora",
+   "tema": "Hipotrocoide con R=11, r=4, d=6: once lazos en un solo trazo que se cierra tras cuatro vueltas",
+   "fondo": "geometria",
+   "score": 2.505,
+   "metricas": {
+    "reach": 2675,
+    "shares": 1,
+    "saved": 5,
+    "follows": 4,
+    "profile_visits": 10,
+    "views": 3360,
+    "likes": 16,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "RETO: ida a **60** km/h, vuelta a **40** km/h por la misma ruta. ¿Velocidad media?",
+   "formato": "reto_basico",
+   "hook": "desafio",
+   "tema": "Velocidad media ida y vuelta (media armónica)",
+   "fondo": "rejilla",
+   "score": 1.095,
+   "metricas": {
+    "reach": 10,
+    "shares": 0,
+    "saved": 1,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 26,
+    "likes": 1,
+    "comments": 0
+   }
+  }
+ ],
+ "bottom": [
+  {
+   "titulo": "1 m extra de cuerda sube igual en la Tierra que en una **naranja**",
+   "formato": "demostracion",
+   "hook": "dato_preciso",
+   "tema": "Cuerda alrededor de la Tierra: la holgura 1/(2π) m no depende del radio",
+   "fondo": "geometria",
+   "score": 0.975,
+   "metricas": {
+    "reach": 7,
+    "shares": 0,
+    "saved": 1,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 22,
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Suma los cubos del 1 al $n$ y siempre obtienes un **cuadrado**",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "Suma de cubos sin palabras: identidad de Nicómaco",
+   "fondo": "formulas",
+   "score": 0.499,
+   "metricas": {
+    "reach": 10,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 24,
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "«El patrón es obvio», dijo el profe. ¿**7** u **8**? 👀",
+   "formato": "chiste",
+   "hook": "humor",
+   "tema": "Sucesión ambigua: primos vs Fibonacci (2, 3, 5, …)",
+   "fondo": "fractal",
+   "score": 0.459,
+   "metricas": {
+    "reach": 9,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 29,
+    "likes": 1,
+    "comments": 0
+   }
+  }
+ ]
+}
