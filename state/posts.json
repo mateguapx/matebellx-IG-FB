@@ -490,5 +490,31 @@
   "ig_id": "18128186053893565",
   "fb_id": "1382195514976052_122110240017500466",
   "th_id": "18186789292414924"
+ },
+ {
+  "id": "20261018-0346-t3",
+  "ts": "2026-10-18T03:47:01+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:julia",
+  "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "inicial",
+  "curva_tipo": "julia",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "conjunto de Julia c = −0.8 + 0.156i",
+  "titulo": "Este **encaje** infinito sale de repetir una sola regla",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18117076139471173",
+  "fb_id": "1382195514976052_122110343469500466",
+  "th_id": "18355695262219189"
  }
 ]
