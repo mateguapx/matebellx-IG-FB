@@ -1,6 +1,6 @@
 name: tokens
 # Cada lunes: renueva IG_TOKEN y THREADS_TOKEN (otros 60 días) y revisa META_PAGE_TOKEN (bot/tokens.py).
-# Para renovar automáticamente necesita el secret GH_PAT (token de GitHub con permiso "Secrets: Read and write" sobre este repo).
+# Para renovar automáticamente necesita el secret GH_PAT (o GH_PATH): token de GitHub con permiso "Secrets: Read and write" sobre este repo.
 # Si algo falla, la corrida queda en rojo y GitHub avisa por correo.
 on:
   schedule: [{ cron: "10 14 * * 1" }]   # lunes 08:10 México
@@ -14,7 +14,7 @@ jobs:
       THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
       META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
       FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
-      GH_TOKEN: ${{ secrets.GH_PAT }}
+      GH_TOKEN: ${{ secrets.GH_PAT || secrets.GH_PATH }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
