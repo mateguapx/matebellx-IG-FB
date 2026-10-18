@@ -28,11 +28,11 @@ jobs:
           status=0
           python -u -m bot.tokens $OPC 2>&1 | tee out.txt || status=$?
           if [ -s "$ARCH" ]; then
-            gh secret set IG_TOKEN --repo "${{ github.repository }}" < "$ARCH" && echo "Secret IG_TOKEN actualizado"
+            gh secret set IG_TOKEN --repo "${{ github.repository }}" < "$ARCH" && echo "Secret IG_TOKEN actualizado" || { echo "::error title=No se guardó IG_TOKEN::GH_PAT sin permiso Secrets: Read and write"; status=1; }
             rm -f "$ARCH"
           fi
           if [ -s "$ARCH_TH" ]; then
-            gh secret set THREADS_TOKEN --repo "${{ github.repository }}" < "$ARCH_TH" && echo "Secret THREADS_TOKEN actualizado"
+            gh secret set THREADS_TOKEN --repo "${{ github.repository }}" < "$ARCH_TH" && echo "Secret THREADS_TOKEN actualizado" || { echo "::error title=No se guardó THREADS_TOKEN::GH_PAT sin permiso Secrets: Read and write"; status=1; }
             rm -f "$ARCH_TH"
           fi
           { echo '```'; cat out.txt; echo '```'; } >> $GITHUB_STEP_SUMMARY
