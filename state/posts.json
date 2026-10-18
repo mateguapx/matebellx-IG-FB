@@ -616,5 +616,31 @@
   "ig_id": "18130460866695087",
   "fb_id": "1382195514976052_122110622289500466",
   "th_id": "18217759990349616"
+ },
+ {
+  "id": "20261018-2112-t2",
+  "ts": "2026-10-18T21:13:50+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "historia",
+  "tema_clave": "libro:FINANCIERAS",
+  "area": "amortización de créditos",
+  "key": "FINANCIERAS",
+  "nivel": "bach",
+  "fondo": "fractal",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "amortización: el crédito como serie geométrica",
+  "titulo": "Pagas lo **mismo** cada mes, pero cada vez abonas más a tu deuda",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18125404574513767",
+  "fb_id": "1382195514976052_122110685439500466",
+  "th_id": "18500809180099983"
  }
 ]
