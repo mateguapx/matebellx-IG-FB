@@ -21,8 +21,8 @@
  "threads": "Pinta la mitad de un cuadrado, luego la mitad de lo que queda, y así para siempre 💛 Tras n pasos solo falta 1/2ⁿ. Por eso 1/2 + 1/4 + 1/8 + ⋯ = 1 exacto. ¿Con quién compartes la mitad de tu pastel?",
  "slides": [
   {
-   "title": "Como repartir un pastel por **mitades**: infinitos pedazos, uno entero",
-   "text": "Tras n pasos solo falta 1/2ⁿ del cuadrado, un pedazo tan pequeño como quieras.",
+   "title": "Cómo repartir un pastel por **mitades**: infinitos pedazos, uno entero",
+   "text": "Tras n pasos solo falta 1/2ⁿ del pastel, un pedazo tan pequeño como quieras.",
    "display": "\\frac{1}{2}+\\frac{1}{4}+\\cdots+\\frac{1}{2^n}=1-\\frac{1}{2^n}",
    "layout": "normal"
   }

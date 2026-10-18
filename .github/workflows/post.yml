@@ -25,7 +25,7 @@ jobs:
       FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
       PAGE_HANDLE: ${{ vars.PAGE_HANDLE }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Elegir tipo
         run: |
           case "${{ github.event.schedule }}" in
@@ -36,12 +36,12 @@ jobs:
       - name: Revisar la cola
         # Con la cola vacía no se instala nada: aviso "Cola vacía" y SKIP=1 (python del sistema, sin dependencias)
         run: python3 -m bot.cola revisar $T
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         if: ${{ env.SKIP != '1' }}
         with: { python-version: "3.12", cache: pip }
       - name: Caché de Chromium
         if: ${{ env.SKIP != '1' }}
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/ms-playwright
           key: chromium-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
@@ -55,7 +55,7 @@ jobs:
           { echo '```'; cat gen.txt; echo '```'; } >> $GITHUB_STEP_SUMMARY
       - name: Guardar imágenes de prueba
         if: ${{ github.event.inputs.dry == 'true' && env.SKIP != '1' }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: imagenes-prueba
           path: out/

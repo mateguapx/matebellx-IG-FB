@@ -16,8 +16,8 @@ jobs:
       FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
       GH_TOKEN: ${{ secrets.GH_PAT }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with: { python-version: "3.12", cache: pip }
       - run: pip install requests
       - name: Renovar y revisar
