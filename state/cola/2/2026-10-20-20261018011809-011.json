@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "identidad",
+ "hook": "dato_preciso",
+ "tema_clave": "libro:PROBABILIDAD",
+ "area": "distribución binomial",
+ "key": "PROBABILIDAD",
+ "nivel": "bach",
+ "fondo": "probabilidad",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 977763,
+ "modo": "inicial",
+ "fecha": "2026-10-20",
+ "tema": "probabilidad de 5 águilas en 10 volados",
+ "caption": "Lanzas 10 monedas. ¿Qué tan probable es que caigan exactamente 5 águilas y 5 soles?\n\nHay 2¹⁰ = 1024 resultados posibles y en 252 de ellos salen 5 y 5. Es el resultado más probable de todos, y aun así ocurre solo 252/1024 ≈ 24.6 % de las veces.\n\nMándaselo a alguien que juraría que es 50 %.\n#matebellx #mateguapo #probabilidad #binomial",
+ "threads": "Lanzas 10 monedas: ¿qué tan seguido salen exactamente 5 águilas? Solo 252 de cada 1024 veces, cerca de 1 de cada 4 💛 Y es el resultado más probable de todos. ¿Tú qué habrías dicho?",
+ "slides": [
+  {
+   "title": "Lanzas 10 monedas: el 5 a 5 sale menos de **1** de cada 4 veces",
+   "text": "Es el resultado más probable y aun así su probabilidad es 252/1024 ≈ 0.246.",
+   "display": "\\binom{10}{5}\\cdot\\frac{1}{2^{10}}=\\frac{252}{1024}",
+   "layout": "normal"
+  }
+ ]
+}

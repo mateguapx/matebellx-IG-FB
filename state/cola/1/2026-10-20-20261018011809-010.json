@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "identidad",
+ "hook": "metafora",
+ "tema_clave": "la fórmula de Euler para poliedros",
+ "area": "la fórmula de Euler para poliedros",
+ "key": null,
+ "nivel": "general",
+ "fondo": "fractal",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 221037,
+ "modo": "inicial",
+ "fecha": "2026-10-20",
+ "tema": "fórmula de Euler para poliedros V − A + C = 2",
+ "caption": "Cuenta vértices, resta aristas, suma caras: siempre da 2.\n\nPasa en el cubo (8 − 12 + 6), en la pirámide (5 − 8 + 5) y en el dodecaedro (20 − 30 + 12): en cualquier poliedro sin agujeros. Euler se lo contó a Goldbach en una carta de 1750.\n\nMándaselo a alguien que vea un balón de futbol hoy.\n#matebellx #mateguapo #euler #geometria",
+ "threads": "Cuenta vértices, resta aristas y suma caras de cualquier poliedro sin agujeros: siempre da 2 💛 Cubo: 8 − 12 + 6. Balón de futbol: 60 − 90 + 32. Euler lo notó en 1750. ¿Lo pruebas con otro?",
+ "slides": [
+  {
+   "title": "Todo poliedro sin agujeros lleva **tatuado** el mismo número",
+   "text": "Cubo: 8 − 12 + 6. Dodecaedro: 20 − 30 + 12. Euler se lo escribió a Goldbach en 1750.",
+   "display": "V-A+C=2",
+   "layout": "normal"
+  }
+ ]
+}

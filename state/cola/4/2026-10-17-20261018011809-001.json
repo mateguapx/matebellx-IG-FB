@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "dato_preciso",
+ "tema_clave": "0.999… = 1",
+ "area": "0.999… = 1",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 757525,
+ "modo": "inicial",
+ "fecha": "2026-10-17",
+ "tema": "(0, 1) tiene tantos puntos como la recta real",
+ "caption": "Un segmento de un centímetro tiene tantos puntos como una recta infinita.\n\nLa función tan(πx − π/2) toma cada número entre 0 y 1 y le asigna un número real distinto, y cada real recibe exactamente uno. Emparejados uno a uno: el mismo tamaño de infinito.\n\nGuárdalo para cuando olvides por qué amas las matemáticas.\n#matebellx #mateguapo #infinito #cantor",
+ "threads": "Un segmento de 1 cm tiene tantos puntos como una recta infinita 💛 La función tan(πx − π/2) empareja cada número entre 0 y 1 con un real distinto, y no sobra ninguno. ¿Te lo esperabas?",
+ "slides": [
+  {
+   "title": "Entre 0 y 1 caben tantos números como en **toda** la recta",
+   "text": "Esta función empareja cada número entre 0 y 1 con un real distinto, sin que sobre ninguno.",
+   "display": "\\tan\\!\\left(\\pi x-\\frac{\\pi}{2}\\right):\\;(0,1)\\;\\to\\;\\mathbb{R}",
+   "layout": "normal"
+  }
+ ]
+}

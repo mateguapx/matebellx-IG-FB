@@ -1,13 +1,15 @@
-"""Banco de ideas que se renueva solo.
-Uso: python -m bot.ideas   (corre cada semana con .github/workflows/ideas.yml)
+"""Banco de ideas para los próximos posts (state/ideas.json), sin la API de Claude.
+Uso:
+  python -m bot.ideas instrucciones > ideas.txt   # qué formatos necesitan ideas y con qué reglas (el prompt BANCO_IDEAS)
+  python -m bot.ideas agregar ideas.json          # agrega las ideas escritas: [{"formato": "...", "idea": "..."}]
 
-Mantiene state/ideas.json con ideas concretas y pendientes para los próximos posts. Si quedan menos de MINIMO
-pendientes por formato, le pide a Claude ideas nuevas que no repitan lo publicado ni lo que ya está en el banco.
-bot/planner.py usa estas ideas como tema de partida y bot/main.py las marca como usadas al publicar."""
+La tarea programada semanal lo rellena antes de planear la cola. bot/planner.py usa estas ideas como tema de partida
+(bot/cola.py → plan) y bot/main.py las marca como usadas al publicar."""
 import json
+import sys
 import unicodedata
 from datetime import datetime, timezone
-from . import llm
+from pathlib import Path
 from . import prompts as P
 from .config import ROOT, SLOTS
 
@@ -30,28 +32,35 @@ def _clave(t: str) -> str:
     return " ".join("".join(c if c.isalnum() else " " for c in t).split())[:80]
 
 
-def run() -> None:
+def faltan() -> list[str]:
+    banco = _load("ideas.json", [])
+    pendientes = {f: sum(1 for i in banco if not i.get("usada") and i.get("formato") == f) for f in FORMATOS}
+    print("Ideas pendientes por formato:", pendientes, file=sys.stderr)
+    return [f for f, n in pendientes.items() if n < MINIMO]
+
+
+def instrucciones() -> str:
+    """El mismo prompt que antes recibía la API (BANCO_IDEAS), o cadena vacía si el banco está lleno."""
+    formatos = faltan()
+    if not formatos:
+        return ""
     banco = _load("ideas.json", [])
     posts = _load("posts.json", [])
-    pendientes = {f: sum(1 for i in banco if not i.get("usada") and i.get("formato") == f) for f in FORMATOS}
-    faltan = [f for f, n in pendientes.items() if n < MINIMO]
-    print("Ideas pendientes por formato:", pendientes)
-    if not faltan:
-        print("El banco está lleno; no se piden ideas nuevas.")
-        return
-
     vistos = [p.get("tema") or p.get("titulo") for p in posts[-150:]] + [i["idea"] for i in banco[-200:]]
-    prompt = P.render(P.BANCO_IDEAS, manual=P.MANUAL, n=POR_LLAMADA,
-                      formatos="\n".join(f"- {f}: {P.FORMATOS[f]}" for f in faltan),
-                      evitar="; ".join(x for x in vistos if x)[-6000:] or "nada")
-    nuevas = llm._json(llm._ask(prompt, max_tokens=8000)).get("ideas", [])
+    return P.render(P.BANCO_IDEAS, manual=P.MANUAL, n=POR_LLAMADA,
+                    formatos="\n".join(f"- {f}: {P.FORMATOS[f]}" for f in formatos),
+                    evitar="; ".join(x for x in vistos if x)[-6000:] or "nada")
 
+
+def agregar(nuevas: list[dict]) -> int:
+    banco = _load("ideas.json", [])
+    validos = set(faltan()) or set(FORMATOS)
     claves = {_clave(i["idea"]) for i in banco}
     ahora = datetime.now(timezone.utc)
     hoy, sello = ahora.strftime("%Y%m%d"), ahora.strftime("%Y%m%d%H%M")
     agregadas = 0
     for n, i in enumerate(nuevas):
-        if not isinstance(i, dict) or i.get("formato") not in faltan or not i.get("idea"):
+        if not isinstance(i, dict) or i.get("formato") not in validos or not i.get("idea"):
             continue
         k = _clave(i["idea"])
         if k in claves:
@@ -64,10 +73,14 @@ def run() -> None:
     banco = usadas + [i for i in banco if not i.get("usada")]
     STATE.mkdir(exist_ok=True)
     (STATE / "ideas.json").write_text(json.dumps(banco, ensure_ascii=False, indent=1))
-    print(f"Ideas nuevas agregadas: {agregadas}")
-    for i in banco[-agregadas:] if agregadas else []:
-        print(f"- [{i['formato']}] {i['idea']}")
+    return agregadas
 
 
 if __name__ == "__main__":
-    run()
+    if len(sys.argv) > 1 and sys.argv[1] == "instrucciones":
+        texto = instrucciones()
+        print(texto or "El banco de ideas está lleno; no hace falta escribir ideas nuevas.")
+    elif len(sys.argv) > 2 and sys.argv[1] == "agregar":
+        print("Ideas nuevas agregadas:", agregar(json.loads(Path(sys.argv[2]).read_text())))
+    else:
+        print(__doc__)

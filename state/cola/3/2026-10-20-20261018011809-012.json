@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:mandelbrot",
+ "area": "conjunto de Mandelbrot z → z² + c",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": "mandelbrot",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 769714,
+ "modo": "inicial",
+ "fecha": "2026-10-20",
+ "tema": "conjunto de Mandelbrot y su borde de dimensión 2",
+ "caption": "Ecuación del día: z → z² + c.\n\nPara cada número complejo c empiezas en 0 y repites la regla. Si los valores nunca escapan al infinito, c pertenece al conjunto de Mandelbrot. Esa sola regla dibuja esta figura.\n\nSu borde es tan intrincado que en 1998 Mitsuhiro Shishikura demostró que tiene dimensión de Hausdorff 2.\n\nGuárdalo para cuando olvides por qué amas las matemáticas.\n#matebellx #mateguapo #fractales #mandelbrot",
+ "threads": "Ecuación del día 💛 Empiezas en 0, elevas al cuadrado, sumas c y repites. Si nunca escapas al infinito, c está en el conjunto de Mandelbrot. Una regla, una figura sin fin. ¿A quién se la mandas?",
+ "slides": [
+  {
+   "title": "Toda esta figura sale de **una** regla: elevar al cuadrado y sumar",
+   "text": "Su borde es tan intrincado que Mitsuhiro Shishikura probó en 1998 que tiene dimensión 2.",
+   "display": "z_{n+1}=z_n^2+c",
+   "curva": {
+    "tipo": "mandelbrot",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ]
+}

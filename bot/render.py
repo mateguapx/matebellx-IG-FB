@@ -91,7 +91,9 @@ document.querySelectorAll('.display').forEach(e=>katex.render(e.dataset.tex,e,{{
 const px=e=>parseFloat(getComputedStyle(e).fontSize);
 function fitWidth(){{document.querySelectorAll('.display').forEach(e=>{{const k=()=>{{const h=e.querySelector('.katex-html');return h?[...h.children].reduce((a,c)=>a+c.getBoundingClientRect().width,0):e.scrollWidth}};let fs=px(e);while(k()>e.clientWidth+1&&fs>26){{fs-=2;e.style.fontSize=fs+'px'}}}})}}
 function contentH(m){{const c=[...m.children];return c.reduce((a,x)=>a+x.offsetHeight,0)+parseFloat(getComputedStyle(m).rowGap||0)*Math.max(c.length-1,0)+parseFloat(getComputedStyle(m).paddingTop||0)}}
-document.fonts.ready.then(()=>{{
+// Algunas fuentes de KaTeX (p. ej. los paréntesis grandes) empiezan a cargarse hasta que se dibuja la fórmula:
+// se espera un cuadro y otra vez a las fuentes antes de medir, para que el ajuste de tamaño no dependa de la suerte.
+document.fonts.ready.then(()=>new Promise(r=>requestAnimationFrame(()=>r()))).then(()=>document.fonts.ready).then(()=>{{
 fitWidth();
 const m=document.querySelector('.main');
 let k=0;

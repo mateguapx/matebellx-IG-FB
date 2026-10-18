@@ -1,0 +1,32 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "frase",
+ "hook": "asombro",
+ "tema_clave": "frase:Henri Poincaré",
+ "area": "El científico no estudia la naturaleza porque sea útil; la estudia porque le deleita, y le deleita porque es bella.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": "poincare-bella",
+ "semilla": 135490,
+ "modo": "inicial",
+ "fecha": "2026-10-19",
+ "tema": "frase de Henri Poincaré",
+ "caption": "«El científico no estudia la naturaleza porque sea útil; la estudia porque le deleita, y le deleita porque es bella.»\n— Henri Poincaré, Ciencia y método, 1908\n\nGuárdala para cuando necesites recordar por qué amas las matemáticas.\n#matebellx #mateguapo #frasescelebres",
+ "threads": "«El científico no estudia la naturaleza porque sea útil; la estudia porque le deleita, y le deleita porque es bella.»\n— Henri Poincaré, Ciencia y método, 1908 💛",
+ "slides": [
+  {
+   "layout": "frase",
+   "title": "El científico no estudia la naturaleza porque sea útil; la estudia porque le deleita, y le deleita porque es bella.",
+   "text": "",
+   "display": "",
+   "autor": "Henri Poincaré",
+   "fuente": "Ciencia y método, 1908"
+  }
+ ]
+}

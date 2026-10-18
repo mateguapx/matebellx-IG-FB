@@ -99,13 +99,6 @@ def ig_media_insight(media_id: str, metric: str) -> float | None:
     return vals[0].get("value") if vals else None
 
 
-def refresh_ig_token() -> str:
-    """Renueva el token de larga duración (válido 60 días; renovable después de 24 h de emitido)."""
-    r = requests.get("https://graph.instagram.com/refresh_access_token",
-                     params={"grant_type": "ig_refresh_token", "access_token": IG_TOKEN()}, timeout=60)
-    return _check(r, "IG refresh")["access_token"]
-
-
 # --- Facebook ---
 def publish_facebook(image_urls: list[str], caption: str) -> str:
     """Una imagen -> foto publicada directamente (devuelve el id del post, que es el que lleva los comentarios).

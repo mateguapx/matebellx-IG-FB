@@ -1,14 +1,16 @@
 """Uso: python -m bot.main --type 1|2|3|4 [--dry]   (concepto: "Porque las Matemáticas son Bellxs")
 Todos los posts son de UNA imagen. Instagram: imagen + imagen final (Síguenos / Comenta PALABRA).
 Facebook y Threads: solo la imagen, con la invitación al final del texto (Threads lleva su propio texto con 💛).
-1 y 4 seguir · 2 palabra clave (tono suave) · 3 "Ecuación del día" (curva) + seguir. Mezcla y series en bot/config.py."""
+1 y 4 seguir · 2 palabra clave (tono suave) · 3 "Ecuación del día" (curva) + seguir. Mezcla y series en bot/config.py.
+Los textos NO se generan aquí (no se usa la API de Claude): se toman ya escritos de la cola state/cola/<tipo>/
+(ver bot/cola.py). Si la cola de ese horario está vacía, no se publica nada en ese horario."""
 import argparse
 import json
 import os
 import re
 from datetime import datetime, timezone
 from .config import FB_CTA, LINK, POST_TYPES, PUBLICAR_DESCRIPCIONES, ROOT, TH_CTA, TH_LIMITE
-from . import llm, meta, planner
+from . import cola, meta
 from .render import render_many, slide_html
 
 OUT = ROOT / "out"
@@ -26,13 +28,6 @@ def _load(name: str, default):
 def _save(name: str, data) -> None:
     STATE.mkdir(exist_ok=True)
     (STATE / name).write_text(json.dumps(data, ensure_ascii=False, indent=1))
-
-
-def _evitar(posts: list[dict]) -> list[str]:
-    """Temas y títulos ya publicados (incluye el historial antiguo)."""
-    viejos = _load("history.json", [])
-    nuevos = [x for p in posts[-80:] for x in (p.get("tema"), p.get("titulo")) if x]
-    return (viejos + nuevos)[-100:]
 
 
 def caption_facebook(caption: str, cta: str, key: str | None) -> str:
@@ -65,11 +60,14 @@ def main() -> None:
     ap.add_argument("--dry", action="store_true", help="genera y renderiza pero no publica ni guarda estado")
     a = ap.parse_args()
 
-    posts = _load("posts.json", [])
-    plan = planner.elegir(a.type, posts, _load("weights.json", {}), ideas=_load("ideas.json", []))
+    content, archivo = cola.tomar(a.type)
+    if content is None:
+        cola.revisar(a.type)  # aviso "Cola vacía" en Actions y SKIP=1 para los pasos siguientes
+        return
+    print("Cola:", json.dumps(cola.estado(), ensure_ascii=False), "· tomado:", archivo.name)
+    # El plan (formato, gancho, tema, libro, fondo, semilla…) lo decidió bot/planner.py al planear la cola.
+    plan = {k: content.get(k) for k in cola.CAMPOS_PLAN}
     print("Plan:", json.dumps(plan, ensure_ascii=False))
-    content = llm.generate(plan, _evitar(posts), _load("insights.json", {}))
-    print("Idea elegida:", json.dumps(content.get("_idea"), ensure_ascii=False))
 
     slide = content["slides"][0]
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
@@ -103,6 +101,7 @@ def main() -> None:
     (OUT / "post.json").write_text(json.dumps({"record": record, "content": content}, ensure_ascii=False, indent=1))
     if a.dry:
         return
+    archivo.unlink()  # el borrado se confirma en el repo solo si la publicación sale bien (paso "Guardar estado")
 
     repo, branch = os.environ["GITHUB_REPOSITORY"], os.getenv("MEDIA_BRANCH", "media")
     url = lambda p: f"https://raw.githubusercontent.com/{repo}/{branch}/{p.name}"

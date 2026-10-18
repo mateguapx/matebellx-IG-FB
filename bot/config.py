@@ -3,7 +3,6 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-MODEL = os.getenv("CLAUDE_MODEL", "claude-sonnet-5-5")
 GRAPH_VERSION = os.getenv("GRAPH_VERSION", "v26.0")
 
 HANDLE = os.getenv("PAGE_HANDLE", "@matebellx")
@@ -91,6 +90,9 @@ SLOTS = {
         "formatos": {"historia": 2, "naturaleza": 2, "infinito": 1, "demostracion": 1, "frase": 1}},
 }
 POST_TYPES = {k: (v["kind"], v["cta"]) for k, v in SLOTS.items()}
+# Hora de México de cada horario (debe coincidir con los crons de .github/workflows/post.yml, que van en UTC = México + 6).
+# La cola (bot/cola.py) la usa para fechar cada post y que las series semanales caigan en su día.
+HORAS = {1: 9, 2: 13, 3: 18, 4: 20}
 
 # Series semanales (día de la semana en México: 0 = lunes … 6 = domingo): {día: {tipo: (formato, nombre de la serie)}}
 SERIES = {
@@ -156,7 +158,8 @@ HOOKS_POR_FORMATO = {
     "curva": ["asombro", "pregunta", "metafora"],
 }
 
-# Cómo se elige la mejor de las ideas que propone Claude (pesos de sus autoevaluaciones 1-10)
+# Cómo se elige la mejor idea de cada post: quien escribe propone N_IDEAS y se queda con la de mejor puntaje
+# (autoevaluaciones 1-10 ponderadas con estos pesos). Va en las instrucciones de la cola (bot/cola.py).
 PESOS_IDEA = {"default": {"compartible": 0.50, "curiosidad": 0.30, "comentable": 0.20}}
 N_IDEAS = 6
 

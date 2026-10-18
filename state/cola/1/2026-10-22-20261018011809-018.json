@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "pregunta",
+ "tema_clave": "la serie armónica diverge",
+ "area": "la serie armónica diverge",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 288454,
+ "modo": "inicial",
+ "fecha": "2026-10-22",
+ "tema": "la serie armónica diverge (Oresme)",
+ "caption": "1 + 1/2 + 1/3 + 1/4 + ⋯ crece sin límite, aunque cada sumando sea más pequeño que el anterior.\n\nLa prueba es de Nicolás Oresme, hacia 1350: 1/3 + 1/4 > 1/2, luego 1/5 + ⋯ + 1/8 > 1/2, y así siempre. Sumas infinitas mitades.\n\nPero crece lentísimo: para pasar de 10 necesitas 12 367 términos.\n\nMándaselo a quien avanza poquito cada día.\n#matebellx #mateguapo #infinito #series",
+ "threads": "¿Sabías que 1 + 1/2 + 1/3 + 1/4 + ⋯ nunca deja de crecer? 💛 Pero va lentísimo: para pasar de 10 necesitas 12 367 términos. Oresme lo probó hacia 1350. ¿A quién le mandas este recordatorio de constancia?",
+ "slides": [
+  {
+   "title": "¿Sabías que sumar pedazos cada vez más chicos puede dar **infinito**?",
+   "text": "Para pasar de 10 necesitas 12 367 términos. Nicolás Oresme probó que crece sin límite hacia 1350.",
+   "display": "1+\\frac{1}{2}+\\frac{1}{3}+\\frac{1}{4}+\\cdots=\\infty",
+   "layout": "normal"
+  }
+ ]
+}

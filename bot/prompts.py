@@ -6,12 +6,13 @@ Edita solo el texto entre comillas. No toques los nombres en {llaves}: el bot lo
 Concepto de @matebellx: "Porque las Matemáticas son Bellxs". Mostrar la belleza de las matemáticas, romantizándolas
 con medida: asombro honesto, nunca cursi.
 
-Flujo de cada post (todos son de UNA imagen):
-  1) IDEAS: Claude propone varias ideas concretas y las puntúa.
-  2) El código elige la mejor idea.
-  3) ESCRIBIR: Claude escribe la imagen y el caption de esa idea.
-  4) VERIFICACION: otra llamada revisa las matemáticas y los datos. Si hay un error real, se corrige y se reintenta.
-Además, cada semana bot/ideas.py usa BANCO_IDEAS para proponer ideas nuevas para los próximos posts.
+Ya NO se envían a la API de Claude: el bot publica desde una cola (bot/cola.py) que llena cada semana una tarea
+programada de Claude. `python -m bot.cola instrucciones plan.json` imprime estos mismos textos para quien escribe,
+así que las reglas siguen siendo exactamente las mismas:
+  1) IDEAS: proponer varias ideas concretas y puntuarlas; se usa la de mayor puntaje (pesos en config.PESOS_IDEA).
+  2) ESCRIBIR: escribir la imagen y el caption de esa idea (reglas de los campos + SCHEMA).
+  3) VERIFICACION: revisar las matemáticas y los datos con el checklist; si hay un error real, corregir.
+Además, cada semana `python -m bot.ideas instrucciones` usa BANCO_IDEAS para pedir ideas nuevas para los próximos posts.
 """
 
 # ---------------------------------------------------------------------------
@@ -188,9 +189,6 @@ Reglas de los campos:
 - curva: solo en posts de curva; si no, omítela.
 
 Formato JSON exacto: {schema}"""
-
-# Se agrega a ESCRIBIR si el verificador encontró errores en el intento anterior. Variable: {errores}
-CORRECCION = "\n\nEl intento anterior tenía estos problemas; corrígelos: {errores}"
 
 # ---------------------------------------------------------------------------
 # 6) PASO 3 — VERIFICACIÓN. Variables: {formato} {contenido}

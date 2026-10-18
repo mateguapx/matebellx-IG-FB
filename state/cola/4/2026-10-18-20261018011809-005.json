@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "asombro",
+ "tema_clave": "la suma de Gauss 1+2+…+n",
+ "area": "la suma de Gauss 1+2+…+n",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": "Domingo de demostraciones",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 112569,
+ "modo": "inicial",
+ "fecha": "2026-10-18",
+ "tema": "la suma de Gauss 1 + 2 + … + 100 = 5050",
+ "caption": "Domingo de demostraciones: 1 + 2 + 3 + ⋯ + 100 sin sumar uno por uno.\n\nEscribe la suma dos veces, una al derecho y otra al revés. Cada columna da 101 y hay 100 columnas: el doble de la suma es 100 · 101. La suma es 5050.\n\nSe cuenta que Gauss lo resolvió así de niño en la escuela.\n\nMándaselo a quien todavía suma de uno en uno.\n#matebellx #mateguapo #gauss #demostraciones",
+ "threads": "Domingo de demostraciones 💛 Escribe 1 + 2 + ⋯ + 100 al derecho y debajo al revés: cada columna suma 101. Hay 100 columnas, así que el doble de la suma es 10100 y la suma es 5050. ¿A quién le enseñas el truco?",
+ "slides": [
+  {
+   "title": "Escribe la suma al **derecho** y al revés, y se resuelve sola",
+   "text": "Cada columna suma 101 y hay 100 columnas. Por eso 1 + 2 + ⋯ + 100 = 5050.",
+   "display": "\\begin{aligned}S&=1+2+\\cdots+100\\\\ S&=100+99+\\cdots+1\\\\ 2S&=100\\cdot 101\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

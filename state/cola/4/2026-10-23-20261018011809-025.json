@@ -1,0 +1,32 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "frase",
+ "hook": "asombro",
+ "tema_clave": "frase:Isaac Newton",
+ "area": "Si he visto más lejos, es porque estoy sobre hombros de gigantes.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": "newton-gigantes",
+ "semilla": 711382,
+ "modo": "inicial",
+ "fecha": "2026-10-23",
+ "tema": "frase de Isaac Newton",
+ "caption": "«Si he visto más lejos, es porque estoy sobre hombros de gigantes.»\n— Isaac Newton, carta a Robert Hooke, 1676\n\nGuárdala para cuando necesites recordar por qué amas las matemáticas.\n#matebellx #mateguapo #frasescelebres",
+ "threads": "«Si he visto más lejos, es porque estoy sobre hombros de gigantes.»\n— Isaac Newton, carta a Robert Hooke, 1676 💛",
+ "slides": [
+  {
+   "layout": "frase",
+   "title": "Si he visto más lejos, es porque estoy sobre hombros de gigantes.",
+   "text": "",
+   "display": "",
+   "autor": "Isaac Newton",
+   "fuente": "carta a Robert Hooke, 1676"
+  }
+ ]
+}

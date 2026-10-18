@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "asombro",
+ "tema_clave": "Alan Turing",
+ "area": "Alan Turing",
+ "key": null,
+ "nivel": "general",
+ "fondo": "ondas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 157798,
+ "modo": "inicial",
+ "fecha": "2026-10-23",
+ "tema": "Alan Turing y los patrones de la morfogénesis",
+ "caption": "Alan Turing es famoso por su máquina de 1936 y por ayudar a descifrar Enigma en la guerra. Su último gran trabajo fue de biología.\n\nEn 1952 publicó «Las bases químicas de la morfogénesis»: dos sustancias que reaccionan y se difunden a distinta velocidad pueden formar manchas y rayas de la nada. Hoy se llaman patrones de Turing.\n\nMándaselo a alguien que ama a los animales y a las ecuaciones.\n#matebellx #mateguapo #turing #historia",
+ "threads": "Alan Turing no solo imaginó la computadora en 1936 💛 En 1952 propuso que dos sustancias que reaccionan y se difunden bastan para formar manchas y rayas. Hoy se llaman patrones de Turing. ¿Lo sabías?",
+ "slides": [
+  {
+   "title": "Alan Turing también buscó la ecuación de las **manchas** animales",
+   "text": "En 1952 propuso que dos sustancias que reaccionan y se difunden bastan para crear patrones.",
+   "display": "\\partial_t u=f(u,v)+D_u\\nabla^2 u",
+   "layout": "normal"
+  }
+ ]
+}
