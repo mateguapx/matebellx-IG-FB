@@ -516,5 +516,31 @@
   "ig_id": "18117076139471173",
   "fb_id": "1382195514976052_122110343469500466",
   "th_id": "18355695262219189"
+ },
+ {
+  "id": "20261018-0658-t4",
+  "ts": "2026-10-18T06:59:44+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "dato_preciso",
+  "tema_clave": "0.999… = 1",
+  "area": "0.999… = 1",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "(0, 1) tiene tantos puntos como la recta real",
+  "titulo": "Entre 0 y 1 caben tantos números como en **toda** la recta",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18359308681221504",
+  "fb_id": "1382195514976052_122110395051500466",
+  "th_id": "17940988431380651"
  }
 ]
