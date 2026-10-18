@@ -9,6 +9,7 @@ Uso:
   python -m bot.cola estado                      # cuántos posts quedan por horario (y hasta qué fecha)
   python -m bot.cola plan --hasta 7 > plan.json  # qué posts faltan (formato, gancho, tema, libro, fondo…) según el aprendizaje
   python -m bot.cola instrucciones plan.json     # las instrucciones completas para escribir cada post del plan
+  python -m bot.cola vista posts.json carpeta    # renderiza los posts escritos como los publicará el bot, para revisarlos
   python -m bot.cola agregar posts.json          # valida y mete los posts escritos a la cola
   python -m bot.cola revisar 3                   # (workflow) si la cola del horario 3 está vacía, avisa y marca SKIP=1
 
@@ -318,6 +319,51 @@ def tomar(tipo: int, ahora: datetime | None = None) -> tuple[dict | None, Path |
     return (atrasados or validos)[0]
 
 
+def vista(lista: list[dict], carpeta: Path) -> list[str]:
+    """Renderiza cada post escrito tal como lo publicará el bot (mismo fondo y semilla del plan), deja una hoja por día
+    para revisarlas de un vistazo y avisa si algo se sale del marco. Devuelve los avisos."""
+    import copy
+    from .main import caption_facebook, texto_threads
+    from .render import render_many, slide_html
+    carpeta.mkdir(parents=True, exist_ok=True)
+    avisos, inners, salidas, textos = [], [], [], []
+    for i, item in enumerate(lista, 1):
+        x = copy.deepcopy(item)
+        if x.get("formato") == "frase" and x.get("frase_id") in FRASES:
+            x.update({k: v for k, v in contenido_frase(x).items() if not k.startswith("_")})
+        errores = validar(x)
+        if errores:
+            avisos.append(f"post {i}: {'; '.join(errores)}")
+            continue
+        inners.append(slide_html(x["slides"][0], x["fondo"], x["semilla"]))
+        salidas.append(carpeta / f"{i:02d}-{x['fecha']}-t{x['tipo']}.png")
+        cta = "follow.png" if x["cta"] == "follow" else f"kw_{x['key']}.png"
+        textos.append(f"===== post {i} · {x['fecha']} · horario {x['tipo']} · imagen final {cta}\n"
+                      f"[Facebook]\n{caption_facebook(x['caption'], x['cta'], x.get('key'))}\n"
+                      f"[Threads]\n{texto_threads(x, x['cta'], x.get('key'))}\n")
+    if inners:
+        render_many(inners, salidas)
+    (carpeta / "textos.txt").write_text("\n".join(textos))
+    try:  # opcional: revisión de márgenes y hojas por día (requiere Pillow y numpy)
+        import numpy as np
+        from PIL import Image
+        for f in salidas:
+            a = np.asarray(Image.open(f).convert("L")).astype(int)[300:1150]
+            cols = np.where((a > 150).sum(axis=0) > 0)[0]
+            if len(cols) and (cols.min() < 60 or cols.max() > 1020):
+                avisos.append(f"{f.name}: algo se acerca o se sale del marco (x {cols.min()}–{cols.max()}); acorta la fórmula o el texto")
+        for fecha in sorted({f.name.split("-t")[0][3:] for f in salidas}):
+            hoja = Image.new("RGB", (1080, 1350), "black")
+            for f in salidas:
+                if f.name[3:].startswith(fecha):
+                    t = int(f.stem.split("-t")[-1])
+                    hoja.paste(Image.open(f).resize((540, 675)), ((t - 1) % 2 * 540, (t - 1) // 2 * 675))
+            hoja.save(carpeta / f"dia-{fecha}.png")
+    except ImportError:
+        avisos.append("(sin Pillow/numpy: no se revisaron márgenes ni se hicieron hojas por día; revisa cada imagen)")
+    return avisos
+
+
 def revisar(tipo: int) -> bool:
     """Para el workflow: si la cola de ese horario está vacía, deja el aviso y marca SKIP=1 (no se instala nada)."""
     if archivos(tipo):
@@ -343,6 +389,9 @@ def _main() -> None:
     sa.add_argument("archivo")
     sr = sub.add_parser("revisar")
     sr.add_argument("tipo", type=int)
+    sv = sub.add_parser("vista")
+    sv.add_argument("archivo")
+    sv.add_argument("carpeta")
     a = ap.parse_args()
     if a.cmd == "estado":
         print(json.dumps(estado(), ensure_ascii=False))
@@ -360,6 +409,13 @@ def _main() -> None:
             sys.exit(1)
     elif a.cmd == "revisar":
         revisar(a.tipo)
+    elif a.cmd == "vista":
+        avisos = vista(json.loads(Path(a.archivo).read_text()), Path(a.carpeta))
+        print("Imágenes, hojas por día (dia-AAAA-MM-DD.png) y textos.txt en", a.carpeta)
+        for m in avisos:
+            print("AVISO:", m)
+        if avisos:
+            sys.exit(1)
 
 
 if __name__ == "__main__":

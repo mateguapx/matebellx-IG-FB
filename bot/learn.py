@@ -47,8 +47,12 @@ def medir(posts: list[dict], ahora: datetime) -> list[str]:
         edad = _edad_h(p, ahora)
         if edad < MIN_EDAD_H:
             continue
-        m: dict = {}
-        for metric in METRICAS:
+        try:  # todas en una sola llamada (8 veces menos llamadas a Meta)…
+            lote = meta.ig_media_insights(p["ig_id"], METRICAS)
+        except Exception:
+            lote = {}
+        m: dict = {k: v for k, v in lote.items() if v is not None}
+        for metric in [x for x in METRICAS if x not in lote]:  # …y lo que falte, de una en una como siempre
             try:
                 v = meta.ig_media_insight(p["ig_id"], metric)
                 if v is not None:

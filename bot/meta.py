@@ -14,18 +14,38 @@ IG_ID = lambda: os.environ["IG_USER_ID"]
 PAGE_ID = lambda: os.environ["FB_PAGE_ID"]
 
 
+ESPERAS = (5, 15)  # segundos entre reintentos ante fallos pasajeros de red o de Meta (errores 5xx)
+
+
 def _check(r: requests.Response, what: str) -> dict:
     if not r.ok:
         raise RuntimeError(f"{what} -> {r.status_code}: {r.text}")
     return r.json()
 
 
-def _ig_post(path: str, **data) -> dict:
-    return _check(requests.post(f"{IG_BASE}/{path}", data={**data, "access_token": IG_TOKEN()}, timeout=60), f"IG POST {path}")
+def _pedir(method: str, url: str, reintentar: bool, **kw) -> requests.Response:
+    """Hace la petición; si `reintentar`, la repite ante un corte de red o un error 5xx de Meta.
+    Solo se reintentan lecturas y contenedores sin publicar: nunca la llamada que publica, para no duplicar posts."""
+    esperas = (*ESPERAS, None) if reintentar else (None,)
+    for espera in esperas:
+        try:
+            r = requests.request(method, url, timeout=60, **kw)
+            if r.status_code < 500 or espera is None:
+                return r
+        except (requests.ConnectionError, requests.Timeout):
+            if espera is None:
+                raise
+        time.sleep(espera)
+    raise AssertionError("inalcanzable")
+
+
+def _ig_post(path: str, reintentar: bool = False, **data) -> dict:
+    r = _pedir("POST", f"{IG_BASE}/{path}", reintentar, data={**data, "access_token": IG_TOKEN()})
+    return _check(r, f"IG POST {path}")
 
 
 def _ig_get(path: str, **params) -> dict:
-    return _check(requests.get(f"{IG_BASE}/{path}", params={**params, "access_token": IG_TOKEN()}, timeout=60), f"IG GET {path}")
+    return _check(_pedir("GET", f"{IG_BASE}/{path}", True, params={**params, "access_token": IG_TOKEN()}), f"IG GET {path}")
 
 
 def _fb_post(path: str, **data) -> dict:
@@ -33,7 +53,7 @@ def _fb_post(path: str, **data) -> dict:
 
 
 def _fb_get(path: str, **params) -> dict:
-    return _check(requests.get(f"{FB_BASE}/{path}", params={**params, "access_token": PAGE_TOKEN()}, timeout=60), f"FB GET {path}")
+    return _check(_pedir("GET", f"{FB_BASE}/{path}", True, params={**params, "access_token": PAGE_TOKEN()}), f"FB GET {path}")
 
 
 def _wait_ready(container_id: str, tries: int = 30) -> None:
@@ -52,11 +72,11 @@ def publish_instagram(image_urls: list[str], caption: str) -> str:
     """Carrusel (2-10 imágenes). Los posts 'imagen única + CTA' son carruseles de 2."""
     children = []
     for url in image_urls:
-        c = _ig_post(f"{IG_ID()}/media", image_url=url, is_carousel_item="true")["id"]
+        c = _ig_post(f"{IG_ID()}/media", reintentar=True, image_url=url, is_carousel_item="true")["id"]
         _wait_ready(c)
         children.append(c)
     extra = {"caption": caption} if caption else {}
-    parent = _ig_post(f"{IG_ID()}/media", media_type="CAROUSEL", children=",".join(children), **extra)["id"]
+    parent = _ig_post(f"{IG_ID()}/media", reintentar=True, media_type="CAROUSEL", children=",".join(children), **extra)["id"]
     _wait_ready(parent)
     return _ig_post(f"{IG_ID()}/media_publish", creation_id=parent)["id"]
 
@@ -86,17 +106,27 @@ def ig_media_info(media_id: str) -> dict:
     return _ig_get(media_id, fields="like_count,comments_count,timestamp,permalink,media_type")
 
 
+def _valor(d: dict):
+    if d.get("total_value"):
+        return d["total_value"].get("value")
+    vals = d.get("values") or []
+    return vals[0].get("value") if vals else None
+
+
+def ig_media_insights(media_id: str, metrics: list[str]) -> dict:
+    """Todas las métricas en UNA llamada. Si alguna no aplica a ese post, Meta rechaza la petición entera:
+    en ese caso quien llama recurre a ig_media_insight (de una en una)."""
+    data = _ig_get(f"{media_id}/insights", metric=",".join(metrics)).get("data", [])
+    return {d.get("name"): _valor(d) for d in data if d.get("name") in metrics}
+
+
 def ig_media_insight(media_id: str, metric: str) -> float | None:
     """Una métrica de insights del post (requiere instagram_business_manage_insights).
     Se pide de una en una porque si una no aplica a ese tipo de post, Meta rechaza toda la petición."""
     data = _ig_get(f"{media_id}/insights", metric=metric).get("data", [])
     if not data:
         return None
-    d = data[0]
-    if d.get("total_value"):
-        return d["total_value"].get("value")
-    vals = d.get("values") or []
-    return vals[0].get("value") if vals else None
+    return _valor(data[0])
 
 
 # --- Facebook ---
@@ -149,15 +179,17 @@ def threads_activo() -> bool:
     return bool(TH_TOKEN())
 
 
-def _th(method: str, path: str, **params) -> dict:
-    r = requests.request(method, f"{TH_BASE}/{path}", params={**params, "access_token": TH_TOKEN()}, timeout=60)
+def _th(method: str, path: str, reintentar: bool | None = None, **params) -> dict:
+    """reintentar: por defecto solo las lecturas (GET); los contenedores sin publicar lo piden explícitamente."""
+    r = _pedir(method, f"{TH_BASE}/{path}", method == "GET" if reintentar is None else reintentar,
+               params={**params, "access_token": TH_TOKEN()})
     return _check(r, f"Threads {method} {path}")
 
 
 def publish_threads(image_url: str, text: str) -> str:
     """Post de una imagen en Threads: contenedor -> esperar a que termine de procesar -> publicar."""
     extra = {"text": text} if text else {}
-    cont = _th("POST", f"{TH_ID()}/threads", media_type="IMAGE", image_url=image_url, **extra)["id"]
+    cont = _th("POST", f"{TH_ID()}/threads", reintentar=True, media_type="IMAGE", image_url=image_url, **extra)["id"]
     time.sleep(10)
     for _ in range(18):  # hasta ~2 min
         st = _th("GET", cont, fields="status,error_message")
