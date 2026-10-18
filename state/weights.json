@@ -1,37 +1,45 @@
 {
- "n": 6,
- "actualizado": "2026-10-17T16:39:26+00:00",
+ "n": 10,
+ "actualizado": "2026-10-18T16:52:34+00:00",
  "formato": {
-  "wow": 2.12,
-  "chiste": 0.82,
-  "reto_basico": 1.032,
-  "curva": 1.502,
-  "demostracion": 0.869
+  "wow": 2.333,
+  "chiste": 0.973,
+  "reto_basico": 0.88,
+  "curva": 1.686,
+  "demostracion": 0.998,
+  "frase": 1.0,
+  "historia": 0.914
  },
  "hook": {
-  "pregunta": 2.12,
-  "humor": 0.82,
-  "desafio": 1.032,
-  "metafora": 1.502,
-  "dato_preciso": 0.992,
-  "asombro": 0.833
+  "pregunta": 1.956,
+  "humor": 0.973,
+  "desafio": 0.88,
+  "metafora": 1.478,
+  "dato_preciso": 1.112,
+  "asombro": 0.913
  },
  "tema": {
-  "el infinito y sus paradojas": 2.12,
-  "patrones y sucesiones sorprendentes": 0.82,
-  "promedios y velocidades medias": 1.032,
-  "curva:hipotrocoide": 1.502,
-  "libro:GEOMETRIA": 0.992,
-  "suma de cubos sin palabras": 0.833
+  "el infinito y sus paradojas": 2.333,
+  "patrones y sucesiones sorprendentes": 0.973,
+  "promedios y velocidades medias": 0.88,
+  "curva:hipotrocoide": 1.478,
+  "libro:GEOMETRIA": 1.112,
+  "suma de cubos sin palabras": 0.884,
+  "frase:Euclides": 1.0,
+  "curva:lissajous": 0.864,
+  "curva:epitrocoide": 1.8,
+  "Georg Cantor": 0.914
  },
  "fondo": {
-  "espiral": 2.12,
-  "fractal": 0.82,
-  "rejilla": 1.032,
-  "geometria": 1.37,
-  "formulas": 0.833
+  "espiral": 2.333,
+  "fractal": 0.915,
+  "rejilla": 1.51,
+  "geometria": 1.354,
+  "formulas": 0.811
  },
  "curva": {
-  "hipotrocoide": 1.502
+  "hipotrocoide": 1.478,
+  "lissajous": 0.864,
+  "epitrocoide": 1.8
  }
 }

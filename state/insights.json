@@ -6,15 +6,33 @@
    "hook": "pregunta",
    "tema": "0.999… es exactamente 1",
    "fondo": "espiral",
-   "score": 4.361,
+   "score": 5.0,
    "metricas": {
-    "reach": 164,
+    "reach": 171,
     "shares": 0,
     "saved": 1,
     "follows": 1,
     "profile_visits": 2,
-    "views": 312,
+    "views": 324,
     "likes": 13,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Los epiciclos de Ptolomeo dibujan **epitrocoides**",
+   "formato": "curva",
+   "hook": "pregunta",
+   "tema": "Epitrocoide R=5, r=2, d=3: epiciclos de Ptolomeo y lazos de retrogradación",
+   "fondo": "rejilla",
+   "score": 3.4,
+   "metricas": {
+    "reach": 99,
+    "shares": 0,
+    "saved": 1,
+    "follows": 2,
+    "profile_visits": 2,
+    "views": 181,
+    "likes": 8,
     "comments": 0
    }
   },
@@ -24,15 +42,35 @@
    "hook": "metafora",
    "tema": "Hipotrocoide con R=11, r=4, d=6: once lazos en un solo trazo que se cierra tras cuatro vueltas",
    "fondo": "geometria",
-   "score": 2.505,
+   "score": 2.435,
    "metricas": {
-    "reach": 2675,
+    "reach": 2682,
     "shares": 1,
     "saved": 5,
     "follows": 4,
     "profile_visits": 10,
-    "views": 3360,
+    "views": 3371,
     "likes": 16,
+    "comments": 0
+   }
+  }
+ ],
+ "bottom": [
+  {
+   "titulo": "Suma los cubos del 1 al $n$ y siempre obtienes un **cuadrado**",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "Suma de cubos sin palabras: identidad de Nicómaco",
+   "fondo": "formulas",
+   "score": 0.653,
+   "metricas": {
+    "reach": 12,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 33,
+    "likes": 2,
     "comments": 0
    }
   },
@@ -42,7 +80,7 @@
    "hook": "desafio",
    "tema": "Velocidad media ida y vuelta (media armónica)",
    "fondo": "rejilla",
-   "score": 1.095,
+   "score": 0.64,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -53,59 +91,21 @@
     "likes": 1,
     "comments": 0
    }
-  }
- ],
- "bottom": [
-  {
-   "titulo": "1 m extra de cuerda sube igual en la Tierra que en una **naranja**",
-   "formato": "demostracion",
-   "hook": "dato_preciso",
-   "tema": "Cuerda alrededor de la Tierra: la holgura 1/(2π) m no depende del radio",
-   "fondo": "geometria",
-   "score": 0.975,
-   "metricas": {
-    "reach": 7,
-    "shares": 0,
-    "saved": 1,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 22,
-    "likes": 1,
-    "comments": 0
-   }
   },
   {
-   "titulo": "Suma los cubos del 1 al $n$ y siempre obtienes un **cuadrado**",
-   "formato": "demostracion",
-   "hook": "asombro",
-   "tema": "Suma de cubos sin palabras: identidad de Nicómaco",
+   "titulo": "Una **octava** musical, dibujada, es un **8**",
+   "formato": "curva",
+   "hook": "pregunta",
+   "tema": "Lissajous 2:1: la octava musical dibuja un ocho",
    "fondo": "formulas",
-   "score": 0.499,
+   "score": 0.593,
    "metricas": {
-    "reach": 10,
+    "reach": 15,
     "shares": 0,
     "saved": 0,
     "follows": 0,
-    "profile_visits": 0,
-    "views": 24,
-    "likes": 1,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "«El patrón es obvio», dijo el profe. ¿**7** u **8**? 👀",
-   "formato": "chiste",
-   "hook": "humor",
-   "tema": "Sucesión ambigua: primos vs Fibonacci (2, 3, 5, …)",
-   "fondo": "fractal",
-   "score": 0.459,
-   "metricas": {
-    "reach": 9,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 29,
+    "profile_visits": 3,
+    "views": 37,
     "likes": 1,
     "comments": 0
    }
