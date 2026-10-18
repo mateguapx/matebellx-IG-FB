@@ -590,5 +590,31 @@
   "ig_id": "18359308681221504",
   "fb_id": "1382195514976052_122110395051500466",
   "th_id": "17940988431380651"
+ },
+ {
+  "id": "20261018-1741-t1",
+  "ts": "2026-10-18T17:42:29+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "los ángulos de un triángulo suman 180°",
+  "area": "los ángulos de un triángulo suman 180°",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "los ángulos de un triángulo suman 180° (prueba con una paralela)",
+  "titulo": "Trazas una **paralela** y los tres ángulos caben en una recta",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18130460866695087",
+  "fb_id": "1382195514976052_122110622289500466",
+  "th_id": "18217759990349616"
  }
 ]
