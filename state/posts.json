@@ -754,5 +754,31 @@
   "ig_id": "17921277630450137",
   "fb_id": "1382195514976052_122110827453500466",
   "th_id": "18500160397109271"
+ },
+ {
+  "id": "20261019-2018-t1",
+  "ts": "2026-10-19T20:19:40+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "identidad",
+  "hook": "dato_preciso",
+  "tema_clave": "las series de Ramanujan para π",
+  "area": "las series de Ramanujan para π",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "serie de Ramanujan de 1914 para 1/π",
+  "titulo": "Un solo término de esta serie da **6** decimales de $\\pi$",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18086618441706062",
+  "fb_id": "1382195514976052_122111110077500466",
+  "th_id": "18244783408314954"
  }
 ]
