@@ -668,5 +668,31 @@
   "ig_id": "18000094596040853",
   "fb_id": "1382195514976052_122110773867500466",
   "th_id": "18448947343123461"
+ },
+ {
+  "id": "20261019-0720-t4",
+  "ts": "2026-10-19T07:21:37+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "la suma de Gauss 1+2+…+n",
+  "area": "la suma de Gauss 1+2+…+n",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la suma de Gauss 1 + 2 + … + 100 = 5050",
+  "titulo": "Escribe la suma al **derecho** y al revés, y se resuelve sola",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17921277630450137",
+  "fb_id": "1382195514976052_122110827453500466",
+  "th_id": "18500160397109271"
  }
 ]
