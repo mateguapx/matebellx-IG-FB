@@ -780,5 +780,31 @@
   "ig_id": "18086618441706062",
   "fb_id": "1382195514976052_122111110077500466",
   "th_id": "18244783408314954"
+ },
+ {
+  "id": "20261019-2244-t2",
+  "ts": "2026-10-19T22:45:53+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "dato_preciso",
+  "tema_clave": "libro:CALCULO",
+  "area": "épsilon-delta",
+  "key": "CALCULO",
+  "nivel": "uni",
+  "fondo": "funciones",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "épsilon-delta: x² tiende a 4 cuando x tiende a 2",
+  "titulo": "Para que $x^2$ quede a **0.01** de 4, basta $x$ a 0.002 de 2",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17884453068625099",
+  "fb_id": "1382195514976052_122111144685500466",
+  "th_id": "18119254159953353"
  }
 ]
