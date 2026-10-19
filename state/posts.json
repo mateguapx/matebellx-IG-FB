@@ -642,5 +642,31 @@
   "ig_id": "18125404574513767",
   "fb_id": "1382195514976052_122110685439500466",
   "th_id": "18500809180099983"
+ },
+ {
+  "id": "20261019-0355-t3",
+  "ts": "2026-10-19T03:56:24+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:rosa",
+  "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": "rosa",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "rosa polar de 12 pétalos r = cos 6θ",
+  "titulo": "Una flor de **12** pétalos, como las horas de un reloj",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18000094596040853",
+  "fb_id": "1382195514976052_122110773867500466",
+  "th_id": "18448947343123461"
  }
 ]
