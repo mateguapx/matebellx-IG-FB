@@ -1,0 +1,212 @@
+[
+ {
+  "id": "202610190351-00",
+  "formato": "demostracion",
+  "idea": "√2 es irracional: si √2 = p/q en mínimos términos, p² = 2q² obliga a p y q a ser pares, contradicción (prueba clásica griega).",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-01",
+  "formato": "demostracion",
+  "idea": "Hay infinitos primos (Euclides, Elementos IX.20): p₁·p₂·…·pₙ + 1 no es divisible por ninguno de la lista, así que siempre falta un primo.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-02",
+  "formato": "demostracion",
+  "idea": "Pitágoras por reacomodo: el cuadrado de lado a+b contiene cuatro triángulos y un cuadrado c²; (a+b)² = c² + 2ab da a² + b² = c².",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-03",
+  "formato": "demostracion",
+  "idea": "La suma de los primeros n impares es n²: cada impar 2k−1 es una escuadra en forma de L que agranda el cuadrado de (k−1)² a k².",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-04",
+  "formato": "demostracion",
+  "idea": "Teorema de Tales: un ángulo inscrito en un semicírculo es recto; trazando el radio al vértice salen dos triángulos isósceles y 2α + 2β = 180°.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-05",
+  "formato": "demostracion",
+  "idea": "Un polígono de n lados tiene n(n−3)/2 diagonales: cada vértice se une a n−3 vértices no vecinos y cada diagonal se cuenta dos veces (el decágono tiene 35).",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-06",
+  "formato": "historia",
+  "idea": "Sophie Germain escribió a Gauss firmando como Monsieur LeBlanc (1804); los primos p con 2p+1 también primo llevan su nombre (2, 3, 5, 11, 23…).",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-07",
+  "formato": "historia",
+  "idea": "Maryam Mirzakhani, nacida en Teherán, fue en 2014 la primera mujer en ganar la Medalla Fields, por su trabajo sobre superficies de Riemann y sus espacios de moduli.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-08",
+  "formato": "historia",
+  "idea": "Évariste Galois murió en 1832 a los 20 años tras un duelo; la víspera escribió a Auguste Chevalier una carta que resume su teoría: la quíntica general no se resuelve por radicales.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-09",
+  "formato": "historia",
+  "idea": "Ada Lovelace publicó en 1843 la Nota G: un procedimiento para calcular números de Bernoulli con la Máquina Analítica de Babbage, considerado el primer programa publicado.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-10",
+  "formato": "historia",
+  "idea": "1729, el número del taxi: Hardy contó que Ramanujan le dijo que es el menor número que se escribe de dos formas como suma de dos cubos: 1³ + 12³ = 9³ + 10³.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-11",
+  "formato": "historia",
+  "idea": "Al-Juarismi escribió en Bagdad (c. 820) el libro de al-jabr, de donde viene la palabra álgebra; su nombre latinizado dio la palabra algoritmo. Resolvía x² + 10x = 39 completando el cuadrado.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-12",
+  "formato": "identidad",
+  "idea": "Producto de Wallis (1656): π/2 = (2·2·4·4·6·6·…)/(1·3·3·5·5·7·…), π sale de multiplicar solo fracciones de enteros.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-13",
+  "formato": "identidad",
+  "idea": "Fracción continua del número áureo: φ = 1 + 1/(1 + 1/(1 + …)), solo unos; sus cortes son cocientes de Fibonacci 2/1, 3/2, 5/3, 8/5…",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-14",
+  "formato": "identidad",
+  "idea": "Serie de Madhava-Leibniz: π/4 = 1 − 1/3 + 1/5 − 1/7 + …; Madhava de Sangamagrama (Kerala, s. XIV) la conocía siglos antes que Leibniz (1674).",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-15",
+  "formato": "identidad",
+  "idea": "Fórmula de Stirling: n! ≈ √(2πn)(n/e)ⁿ; para n = 10 da 3 598 696 frente a 10! = 3 628 800, error menor al 1 %.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-16",
+  "formato": "identidad",
+  "idea": "Producto de Euler (1737): ∑ 1/nˢ = ∏ 1/(1 − p⁻ˢ) sobre todos los primos; la suma sobre todos los enteros se factoriza en los primos.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-17",
+  "formato": "identidad",
+  "idea": "Fórmula de De Moivre: (cos θ + i sen θ)ⁿ = cos nθ + i sen nθ; elevar a una potencia es girar n veces.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-18",
+  "formato": "infinito",
+  "idea": "El hotel de Hilbert: un hotel lleno con infinitas habitaciones recibe a un huésped más moviendo a cada quien de la habitación n a la n+1.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-19",
+  "formato": "infinito",
+  "idea": "La trompeta de Gabriel (Torricelli, 1643): girar y = 1/x desde x = 1 da un sólido de volumen π pero de superficie infinita.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-20",
+  "formato": "infinito",
+  "idea": "Copo de nieve de Koch (1904): su perímetro crece por 4/3 en cada paso y es infinito, pero su área es exactamente 8/5 de la del triángulo inicial.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-21",
+  "formato": "infinito",
+  "idea": "Primos gemelos: nadie sabe si hay infinitos pares como (11, 13); en 2013 Yitang Zhang probó que hay infinitos pares de primos a distancia menor que 70 millones.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-22",
+  "formato": "infinito",
+  "idea": "La suma de los inversos de los primos 1/2 + 1/3 + 1/5 + 1/7 + … diverge (Euler, 1737), aunque crece como ln ln n, lentísimo.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-23",
+  "formato": "infinito",
+  "idea": "π es irracional (Lambert, 1761): sus decimales nunca se repiten en bloque; ninguna fracción p/q lo iguala.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-24",
+  "formato": "naturaleza",
+  "idea": "Conjetura del panal: Thomas Hales demostró en 1999 que el hexágono regular divide el plano en celdas de igual área con el menor perímetro total.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-25",
+  "formato": "naturaleza",
+  "idea": "La catenaria: una cadena colgante sigue y = a·cosh(x/a), no una parábola; invertida da el arco que solo trabaja a compresión (Hooke, 1675).",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-26",
+  "formato": "naturaleza",
+  "idea": "Coma pitagórica: 12 quintas justas (3/2)¹² no cierran 7 octavas 2⁷; sobran 3¹²/2¹⁹ ≈ 1.0136, y por eso el piano usa temperamento igual con 2^(1/12).",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-27",
+  "formato": "naturaleza",
+  "idea": "Cigarras periódicas de Norteamérica: emergen cada 13 o 17 años, ambos primos; una hipótesis es que así coinciden poco con depredadores de ciclos cortos (mcm(13,17) = 221).",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-28",
+  "formato": "naturaleza",
+  "idea": "Arcoíris a 42°: Descartes (1637) calculó que la luz que se refleja una vez dentro de la gota se concentra a unos 42° del punto opuesto al Sol.",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-29",
+  "formato": "naturaleza",
+  "idea": "Teselado de Penrose (1974): dos piezas cubren el plano sin repetirse nunca; en 1982 Shechtman halló cuasicristales con esa simetría (Nobel de Química 2011).",
+  "creada": "20261019",
+  "usada": null
+ }
+]

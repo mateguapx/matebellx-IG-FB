@@ -1,0 +1,38 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "metafora",
+ "tema_clave": "curva:hipotrocoide",
+ "area": "espirógrafo interior (hipotrocoide) con radios R, r y distancia d",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": "hipotrocoide",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 572339,
+ "modo": "inicial",
+ "fecha": "2026-10-26",
+ "tema": "hipotrocoide R=8, r=5, d=5: estrella de ocho puntas en cinco vueltas",
+ "slides": [
+  {
+   "title": "Como una **canción**, esta estrella vuelve al inicio tras 5 vueltas",
+   "text": "Una rueda de radio 5 gira dentro de un aro de radio 8: la estrella de 8 puntas cierra tras 5 vueltas.",
+   "display": "\\begin{aligned}x&=3\\cos t+5\\cos(\\tfrac{3}{5}\\,t)\\\\ y&=3\\sin t-5\\sin(\\tfrac{3}{5}\\,t)\\end{aligned}",
+   "curva": {
+    "tipo": "hipotrocoide",
+    "params": {
+     "R": 8,
+     "r": 5,
+     "d": 5.0
+    }
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: un espirógrafo que tarda en volver a casa.\nUna rueda de radio 5 gira por dentro de un aro de radio 8, con el lápiz a distancia 5 de su centro. Como 8 y 5 no comparten divisores, la rueda debe dar cinco vueltas al aro antes de que el trazo se cierre, y en el camino dibuja una estrella de 8 puntas.\nGuárdalo para cuando olvides por qué amas las matemáticas.\n#matebellx #mateguapo #curvas #espirografo",
+ "threads": "Esta curva es un espirógrafo: una rueda de radio 5 dentro de un aro de radio 8 💛 Como 8 y 5 no tienen divisores en común, el lápiz da cinco vueltas al aro antes de volver al punto de partida y dibuja una estrella de ocho puntas. Como una canción que tarda en volver al estribillo. ¿Se la mandas a alguien?"
+}

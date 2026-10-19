@@ -1,0 +1,34 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:mandelbrot",
+ "area": "conjunto de Mandelbrot z → z² + c",
+ "key": "FINANCIERAS",
+ "nivel": "bach",
+ "fondo": "formulas",
+ "curva_tipo": "mandelbrot",
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 972424,
+ "modo": "inicial",
+ "fecha": "2026-10-25",
+ "tema": "el conjunto de Mandelbrot es conexo (Douady y Hubbard, 1982)",
+ "slides": [
+  {
+   "title": "Parece un archipiélago, pero es **una** sola pieza",
+   "text": "Douady y Hubbard probaron en 1982 que el conjunto de Mandelbrot es conexo.",
+   "display": "z_{n+1}=z_n^2+c",
+   "curva": {
+    "tipo": "mandelbrot",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Cada isla diminuta que ves alrededor está unida al cuerpo principal.\nEl conjunto de Mandelbrot reúne los números c para los que repetir z → z² + c, empezando en 0, nunca se dispara al infinito: cada resultado se vuelve la entrada del paso siguiente.\nSus filamentos son tan finos que no se ven, pero en 1982 Adrien Douady y John Hubbard demostraron que todo está conectado.\nMándaselo a alguien que parece lejos pero sigue cerca.\n#matebellx #mateguapo #fractales #mandelbrot",
+ "threads": "Mira las islitas alrededor del Mandelbrot 💛 Parecen sueltas, pero no lo están: en 1982 Douady y Hubbard demostraron que todo el conjunto es una sola pieza, unida por hilos tan finos que ninguna pantalla los muestra. Y todo sale de repetir z → z² + c. ¿Lo habrías adivinado?"
+}

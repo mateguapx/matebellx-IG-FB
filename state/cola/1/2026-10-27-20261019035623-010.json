@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "naturaleza",
+ "hook": "asombro",
+ "tema_clave": "idea:naturaleza",
+ "area": "Arcoíris a 42°: Descartes (1637) calculó que la luz que se refleja una vez dentro de la gota se concentra a unos 42° del punto opuesto al Sol.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "lissajous",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-28",
+ "frase_id": null,
+ "semilla": 664503,
+ "modo": "inicial",
+ "fecha": "2026-10-27",
+ "tema": "el ángulo de 42° del arcoíris (Descartes, 1637)",
+ "slides": [
+  {
+   "title": "El arcoíris siempre se abre a 42° alrededor de tu **sombra**",
+   "text": "Descartes lo calculó en 1637 siguiendo rayos que se reflejan una vez dentro de cada gota.",
+   "display": "\\begin{aligned}\\sin i&=\\tfrac43\\,\\sin r\\\\ \\theta_{\\max}&=\\max\\,(4r-2i)\\approx 42^\\circ\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "El arcoíris no está en un lugar: está en un ángulo.\nLa luz entra a cada gota, se refleja una vez dentro y sale. Descartes siguió muchos rayos en «Los meteoros» (1637) y vio que salen amontonados cerca de 42° respecto a la dirección opuesta al Sol. Por eso el arco rodea la sombra de tu cabeza, y cada quien ve el suyo.\nEl rojo queda a 42.4° y el violeta a 40.6°.\nMándaselo a alguien con quien quieras ver el próximo.\n#matebellx #mateguapo #arcoiris #naturaleza",
+ "threads": "Dato precioso: el arcoíris es un ángulo 💛 La luz entra a la gota, rebota una vez adentro y sale concentrada a unos 42° de la dirección opuesta al Sol. Por eso el arco siempre rodea la sombra de tu cabeza y dos personas nunca ven exactamente el mismo. Descartes lo calculó en 1637. ¿Con quién viste el último? 🌈"
+}
