@@ -1,20 +1,38 @@
 {
  "top": [
   {
+   "titulo": "Elevar $i$ a la potencia $i$ da un número **real**",
+   "formato": "identidad",
+   "hook": "dato_preciso",
+   "tema": "i elevado a i es un número real: i^i = e^(−π/2)",
+   "fondo": "funciones",
+   "score": 5.0,
+   "metricas": {
+    "reach": 139,
+    "shares": 0,
+    "saved": 1,
+    "follows": 3,
+    "profile_visits": 8,
+    "views": 230,
+    "likes": 15,
+    "comments": 1
+   }
+  },
+  {
    "titulo": "¿Sabías que $0.999\\ldots$ es **exactamente** igual a 1? 🤯",
    "formato": "wow",
    "hook": "pregunta",
    "tema": "0.999… es exactamente 1",
    "fondo": "espiral",
-   "score": 5.0,
+   "score": 3.714,
    "metricas": {
-    "reach": 171,
+    "reach": 175,
     "shares": 0,
     "saved": 1,
     "follows": 1,
     "profile_visits": 2,
-    "views": 324,
-    "likes": 13,
+    "views": 332,
+    "likes": 14,
     "comments": 0
    }
   },
@@ -24,71 +42,53 @@
    "hook": "pregunta",
    "tema": "Epitrocoide R=5, r=2, d=3: epiciclos de Ptolomeo y lazos de retrogradación",
    "fondo": "rejilla",
-   "score": 3.4,
+   "score": 3.656,
    "metricas": {
-    "reach": 99,
+    "reach": 114,
     "shares": 0,
     "saved": 1,
     "follows": 2,
-    "profile_visits": 2,
-    "views": 181,
+    "profile_visits": 3,
+    "views": 201,
     "likes": 8,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Sin levantar el lápiz, un solo **trazo** dibuja 11 lazos",
-   "formato": "curva",
-   "hook": "metafora",
-   "tema": "Hipotrocoide con R=11, r=4, d=6: once lazos en un solo trazo que se cierra tras cuatro vueltas",
-   "fondo": "geometria",
-   "score": 2.435,
-   "metricas": {
-    "reach": 2682,
-    "shares": 1,
-    "saved": 5,
-    "follows": 4,
-    "profile_visits": 10,
-    "views": 3371,
-    "likes": 16,
     "comments": 0
    }
   }
  ],
  "bottom": [
   {
-   "titulo": "Suma los cubos del 1 al $n$ y siempre obtienes un **cuadrado**",
-   "formato": "demostracion",
+   "titulo": "No hay camino real hacia la geometría.",
+   "formato": "frase",
    "hook": "asombro",
-   "tema": "Suma de cubos sin palabras: identidad de Nicómaco",
-   "fondo": "formulas",
-   "score": 0.653,
+   "tema": "frase de Euclides",
+   "fondo": "geometria",
+   "score": 0.55,
    "metricas": {
-    "reach": 12,
+    "reach": 16,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 33,
+    "views": 39,
     "likes": 2,
     "comments": 0
    }
   },
   {
-   "titulo": "RETO: ida a **60** km/h, vuelta a **40** km/h por la misma ruta. ¿Velocidad media?",
-   "formato": "reto_basico",
-   "hook": "desafio",
-   "tema": "Velocidad media ida y vuelta (media armónica)",
-   "fondo": "rejilla",
-   "score": 0.64,
+   "titulo": "En 2002 subió su prueba a internet. Después rechazó el **millón**",
+   "formato": "historia",
+   "hook": "historia",
+   "tema": "Perelman y la conjetura de Poincaré",
+   "fondo": "geometria",
+   "score": 0.525,
    "metricas": {
-    "reach": 10,
+    "reach": 12,
     "shares": 0,
-    "saved": 1,
+    "saved": 0,
     "follows": 0,
-    "profile_visits": 0,
-    "views": 26,
-    "likes": 1,
+    "profile_visits": 1,
+    "views": 24,
+    "likes": 3,
     "comments": 0
    }
   },
@@ -98,14 +98,14 @@
    "hook": "pregunta",
    "tema": "Lissajous 2:1: la octava musical dibuja un ocho",
    "fondo": "formulas",
-   "score": 0.593,
+   "score": 0.486,
    "metricas": {
-    "reach": 15,
+    "reach": 17,
     "shares": 0,
     "saved": 0,
     "follows": 0,
-    "profile_visits": 3,
-    "views": 37,
+    "profile_visits": 4,
+    "views": 42,
     "likes": 1,
     "comments": 0
    }
