@@ -8,14 +8,32 @@
    "fondo": "funciones",
    "score": 5.0,
    "metricas": {
-    "reach": 139,
+    "reach": 146,
     "shares": 0,
     "saved": 1,
     "follows": 3,
     "profile_visits": 8,
-    "views": 230,
+    "views": 244,
     "likes": 15,
     "comments": 1
+   }
+  },
+  {
+   "titulo": "Nadie sabe si $\\pi+e$ es **irracional**",
+   "formato": "infinito",
+   "hook": "pregunta",
+   "tema": "π + e: un problema abierto sobre números trascendentes",
+   "fondo": "fractal",
+   "score": 4.403,
+   "metricas": {
+    "reach": 1117,
+    "shares": 2,
+    "saved": 7,
+    "follows": 8,
+    "profile_visits": 12,
+    "views": 1735,
+    "likes": 24,
+    "comments": 0
    }
   },
   {
@@ -24,88 +42,70 @@
    "hook": "pregunta",
    "tema": "0.999… es exactamente 1",
    "fondo": "espiral",
-   "score": 3.714,
+   "score": 4.385,
    "metricas": {
-    "reach": 175,
+    "reach": 183,
     "shares": 0,
     "saved": 1,
     "follows": 1,
     "profile_visits": 2,
-    "views": 332,
+    "views": 344,
     "likes": 14,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Los epiciclos de Ptolomeo dibujan **epitrocoides**",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "Epitrocoide R=5, r=2, d=3: epiciclos de Ptolomeo y lazos de retrogradación",
-   "fondo": "rejilla",
-   "score": 3.656,
-   "metricas": {
-    "reach": 114,
-    "shares": 0,
-    "saved": 1,
-    "follows": 2,
-    "profile_visits": 3,
-    "views": 201,
-    "likes": 8,
     "comments": 0
    }
   }
  ],
  "bottom": [
   {
-   "titulo": "No hay camino real hacia la geometría.",
-   "formato": "frase",
-   "hook": "asombro",
-   "tema": "frase de Euclides",
-   "fondo": "geometria",
-   "score": 0.55,
-   "metricas": {
-    "reach": 16,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 39,
-    "likes": 2,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "En 2002 subió su prueba a internet. Después rechazó el **millón**",
-   "formato": "historia",
-   "hook": "historia",
-   "tema": "Perelman y la conjetura de Poincaré",
-   "fondo": "geometria",
-   "score": 0.525,
-   "metricas": {
-    "reach": 12,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 1,
-    "views": 24,
-    "likes": 3,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Una **octava** musical, dibujada, es un **8**",
    "formato": "curva",
    "hook": "pregunta",
    "tema": "Lissajous 2:1: la octava musical dibuja un ocho",
    "fondo": "formulas",
-   "score": 0.486,
+   "score": 0.499,
    "metricas": {
-    "reach": 17,
+    "reach": 18,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 4,
     "views": 42,
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Trazas una **paralela** y los tres ángulos caben en una recta",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "los ángulos de un triángulo suman 180° (prueba con una paralela)",
+   "fondo": "espiral",
+   "score": 0.482,
+   "metricas": {
+    "reach": 14,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 33,
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "RETO: ida a **60** km/h, vuelta a **40** km/h por la misma ruta. ¿Velocidad media?",
+   "formato": "reto_basico",
+   "hook": "desafio",
+   "tema": "Velocidad media ida y vuelta (media armónica)",
+   "fondo": "rejilla",
+   "score": 0.46,
+   "metricas": {
+    "reach": 11,
+    "shares": 0,
+    "saved": 1,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 27,
     "likes": 1,
     "comments": 0
    }
