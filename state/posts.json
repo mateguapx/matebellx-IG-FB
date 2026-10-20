@@ -932,5 +932,31 @@
   "ig_id": "17893377096615852",
   "fb_id": "1382195514976052_122111518419500466",
   "th_id": "17874519585596957"
+ },
+ {
+  "id": "20261020-2200-t2",
+  "ts": "2026-10-20T22:01:19+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "dato_preciso",
+  "tema_clave": "libro:PROBABILIDAD",
+  "area": "distribución binomial",
+  "key": "PROBABILIDAD",
+  "nivel": "bach",
+  "fondo": "probabilidad",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "probabilidad de 5 águilas en 10 volados",
+  "titulo": "Lanzas 10 monedas: el 5 a 5 sale menos de **1** de cada 4 veces",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17952977568289135",
+  "fb_id": "1382195514976052_122111565783500466",
+  "th_id": "18073562438765017"
  }
 ]
