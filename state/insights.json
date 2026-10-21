@@ -8,12 +8,12 @@
    "fondo": "funciones",
    "score": 5.0,
    "metricas": {
-    "reach": 146,
+    "reach": 156,
     "shares": 0,
     "saved": 1,
     "follows": 3,
     "profile_visits": 8,
-    "views": 244,
+    "views": 260,
     "likes": 15,
     "comments": 1
    }
@@ -24,15 +24,15 @@
    "hook": "pregunta",
    "tema": "π + e: un problema abierto sobre números trascendentes",
    "fondo": "fractal",
-   "score": 4.403,
+   "score": 4.434,
    "metricas": {
-    "reach": 1117,
+    "reach": 1134,
     "shares": 2,
-    "saved": 7,
+    "saved": 8,
     "follows": 8,
     "profile_visits": 12,
-    "views": 1735,
-    "likes": 24,
+    "views": 1760,
+    "likes": 25,
     "comments": 0
    }
   },
@@ -49,7 +49,7 @@
     "saved": 1,
     "follows": 1,
     "profile_visits": 2,
-    "views": 344,
+    "views": 345,
     "likes": 14,
     "comments": 0
    }
@@ -62,14 +62,14 @@
    "hook": "pregunta",
    "tema": "Lissajous 2:1: la octava musical dibuja un ocho",
    "fondo": "formulas",
-   "score": 0.499,
+   "score": 0.486,
    "metricas": {
     "reach": 18,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 4,
-    "views": 42,
+    "views": 43,
     "likes": 1,
     "comments": 0
    }
@@ -93,19 +93,19 @@
    }
   },
   {
-   "titulo": "RETO: ida a **60** km/h, vuelta a **40** km/h por la misma ruta. ¿Velocidad media?",
-   "formato": "reto_basico",
-   "hook": "desafio",
-   "tema": "Velocidad media ida y vuelta (media armónica)",
-   "fondo": "rejilla",
-   "score": 0.46,
+   "titulo": "Escribe la suma al **derecho** y al revés, y se resuelve sola",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "la suma de Gauss 1 + 2 + … + 100 = 5050",
+   "fondo": "espiral",
+   "score": 0.385,
    "metricas": {
-    "reach": 11,
+    "reach": 10,
     "shares": 0,
-    "saved": 1,
+    "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 27,
+    "views": 24,
     "likes": 1,
     "comments": 0
    }
