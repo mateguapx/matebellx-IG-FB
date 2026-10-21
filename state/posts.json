@@ -1072,5 +1072,31 @@
   "ig_id": "17908378968331574",
   "fb_id": "1382195514976052_122111983965500466",
   "th_id": "18115438715325520"
+ },
+ {
+  "id": "20261021-2203-t2",
+  "ts": "2026-10-21T22:04:49+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "libro:ALGEBRA",
+  "area": "ecuaciones y desigualdades",
+  "key": "ALGEBRA",
+  "nivel": "bach",
+  "fondo": "funciones",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "desigualdad de las medias con un cuadrado",
+  "titulo": "¿Sabías que esta desigualdad se demuestra con un solo **cuadrado**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17992964319100624",
+  "fb_id": "1382195514976052_122112026919500466",
+  "th_id": "18641996992012280"
  }
 ]
