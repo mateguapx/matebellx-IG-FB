@@ -984,5 +984,31 @@
   "ig_id": "18563949058078817",
   "fb_id": "1382195514976052_122111648619500466",
   "th_id": "18106832045198066"
+ },
+ {
+  "id": "20261021-0705-t4",
+  "ts": "2026-10-21T07:06:05+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "metafora",
+  "tema_clave": "la serie geométrica 1/2+1/4+… = 1",
+  "area": "la serie geométrica 1/2+1/4+… = 1",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "1/2 + 1/4 + 1/8 + … = 1 con un cuadrado",
+  "titulo": "Cómo repartir un pastel por **mitades**: infinitos pedazos, uno entero",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17961831632998104",
+  "fb_id": "1382195514976052_122111716665500466",
+  "th_id": "17925852189200862"
  }
 ]
