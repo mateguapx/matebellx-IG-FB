@@ -958,5 +958,31 @@
   "ig_id": "17952977568289135",
   "fb_id": "1382195514976052_122111565783500466",
   "th_id": "18073562438765017"
+ },
+ {
+  "id": "20261021-0356-t3",
+  "ts": "2026-10-21T03:57:57+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:mandelbrot",
+  "area": "conjunto de Mandelbrot z → z² + c",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "inicial",
+  "curva_tipo": "mandelbrot",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "conjunto de Mandelbrot y su borde de dimensión 2",
+  "titulo": "Toda esta figura sale de **una** regla: elevar al cuadrado y sumar",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18563949058078817",
+  "fb_id": "1382195514976052_122111648619500466",
+  "th_id": "18106832045198066"
  }
 ]
