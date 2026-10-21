@@ -1046,5 +1046,31 @@
   "ig_id": "17961831632998104",
   "fb_id": "1382195514976052_122111716665500466",
   "th_id": "17925852189200862"
+ },
+ {
+  "id": "20261021-1903-t1",
+  "ts": "2026-10-21T19:04:16+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "Hipatia de Alejandría",
+  "area": "Hipatia de Alejandría",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Hipatia de Alejandría",
+  "titulo": "Hace más de 1600 años, Hipatia enseñaba **matemáticas** en Alejandría",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17908378968331574",
+  "fb_id": "1382195514976052_122111983965500466",
+  "th_id": "18115438715325520"
  }
 ]
