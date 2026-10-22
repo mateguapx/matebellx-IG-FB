@@ -1224,5 +1224,31 @@
   "ig_id": "18082578725405571",
   "fb_id": "1382195514976052_122112361545500466",
   "th_id": "17977610745131124"
+ },
+ {
+  "id": "20261022-2202-t2",
+  "ts": "2026-10-22T22:03:13+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "dato_preciso",
+  "tema_clave": "libro:EDO",
+  "area": "variación de parámetros",
+  "key": "EDO",
+  "nivel": "uni",
+  "fondo": "lissajous",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "identidad de Abel para el wronskiano",
+  "titulo": "El wronskiano se calcula sin conocer **ninguna** solución",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17911069428519964",
+  "fb_id": "1382195514976052_122112411765500466",
+  "th_id": "17886122325503459"
  }
 ]
