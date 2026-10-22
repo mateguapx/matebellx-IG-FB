@@ -8,97 +8,61 @@
    "fondo": "funciones",
    "score": 5.0,
    "metricas": {
-    "reach": 156,
+    "reach": 158,
     "shares": 0,
     "saved": 1,
     "follows": 3,
     "profile_visits": 8,
-    "views": 260,
-    "likes": 15,
+    "views": 264,
+    "likes": 16,
     "comments": 1
    }
   },
   {
-   "titulo": "Nadie sabe si $\\pi+e$ es **irracional**",
-   "formato": "infinito",
-   "hook": "pregunta",
-   "tema": "π + e: un problema abierto sobre números trascendentes",
-   "fondo": "fractal",
-   "score": 4.434,
+   "titulo": "El científico no estudia la naturaleza porque sea útil; la estudia porque le deleita, y le deleita porque es bella.",
+   "formato": "frase",
+   "hook": "asombro",
+   "tema": "frase de Henri Poincaré",
+   "fondo": "geometria",
+   "score": 5.0,
    "metricas": {
-    "reach": 1134,
-    "shares": 2,
-    "saved": 8,
-    "follows": 8,
-    "profile_visits": 12,
-    "views": 1760,
-    "likes": 25,
+    "reach": 187,
+    "shares": 1,
+    "saved": 1,
+    "follows": 2,
+    "profile_visits": 3,
+    "views": 296,
+    "likes": 24,
     "comments": 0
    }
   },
   {
-   "titulo": "¿Sabías que $0.999\\ldots$ es **exactamente** igual a 1? 🤯",
-   "formato": "wow",
+   "titulo": "Los epiciclos de Ptolomeo dibujan **epitrocoides**",
+   "formato": "curva",
    "hook": "pregunta",
-   "tema": "0.999… es exactamente 1",
-   "fondo": "espiral",
-   "score": 4.385,
+   "tema": "Epitrocoide R=5, r=2, d=3: epiciclos de Ptolomeo y lazos de retrogradación",
+   "fondo": "rejilla",
+   "score": 4.786,
    "metricas": {
-    "reach": 183,
+    "reach": 125,
     "shares": 0,
     "saved": 1,
-    "follows": 1,
-    "profile_visits": 2,
-    "views": 345,
-    "likes": 14,
+    "follows": 2,
+    "profile_visits": 3,
+    "views": 216,
+    "likes": 8,
     "comments": 0
    }
   }
  ],
  "bottom": [
   {
-   "titulo": "Una **octava** musical, dibujada, es un **8**",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "Lissajous 2:1: la octava musical dibuja un ocho",
-   "fondo": "formulas",
-   "score": 0.486,
-   "metricas": {
-    "reach": 18,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 4,
-    "views": 43,
-    "likes": 1,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Trazas una **paralela** y los tres ángulos caben en una recta",
-   "formato": "demostracion",
-   "hook": "asombro",
-   "tema": "los ángulos de un triángulo suman 180° (prueba con una paralela)",
-   "fondo": "espiral",
-   "score": 0.482,
-   "metricas": {
-    "reach": 14,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 33,
-    "likes": 1,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Escribe la suma al **derecho** y al revés, y se resuelve sola",
    "formato": "demostracion",
    "hook": "asombro",
    "tema": "la suma de Gauss 1 + 2 + … + 100 = 5050",
    "fondo": "espiral",
-   "score": 0.385,
+   "score": 0.338,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -106,6 +70,42 @@
     "follows": 0,
     "profile_visits": 0,
     "views": 24,
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Para que $x^2$ quede a **0.01** de 4, basta $x$ a 0.002 de 2",
+   "formato": "demostracion",
+   "hook": "dato_preciso",
+   "tema": "épsilon-delta: x² tiende a 4 cuando x tiende a 2",
+   "fondo": "funciones",
+   "score": 0.274,
+   "metricas": {
+    "reach": 8,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 27,
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "¿Sabías que el símbolo del **infinito** tiene ecuación?",
+   "formato": "curva",
+   "hook": "pregunta",
+   "tema": "lemniscata de Bernoulli, el símbolo del infinito",
+   "fondo": "formulas",
+   "score": 0.257,
+   "metricas": {
+    "reach": 12,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 29,
     "likes": 1,
     "comments": 0
    }
