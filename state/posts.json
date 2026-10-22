@@ -1198,5 +1198,31 @@
   "ig_id": "18028020812697012",
   "fb_id": "1382195514976052_122112162753500466",
   "th_id": "17897653482411477"
+ },
+ {
+  "id": "20261022-1858-t1",
+  "ts": "2026-10-22T18:59:45+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "pregunta",
+  "tema_clave": "la serie armónica diverge",
+  "area": "la serie armónica diverge",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la serie armónica diverge (Oresme)",
+  "titulo": "¿Sabías que sumar pedazos cada vez más chicos puede dar **infinito**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18082578725405571",
+  "fb_id": "1382195514976052_122112361545500466",
+  "th_id": "17977610745131124"
  }
 ]
