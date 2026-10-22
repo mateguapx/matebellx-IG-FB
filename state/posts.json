@@ -1124,5 +1124,31 @@
   "ig_id": "17912883105507619",
   "fb_id": "1382195514976052_122112111129500466",
   "th_id": "18022788908927744"
+ },
+ {
+  "id": "20261022-0707-t4",
+  "ts": "2026-10-22T07:08:24+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "historia",
+  "tema_clave": "Emmy Noether",
+  "area": "Emmy Noether",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": "Bellxs de la historia",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Emmy Noether y su teorema",
+  "titulo": "Durante años, sus clases se anunciaron con el nombre de **otro**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18028020812697012",
+  "fb_id": "1382195514976052_122112162753500466",
+  "th_id": "17897653482411477"
  }
 ]
