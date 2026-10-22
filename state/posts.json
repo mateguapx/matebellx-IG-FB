@@ -1098,5 +1098,31 @@
   "ig_id": "17992964319100624",
   "fb_id": "1382195514976052_122112026919500466",
   "th_id": "18641996992012280"
+ },
+ {
+  "id": "20261022-0357-t3",
+  "ts": "2026-10-22T03:57:56+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:campana",
+  "area": "campana de Gauss (distribución normal)",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "inicial",
+  "curva_tipo": "campana",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "campana de Gauss: π y e en la misma fórmula",
+  "titulo": "¿Sabías que en la campana de Gauss viven **π** y **e** juntos?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17912883105507619",
+  "fb_id": "1382195514976052_122112111129500466",
+  "th_id": "18022788908927744"
  }
 ]
