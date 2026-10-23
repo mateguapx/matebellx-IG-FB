@@ -1376,5 +1376,31 @@
   "ig_id": "17919013617468801",
   "fb_id": "1382195514976052_122112789225500466",
   "th_id": "17902565667378596"
+ },
+ {
+  "id": "20261023-2148-t2",
+  "ts": "2026-10-23T21:49:00+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "dato_preciso",
+  "tema_clave": "libro:TRIGONOMETRIA",
+  "area": "identidades trigonométricas",
+  "key": "TRIGONOMETRIA",
+  "nivel": "bach",
+  "fondo": "trig",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "cos 36° es la mitad del número áureo",
+  "titulo": "El coseno de **36°** es exactamente la mitad del número áureo",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18123544243933025",
+  "fb_id": "1382195514976052_122112832323500466",
+  "th_id": "18036170222895198"
  }
 ]
