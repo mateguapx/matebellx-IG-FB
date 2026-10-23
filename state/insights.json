@@ -1,6 +1,24 @@
 {
  "top": [
   {
+   "titulo": "Los epiciclos de Ptolomeo dibujan **epitrocoides**",
+   "formato": "curva",
+   "hook": "pregunta",
+   "tema": "Epitrocoide R=5, r=2, d=3: epiciclos de Ptolomeo y lazos de retrogradación",
+   "fondo": "rejilla",
+   "score": 5.0,
+   "metricas": {
+    "reach": 126,
+    "shares": 0,
+    "saved": 1,
+    "follows": 2,
+    "profile_visits": 3,
+    "views": 218,
+    "likes": 8,
+    "comments": 0
+   }
+  },
+  {
    "titulo": "Elevar $i$ a la potencia $i$ da un número **real**",
    "formato": "identidad",
    "hook": "dato_preciso",
@@ -8,12 +26,12 @@
    "fondo": "funciones",
    "score": 5.0,
    "metricas": {
-    "reach": 158,
+    "reach": 162,
     "shares": 0,
     "saved": 1,
     "follows": 3,
     "profile_visits": 8,
-    "views": 264,
+    "views": 271,
     "likes": 16,
     "comments": 1
    }
@@ -26,31 +44,13 @@
    "fondo": "geometria",
    "score": 5.0,
    "metricas": {
-    "reach": 187,
+    "reach": 202,
     "shares": 1,
     "saved": 1,
     "follows": 2,
-    "profile_visits": 3,
-    "views": 296,
+    "profile_visits": 4,
+    "views": 318,
     "likes": 24,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Los epiciclos de Ptolomeo dibujan **epitrocoides**",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "Epitrocoide R=5, r=2, d=3: epiciclos de Ptolomeo y lazos de retrogradación",
-   "fondo": "rejilla",
-   "score": 4.786,
-   "metricas": {
-    "reach": 125,
-    "shares": 0,
-    "saved": 1,
-    "follows": 2,
-    "profile_visits": 3,
-    "views": 216,
-    "likes": 8,
     "comments": 0
    }
   }
@@ -62,14 +62,14 @@
    "hook": "asombro",
    "tema": "la suma de Gauss 1 + 2 + … + 100 = 5050",
    "fondo": "espiral",
-   "score": 0.338,
+   "score": 0.359,
    "metricas": {
-    "reach": 10,
+    "reach": 11,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 24,
+    "views": 25,
     "likes": 1,
     "comments": 0
    }
@@ -80,33 +80,33 @@
    "hook": "dato_preciso",
    "tema": "épsilon-delta: x² tiende a 4 cuando x tiende a 2",
    "fondo": "funciones",
-   "score": 0.274,
+   "score": 0.286,
    "metricas": {
     "reach": 8,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 27,
+    "views": 28,
     "likes": 1,
     "comments": 0
    }
   },
   {
-   "titulo": "¿Sabías que el símbolo del **infinito** tiene ecuación?",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "lemniscata de Bernoulli, el símbolo del infinito",
-   "fondo": "formulas",
-   "score": 0.257,
+   "titulo": "Lanzas 10 monedas: el 5 a 5 sale menos de **1** de cada 4 veces",
+   "formato": "identidad",
+   "hook": "dato_preciso",
+   "tema": "probabilidad de 5 águilas en 10 volados",
+   "fondo": "probabilidad",
+   "score": 0.26,
    "metricas": {
-    "reach": 12,
+    "reach": 8,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 29,
-    "likes": 1,
+    "views": 21,
+    "likes": 0,
     "comments": 0
    }
   }
