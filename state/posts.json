@@ -1350,5 +1350,31 @@
   "ig_id": "17910755994487975",
   "fb_id": "1382195514976052_122112587343500466",
   "th_id": "18108314327193901"
+ },
+ {
+  "id": "20261023-1848-t1",
+  "ts": "2026-10-23T18:49:44+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "Alan Turing",
+  "area": "Alan Turing",
+  "key": null,
+  "nivel": "general",
+  "fondo": "ondas",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Alan Turing y los patrones de la morfogénesis",
+  "titulo": "Alan Turing también buscó la ecuación de las **manchas** animales",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17919013617468801",
+  "fb_id": "1382195514976052_122112789225500466",
+  "th_id": "17902565667378596"
  }
 ]
