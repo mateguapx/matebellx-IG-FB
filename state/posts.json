@@ -1276,5 +1276,31 @@
   "ig_id": "18450868318124487",
   "fb_id": "1382195514976052_122112496335500466",
   "th_id": "18112770128143733"
+ },
+ {
+  "id": "20261023-0659-t4",
+  "ts": "2026-10-23T07:00:11+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "historia",
+  "tema_clave": "el ángulo áureo en las plantas",
+  "area": "el ángulo áureo en las plantas",
+  "key": null,
+  "nivel": "general",
+  "fondo": "lissajous",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "modelo de Vogel del girasol y el ángulo áureo",
+  "titulo": "En 1979, Helmut Vogel dibujó un **girasol** con una sola regla",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17910755994487975",
+  "fb_id": "1382195514976052_122112587343500466",
+  "th_id": "18108314327193901"
  }
 ]
