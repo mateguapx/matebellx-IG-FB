@@ -1250,5 +1250,31 @@
   "ig_id": "17911069428519964",
   "fb_id": "1382195514976052_122112411765500466",
   "th_id": "17886122325503459"
+ },
+ {
+  "id": "20261023-0400-t3",
+  "ts": "2026-10-23T04:01:03+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:astroide",
+  "area": "astroide x = cos³t, y = sen³t",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "inicial",
+  "curva_tipo": "astroide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "astroide como envolvente de una escalera",
+  "titulo": "Una escalera que **resbala** por la pared dibuja esta estrella",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18450868318124487",
+  "fb_id": "1382195514976052_122112496335500466",
+  "th_id": "18112770128143733"
  }
 ]
