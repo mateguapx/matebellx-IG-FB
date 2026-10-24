@@ -1528,5 +1528,31 @@
   "ig_id": "18128709961882015",
   "fb_id": "1382195514976052_122113145781500466",
   "th_id": "17899127739395223"
+ },
+ {
+  "id": "20261024-2122-t2",
+  "ts": "2026-10-24T21:23:57+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "libro:LINEAL",
+  "area": "matrices e inversas",
+  "key": "LINEAL",
+  "nivel": "uni",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la inversa de un producto invierte el orden",
+  "titulo": "Para deshacer dos pasos, se deshacen en el orden **inverso**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17877569148635467",
+  "fb_id": "1382195514976052_122113204101500466",
+  "th_id": "18027467723860122"
  }
 ]
