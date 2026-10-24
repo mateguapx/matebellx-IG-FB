@@ -1402,5 +1402,31 @@
   "ig_id": "18123544243933025",
   "fb_id": "1382195514976052_122112832323500466",
   "th_id": "18036170222895198"
+ },
+ {
+  "id": "20261024-0354-t3",
+  "ts": "2026-10-24T03:55:35+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:fourier",
+  "area": "sumas parciales de Fourier de la onda cuadrada con n términos",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "inicial",
+  "curva_tipo": "fourier",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "suma de Fourier de 12 términos de la onda cuadrada",
+  "titulo": "Como un coro que, voz por voz, aprende a dibujar un **escalón**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": null,
+  "fb_id": "1382195514976052_122112923739500466",
+  "th_id": "18216697162359514"
  }
 ]
