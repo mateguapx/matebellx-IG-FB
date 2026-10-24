@@ -1428,5 +1428,31 @@
   "ig_id": null,
   "fb_id": "1382195514976052_122112923739500466",
   "th_id": "18216697162359514"
+ },
+ {
+  "id": "20261024-0653-t4",
+  "ts": "2026-10-24T06:54:05+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:Isaac Newton",
+  "area": "Si he visto más lejos, es porque estoy sobre hombros de gigantes.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "newton-gigantes",
+  "tema": "frase de Isaac Newton",
+  "titulo": "Si he visto más lejos, es porque estoy sobre hombros de gigantes.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18358184380217681",
+  "fb_id": "1382195514976052_122112964557500466",
+  "th_id": "17951060775054317"
  }
 ]
