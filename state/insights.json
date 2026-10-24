@@ -26,7 +26,7 @@
    "fondo": "funciones",
    "score": 5.0,
    "metricas": {
-    "reach": 162,
+    "reach": 163,
     "shares": 0,
     "saved": 1,
     "follows": 3,
@@ -44,12 +44,12 @@
    "fondo": "geometria",
    "score": 5.0,
    "metricas": {
-    "reach": 202,
+    "reach": 207,
     "shares": 1,
     "saved": 1,
     "follows": 2,
     "profile_visits": 4,
-    "views": 318,
+    "views": 327,
     "likes": 24,
     "comments": 0
    }
@@ -57,30 +57,12 @@
  ],
  "bottom": [
   {
-   "titulo": "Escribe la suma al **derecho** y al revés, y se resuelve sola",
-   "formato": "demostracion",
-   "hook": "asombro",
-   "tema": "la suma de Gauss 1 + 2 + … + 100 = 5050",
-   "fondo": "espiral",
-   "score": 0.359,
-   "metricas": {
-    "reach": 11,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 25,
-    "likes": 1,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Para que $x^2$ quede a **0.01** de 4, basta $x$ a 0.002 de 2",
    "formato": "demostracion",
    "hook": "dato_preciso",
    "tema": "épsilon-delta: x² tiende a 4 cuando x tiende a 2",
    "fondo": "funciones",
-   "score": 0.286,
+   "score": 0.306,
    "metricas": {
     "reach": 8,
     "shares": 0,
@@ -98,7 +80,7 @@
    "hook": "dato_preciso",
    "tema": "probabilidad de 5 águilas en 10 volados",
    "fondo": "probabilidad",
-   "score": 0.26,
+   "score": 0.281,
    "metricas": {
     "reach": 8,
     "shares": 0,
@@ -106,6 +88,24 @@
     "follows": 0,
     "profile_visits": 0,
     "views": 21,
+    "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Durante años, sus clases se anunciaron con el nombre de **otro**",
+   "formato": "historia",
+   "hook": "historia",
+   "tema": "Emmy Noether y su teorema",
+   "fondo": "geometria",
+   "score": 0.26,
+   "metricas": {
+    "reach": 8,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 11,
     "likes": 0,
     "comments": 0
    }
