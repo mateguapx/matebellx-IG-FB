@@ -67,6 +67,28 @@ def _wait_ready(container_id: str, tries: int = 30) -> None:
     raise TimeoutError(f"Contenedor {container_id} no terminó a tiempo")
 
 
+def _no_listo(r: requests.Response) -> bool:
+    """Meta a veces responde 'Media ID is not available' (9007/2207027) aunque el contenedor ya diga FINISHED."""
+    try:
+        e = r.json().get("error", {})
+    except ValueError:
+        return False
+    return e.get("code") == 9007 or e.get("error_subcode") == 2207027
+
+
+def _ig_publicar(creation_id: str) -> str:
+    """media_publish con reintentos SOLO ante 'contenedor aún no listo': ese error garantiza que no se publicó,
+    así que reintentar no duplica el post."""
+    for espera in (10, 20, 30, None):
+        r = _pedir("POST", f"{IG_BASE}/{IG_ID()}/media_publish", False,
+                   data={"creation_id": creation_id, "access_token": IG_TOKEN()})
+        if r.ok or espera is None or not _no_listo(r):
+            return _check(r, f"IG POST {IG_ID()}/media_publish")["id"]
+        time.sleep(espera)
+        _wait_ready(creation_id)
+    raise AssertionError("inalcanzable")
+
+
 # --- Instagram ---
 def publish_instagram(image_urls: list[str], caption: str) -> str:
     """Carrusel (2-10 imágenes). Los posts 'imagen única + CTA' son carruseles de 2."""
@@ -78,7 +100,7 @@ def publish_instagram(image_urls: list[str], caption: str) -> str:
     extra = {"caption": caption} if caption else {}
     parent = _ig_post(f"{IG_ID()}/media", reintentar=True, media_type="CAROUSEL", children=",".join(children), **extra)["id"]
     _wait_ready(parent)
-    return _ig_post(f"{IG_ID()}/media_publish", creation_id=parent)["id"]
+    return _ig_publicar(parent)
 
 
 def ig_comments(media_id: str) -> list[dict]:
