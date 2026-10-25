@@ -1660,5 +1660,31 @@
   "ig_id": "18035874857666603",
   "fb_id": "1382195514976052_122113335459500466",
   "th_id": "18118728256973693"
+ },
+ {
+  "id": "20261025-1800-t1",
+  "ts": "2026-10-25T18:01:00+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "dato_preciso",
+  "tema_clave": "la serie geométrica 1/2+1/4+… = 1",
+  "area": "la serie geométrica 1/2+1/4+… = 1",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Arquímedes y la serie 1 + 1/4 + 1/16 + … = 4/3",
+  "titulo": "Arquímedes sumó infinitos triángulos y obtuvo exactamente **4/3**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17949392394068752",
+  "fb_id": "1382195514976052_122113523217500466",
+  "th_id": "17951576214056104"
  }
 ]
