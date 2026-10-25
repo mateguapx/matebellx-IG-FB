@@ -1580,5 +1580,31 @@
   "ig_id": "18119611687972173",
   "fb_id": "1382195514976052_122113282719500466",
   "th_id": "17961427602250705"
+ },
+ {
+  "id": "20261025-0717-t4",
+  "ts": "2026-10-25T07:18:27+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:Gottfried Leibniz",
+  "area": "La música es un ejercicio oculto de aritmética del alma, que no sabe que está contando.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "funciones",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "leibniz-musica",
+  "tema": "frase de Gottfried Leibniz",
+  "titulo": "La música es un ejercicio oculto de aritmética del alma, que no sabe que está contando.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18035874857666603",
+  "fb_id": "1382195514976052_122113335459500466",
+  "th_id": "18118728256973693"
  }
 ]
