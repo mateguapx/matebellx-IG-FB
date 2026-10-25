@@ -1554,5 +1554,31 @@
   "ig_id": "17877569148635467",
   "fb_id": "1382195514976052_122113204101500466",
   "th_id": "18027467723860122"
+ },
+ {
+  "id": "20261025-0353-t3",
+  "ts": "2026-10-25T03:54:44+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:rosa",
+  "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "inicial",
+  "curva_tipo": "rosa",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "rosa polar r = cos(7θ/4), 14 pétalos en cuatro vueltas",
+  "titulo": "Una rosa bordada con un solo **hilo** que da cuatro vueltas",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18119611687972173",
+  "fb_id": "1382195514976052_122113282719500466",
+  "th_id": "17961427602250705"
  }
 ]
