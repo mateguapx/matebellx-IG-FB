@@ -26,12 +26,12 @@
    "fondo": "funciones",
    "score": 5.0,
    "metricas": {
-    "reach": 163,
+    "reach": 164,
     "shares": 0,
     "saved": 1,
     "follows": 3,
     "profile_visits": 8,
-    "views": 271,
+    "views": 274,
     "likes": 16,
     "comments": 1
    }
@@ -44,12 +44,12 @@
    "fondo": "geometria",
    "score": 5.0,
    "metricas": {
-    "reach": 207,
+    "reach": 210,
     "shares": 1,
     "saved": 1,
     "follows": 2,
     "profile_visits": 4,
-    "views": 327,
+    "views": 334,
     "likes": 24,
     "comments": 0
    }
@@ -62,7 +62,7 @@
    "hook": "dato_preciso",
    "tema": "épsilon-delta: x² tiende a 4 cuando x tiende a 2",
    "fondo": "funciones",
-   "score": 0.306,
+   "score": 0.332,
    "metricas": {
     "reach": 8,
     "shares": 0,
@@ -80,7 +80,7 @@
    "hook": "dato_preciso",
    "tema": "probabilidad de 5 águilas en 10 volados",
    "fondo": "probabilidad",
-   "score": 0.281,
+   "score": 0.306,
    "metricas": {
     "reach": 8,
     "shares": 0,
@@ -98,7 +98,7 @@
    "hook": "historia",
    "tema": "Emmy Noether y su teorema",
    "fondo": "geometria",
-   "score": 0.26,
+   "score": 0.273,
    "metricas": {
     "reach": 8,
     "shares": 0,
