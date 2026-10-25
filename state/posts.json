@@ -1686,5 +1686,31 @@
   "ig_id": "17949392394068752",
   "fb_id": "1382195514976052_122113523217500466",
   "th_id": "17951576214056104"
+ },
+ {
+  "id": "20261025-2120-t2",
+  "ts": "2026-10-25T21:21:22+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:mandelbrot",
+  "area": "conjunto de Mandelbrot z → z² + c",
+  "key": "FINANCIERAS",
+  "nivel": "bach",
+  "fondo": "formulas",
+  "modo": "inicial",
+  "curva_tipo": "mandelbrot",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "el conjunto de Mandelbrot es conexo (Douady y Hubbard, 1982)",
+  "titulo": "Parece un archipiélago, pero es **una** sola pieza",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17899074456612157",
+  "fb_id": "1382195514976052_122113578747500466",
+  "th_id": "17938487283126386"
  }
 ]
