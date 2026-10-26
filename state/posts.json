@@ -1817,5 +1817,31 @@
   "ig_id": "17935036380141751",
   "fb_id": "1382195514976052_122113724103500466",
   "th_id": "18079196795412693"
+ },
+ {
+  "id": "20261026-2014-t1",
+  "ts": "2026-10-26T20:15:39+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "dato_preciso",
+  "tema_clave": "hexágonos en los panales",
+  "area": "hexágonos en los panales",
+  "key": null,
+  "nivel": "general",
+  "fondo": "lissajous",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "hexágonos del panal: menos borde para la misma área (Hales, 1999)",
+  "titulo": "Misma área, menos **cera**: el hexágono gana al cuadrado",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18114975419039772",
+  "fb_id": "1382195514976052_122113981377500466",
+  "th_id": "18096467882653611"
  }
 ]
