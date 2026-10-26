@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "pregunta",
+ "tema_clave": "idea:historia",
+ "area": "Ada Lovelace publicó en 1843 la Nota G: un procedimiento para calcular números de Bernoulli con la Máquina Analítica de Babbage, considerado el primer programa publicado.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-09",
+ "frase_id": null,
+ "semilla": 407805,
+ "modo": "explorar",
+ "fecha": "2026-11-02",
+ "tema": "Ada Lovelace y la Nota G (1843): números de Bernoulli en la Máquina Analítica",
+ "caption": "Ada Lovelace tradujo en 1843 un artículo de Luigi Menabrea sobre la Máquina Analítica de Charles Babbage y le añadió notas más largas que el texto original.\nEn la Nota G describió paso a paso cómo la máquina calcularía los números de Bernoulli, los coeficientes de esta serie. Se le considera uno de los primeros programas publicados.\nMándaselo a alguien que programa.\n#matebellx #mateguapo #adalovelace #historiadelasmatematicas",
+ "threads": "En 1843 Ada Lovelace escribió, para una máquina que nunca se terminó de construir, el procedimiento paso a paso para calcular números de Bernoulli 💛 Hoy se le considera uno de los primeros programas publicados. Programó antes de que existieran las computadoras. ¿A qué persona que programa se lo mandarías?",
+ "slides": [
+  {
+   "title": "¿Sabías que uno de los primeros programas lo escribió una **mujer**?",
+   "text": "Ada Lovelace detalló en su Nota G (1843) cómo la Máquina Analítica calcularía los números de Bernoulli.",
+   "display": "\\frac{x}{e^{x}-1}=\\sum_{n=0}^{\\infty}B_n\\,\\frac{x^n}{n!}",
+   "layout": "normal"
+  }
+ ]
+}

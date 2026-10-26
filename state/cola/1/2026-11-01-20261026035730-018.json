@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "pregunta",
+ "tema_clave": "la suma de Gauss 1+2+…+n",
+ "area": "la suma de Gauss 1+2+…+n",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": "Domingo de demostraciones",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 7731,
+ "modo": "explotar",
+ "fecha": "2026-11-01",
+ "tema": "suma de Gauss 1+2+…+n con dos escaleras que forman un rectángulo",
+ "caption": "Domingo de demostraciones: la suma 1 + 2 + … + n, sin hacer ni una suma.\nApila cuadritos: 1 en la primera fila, 2 en la segunda, hasta n. Es una escalera. Haz una copia, gírala y encájala con la primera: juntas llenan un rectángulo de n por n + 1.\nCada escalera es la mitad: n(n + 1)/2. Con n = 10, 55 cuadritos.\nGuárdalo para cuando olvides por qué amas las matemáticas.\n#matebellx #mateguapo #demostracion #sumadegauss",
+ "threads": "Dibuja una escalera de cuadritos: 1, 2, 3, …, n. Ahora haz otra igual, voltéala y júntalas 💛 Encajan en un rectángulo de n por n + 1. Así que cada escalera tiene n(n + 1)/2 cuadritos, sin sumar uno por uno. ¿La dibujas con n = 4 para verla?",
+ "slides": [
+  {
+   "title": "¿Sabías que dos **escaleras** iguales forman un rectángulo?",
+   "text": "Una escalera de $n$ escalones y su copia girada encajan en un rectángulo de $n\\times(n+1)$.",
+   "display": "\\begin{aligned}2\\,(1+2+\\cdots+n)&=n\\,(n+1)\\\\ 1+2+\\cdots+n&=\\frac{n\\,(n+1)}{2}\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

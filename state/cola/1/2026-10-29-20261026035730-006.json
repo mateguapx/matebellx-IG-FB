@@ -1,0 +1,32 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "frase",
+ "hook": "asombro",
+ "tema_clave": "frase:Alfréd Rényi",
+ "area": "Un matemático es una máquina que convierte café en teoremas.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": "renyi-cafe",
+ "semilla": 838673,
+ "modo": "explotar",
+ "fecha": "2026-10-29",
+ "tema": "frase de Alfréd Rényi",
+ "caption": "«Un matemático es una máquina que convierte café en teoremas.»\n— Alfréd Rényi, frase popularizada por Paul Erdős\n\nGuárdala para cuando necesites recordar por qué amas las matemáticas.\n#matebellx #mateguapo #frasescelebres",
+ "threads": "«Un matemático es una máquina que convierte café en teoremas.»\n— Alfréd Rényi, frase popularizada por Paul Erdős 💛",
+ "slides": [
+  {
+   "layout": "frase",
+   "title": "Un matemático es una máquina que convierte café en teoremas.",
+   "text": "",
+   "display": "",
+   "autor": "Alfréd Rényi",
+   "fuente": "frase popularizada por Paul Erdős"
+  }
+ ]
+}

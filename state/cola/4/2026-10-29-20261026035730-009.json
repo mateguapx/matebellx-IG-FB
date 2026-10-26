@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "dato_preciso",
+ "tema_clave": "idea:demostracion",
+ "area": "Cada fila del triángulo de Pascal suma 2ⁿ: C(n,0) + C(n,1) + … + C(n,n) cuenta todos los subconjuntos de n objetos, y cada objeto se elige o no.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-02",
+ "frase_id": null,
+ "semilla": 945439,
+ "modo": "explorar",
+ "fecha": "2026-10-29",
+ "tema": "cada fila del triángulo de Pascal suma 2^n",
+ "caption": "Suma cualquier fila del triángulo de Pascal y saldrá una potencia de 2.\nLa razón cabe en una línea: el número C(n, k) cuenta de cuántas formas eliges k objetos entre n. Si sumas todos los k, cuentas todas las elecciones posibles. Y cada objeto tiene dos opciones, entrar o no: 2 × 2 × … × 2 = 2ⁿ.\nFila 5: 1 + 5 + 10 + 10 + 5 + 1 = 32. Fila 10: 1024.\nGuárdalo para cuando olvides por qué amas las matemáticas.\n#matebellx #mateguapo #trianguloDePascal #combinatoria",
+ "threads": "Suma una fila del triángulo de Pascal: 1 + 5 + 10 + 10 + 5 + 1 = 32. La siguiente da 64. La fila 10, 1024 💛 ¿Por qué? Porque esa suma cuenta todas las maneras de elegir objetos de un grupo de n, y cada objeto entra o no entra: 2ⁿ. ¿Ya lo sabías o te voló la cabeza?",
+ "slides": [
+  {
+   "title": "La fila 10 del triángulo de Pascal suma **1024**, y no es casualidad",
+   "text": "Cada término cuenta grupos de $k$ entre $n$ objetos; en total, cada objeto se elige o no: $2^n$ formas.",
+   "display": "\\begin{aligned}\\binom{n}{0}+\\binom{n}{1}+\\cdots+\\binom{n}{n}&=2^n\\\\ 1+5+10+10+5+1&=32\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

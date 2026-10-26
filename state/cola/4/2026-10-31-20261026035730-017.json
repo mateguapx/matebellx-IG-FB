@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "naturaleza",
+ "hook": "metafora",
+ "tema_clave": "idea:naturaleza",
+ "area": "Cigarras periódicas de Norteamérica: emergen cada 13 o 17 años, ambos primos; una hipótesis es que así coinciden poco con depredadores de ciclos cortos (mcm(13,17) = 221).",
+ "key": null,
+ "nivel": "general",
+ "fondo": "primos",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-27",
+ "frase_id": null,
+ "semilla": 167157,
+ "modo": "explotar",
+ "fecha": "2026-10-31",
+ "tema": "cigarras periódicas de 13 y 17 años y los ciclos primos",
+ "caption": "En el este de Norteamérica hay cigarras que pasan 13 o 17 años bajo tierra y salen todas juntas. Ambos números son primos.\nUna hipótesis: un ciclo primo coincide poco con los de sus depredadores. Si un depredador vuelve cada 4 años, una cigarra de 12 años lo encontraría en cada salida; una de 13, solo cada 52 años.\nEs una hipótesis, no un hecho cerrado, y aun así es una idea bellísima.\nMándaselo a alguien que ama los números primos.\n#matebellx #mateguapo #primos #naturaleza",
+ "threads": "Hay cigarras que viven 13 o 17 años bajo tierra y salen todas a la vez. Los dos son primos 💛 Una hipótesis: así esquivan a sus depredadores. Con uno que vuelve cada 4 años, una cigarra de 12 años se toparía con él siempre; una de 13, solo cada 52. ¿Conocías esta historia?",
+ "slides": [
+  {
+   "title": "Las cigarras salen cada 13 o 17 años, como quien **esquiva** una cita",
+   "text": "Una hipótesis: con un depredador de ciclo 4, una cigarra de 12 años coincide siempre; una de 13, cada 52.",
+   "display": "\\begin{aligned}\\operatorname{mcm}(12,4)&=12\\\\ \\operatorname{mcm}(13,4)&=52\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "asombro",
+ "tema_clave": "el teorema de Pitágoras sin palabras",
+ "area": "el teorema de Pitágoras sin palabras",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": "Domingo de demostraciones",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 421082,
+ "modo": "explotar",
+ "fecha": "2026-11-01",
+ "tema": "demostración de Pitágoras de James A. Garfield con un trapecio (1876)",
+ "caption": "Domingo de demostraciones: Pitágoras en un trapecio.\nPon dos copias del triángulo de catetos a y b, y únelas con un tercer triángulo de catetos c y c. Juntas forman un trapecio de área (a + b)²/2.\nSumando las tres piezas: ab/2 + ab/2 + c²/2. Iguala, simplifica y queda a² + b² = c².\nGarfield, entonces congresista, la publicó en 1876 en el New England Journal of Education.\nMándaselo a tu profe de mate.\n#matebellx #mateguapo #pitagoras #demostracion",
+ "threads": "Dato que me encanta: James A. Garfield, antes de ser presidente de EE. UU., encontró su propia demostración del teorema de Pitágoras 💛 Dos triángulos iguales y uno más forman un trapecio; calculas su área de dos formas y sale a² + b² = c². La publicó en 1876. ¿Se la mandas a tu profe?",
+ "slides": [
+  {
+   "title": "Un futuro presidente de EE. UU. probó a Pitágoras con un **trapecio**",
+   "text": "James A. Garfield la publicó en 1876, cinco años antes de llegar a la presidencia.",
+   "display": "\\begin{aligned}\\frac{(a+b)^2}{2}&=ab+\\frac{c^2}{2}\\\\ a^2+b^2&=c^2\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

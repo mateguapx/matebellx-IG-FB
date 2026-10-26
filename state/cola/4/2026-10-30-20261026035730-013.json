@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "pregunta",
+ "tema_clave": "idea:demostracion",
+ "area": "Principio del palomar: en cualquier grupo de 367 personas dos cumplen años el mismo día, porque solo hay 366 fechas posibles.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "lissajous",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-03",
+ "frase_id": null,
+ "semilla": 461880,
+ "modo": "explorar",
+ "fecha": "2026-10-30",
+ "tema": "principio del palomar: 367 personas, dos con el mismo cumpleaños",
+ "caption": "El principio del palomar: si hay más palomas que nidos, algún nido tiene dos.\nUn año tiene a lo más 366 fechas, contando el 29 de febrero. Con 367 personas es imposible que todas cumplan años en días distintos. No es probable: es seguro.\nY aquí va lo que sorprende más: con solo 23 personas, la probabilidad de una coincidencia ya pasa del 50 % (si los 365 días son igual de probables).\nMándaselo a alguien con quien compartes cumpleaños.\n#matebellx #mateguapo #palomar #probabilidad",
+ "threads": "Junta a 367 personas y te garantizo que dos cumplen años el mismo día 💛 No hace falta suerte: solo hay 366 fechas posibles, así que alguien sobra. Lo que de verdad sorprende es que con 23 personas ya hay más de 50 % de probabilidad. ¿Con quién compartes tu cumpleaños?",
+ "slides": [
+  {
+   "title": "¿Sabías que entre 367 personas dos **siempre** cumplen el mismo día?",
+   "text": "Si cada fecha tuviera a lo más una persona, cabrían solo 366. Sobra una, y esa coincide con alguien.",
+   "display": "\\begin{aligned}367\\ \\text{personas}&>366\\ \\text{fechas}\\\\ \\Longrightarrow\\ \\text{dos}&\\ \\text{comparten día}\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

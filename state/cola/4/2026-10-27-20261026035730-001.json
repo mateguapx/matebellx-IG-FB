@@ -1,0 +1,32 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "frase",
+ "hook": "asombro",
+ "tema_clave": "frase:G. H. Hardy",
+ "area": "La belleza es la primera prueba: no hay lugar permanente en el mundo para las matemáticas feas.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": "hardy-belleza",
+ "semilla": 781823,
+ "modo": "explotar",
+ "fecha": "2026-10-27",
+ "tema": "frase de G. H. Hardy",
+ "caption": "«La belleza es la primera prueba: no hay lugar permanente en el mundo para las matemáticas feas.»\n— G. H. Hardy, A Mathematician's Apology, 1940\n\nGuárdala para cuando necesites recordar por qué amas las matemáticas.\n#matebellx #mateguapo #frasescelebres",
+ "threads": "«La belleza es la primera prueba: no hay lugar permanente en el mundo para las matemáticas feas.»\n— G. H. Hardy, A Mathematician's Apology, 1940 💛",
+ "slides": [
+  {
+   "layout": "frase",
+   "title": "La belleza es la primera prueba: no hay lugar permanente en el mundo para las matemáticas feas.",
+   "text": "",
+   "display": "",
+   "autor": "G. H. Hardy",
+   "fuente": "A Mathematician's Apology, 1940"
+  }
+ ]
+}

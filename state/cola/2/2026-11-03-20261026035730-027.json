@@ -1,0 +1,37 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:julia",
+ "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+ "key": "GEOMETRIA",
+ "nivel": "bach",
+ "fondo": "rejilla",
+ "curva_tipo": "julia",
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 849660,
+ "modo": "explotar",
+ "fecha": "2026-11-03",
+ "tema": "conjunto de Julia c = −0.4 + 0.6i: elevar al cuadrado duplica el ángulo",
+ "caption": "Esta figura es pura geometría repetida.\nUn número complejo es un punto del plano. Al elevarlo al cuadrado, su ángulo se duplica y su distancia al origen se eleva al cuadrado; luego sumar c = −0.4 + 0.6i lo desplaza.\nRepite ese giro y ese salto miles de veces: los puntos que nunca se alejan forman este conjunto de Julia, llamado así por Gaston Julia, que lo estudió en 1918.\nMándaselo a alguien que ama la geometría.\n#matebellx #mateguapo #fractales #geometria",
+ "threads": "Elevar al cuadrado un número complejo es girarlo: duplica su ángulo y eleva al cuadrado su distancia al origen 💛 Luego le sumas c = −0.4 + 0.6i y repites. Los puntos que nunca huyen forman esta figura. ¿Quién diría que girar y saltar da algo así?",
+ "slides": [
+  {
+   "title": "¿Sabías que elevar un complejo al cuadrado **duplica** su ángulo?",
+   "text": "$z^2$ duplica el ángulo y eleva al cuadrado la distancia; sumar $c$ desplaza.",
+   "display": "z_{n+1}=z_n^2-0.4+0.6\\,i",
+   "curva": {
+    "tipo": "julia",
+    "params": {
+     "c_re": -0.4,
+     "c_im": 0.6
+    }
+   },
+   "layout": "curva"
+  }
+ ]
+}

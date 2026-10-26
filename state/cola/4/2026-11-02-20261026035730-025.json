@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "metafora",
+ "tema_clave": "idea:demostracion",
+ "area": "La suma de los primeros n impares es n²: cada impar 2k−1 es una escuadra en forma de L que agranda el cuadrado de (k−1)² a k².",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-03",
+ "frase_id": null,
+ "semilla": 139949,
+ "modo": "explorar",
+ "fecha": "2026-11-02",
+ "tema": "la suma de los primeros n impares es n²: escuadras que agrandan el cuadrado",
+ "caption": "Empieza con un cuadrito. Ponle una escuadra de 3 alrededor: tienes un cuadrado de 2 × 2. Otra de 5: 3 × 3. Otra de 7: 4 × 4.\nCada impar 2k − 1 es justo la pieza en L que convierte el cuadrado de lado k − 1 en uno de lado k. Por eso 1 + 3 + 5 + … + (2n − 1) = n².\nLos griegos llamaban gnomon a esa escuadra.\nGuárdalo para cuando olvides por qué amas las matemáticas.\n#matebellx #mateguapo #demostracion #numerosimpares",
+ "threads": "Suma impares: 1, 1 + 3 = 4, 1 + 3 + 5 = 9, 1 + 3 + 5 + 7 = 16 💛 Siempre un cuadrado. La razón se dibuja: cada impar es una escuadra en forma de L que rodea al cuadrado anterior y lo agranda un paso. ¿La dibujas para verla?",
+ "slides": [
+  {
+   "title": "Cada impar es una **escuadra** que agranda el cuadrado un paso",
+   "text": "Los griegos llamaban gnomon a esa pieza en L. Con 1 + 3 + 5 + 7 + 9 ya tienes 25, un cuadrado de 5 × 5.",
+   "display": "\\begin{aligned}(k-1)^2+(2k-1)&=k^2\\\\ 1+3+5+\\cdots+(2n-1)&=n^2\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:espiral_aurea",
+ "area": "espiral logarítmica áurea r = φ^(2θ/π), la de los girasoles y los caracoles",
+ "key": "FINANCIERAS",
+ "nivel": "bach",
+ "fondo": "geometria",
+ "curva_tipo": "espiral_aurea",
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 562410,
+ "modo": "explotar",
+ "fecha": "2026-11-02",
+ "tema": "la espiral áurea como interés compuesto: factor constante por cada cuarto de vuelta",
+ "caption": "Una espiral que es crecimiento exponencial dibujado.\nEn el interés compuesto, cada periodo tu saldo se multiplica por el mismo factor. En la espiral r = φ^(2θ/π), cada cuarto de vuelta el radio se multiplica por φ = 1.618…\nTras una vuelta entera, el radio ya es φ⁴ = 6.854… veces mayor; tras dos vueltas, casi 47 veces. Mándaselo a alguien que está aprendiendo a ahorrar.\n#matebellx #mateguapo #interescompuesto #espiral",
+ "threads": "Esta espiral es interés compuesto dibujado 💛 Cada cuarto de vuelta, el radio se multiplica por φ = 1.618…, igual que un saldo que se multiplica por el mismo factor cada periodo. Tras una vuelta ya es 6.85 veces mayor. ¿Lo habías visto así?",
+ "slides": [
+  {
+   "title": "¿Sabías que esta espiral crece como el **interés** compuesto?",
+   "text": "Cada cuarto de vuelta, su radio se multiplica por el mismo factor: 1.618…",
+   "display": "r=\\varphi^{\\,2\\theta/\\pi}",
+   "curva": {
+    "tipo": "espiral_aurea",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ]
+}

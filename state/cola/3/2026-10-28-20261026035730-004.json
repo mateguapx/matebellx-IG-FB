@@ -1,0 +1,37 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:julia",
+ "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": "julia",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 602948,
+ "modo": "explorar",
+ "fecha": "2026-10-28",
+ "tema": "conejo de Douady: Julia con c = −0.123 + 0.745i y su ciclo de periodo 3",
+ "caption": "Ecuación del día: el conejo de Douady.\nToma un número complejo z, elévalo al cuadrado y súmale c. Repite. Los puntos que nunca escapan forman esta figura, un conjunto de Julia.\nCon c = −0.123 + 0.745i, los puntos de adentro acaban dando vueltas en un ciclo de tres pasos, y por eso cada bulto se junta con otros dos, como orejas.\nSu nombre honra al matemático francés Adrien Douady.\nMándaselo a quien ve figuras en todo.\n#matebellx #mateguapo #fractales #conjuntodejulia",
+ "threads": "Este fractal tiene nombre de mascota: el conejo de Douady 💛 Sale de repetir z² + c con c = −0.123 + 0.745i. Los puntos de adentro terminan girando en un ciclo de tres pasos, y por eso cada bulto se junta con otros dos como orejas. ¿Tú también ves al conejo?",
+ "slides": [
+  {
+   "title": "¿Sabías que este fractal se llama el **conejo** de Douady?",
+   "text": "Con $c=-0.123+0.745i$, cada punto interior cae en un ciclo de 3 pasos.",
+   "display": "z_{n+1}=z_n^2-0.123+0.745\\,i",
+   "curva": {
+    "tipo": "julia",
+    "params": {
+     "c_re": -0.123,
+     "c_im": 0.745
+    }
+   },
+   "layout": "curva"
+  }
+ ]
+}

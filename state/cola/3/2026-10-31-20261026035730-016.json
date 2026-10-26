@@ -1,0 +1,38 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:epitrocoide",
+ "area": "espirógrafo exterior (epitrocoide) con radios R, r y distancia d",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": "epitrocoide",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 888887,
+ "modo": "explotar",
+ "fecha": "2026-10-31",
+ "tema": "epitrocoide R=7, r=2, d=4: siete lazos en dos vueltas",
+ "caption": "Ecuación del día: un espirógrafo exterior.\nUna rueda de radio 2 rueda por fuera de otra de radio 7, con el lápiz a distancia 4 de su centro. Como 7 y 2 no tienen divisores en común, el dibujo no se repite hasta que la rueda da dos vueltas completas alrededor, y deja 7 lazos.\nCambia los radios y cambia la flor: la cuenta siempre la deciden sus divisores.\nDedícale esta flor a quien tú sabes.\n#matebellx #mateguapo #epitrocoide #curvas",
+ "threads": "Una rueda de radio 2 gira por fuera de una de radio 7 y un lápiz va pegado a ella 💛 Como 7 y 2 no comparten divisores, el dibujo tarda dos vueltas en cerrarse y deja siete lazos. Los radios deciden la flor. ¿Qué radios elegirías tú?",
+ "slides": [
+  {
+   "title": "¿Sabías que esta flor de **7** lazos se cierra tras dos vueltas?",
+   "text": "Una rueda de radio 2 rueda por fuera de una de radio 7; el lápiz va a 4 de su centro.",
+   "display": "\\begin{aligned}x&=9\\cos t-4\\cos(\\tfrac{9}{2}\\,t)\\\\ y&=9\\sin t-4\\sin(\\tfrac{9}{2}\\,t)\\end{aligned}",
+   "curva": {
+    "tipo": "epitrocoide",
+    "params": {
+     "R": 7,
+     "r": 2,
+     "d": 4.0
+    }
+   },
+   "layout": "curva"
+  }
+ ]
+}

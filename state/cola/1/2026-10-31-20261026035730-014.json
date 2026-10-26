@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "naturaleza",
+ "hook": "pregunta",
+ "tema_clave": "idea:naturaleza",
+ "area": "Ley de Snell: sen θ₁ / sen θ₂ = n₂ / n₁; Fermat (1662) la dedujo pidiendo que la luz siga el camino de menor tiempo, por eso una pajilla se ve quebrada en el vaso.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "primos",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-27",
+ "frase_id": null,
+ "semilla": 348646,
+ "modo": "explotar",
+ "fecha": "2026-10-31",
+ "tema": "ley de Snell y el principio de tiempo mínimo de Fermat (1662)",
+ "caption": "La luz se dobla al entrar al agua porque ahí viaja más lento.\nComo un salvavidas que corre por la arena antes de nadar, el camino más rápido no es la línea recta. En 1662 Fermat mostró que, si la luz tarda lo menos posible, los ángulos cumplen sen θ₁ / sen θ₂ = n₂ / n₁.\nLa ley ya la conocía Ibn Sahl en Bagdad en el año 984, y Snell la redescubrió en 1621.\nMándaselo a alguien que siempre busca el atajo.\n#matebellx #mateguapo #optica #fisica",
+ "threads": "Mete una pajilla en un vaso con agua y se ve quebrada. Es la luz eligiendo el camino que tarda menos 💛 En el agua va más lenta, así que le conviene doblarse, como un salvavidas que corre por la arena antes de nadar. Fermat sacó de ahí la ley sen θ₁ / sen θ₂ = n₂ / n₁. ¿Ya la habías visto así?",
+ "slides": [
+  {
+   "title": "¿Sabías que la luz sigue el camino más **rápido**, no el más corto?",
+   "text": "Fermat dedujo esta ley en 1662 pidiendo tiempo mínimo; por eso una pajilla se ve quebrada en el vaso.",
+   "display": "\\frac{\\sin\\theta_1}{\\sin\\theta_2}=\\frac{n_2}{n_1}",
+   "layout": "normal"
+  }
+ ]
+}

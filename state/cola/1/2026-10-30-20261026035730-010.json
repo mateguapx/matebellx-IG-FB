@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "identidad",
+ "hook": "dato_preciso",
+ "tema_clave": "la serie de Leibniz para π",
+ "area": "la serie de Leibniz para π",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 357275,
+ "modo": "explotar",
+ "fecha": "2026-10-30",
+ "tema": "serie de Leibniz con 500 000 términos: errores en dígitos aislados",
+ "caption": "La serie de Leibniz es famosa por lenta, pero guarda una sorpresa.\nSuma sus primeros 500 000 términos y multiplica por 4: obtienes 3.14159065358979324046…, cuando π = 3.14159265358979323846…\nEl error no arruina todo lo que sigue: falla un dígito, acierta los diez siguientes, falla dos, acierta otros diez. Jonathan y Peter Borwein explicaron ese patrón con los números de Euler.\nMándaselo a quien ama los decimales de π.\n#matebellx #mateguapo #pi #series",
+ "threads": "Sumé medio millón de términos de 1 − 1/3 + 1/5 − 1/7 + … y multipliqué por 4. Salió 3.1415906535897932404… 💛 Compáralo con π: falla un dígito, luego acierta diez seguidos, falla dos, y vuelve a acertar. No es ruido: tiene un patrón exacto. ¿Te animas a encontrar los dígitos que fallan?",
+ "slides": [
+  {
+   "title": "Con 500 000 términos, esta serie falla en dígitos **sueltos** de $\\pi$",
+   "text": "Da 3.141590653589793240462…: falla un dígito, acierta diez, falla dos y vuelve a acertar diez.",
+   "display": "\\pi=4\\left(1-\\frac{1}{3}+\\frac{1}{5}-\\frac{1}{7}+\\cdots\\right)",
+   "layout": "normal"
+  }
+ ]
+}

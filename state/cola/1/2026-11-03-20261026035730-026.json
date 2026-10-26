@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "historia",
+ "tema_clave": "idea:infinito",
+ "area": "La trompeta de Gabriel (Torricelli, 1643): girar y = 1/x desde x = 1 da un sólido de volumen π pero de superficie infinita.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "fractal",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-19",
+ "frase_id": null,
+ "semilla": 165432,
+ "modo": "explotar",
+ "fecha": "2026-11-03",
+ "tema": "trompeta de Gabriel: volumen π y superficie infinita",
+ "caption": "Evangelista Torricelli, el del barómetro, estudió en el siglo XVII esta figura: la curva y = 1/x girada alrededor del eje x, desde x = 1 hasta el infinito.\nSu volumen es exactamente π. Su superficie, en cambio, es infinita. La paradoja: cabe una cantidad finita de pintura dentro, pero ninguna cantidad alcanzaría para pintar su pared.\nHoy se le llama la trompeta de Gabriel.\nMándaselo a alguien que ama las paradojas.\n#matebellx #mateguapo #infinito #calculo",
+ "threads": "Imagina una trompeta infinitamente larga: la curva y = 1/x girada desde x = 1. Torricelli calculó que su volumen es π, finito 💛 Pero su superficie es infinita. Podrías llenarla de pintura, y aun así nunca terminarías de pintarla por fuera. ¿Cómo te explicas eso?",
+ "slides": [
+  {
+   "title": "Una trompeta que puedes llenar de pintura, pero nunca **pintar**",
+   "text": "Torricelli la estudió: es $y=1/x$ girada desde $x=1$. Su superficie, en cambio, es infinita.",
+   "display": "V=\\pi\\int_1^{\\infty}\\frac{dx}{x^2}=\\pi",
+   "layout": "normal"
+  }
+ ]
+}

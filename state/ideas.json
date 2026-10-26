@@ -208,5 +208,215 @@
   "idea": "Teselado de Penrose (1974): dos piezas cubren el plano sin repetirse nunca; en 1982 Shechtman halló cuasicristales con esa simetría (Nobel de Química 2011).",
   "creada": "20261019",
   "usada": null
+ },
+ {
+  "id": "202610260350-00",
+  "formato": "demostracion",
+  "idea": "La suma de los primeros cubos es un cuadrado: 1³ + 2³ + … + n³ = (1 + 2 + … + n)²; por ejemplo 1 + 8 + 27 + 64 = 100 = 10².",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-01",
+  "formato": "demostracion",
+  "idea": "Suma telescópica: 1/(1·2) + 1/(2·3) + 1/(3·4) + … = 1, porque 1/(n(n+1)) = 1/n − 1/(n+1) y todo se cancela menos el primer 1.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-02",
+  "formato": "demostracion",
+  "idea": "Cada fila del triángulo de Pascal suma 2ⁿ: C(n,0) + C(n,1) + … + C(n,n) cuenta todos los subconjuntos de n objetos, y cada objeto se elige o no.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-03",
+  "formato": "demostracion",
+  "idea": "Principio del palomar: en cualquier grupo de 367 personas dos cumplen años el mismo día, porque solo hay 366 fechas posibles.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-04",
+  "formato": "demostracion",
+  "idea": "Suma geométrica por resta: si S = 1 + r + … + rⁿ⁻¹, entonces S − rS = 1 − rⁿ y S = (1 − rⁿ)/(1 − r).",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-05",
+  "formato": "demostracion",
+  "idea": "log₂ 3 es irracional: si fuera p/q, entonces 2ᵖ = 3^q, pero un lado es par y el otro impar.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-06",
+  "formato": "historia",
+  "idea": "Euler y los siete puentes de Königsberg (1736): demostró que no hay paseo que cruce cada puente una sola vez, porque haría falta tener 0 o 2 zonas con un número impar de puentes; ahí nace la teoría de grafos.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-07",
+  "formato": "historia",
+  "idea": "Katherine Johnson calculó trayectorias para la NASA; en 1962 John Glenn pidió que ella verificara a mano los cálculos de la computadora antes de su vuelo orbital.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-08",
+  "formato": "historia",
+  "idea": "Brahmagupta, en su Brahmasphutasiddhanta (628), dio reglas para operar con el cero como número: a − a = 0 y a · 0 = 0.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-09",
+  "formato": "historia",
+  "idea": "Gauss tenía 19 años cuando, en 1796, demostró que el polígono regular de 17 lados se construye con regla y compás, porque 17 es un primo de Fermat 2^(2²) + 1.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-10",
+  "formato": "historia",
+  "idea": "Sofía Kovalévskaya ganó en 1888 el Premio Bordin de la Academia de Ciencias de París por su estudio del giro de un sólido rígido, y en 1889 fue nombrada profesora en Estocolmo.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-11",
+  "formato": "historia",
+  "idea": "Fermat anotó en el margen de su Aritmética de Diofanto que xⁿ + yⁿ = zⁿ no tiene soluciones enteras positivas para n > 2; Andrew Wiles lo demostró en 1994, más de 350 años después.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-12",
+  "formato": "identidad",
+  "idea": "Euler (1735): 1 + 1/2⁴ + 1/3⁴ + 1/4⁴ + … = π⁴/90; las cuartas potencias de los inversos también esconden a π.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-13",
+  "formato": "identidad",
+  "idea": "Fórmula de Machin (1706): π/4 = 4·arctan(1/5) − arctan(1/239); con ella John Machin calculó 100 decimales de π.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-14",
+  "formato": "identidad",
+  "idea": "Fórmula BBP (Bailey, Borwein y Plouffe, 1995): π = ∑ 16⁻ᵏ (4/(8k+1) − 2/(8k+4) − 1/(8k+5) − 1/(8k+6)); permite calcular un dígito hexadecimal de π sin calcular los anteriores.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-15",
+  "formato": "identidad",
+  "idea": "Producto de Viète (1593): 2/π = (√2/2)·(√(2+√2)/2)·(√(2+√(2+√2))/2)·…, el primer producto infinito de la historia de Europa, sale de polígonos inscritos.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-16",
+  "formato": "identidad",
+  "idea": "e = 1 + 1/1! + 1/2! + 1/3! + … ; con solo 10 términos ya se tienen 6 decimales correctos de e = 2.718281…",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-17",
+  "formato": "identidad",
+  "idea": "Identidad de Brahmagupta-Fibonacci: (a² + b²)(c² + d²) = (ac − bd)² + (ad + bc)²; el producto de dos sumas de dos cuadrados vuelve a ser suma de dos cuadrados (5·13 = 65 = 1² + 8²).",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-18",
+  "formato": "infinito",
+  "idea": "0.999… = 1: si 1/3 = 0.333…, multiplicar por 3 da 0.999… = 1; no hay ningún número entre ellos.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-19",
+  "formato": "infinito",
+  "idea": "Argumento diagonal de Cantor (1891): cualquier lista de números reales deja fuera uno, el que cambia el n-ésimo decimal del n-ésimo número; los reales no se pueden contar.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-20",
+  "formato": "infinito",
+  "idea": "Conjunto de Cantor: quitar tercios medios una y otra vez deja longitud total 0, pero tantos puntos como la recta, y su dimensión es log 2 / log 3 ≈ 0.6309.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-21",
+  "formato": "infinito",
+  "idea": "Hay huecos tan grandes como quieras entre primos: n! + 2, n! + 3, …, n! + n son n − 1 números compuestos seguidos.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-22",
+  "formato": "infinito",
+  "idea": "Teorema de los números primos (Hadamard y de la Vallée Poussin, 1896): la cantidad de primos hasta x se parece a x/ln x, y el cociente tiende a 1.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-23",
+  "formato": "infinito",
+  "idea": "1 − 1/2 + 1/3 − 1/4 + … = ln 2, pero el teorema de Riemann dice que reordenando sus términos puede sumar cualquier número que elijas.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-24",
+  "formato": "naturaleza",
+  "idea": "Tercera ley de Kepler (1619): el cuadrado del periodo de un planeta es proporcional al cubo de su distancia media al Sol, T² ∝ a³; Marte tarda 1.88 años con a ≈ 1.52 UA.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-25",
+  "formato": "naturaleza",
+  "idea": "Leyes de Plateau (1873): en la espuma de jabón las películas se juntan siempre de tres en tres a 120°; Jean Taylor lo demostró en 1976.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-26",
+  "formato": "naturaleza",
+  "idea": "La cuerda que vibra: sus armónicos tienen frecuencias f, 2f, 3f, …; la octava es la razón 2:1 y la quinta 3:2, los primeros intervalos de la música.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-27",
+  "formato": "naturaleza",
+  "idea": "Ley de Snell: sen θ₁ / sen θ₂ = n₂ / n₁; Fermat (1662) la dedujo pidiendo que la luz siga el camino de menor tiempo, por eso una pajilla se ve quebrada en el vaso.",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-28",
+  "formato": "naturaleza",
+  "idea": "Las pompas de jabón son esféricas porque la esfera encierra el mayor volumen con la menor superficie (desigualdad isoperimétrica, probada en 3D por Schwarz en 1884).",
+  "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202610260350-29",
+  "formato": "naturaleza",
+  "idea": "Galileo (1638): un chorro de agua o una pelota lanzada dibuja una parábola y = x·tan θ − g x²/(2v² cos² θ); a 45° llega más lejos, sin aire.",
+  "creada": "20261026",
+  "usada": null
  }
 ]

@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "identidad",
+ "hook": "pregunta",
+ "tema_clave": "libro:MULTIVARIABLE",
+ "area": "multiplicadores de Lagrange",
+ "key": "MULTIVARIABLE",
+ "nivel": "uni",
+ "fondo": "funciones",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 299203,
+ "modo": "explotar",
+ "fecha": "2026-10-29",
+ "tema": "el multiplicador de Lagrange mide cuánto cambia el óptimo al aflojar la restricción",
+ "caption": "El λ de Lagrange no es solo un truco para resolver: tiene significado.\nSi optimizas f con la restricción g = c, el multiplicador λ es la derivada del valor óptimo respecto a c. Dice cuánto mejora el máximo si aflojas un poco la restricción.\nEjemplo: máximo de xy con x + y = c. Sale x = y = λ = c/2 y el máximo es c²/4, cuya derivada es c/2.\nLagrange lo publicó en su Mécanique analytique (1788).\nMándaselo a tu compa de cálculo.\n#matebellx #mateguapo #calculomultivariable #lagrange",
+ "threads": "Siempre me enseñaron λ como una letra auxiliar que se despeja y se olvida. Pero λ es la derivada del óptimo respecto a la restricción 💛 Con xy y x + y = c sale λ = c/2, y el máximo c²/4 tiene justo esa derivada. Esa letra te dice cuánto vale aflojar el límite. ¿Te lo habían contado así?",
+ "slides": [
+  {
+   "title": "¿Sabías que el **λ** de Lagrange dice cuánto vale aflojar el límite?",
+   "text": "Maximiza $xy$ con $x+y=c$: sale $\\lambda=c/2$, justo la derivada del máximo $c^2/4$.",
+   "display": "\\nabla f=\\lambda\\,\\nabla g\\qquad\\Longrightarrow\\qquad \\frac{d f^{*}}{dc}=\\lambda",
+   "layout": "normal"
+  }
+ ]
+}

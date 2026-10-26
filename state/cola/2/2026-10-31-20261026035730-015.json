@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "identidad",
+ "hook": "pregunta",
+ "tema_clave": "libro:LINEAL",
+ "area": "matrices e inversas",
+ "key": "LINEAL",
+ "nivel": "uni",
+ "fondo": "rejilla",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 95252,
+ "modo": "explotar",
+ "fecha": "2026-10-31",
+ "tema": "inversa de una matriz 2×2 por Cayley-Hamilton",
+ "caption": "El teorema de Cayley-Hamilton dice que toda matriz satisface su propio polinomio característico.\nPara una 2×2: A² − (tr A)A + (det A)I = 0. Factoriza A: A·((tr A)I − A) = (det A)I. Si det A ≠ 0, divides y ya tienes la inversa, sin eliminación ni cofactores.\nCayley lo publicó en 1858, verificado para matrices 2×2 y 3×3.\nMándaselo a tu compa de álgebra lineal.\n#matebellx #mateguapo #algebralineal #matrices",
+ "threads": "Truco bonito para la inversa de una 2×2: la matriz cumple su propia ecuación, A² − (traza)A + (det)I = 0 💛 Factorizas A, despejas y sale A⁻¹ = ((traza)I − A)/det. Sin cofactores. Es el teorema de Cayley-Hamilton en su versión más pequeña. ¿Lo pruebas con una matriz cualquiera?",
+ "slides": [
+  {
+   "title": "¿Sabías que una matriz 2×2 se invierte con su **propia** ecuación?",
+   "text": "Toda matriz 2×2 cumple $A^2-(\\operatorname{tr}A)A+(\\det A)I=0$; despeja y aparece la inversa.",
+   "display": "A^{-1}=\\frac{(\\operatorname{tr}A)\\,I-A}{\\det A}",
+   "layout": "normal"
+  }
+ ]
+}

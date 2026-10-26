@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:mandelbrot",
+ "area": "conjunto de Mandelbrot z → z² + c",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": "mandelbrot",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 164776,
+ "modo": "explotar",
+ "fecha": "2026-11-01",
+ "tema": "el conjunto de Mandelbrot contiene infinitas copias pequeñas de sí mismo",
+ "caption": "Ecuación del día: el conjunto de Mandelbrot.\nEs el conjunto de números c para los que repetir z → z² + c, empezando en 0, nunca se escapa al infinito.\nSi haces zoom en su borde encuentras pequeñas copias de la figura completa, infinitas, rodeadas de filamentos que nunca se repiten del todo.\nSobre la recta real ocupa exactamente el intervalo de −2 a 1/4.\nGuárdalo para cuando olvides por qué amas las matemáticas.\n#matebellx #mateguapo #mandelbrot #fractales",
+ "threads": "Lo que más me gusta del conjunto de Mandelbrot: acércate a su borde y vuelves a encontrar la figura completa, chiquita, y luego otra, y otra 💛 Hay infinitas copias, todas salidas de repetir z² + c. ¿Te imaginas cuántas caben en un punto de tu pantalla?",
+ "slides": [
+  {
+   "title": "Cerca de su borde aparecen **copias** diminutas de la figura entera",
+   "text": "Hay infinitas, unidas a la figura principal por filamentos. Sobre la recta real va de −2 a 1/4.",
+   "display": "z_{n+1}=z_n^2+c",
+   "curva": {
+    "tipo": "mandelbrot",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "metafora",
+ "tema_clave": "curva:astroide",
+ "area": "astroide x = cos³t, y = sen³t",
+ "key": null,
+ "nivel": "general",
+ "fondo": "rejilla",
+ "curva_tipo": "astroide",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 856140,
+ "modo": "explotar",
+ "fecha": "2026-11-02",
+ "tema": "astroide: hipocicloide de 4 cúspides con perímetro exactamente 6",
+ "caption": "Ecuación del día: la astroide, x^(2/3) + y^(2/3) = 1.\nUn círculo de radio 1/4 rueda por dentro de una circunferencia de radio 1, y un punto de su borde traza esta estrella de cuatro puntas.\nLo sorprendente: aunque nace de círculos, su perímetro mide exactamente 6, sin π. Su área, en cambio, sí lo lleva: 3π/8.\nDedícasela a alguien que te orienta.\n#matebellx #mateguapo #astroide #curvas",
+ "threads": "Esta estrella de cuatro puntas, como una brújula, sale de un círculo de radio 1/4 que rueda dentro de uno de radio 1 💛 Y aunque todo son círculos, su contorno mide exactamente 6, sin π por ningún lado. ¿A quién le mandarías esta brújula?",
+ "slides": [
+  {
+   "title": "Cuatro puntas como una **brújula**, y su contorno mide exactamente 6",
+   "text": "La traza un círculo de radio 1/4 que rueda por dentro de otro de radio 1.",
+   "display": "x^{2/3}+y^{2/3}=1",
+   "curva": {
+    "tipo": "astroide",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ]
+}

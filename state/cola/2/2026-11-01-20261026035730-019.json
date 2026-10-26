@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "metafora",
+ "tema_clave": "libro:PRECALCULO",
+ "area": "exponenciales y logaritmos",
+ "key": "PRECALCULO",
+ "nivel": "bach",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 601755,
+ "modo": "explotar",
+ "fecha": "2026-11-01",
+ "tema": "los logaritmos convierten productos en sumas (Napier, 1614)",
+ "caption": "Todo número positivo se escribe como una potencia de 10: a = 10ᵐ, b = 10ⁿ. Al multiplicarlos, los exponentes se suman: ab = 10ᵐ⁺ⁿ. Y el logaritmo es justo ese exponente.\nPor eso log(ab) = log a + log b. John Napier publicó sus tablas en 1614, y durante siglos astrónomos y navegantes multiplicaron números enormes con una suma y una tabla.\nMándaselo a quien sufre con los logaritmos.\n#matebellx #mateguapo #logaritmos #precalculo",
+ "threads": "Si un número es 10ᵐ y otro es 10ⁿ, su producto es 10ᵐ⁺ⁿ: multiplicar se vuelve sumar exponentes 💛 Eso es un logaritmo, el exponente. Con esa idea, desde 1614 navegantes y astrónomos multiplicaban números gigantes sumando. ¿Te habían explicado así por qué log(ab) = log a + log b?",
+ "slides": [
+  {
+   "title": "El logaritmo es un **traductor**: convierte multiplicar en sumar",
+   "text": "Napier publicó sus tablas en 1614; por siglos se multiplicó a mano sumando logaritmos.",
+   "display": "\\begin{aligned}10^{m}\\cdot 10^{n}&=10^{m+n}\\\\ \\log(ab)&=\\log a+\\log b\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}
