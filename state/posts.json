@@ -1843,5 +1843,31 @@
   "ig_id": "18114975419039772",
   "fb_id": "1382195514976052_122113981377500466",
   "th_id": "18096467882653611"
+ },
+ {
+  "id": "20261026-2259-t2",
+  "ts": "2026-10-26T23:00:06+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:epitrocoide",
+  "area": "espirógrafo exterior (epitrocoide) con radios R, r y distancia d",
+  "key": "TRIGONOMETRIA",
+  "nivel": "bach",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": "epitrocoide",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "epitrocoide R=5, r=3, d=5: cinco lazos en tres vueltas",
+  "titulo": "Dos ruedas que giran a distinto **ritmo** dibujan cinco lazos",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17912879070554625",
+  "fb_id": "1382195514976052_122114025411500466",
+  "th_id": "18646929427026156"
  }
 ]
