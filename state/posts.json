@@ -1712,5 +1712,31 @@
   "ig_id": "17899074456612157",
   "fb_id": "1382195514976052_122113578747500466",
   "th_id": "17938487283126386"
+ },
+ {
+  "id": "20261026-0358-t3",
+  "ts": "2026-10-26T03:59:02+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:espiral_aurea",
+  "area": "espiral logarítmica áurea r = φ^(2θ/π), la de los girasoles y los caracoles",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "inicial",
+  "curva_tipo": "espiral_aurea",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la tumba de Jakob Bernoulli y la espiral logarítmica",
+  "titulo": "¿Sabías que Bernoulli pidió una espiral como esta en su **tumba**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18116924957042982",
+  "fb_id": "1382195514976052_122113678923500466",
+  "th_id": "18115658909041444"
  }
 ]
