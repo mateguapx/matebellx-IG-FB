@@ -11,7 +11,7 @@
   "formato": "demostracion",
   "idea": "Hay infinitos primos (Euclides, Elementos IX.20): p₁·p₂·…·pₙ + 1 no es divisible por ninguno de la lista, así que siempre falta un primo.",
   "creada": "20261019",
-  "usada": null
+  "usada": "2026-10-26T07:27:10+00:00"
  },
  {
   "id": "202610190351-02",

@@ -1738,5 +1738,31 @@
   "ig_id": "18116924957042982",
   "fb_id": "1382195514976052_122113678923500466",
   "th_id": "18115658909041444"
+ },
+ {
+  "id": "20261026-0726-t4",
+  "ts": "2026-10-26T07:27:10+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "idea:demostracion",
+  "area": "Hay infinitos primos (Euclides, Elementos IX.20): p₁·p₂·…·pₙ + 1 no es divisible por ninguno de la lista, así que siempre falta un primo.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": "202610190351-01",
+  "frase_id": null,
+  "tema": "Euclides: hay infinitos números primos",
+  "titulo": "¿Sabías que los primos **nunca** se acaban? Euclides lo probó así",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17935036380141751",
+  "fb_id": "1382195514976052_122113724103500466",
+  "th_id": "18079196795412693"
  }
 ]
