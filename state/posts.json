@@ -1895,5 +1895,31 @@
   "ig_id": "17962797470997429",
   "fb_id": "1382195514976052_122114104497500466",
   "th_id": "17914925565509838"
+ },
+ {
+  "id": "20261027-0719-t4",
+  "ts": "2026-10-27T07:20:46+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "metafora",
+  "tema_clave": "la serie geométrica 1/2+1/4+… = 1",
+  "area": "la serie geométrica 1/2+1/4+… = 1",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Aquiles y la tortuga: 100 + 10 + 1 + … = 1000/9",
+  "titulo": "Zenón partió la carrera en **migajas** que suman $1000/9$ metros",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18115040977841829",
+  "fb_id": "1382195514976052_122114198007500466",
+  "th_id": "18094469225670841"
  }
 ]
