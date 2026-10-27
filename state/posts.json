@@ -1869,5 +1869,31 @@
   "ig_id": "17912879070554625",
   "fb_id": "1382195514976052_122114025411500466",
   "th_id": "18646929427026156"
+ },
+ {
+  "id": "20261027-0419-t3",
+  "ts": "2026-10-27T04:20:18+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:hipotrocoide",
+  "area": "espirógrafo interior (hipotrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "inicial",
+  "curva_tipo": "hipotrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "hipotrocoide R=8, r=5, d=5: estrella de ocho puntas en cinco vueltas",
+  "titulo": "Como una **canción**, esta estrella vuelve al inicio tras 5 vueltas",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17962797470997429",
+  "fb_id": "1382195514976052_122114104497500466",
+  "th_id": "17914925565509838"
  }
 ]
