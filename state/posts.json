@@ -1973,5 +1973,31 @@
   "ig_id": "18115040977841829",
   "fb_id": "1382195514976052_122114198007500466",
   "th_id": "18094469225670841"
+ },
+ {
+  "id": "20261027-1953-t1",
+  "ts": "2026-10-27T19:54:02+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "asombro",
+  "tema_clave": "idea:naturaleza",
+  "area": "Arcoíris a 42°: Descartes (1637) calculó que la luz que se refleja una vez dentro de la gota se concentra a unos 42° del punto opuesto al Sol.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "lissajous",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-28",
+  "frase_id": null,
+  "tema": "el ángulo de 42° del arcoíris (Descartes, 1637)",
+  "titulo": "El arcoíris siempre se abre a 42° alrededor de tu **sombra**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18108081632353476",
+  "fb_id": "1382195514976052_122114401485500466",
+  "th_id": "17958997413017581"
  }
 ]
