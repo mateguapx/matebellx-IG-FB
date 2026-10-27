@@ -1999,5 +1999,31 @@
   "ig_id": "18108081632353476",
   "fb_id": "1382195514976052_122114401485500466",
   "th_id": "17958997413017581"
+ },
+ {
+  "id": "20261027-2248-t2",
+  "ts": "2026-10-27T22:49:14+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "dato_preciso",
+  "tema_clave": "libro:GEOMETRIA",
+  "area": "la circunferencia",
+  "key": "GEOMETRIA",
+  "nivel": "bach",
+  "fondo": "geometria",
+  "modo": "inicial",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "potencia de un punto: PA·PB constante en la circunferencia",
+  "titulo": "Gira la cuerda como quieras: $PA\\cdot PB$ **nunca** cambia",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18075650006765892",
+  "fb_id": "1382195514976052_122114436771500466",
+  "th_id": "18134093728740917"
  }
 ]
