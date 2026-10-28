@@ -2143,5 +2143,31 @@
   "ig_id": "18079603337409354",
   "fb_id": "1382195514976052_122114794299500466",
   "th_id": "18374519407245734"
+ },
+ {
+  "id": "20261028-2256-t2",
+  "ts": "2026-10-28T22:57:10+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "metafora",
+  "tema_clave": "libro:PRECALCULO",
+  "area": "sucesiones y series",
+  "key": "PRECALCULO",
+  "nivel": "bach",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "1/89 contiene la sucesión de Fibonacci",
+  "titulo": "Dentro de $1/89$ viven, encimados, los números de **Fibonacci**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17937358950410050",
+  "fb_id": "1382195514976052_122114831877500466",
+  "th_id": "18127707563303492"
  }
 ]
