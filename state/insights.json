@@ -1,24 +1,6 @@
 {
  "top": [
   {
-   "titulo": "Los epiciclos de Ptolomeo dibujan **epitrocoides**",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "Epitrocoide R=5, r=2, d=3: epiciclos de Ptolomeo y lazos de retrogradación",
-   "fondo": "rejilla",
-   "score": 5.0,
-   "metricas": {
-    "reach": 126,
-    "shares": 0,
-    "saved": 1,
-    "follows": 2,
-    "profile_visits": 3,
-    "views": 218,
-    "likes": 8,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Elevar $i$ a la potencia $i$ da un número **real**",
    "formato": "identidad",
    "hook": "dato_preciso",
@@ -53,6 +35,24 @@
     "likes": 24,
     "comments": 0
    }
+  },
+  {
+   "titulo": "Este **encaje** infinito sale de repetir una sola regla",
+   "formato": "curva",
+   "hook": "metafora",
+   "tema": "conjunto de Julia c = −0.8 + 0.156i",
+   "fondo": "rejilla",
+   "score": 4.402,
+   "metricas": {
+    "reach": 157,
+    "shares": 0,
+    "saved": 2,
+    "follows": 1,
+    "profile_visits": 3,
+    "views": 275,
+    "likes": 12,
+    "comments": 0
+   }
   }
  ],
  "bottom": [
@@ -75,12 +75,30 @@
    }
   },
   {
+   "titulo": "La música es un ejercicio oculto de aritmética del alma, que no sabe que está contando.",
+   "formato": "frase",
+   "hook": "asombro",
+   "tema": "frase de Gottfried Leibniz",
+   "fondo": "funciones",
+   "score": 0.313,
+   "metricas": {
+    "reach": 8,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 15,
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
    "titulo": "Durante años, sus clases se anunciaron con el nombre de **otro**",
    "formato": "historia",
    "hook": "historia",
    "tema": "Emmy Noether y su teorema",
    "fondo": "geometria",
-   "score": 0.254,
+   "score": 0.273,
    "metricas": {
     "reach": 8,
     "shares": 0,
@@ -88,24 +106,6 @@
     "follows": 0,
     "profile_visits": 0,
     "views": 11,
-    "likes": 0,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "La música es un ejercicio oculto de aritmética del alma, que no sabe que está contando.",
-   "formato": "frase",
-   "hook": "asombro",
-   "tema": "frase de Gottfried Leibniz",
-   "fondo": "funciones",
-   "score": 0.205,
-   "metricas": {
-    "reach": 6,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 12,
     "likes": 0,
     "comments": 0
    }
