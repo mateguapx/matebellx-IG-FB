@@ -2025,5 +2025,31 @@
   "ig_id": "18075650006765892",
   "fb_id": "1382195514976052_122114436771500466",
   "th_id": "18134093728740917"
+ },
+ {
+  "id": "20261028-0449-t3",
+  "ts": "2026-10-28T04:50:53+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:rosa",
+  "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": "rosa",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "rosa polar de 5 pétalos r = cos 5θ y su área π/4",
+  "titulo": "Cinco **pétalos** iguales, y solo hizo falta un coseno",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17952417969318171",
+  "fb_id": "1382195514976052_122114509545500466",
+  "th_id": "18133180288740699"
  }
 ]
