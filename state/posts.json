@@ -2051,5 +2051,31 @@
   "ig_id": "17952417969318171",
   "fb_id": "1382195514976052_122114509545500466",
   "th_id": "18133180288740699"
+ },
+ {
+  "id": "20261028-0756-t4",
+  "ts": "2026-10-28T07:57:06+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:G. H. Hardy",
+  "area": "La belleza es la primera prueba: no hay lugar permanente en el mundo para las matemáticas feas.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "hardy-belleza",
+  "tema": "frase de G. H. Hardy",
+  "titulo": "La belleza es la primera prueba: no hay lugar permanente en el mundo para las matemáticas feas.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18135356995661828",
+  "fb_id": "1382195514976052_122114578053500466",
+  "th_id": "18090006410286082"
  }
 ]
