@@ -2117,5 +2117,31 @@
   "ig_id": "18135356995661828",
   "fb_id": "1382195514976052_122114578053500466",
   "th_id": "18090006410286082"
+ },
+ {
+  "id": "20261028-1959-t1",
+  "ts": "2026-10-28T20:00:40+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "historia",
+  "tema_clave": "la geometría de las conchas de nautilo (sin mitos)",
+  "area": "la geometría de las conchas de nautilo (sin mitos)",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "las conchas de nautilo crecen en espiral logarítmica, pero no áurea (Falbo, 2005)",
+  "titulo": "En 2005 midieron conchas de nautilo y **no** hallaron el número áureo",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18079603337409354",
+  "fb_id": "1382195514976052_122114794299500466",
+  "th_id": "18374519407245734"
  }
 ]
