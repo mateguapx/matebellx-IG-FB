@@ -2272,5 +2272,31 @@
   "ig_id": "18117357479517601",
   "fb_id": "1382195514976052_122114952057500466",
   "th_id": "18049223153818181"
+ },
+ {
+  "id": "20261029-1959-t1",
+  "ts": "2026-10-29T19:59:58+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:Alfréd Rényi",
+  "area": "Un matemático es una máquina que convierte café en teoremas.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "renyi-cafe",
+  "tema": "frase de Alfréd Rényi",
+  "titulo": "Un matemático es una máquina que convierte café en teoremas.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18568370014078422",
+  "fb_id": "1382195514976052_122115166107500466",
+  "th_id": "17955556980294316"
  }
 ]
