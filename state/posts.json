@@ -2169,5 +2169,31 @@
   "ig_id": "17937358950410050",
   "fb_id": "1382195514976052_122114831877500466",
   "th_id": "18127707563303492"
+ },
+ {
+  "id": "20261029-0459-t3",
+  "ts": "2026-10-29T05:00:52+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:julia",
+  "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explorar",
+  "curva_tipo": "julia",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "conejo de Douady: Julia con c = −0.123 + 0.745i y su ciclo de periodo 3",
+  "titulo": "¿Sabías que este fractal se llama el **conejo** de Douady?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17886989190505073",
+  "fb_id": "1382195514976052_122114914257500466",
+  "th_id": "18642502558022587"
  }
 ]
