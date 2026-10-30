@@ -2324,5 +2324,31 @@
   "ig_id": "18244350064312675",
   "fb_id": "1382195514976052_122115203649500466",
   "th_id": "18642602713009529"
+ },
+ {
+  "id": "20261030-0459-t3",
+  "ts": "2026-10-30T05:00:24+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:lissajous",
+  "area": "curva de Lissajous x = sen(a t + δ), y = sen(b t)",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "lissajous",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Lissajous 5:4, la tercera mayor, y los diapasones de Lissajous (1857)",
+  "titulo": "¿Sabías que así se ve una **tercera** mayor, la razón 5:4?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17873083923644850",
+  "fb_id": "1382195514976052_122115279117500466",
+  "th_id": "18132169991499492"
  }
 ]
