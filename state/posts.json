@@ -2454,5 +2454,31 @@
   "ig_id": "17895619377436515",
   "fb_id": "1382195514976052_122115510555500466",
   "th_id": "18016596473979160"
+ },
+ {
+  "id": "20261030-2245-t2",
+  "ts": "2026-10-30T22:46:38+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "dato_preciso",
+  "tema_clave": "libro:TRIGONOMETRIA",
+  "area": "círculo unitario y radianes",
+  "key": "TRIGONOMETRIA",
+  "nivel": "bach",
+  "fondo": "trig",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "el radián: el ángulo cuyo arco mide lo mismo que el radio",
+  "titulo": "El radián: el ángulo cuyo arco mide **exactamente** lo que el radio",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18342746425261536",
+  "fb_id": "1382195514976052_122115555807500466",
+  "th_id": "18019963241950594"
  }
 ]
