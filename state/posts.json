@@ -2350,5 +2350,31 @@
   "ig_id": "17873083923644850",
   "fb_id": "1382195514976052_122115279117500466",
   "th_id": "18132169991499492"
+ },
+ {
+  "id": "20261030-0804-t4",
+  "ts": "2026-10-30T08:05:39+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "dato_preciso",
+  "tema_clave": "idea:demostracion",
+  "area": "Cada fila del triángulo de Pascal suma 2ⁿ: C(n,0) + C(n,1) + … + C(n,n) cuenta todos los subconjuntos de n objetos, y cada objeto se elige o no.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-02",
+  "frase_id": null,
+  "tema": "cada fila del triángulo de Pascal suma 2^n",
+  "titulo": "La fila 10 del triángulo de Pascal suma **1024**, y no es casualidad",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18205307995372636",
+  "fb_id": "1382195514976052_122115317199500466",
+  "th_id": "18119614318987950"
  }
 ]

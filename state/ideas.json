@@ -228,7 +228,7 @@
   "formato": "demostracion",
   "idea": "Cada fila del triángulo de Pascal suma 2ⁿ: C(n,0) + C(n,1) + … + C(n,n) cuenta todos los subconjuntos de n objetos, y cada objeto se elige o no.",
   "creada": "20261026",
-  "usada": null
+  "usada": "2026-10-30T08:05:39+00:00"
  },
  {
   "id": "202610260350-03",
