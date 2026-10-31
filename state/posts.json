@@ -2506,5 +2506,31 @@
   "ig_id": "18011722641003448",
   "fb_id": "1382195514976052_122115624213500466",
   "th_id": "18104789462305997"
+ },
+ {
+  "id": "20261031-0800-t4",
+  "ts": "2026-10-31T08:01:15+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "idea:demostracion",
+  "area": "Principio del palomar: en cualquier grupo de 367 personas dos cumplen años el mismo día, porque solo hay 366 fechas posibles.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "lissajous",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-03",
+  "frase_id": null,
+  "tema": "principio del palomar: 367 personas, dos con el mismo cumpleaños",
+  "titulo": "¿Sabías que entre 367 personas dos **siempre** cumplen el mismo día?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18082784546378172",
+  "fb_id": "1382195514976052_122115663087500466",
+  "th_id": "18077200004464961"
  }
 ]
