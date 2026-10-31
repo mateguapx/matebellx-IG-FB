@@ -2480,5 +2480,31 @@
   "ig_id": "18342746425261536",
   "fb_id": "1382195514976052_122115555807500466",
   "th_id": "18019963241950594"
+ },
+ {
+  "id": "20261031-0446-t3",
+  "ts": "2026-10-31T04:47:38+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:espiral_aurea",
+  "area": "espiral logarítmica áurea r = φ^(2θ/π), la de los girasoles y los caracoles",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explorar",
+  "curva_tipo": "espiral_aurea",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la espiral áurea corta todos los radios con el mismo ángulo de 72.97°",
+  "titulo": "¿Sabías que esta espiral cruza cada radio con el **mismo** ángulo?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18011722641003448",
+  "fb_id": "1382195514976052_122115624213500466",
+  "th_id": "18104789462305997"
  }
 ]
