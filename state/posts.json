@@ -2584,5 +2584,31 @@
   "ig_id": "18082784546378172",
   "fb_id": "1382195514976052_122115663087500466",
   "th_id": "18077200004464961"
+ },
+ {
+  "id": "20261031-1856-t1",
+  "ts": "2026-10-31T18:57:14+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "pregunta",
+  "tema_clave": "idea:naturaleza",
+  "area": "Ley de Snell: sen θ₁ / sen θ₂ = n₂ / n₁; Fermat (1662) la dedujo pidiendo que la luz siga el camino de menor tiempo, por eso una pajilla se ve quebrada en el vaso.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "primos",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-27",
+  "frase_id": null,
+  "tema": "ley de Snell y el principio de tiempo mínimo de Fermat (1662)",
+  "titulo": "¿Sabías que la luz sigue el camino más **rápido**, no el más corto?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17939638593121977",
+  "fb_id": "1382195514976052_122115866235500466",
+  "th_id": "17944007607371638"
  }
 ]
