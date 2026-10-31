@@ -2610,5 +2610,31 @@
   "ig_id": "17939638593121977",
   "fb_id": "1382195514976052_122115866235500466",
   "th_id": "17944007607371638"
+ },
+ {
+  "id": "20261031-2207-t2",
+  "ts": "2026-10-31T22:08:37+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "pregunta",
+  "tema_clave": "libro:LINEAL",
+  "area": "matrices e inversas",
+  "key": "LINEAL",
+  "nivel": "uni",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "inversa de una matriz 2×2 por Cayley-Hamilton",
+  "titulo": "¿Sabías que una matriz 2×2 se invierte con su **propia** ecuación?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18139982728559231",
+  "fb_id": "1382195514976052_122115911985500466",
+  "th_id": "17954030031301869"
  }
 ]
