@@ -2740,5 +2740,31 @@
   "ig_id": "18134438533771639",
   "fb_id": "1382195514976052_122116031043500466",
   "th_id": "17970347981963864"
+ },
+ {
+  "id": "20261101-1918-t1",
+  "ts": "2026-11-01T19:19:27+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "la suma de Gauss 1+2+…+n",
+  "area": "la suma de Gauss 1+2+…+n",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "suma de Gauss 1+2+…+n con dos escaleras que forman un rectángulo",
+  "titulo": "¿Sabías que dos **escaleras** iguales forman un rectángulo?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18481917508114866",
+  "fb_id": "1382195514976052_122116179447500466",
+  "th_id": "18041169674648524"
  }
 ]
