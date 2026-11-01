@@ -2636,5 +2636,31 @@
   "ig_id": "18139982728559231",
   "fb_id": "1382195514976052_122115911985500466",
   "th_id": "17954030031301869"
+ },
+ {
+  "id": "20261101-0509-t3",
+  "ts": "2026-11-01T05:10:30+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:epitrocoide",
+  "area": "espirógrafo exterior (epitrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "epitrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "epitrocoide R=7, r=2, d=4: siete lazos en dos vueltas",
+  "titulo": "¿Sabías que esta flor de **7** lazos se cierra tras dos vueltas?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17975703117171358",
+  "fb_id": "1382195514976052_122115986853500466",
+  "th_id": "18219807172355644"
  }
 ]
