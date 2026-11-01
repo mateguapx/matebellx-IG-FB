@@ -2766,5 +2766,31 @@
   "ig_id": "18481917508114866",
   "fb_id": "1382195514976052_122116179447500466",
   "th_id": "18041169674648524"
+ },
+ {
+  "id": "20261101-2233-t2",
+  "ts": "2026-11-01T22:34:39+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "metafora",
+  "tema_clave": "libro:PRECALCULO",
+  "area": "exponenciales y logaritmos",
+  "key": "PRECALCULO",
+  "nivel": "bach",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "los logaritmos convierten productos en sumas (Napier, 1614)",
+  "titulo": "El logaritmo es un **traductor**: convierte multiplicar en sumar",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17945006931362482",
+  "fb_id": "1382195514976052_122116209129500466",
+  "th_id": "18101620268361132"
  }
 ]
