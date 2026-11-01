@@ -2662,5 +2662,31 @@
   "ig_id": "17975703117171358",
   "fb_id": "1382195514976052_122115986853500466",
   "th_id": "18219807172355644"
+ },
+ {
+  "id": "20261101-0843-t4",
+  "ts": "2026-11-01T08:44:38+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "metafora",
+  "tema_clave": "idea:naturaleza",
+  "area": "Cigarras periódicas de Norteamérica: emergen cada 13 o 17 años, ambos primos; una hipótesis es que así coinciden poco con depredadores de ciclos cortos (mcm(13,17) = 221).",
+  "key": null,
+  "nivel": "general",
+  "fondo": "primos",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-27",
+  "frase_id": null,
+  "tema": "cigarras periódicas de 13 y 17 años y los ciclos primos",
+  "titulo": "Las cigarras salen cada 13 o 17 años, como quien **esquiva** una cita",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18134438533771639",
+  "fb_id": "1382195514976052_122116031043500466",
+  "th_id": "17970347981963864"
  }
 ]
