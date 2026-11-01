@@ -19,20 +19,20 @@
    }
   },
   {
-   "titulo": "Si he visto más lejos, es porque estoy sobre hombros de gigantes.",
+   "titulo": "Un matemático es una máquina que convierte café en teoremas.",
    "formato": "frase",
    "hook": "asombro",
-   "tema": "frase de Isaac Newton",
+   "tema": "frase de Alfréd Rényi",
    "fondo": "geometria",
-   "score": 5.0,
+   "score": 4.693,
    "metricas": {
-    "reach": 229,
-    "shares": 1,
-    "saved": 1,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 429,
-    "likes": 13,
+    "reach": 309,
+    "shares": 2,
+    "saved": 4,
+    "follows": 2,
+    "profile_visits": 3,
+    "views": 474,
+    "likes": 20,
     "comments": 0
    }
   },
@@ -56,6 +56,24 @@
   }
  ],
  "bottom": [
+  {
+   "titulo": "Lanzas 10 monedas: el 5 a 5 sale menos de **1** de cada 4 veces",
+   "formato": "identidad",
+   "hook": "dato_preciso",
+   "tema": "probabilidad de 5 águilas en 10 volados",
+   "fondo": "probabilidad",
+   "score": 0.338,
+   "metricas": {
+    "reach": 8,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 21,
+    "likes": 0,
+    "comments": 0
+   }
+  },
   {
    "titulo": "Zenón partió la carrera en **migajas** que suman $1000/9$ metros",
    "formato": "demostracion",
@@ -89,24 +107,6 @@
     "profile_visits": 0,
     "views": 18,
     "likes": 0,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "En 2005 midieron conchas de nautilo y **no** hallaron el número áureo",
-   "formato": "naturaleza",
-   "hook": "historia",
-   "tema": "las conchas de nautilo crecen en espiral logarítmica, pero no áurea (Falbo, 2005)",
-   "fondo": "geometria",
-   "score": 0.289,
-   "metricas": {
-    "reach": 6,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 19,
-    "likes": 1,
     "comments": 0
    }
   }
