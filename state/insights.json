@@ -1,38 +1,20 @@
 {
  "top": [
   {
-   "titulo": "El científico no estudia la naturaleza porque sea útil; la estudia porque le deleita, y le deleita porque es bella.",
-   "formato": "frase",
-   "hook": "asombro",
-   "tema": "frase de Henri Poincaré",
-   "fondo": "geometria",
-   "score": 5.0,
-   "metricas": {
-    "reach": 215,
-    "shares": 1,
-    "saved": 1,
-    "follows": 2,
-    "profile_visits": 4,
-    "views": 343,
-    "likes": 24,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Un matemático es una máquina que convierte café en teoremas.",
    "formato": "frase",
    "hook": "asombro",
    "tema": "frase de Alfréd Rényi",
    "fondo": "geometria",
-   "score": 4.693,
+   "score": 4.854,
    "metricas": {
-    "reach": 309,
-    "shares": 2,
+    "reach": 328,
+    "shares": 3,
     "saved": 4,
     "follows": 2,
     "profile_visits": 3,
-    "views": 474,
-    "likes": 20,
+    "views": 506,
+    "likes": 23,
     "comments": 0
    }
   },
@@ -42,34 +24,52 @@
    "hook": "asombro",
    "tema": "Alan Turing y los patrones de la morfogénesis",
    "fondo": "ondas",
-   "score": 4.029,
+   "score": 4.319,
    "metricas": {
-    "reach": 205,
+    "reach": 207,
     "shares": 0,
-    "saved": 2,
+    "saved": 3,
     "follows": 1,
     "profile_visits": 0,
-    "views": 379,
-    "likes": 20,
+    "views": 386,
+    "likes": 22,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "En 1967, Mandelbrot preguntó cuánto **mide** la costa de Gran Bretaña",
+   "formato": "naturaleza",
+   "hook": "historia",
+   "tema": "la costa de Gran Bretaña y la dimensión fractal",
+   "fondo": "fractal",
+   "score": 3.833,
+   "metricas": {
+    "reach": 55,
+    "shares": 0,
+    "saved": 0,
+    "follows": 1,
+    "profile_visits": 4,
+    "views": 98,
+    "likes": 5,
     "comments": 0
    }
   }
  ],
  "bottom": [
   {
-   "titulo": "Lanzas 10 monedas: el 5 a 5 sale menos de **1** de cada 4 veces",
+   "titulo": "Con 500 000 términos, esta serie falla en dígitos **sueltos** de $\\pi$",
    "formato": "identidad",
    "hook": "dato_preciso",
-   "tema": "probabilidad de 5 águilas en 10 volados",
-   "fondo": "probabilidad",
-   "score": 0.338,
+   "tema": "serie de Leibniz con 500 000 términos: errores en dígitos aislados",
+   "fondo": "espiral",
+   "score": 0.327,
    "metricas": {
     "reach": 8,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 21,
+    "views": 18,
     "likes": 0,
     "comments": 0
    }
@@ -98,7 +98,7 @@
    "hook": "metafora",
    "tema": "1/89 contiene la sucesión de Fibonacci",
    "fondo": "espiral",
-   "score": 0.303,
+   "score": 0.315,
    "metricas": {
     "reach": 7,
     "shares": 0,
