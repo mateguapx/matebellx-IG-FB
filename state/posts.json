@@ -2922,5 +2922,31 @@
   "ig_id": "18088012385329615",
   "fb_id": "1382195514976052_122116344603500466",
   "th_id": "17924372337223501"
+ },
+ {
+  "id": "20261102-2257-t1",
+  "ts": "2026-11-02T22:58:19+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "pregunta",
+  "tema_clave": "idea:historia",
+  "area": "Ada Lovelace publicó en 1843 la Nota G: un procedimiento para calcular números de Bernoulli con la Máquina Analítica de Babbage, considerado el primer programa publicado.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-09",
+  "frase_id": null,
+  "tema": "Ada Lovelace y la Nota G (1843): números de Bernoulli en la Máquina Analítica",
+  "titulo": "¿Sabías que uno de los primeros programas lo escribió una **mujer**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17923415115446658",
+  "fb_id": "1382195514976052_122116533789500466",
+  "th_id": "17907171147348983"
  }
 ]
