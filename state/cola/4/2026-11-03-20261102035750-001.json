@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "pregunta",
+ "tema_clave": "idea:demostracion",
+ "area": "Suma geométrica por resta: si S = 1 + r + … + rⁿ⁻¹, entonces S − rS = 1 − rⁿ y S = (1 − rⁿ)/(1 − r).",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-04",
+ "frase_id": null,
+ "semilla": 920633,
+ "modo": "explotar",
+ "fecha": "2026-11-03",
+ "tema": "suma geométrica por resta: S − rS = 1 − rⁿ",
+ "slides": [
+  {
+   "title": "¿Sabías que esta suma se resuelve **restándola** de sí misma?",
+   "text": "Todo se cancela menos los extremos, y queda $S=\\frac{1-r^n}{1-r}$ para cualquier $r\\neq 1$.",
+   "display": "\\begin{aligned}S&=1+r+r^2+\\cdots+r^{n-1}\\\\ rS&=\\phantom{1+{}}r+r^2+\\cdots+r^{n-1}+r^n\\\\ S-rS&=1-r^n\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Una suma larguísima que se desarma con una resta.\nMultiplicas S por r y todo se recorre un lugar: al restar, se cancelan todos los términos menos el primero y el último.\nAsí sale de inmediato que 1 + 2 + 4 + … + 2⁶³ = 2⁶⁴ − 1, los granos de trigo del tablero de ajedrez: 18 446 744 073 709 551 615.\nMándaselo a alguien que todavía suma término por término.\n#matebellx #mateguapo #seriegeometrica #demostracion",
+ "threads": "Truco precioso: S = 1 + r + r² + … + rⁿ⁻¹. Multiplícala por r, réstala de sí misma y casi todo desaparece: S − rS = 1 − rⁿ 💛 Con eso, 1 + 2 + 4 + … + 2⁶³ da 2⁶⁴ − 1 sin sumar nada. ¿Te lo enseñaron así en la escuela?"
+}

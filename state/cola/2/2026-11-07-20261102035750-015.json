@@ -1,0 +1,36 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "curva",
+ "hook": "metafora",
+ "tema_clave": "curva:rosa",
+ "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+ "key": "PRECALCULO",
+ "nivel": "bach",
+ "fondo": "formulas",
+ "curva_tipo": "rosa",
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 54044,
+ "modo": "explotar",
+ "fecha": "2026-11-07",
+ "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
+ "slides": [
+  {
+   "title": "Un trébol de **cuatro** hojas que no depende de la suerte",
+   "text": "Con $k$ par salen $2k$ pétalos; con $k$ impar, solo $k$. Por eso $\\cos 2\\theta$ da cuatro.",
+   "display": "r=\\cos(2\\theta)",
+   "curva": {
+    "tipo": "rosa",
+    "params": {
+     "k": 2.0
+    }
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Un trébol de cuatro hojas que siempre puedes encontrar: r = cos 2θ.\nEn las rosas polares r = cos kθ, si k es impar salen k pétalos, porque la curva repasa los mismos al dar la vuelta; si k es par, salen 2k.\nPor eso cos 3θ da tres pétalos y cos 2θ, uno menos en k, da cuatro.\nDedícale este trébol a alguien que te trae suerte.\n#matebellx #mateguapo #rosapolar #curvas",
+ "threads": "Un trébol de cuatro hojas que no depende de la suerte: r = cos 2θ 💛 En las rosas r = cos kθ, si k es par salen 2k pétalos y si es impar solo k. Por eso cos 3θ tiene tres y cos 2θ tiene cuatro. ¿A quién le regalarías este trébol?"
+}

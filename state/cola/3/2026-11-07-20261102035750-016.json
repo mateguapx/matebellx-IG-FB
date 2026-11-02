@@ -1,0 +1,38 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:hipotrocoide",
+ "area": "espirógrafo interior (hipotrocoide) con radios R, r y distancia d",
+ "key": null,
+ "nivel": "general",
+ "fondo": "rejilla",
+ "curva_tipo": "hipotrocoide",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 999930,
+ "modo": "explotar",
+ "fecha": "2026-11-07",
+ "tema": "hipotrocoide R=12, r=5, d=4: doce puntas en cinco vueltas",
+ "slides": [
+  {
+   "title": "Una rueda de radio 5 gira dentro de otra de 12 y borda **doce** puntas",
+   "text": "Como 12 y 5 no comparten divisores, el lápiz da 5 vueltas completas antes de volver al inicio.",
+   "display": "\\begin{aligned}x&=7\\cos t+4\\cos(\\tfrac{7}{5}\\,t)\\\\ y&=7\\sin t-4\\sin(\\tfrac{7}{5}\\,t)\\end{aligned}",
+   "curva": {
+    "tipo": "hipotrocoide",
+    "params": {
+     "R": 12,
+     "r": 5,
+     "d": 4.0
+    }
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: un hipotrocoide.\nUna rueda de radio 5 gira por dentro de un aro de radio 12, con el lápiz a distancia 4 de su centro.\nComo 12 y 5 no tienen divisores en común, el trazo tarda 5 vueltas en cerrarse y deja 12 puntas.\nUn dato precioso: si la rueda tuviera la mitad del radio del aro, un punto de su borde iría en línea recta.\nMándaselo a alguien que jugaba con espirógrafo.\n#matebellx #mateguapo #espirografo #ecuaciondeldia",
+ "threads": "Una rueda de radio 5 girando dentro de un aro de radio 12 💛 Como 12 y 5 no comparten divisores, el lápiz da 5 vueltas antes de cerrar el dibujo y deja 12 puntas. Y si la rueda midiera la mitad del aro, un punto de su borde iría en línea recta. ¿Te lo imaginabas?"
+}

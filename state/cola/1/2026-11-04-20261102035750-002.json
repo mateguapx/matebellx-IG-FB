@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "asombro",
+ "tema_clave": "idea:infinito",
+ "area": "Hay huecos tan grandes como quieras entre primos: n! + 2, n! + 3, …, n! + n son n − 1 números compuestos seguidos.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "primos",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-21",
+ "frase_id": null,
+ "semilla": 323205,
+ "modo": "explotar",
+ "fecha": "2026-11-04",
+ "tema": "huecos arbitrariamente largos entre primos: n! + 2, …, n! + n",
+ "slides": [
+  {
+   "title": "Entre los primos hay desiertos tan **largos** como quieras",
+   "text": "De $10!+2$ a $10!+10$ hay 9 compuestos seguidos: cada $k$ divide a $10!+k$.",
+   "display": "n!+2,\\; n!+3,\\; \\ldots,\\; n!+n",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Los primos nunca se acaban, pero pueden hacerse esperar todo lo que quieras.\nEn n! + k, con k entre 2 y n, el número k divide a n! y también a sí mismo, así que divide a la suma: ninguno es primo.\nCon n = 10, de 3 628 802 a 3 628 810 hay nueve compuestos seguidos. Con n = 1000, hay 999.\nGuárdalo para cuando creas que ya lo has visto todo de los primos.\n#matebellx #mateguapo #numerosprimos #infinito",
+ "threads": "Los primos son infinitos, pero entre ellos hay huecos tan largos como quieras 💛 Toma n! + 2, n! + 3, …, n! + n: cada k divide a n! + k, así que ninguno es primo. Con n = 1000 tienes 999 compuestos seguidos. ¿No te da un poquito de vértigo?"
+}

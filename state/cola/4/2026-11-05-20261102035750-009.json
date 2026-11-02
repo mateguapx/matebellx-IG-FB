@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "naturaleza",
+ "hook": "historia",
+ "tema_clave": "las manchas animales y las ecuaciones de Turing",
+ "area": "las manchas animales y las ecuaciones de Turing",
+ "key": null,
+ "nivel": "general",
+ "fondo": "funciones",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 283996,
+ "modo": "explotar",
+ "fecha": "2026-11-05",
+ "tema": "Murray (1988): con las ecuaciones de Turing, las colas manchadas terminan en anillos",
+ "slides": [
+  {
+   "title": "Murray explicó por qué tantas colas con manchas acaban en **anillos**",
+   "text": "En un cono angosto, las ecuaciones de Turing (1952) solo forman franjas: manchas arriba, anillos al final.",
+   "display": "\\begin{aligned}\\frac{\\partial u}{\\partial t}&=D_u\\nabla^2 u+f(u,v)\\\\ \\frac{\\partial v}{\\partial t}&=D_v\\nabla^2 v+g(u,v)\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Mira la cola de un guepardo: empieza con manchas y termina en anillos.\nEn 1952, Alan Turing propuso que dos sustancias que reaccionan y se difunden a distinta velocidad pueden formar patrones solas.\nEn 1988, James D. Murray usó esas ecuaciones en superficies con la forma de una cola: donde es ancha caben manchas; donde se angosta, solo caben franjas.\nPor eso hay colas manchadas que acaban rayadas, no al revés.\nMándaselo a alguien que ama a los felinos.\n#matebellx #mateguapo #turing #naturaleza",
+ "threads": "¿Te has fijado que la cola del guepardo empieza con manchas y acaba en anillos? 💛 En 1988, James Murray lo explicó con las ecuaciones de Turing: en una superficie ancha caben manchas, pero cuando se angosta solo caben franjas. Por eso hay colas manchadas que terminan rayadas, pero no al revés. ¿A quién le mandarías esto?"
+}

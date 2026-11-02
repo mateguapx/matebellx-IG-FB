@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "asombro",
+ "tema_clave": "Carl Friedrich Gauss de niño",
+ "area": "Carl Friedrich Gauss de niño",
+ "key": null,
+ "nivel": "general",
+ "fondo": "probabilidad",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 292222,
+ "modo": "explotar",
+ "fecha": "2026-11-06",
+ "tema": "Gauss a los 18 años y el polígono regular de 17 lados (30 de marzo de 1796)",
+ "slides": [
+  {
+   "title": "A sus 18, Gauss probó que el **17**-ágono se traza con regla y compás",
+   "text": "Lo anotó el 30 de marzo de 1796: es la primera entrada de su diario matemático.",
+   "display": "\\begin{aligned}16\\cos\\tfrac{2\\pi}{17}={}&-1+\\sqrt{17}+\\sqrt{34-2\\sqrt{17}}\\\\ &+2\\sqrt{17+3\\sqrt{17}-\\sqrt{34-2\\sqrt{17}}-2\\sqrt{34+2\\sqrt{17}}}\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Desde los griegos se sabía trazar con regla y compás triángulos, cuadrados, pentágonos y sus derivados. Del 17 nadie había dicho nada.\nEl 30 de marzo de 1796, con 18 años, Carl Friedrich Gauss encontró que cos(2π/17) se escribe solo con sumas y raíces cuadradas, y eso basta para trazar el polígono regular de 17 lados.\nEse día abrió su diario matemático.\nMándaselo a alguien que está empezando algo grande.\n#matebellx #mateguapo #gauss #historiadelasmatematicas",
+ "threads": "El 30 de marzo de 1796, Gauss tenía 18 años y descubrió que el polígono regular de 17 lados se puede trazar con regla y compás 💛 La clave: cos(2π/17) se escribe solo con sumas y raíces cuadradas. Fue la primera entrada de su diario. ¿Qué estabas haciendo tú a los 18?"
+}

@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "metafora",
+ "tema_clave": "curva:corazon",
+ "area": "curva del corazón x = 16 sen³t, y = 13 cos t − 5 cos 2t − 2 cos 3t − cos 4t",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": "corazon",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 17057,
+ "modo": "explorar",
+ "fecha": "2026-11-04",
+ "tema": "curva del corazón: x usa sen³t = (3 sen t − sen 3t)/4 y y usa cuatro cosenos",
+ "slides": [
+  {
+   "title": "Este corazón late con cuatro **frecuencias**: $t$, $2t$, $3t$ y $4t$",
+   "text": "Y como $\\sin^3 t=\\frac{3\\sin t-\\sin 3t}{4}$, su ancho también es una suma de solo dos ondas.",
+   "display": "\\begin{aligned}x&=16\\sin^3 t\\\\ y&=13\\cos t-5\\cos 2t-2\\cos 3t-\\cos 4t\\end{aligned}",
+   "curva": {
+    "tipo": "corazon",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: la curva del corazón.\nSu altura es una mezcla de cuatro cosenos, cos t, cos 2t, cos 3t y cos 4t, cada uno con su peso: 13, −5, −2 y −1.\nSu ancho es 16 sen³t, que en realidad son solo dos ondas, porque sen³t = (3 sen t − sen 3t)/4.\nUn corazón hecho de ritmos que se suman.\nDedícale esta curva a quien tú sabes.\n#matebellx #mateguapo #ecuaciondeldia #curvas",
+ "threads": "Este corazón es pura música 💛 Su altura mezcla cuatro ondas, cos t, cos 2t, cos 3t y cos 4t, y su ancho, 16 sen³t, son solo dos más, porque sen³t = (3 sen t − sen 3t)/4. Ritmos que se suman y dibujan un corazón. ¿A quién se lo mandarías?"
+}

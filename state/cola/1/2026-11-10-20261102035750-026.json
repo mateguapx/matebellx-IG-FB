@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "naturaleza",
+ "hook": "asombro",
+ "tema_clave": "idea:naturaleza",
+ "area": "Galileo (1638): un chorro de agua o una pelota lanzada dibuja una parábola y = x·tan θ − g x²/(2v² cos² θ); a 45° llega más lejos, sin aire.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-29",
+ "frase_id": null,
+ "semilla": 335671,
+ "modo": "explotar",
+ "fecha": "2026-11-10",
+ "tema": "Galileo (1638): el tiro parabólico y el alcance máximo a 45°",
+ "slides": [
+  {
+   "title": "Todo chorro de agua dibuja una **parábola**, y a 45° llega más lejos",
+   "text": "Galileo, 1638: sin aire, el alcance es $v^2\\sin 2\\theta/g$, máximo cuando $2\\theta=90^\\circ$.",
+   "display": "y=x\\tan\\theta-\\frac{g\\,x^2}{2v^2\\cos^2\\theta}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Una fuente, una pelota, un salto: todo lo que vuela sin aire que lo frene sigue una parábola.\nGalileo lo publicó en 1638, en sus Dos nuevas ciencias: el avance horizontal es uniforme y la caída acelera, y juntos dibujan esta curva.\nEl alcance es v²·sen 2θ / g, y como el seno vale como máximo 1, el tiro más largo sale a 45°.\nMándaselo a alguien que ve física en cada fuente.\n#matebellx #mateguapo #galileo #naturaleza",
+ "threads": "La próxima vez que veas una fuente, fíjate en el chorro: es una parábola 💛 Galileo lo publicó en 1638 y además probó que, sin aire, el alcance es v²·sen 2θ / g, así que el tiro más largo sale a 45°. ¿Lo comprobarías con una manguera?"
+}

@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:cardioide",
+ "area": "cardioide r = 1 − cos θ (forma de corazón)",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": "cardioide",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 335834,
+ "modo": "explorar",
+ "fecha": "2026-11-03",
+ "tema": "cardioide r = 1 − cos θ: perímetro exactamente 8 y área 3π/2",
+ "slides": [
+  {
+   "title": "¿Sabías que el contorno de este corazón mide exactamente **8**?",
+   "text": "Y su área es $3\\pi/2$: seis veces la del círculo que lo dibuja al rodar.",
+   "display": "r=1-\\cos\\theta",
+   "curva": {
+    "tipo": "cardioide",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: el cardioide, r = 1 − cos θ.\nTiene curvas suaves y una punta, y aun así su contorno mide exactamente 8, sin π ni decimales.\nSu área es 3π/2, justo seis veces la del círculo de radio 1/2 que, al rodar alrededor de otro igual, lo va trazando.\nUn corazón con medidas exactas.\nDedícale esta curva a quien tú sabes.\n#matebellx #mateguapo #cardioide #ecuaciondeldia",
+ "threads": "Me encanta este dato: el cardioide, r = 1 − cos θ, está hecho de pura curva y aun así su contorno mide exactamente 8. Ni π ni decimales 💛 Y su área es 3π/2, seis veces la del circulito que lo dibuja al rodar. ¿A quién le dedicarías este corazón?"
+}

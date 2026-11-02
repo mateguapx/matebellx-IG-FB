@@ -1,0 +1,34 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:lemniscata",
+ "area": "lemniscata de Bernoulli r² = cos 2θ (el símbolo de infinito)",
+ "key": "EDO",
+ "nivel": "uni",
+ "fondo": "geometria",
+ "curva_tipo": "lemniscata",
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 170996,
+ "modo": "explotar",
+ "fecha": "2026-11-05",
+ "tema": "perímetro de la lemniscata y la constante ϖ = π/AGM(1, √2) (Gauss, 1799)",
+ "slides": [
+  {
+   "title": "¿Sabías que el símbolo del infinito tiene su propio **π**?",
+   "text": "Su contorno mide $2\\varpi$, con $\\varpi=2.62205\\ldots$, y Gauss lo ligó a $\\pi$ en 1799.",
+   "display": "r^2=\\cos 2\\theta",
+   "curva": {
+    "tipo": "lemniscata",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Así como el círculo tiene a π, la lemniscata tiene a ϖ.\nSu contorno mide 2ϖ, donde ϖ = 2∫₀¹ dt/√(1 − t⁴) = 2.62205…, una integral que no se resuelve con funciones elementales.\nEn 1799, Gauss descubrió que ϖ = π / M(1, √2), donde M es la media aritmético-geométrica: una sucesión de promedios que converge rapidísimo.\nGuárdalo para cuando una integral te parezca imposible.\n#matebellx #mateguapo #lemniscata #calculo",
+ "threads": "El símbolo del infinito, la lemniscata, tiene su propio π: se llama ϖ y vale 2.62205… 💛 Su contorno mide 2ϖ, y en 1799 Gauss descubrió que ϖ es π dividido entre la media aritmético-geométrica de 1 y √2. ¿Habías oído hablar de ϖ?"
+}
