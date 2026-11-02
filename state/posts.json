@@ -2818,5 +2818,31 @@
   "ig_id": "17967335964198805",
   "fb_id": "1382195514976052_122116290903500466",
   "th_id": "18119753960078148"
+ },
+ {
+  "id": "20261102-0854-t4",
+  "ts": "2026-11-02T08:55:25+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "el teorema de Pitágoras sin palabras",
+  "area": "el teorema de Pitágoras sin palabras",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "demostración de Pitágoras de James A. Garfield con un trapecio (1876)",
+  "titulo": "Un futuro presidente de EE. UU. probó a Pitágoras con un **trapecio**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18088012385329615",
+  "fb_id": "1382195514976052_122116344603500466",
+  "th_id": "17924372337223501"
  }
 ]
