@@ -3064,5 +3064,31 @@
   "ig_id": "18392613280165249",
   "fb_id": "1382195514976052_122116653201500466",
   "th_id": "18110318282227660"
+ },
+ {
+  "id": "20261103-2043-t1",
+  "ts": "2026-11-03T20:44:18+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "historia",
+  "tema_clave": "idea:infinito",
+  "area": "La trompeta de Gabriel (Torricelli, 1643): girar y = 1/x desde x = 1 da un sólido de volumen π pero de superficie infinita.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-19",
+  "frase_id": null,
+  "tema": "trompeta de Gabriel: volumen π y superficie infinita",
+  "titulo": "Una trompeta que puedes llenar de pintura, pero nunca **pintar**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18117237124833022",
+  "fb_id": "1382195514976052_122116809681500466",
+  "th_id": "18115477727601070"
  }
 ]
