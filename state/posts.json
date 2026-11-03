@@ -3090,5 +3090,31 @@
   "ig_id": "18117237124833022",
   "fb_id": "1382195514976052_122116809681500466",
   "th_id": "18115477727601070"
+ },
+ {
+  "id": "20261103-2350-t2",
+  "ts": "2026-11-03T23:51:33+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:julia",
+  "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+  "key": "GEOMETRIA",
+  "nivel": "bach",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": "julia",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "conjunto de Julia c = −0.4 + 0.6i: elevar al cuadrado duplica el ángulo",
+  "titulo": "¿Sabías que elevar un complejo al cuadrado **duplica** su ángulo?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18217838026355124",
+  "fb_id": "1382195514976052_122116842135500466",
+  "th_id": "18124838131940292"
  }
 ]
