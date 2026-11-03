@@ -3000,5 +3000,31 @@
   "ig_id": "18112009082189990",
   "fb_id": "1382195514976052_122116612809500466",
   "th_id": "18110617244225199"
+ },
+ {
+  "id": "20261103-0902-t4",
+  "ts": "2026-11-03T09:02:59+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "metafora",
+  "tema_clave": "idea:demostracion",
+  "area": "La suma de los primeros n impares es n²: cada impar 2k−1 es una escuadra en forma de L que agranda el cuadrado de (k−1)² a k².",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-03",
+  "frase_id": null,
+  "tema": "la suma de los primeros n impares es n²: escuadras que agrandan el cuadrado",
+  "titulo": "Cada impar es una **escuadra** que agranda el cuadrado un paso",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18392613280165249",
+  "fb_id": "1382195514976052_122116653201500466",
+  "th_id": "18110318282227660"
  }
 ]
