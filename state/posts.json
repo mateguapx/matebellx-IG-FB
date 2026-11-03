@@ -2948,5 +2948,31 @@
   "ig_id": "17923415115446658",
   "fb_id": "1382195514976052_122116533789500466",
   "th_id": "17907171147348983"
+ },
+ {
+  "id": "20261103-0126-t2",
+  "ts": "2026-11-03T01:27:29+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:espiral_aurea",
+  "area": "espiral logarítmica áurea r = φ^(2θ/π), la de los girasoles y los caracoles",
+  "key": "FINANCIERAS",
+  "nivel": "bach",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "espiral_aurea",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la espiral áurea como interés compuesto: factor constante por cada cuarto de vuelta",
+  "titulo": "¿Sabías que esta espiral crece como el **interés** compuesto?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18019954697955801",
+  "fb_id": "1382195514976052_122116563951500466",
+  "th_id": "18100278836396159"
  }
 ]
