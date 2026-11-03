@@ -2974,5 +2974,31 @@
   "ig_id": "18019954697955801",
   "fb_id": "1382195514976052_122116563951500466",
   "th_id": "18100278836396159"
+ },
+ {
+  "id": "20261103-0554-t3",
+  "ts": "2026-11-03T05:55:36+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:astroide",
+  "area": "astroide x = cos³t, y = sen³t",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": "astroide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "astroide: hipocicloide de 4 cúspides con perímetro exactamente 6",
+  "titulo": "Cuatro puntas como una **brújula**, y su contorno mide exactamente 6",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18112009082189990",
+  "fb_id": "1382195514976052_122116612809500466",
+  "th_id": "18110617244225199"
  }
 ]
