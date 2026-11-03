@@ -6,14 +6,14 @@
    "hook": "asombro",
    "tema": "frase de Alfréd Rényi",
    "fondo": "geometria",
-   "score": 4.854,
+   "score": 4.915,
    "metricas": {
-    "reach": 328,
+    "reach": 344,
     "shares": 3,
     "saved": 4,
     "follows": 2,
-    "profile_visits": 3,
-    "views": 506,
+    "profile_visits": 4,
+    "views": 530,
     "likes": 23,
     "comments": 0
    }
@@ -24,7 +24,7 @@
    "hook": "asombro",
    "tema": "Alan Turing y los patrones de la morfogénesis",
    "fondo": "ondas",
-   "score": 4.319,
+   "score": 4.484,
    "metricas": {
     "reach": 207,
     "shares": 0,
@@ -42,7 +42,7 @@
    "hook": "historia",
    "tema": "la costa de Gran Bretaña y la dimensión fractal",
    "fondo": "fractal",
-   "score": 3.833,
+   "score": 3.976,
    "metricas": {
     "reach": 55,
     "shares": 0,
@@ -57,10 +57,28 @@
  ],
  "bottom": [
   {
-   "titulo": "Con 500 000 términos, esta serie falla en dígitos **sueltos** de $\\pi$",
+   "titulo": "En 2005 midieron conchas de nautilo y **no** hallaron el número áureo",
+   "formato": "naturaleza",
+   "hook": "historia",
+   "tema": "las conchas de nautilo crecen en espiral logarítmica, pero no áurea (Falbo, 2005)",
+   "fondo": "geometria",
+   "score": 0.352,
+   "metricas": {
+    "reach": 8,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 22,
+    "likes": 1,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Dentro de $1/89$ viven, encimados, los números de **Fibonacci**",
    "formato": "identidad",
-   "hook": "dato_preciso",
-   "tema": "serie de Leibniz con 500 000 términos: errores en dígitos aislados",
+   "hook": "metafora",
+   "tema": "1/89 contiene la sucesión de Fibonacci",
    "fondo": "espiral",
    "score": 0.327,
    "metricas": {
@@ -69,7 +87,7 @@
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 18,
+    "views": 19,
     "likes": 0,
     "comments": 0
    }
@@ -80,7 +98,7 @@
    "hook": "metafora",
    "tema": "Aquiles y la tortuga: 100 + 10 + 1 + … = 1000/9",
    "fondo": "espiral",
-   "score": 0.315,
+   "score": 0.284,
    "metricas": {
     "reach": 7,
     "shares": 0,
@@ -88,24 +106,6 @@
     "follows": 0,
     "profile_visits": 0,
     "views": 13,
-    "likes": 0,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Dentro de $1/89$ viven, encimados, los números de **Fibonacci**",
-   "formato": "identidad",
-   "hook": "metafora",
-   "tema": "1/89 contiene la sucesión de Fibonacci",
-   "fondo": "espiral",
-   "score": 0.315,
-   "metricas": {
-    "reach": 7,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 18,
     "likes": 0,
     "comments": 0
    }
