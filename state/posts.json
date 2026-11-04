@@ -3116,5 +3116,31 @@
   "ig_id": "18217838026355124",
   "fb_id": "1382195514976052_122116842135500466",
   "th_id": "18124838131940292"
+ },
+ {
+  "id": "20261104-0530-t3",
+  "ts": "2026-11-04T05:31:27+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:cardioide",
+  "area": "cardioide r = 1 − cos θ (forma de corazón)",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explorar",
+  "curva_tipo": "cardioide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "cardioide r = 1 − cos θ: perímetro exactamente 8 y área 3π/2",
+  "titulo": "¿Sabías que el contorno de este corazón mide exactamente **8**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18003904904809436",
+  "fb_id": "1382195514976052_122116905093500466",
+  "th_id": "18099225932418794"
  }
 ]
