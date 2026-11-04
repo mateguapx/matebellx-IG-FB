@@ -3208,5 +3208,31 @@
   "ig_id": "18182962375432492",
   "fb_id": "1382195514976052_122116937529500466",
   "th_id": "18133234258882555"
+ },
+ {
+  "id": "20261104-2100-t1",
+  "ts": "2026-11-04T21:01:33+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "asombro",
+  "tema_clave": "idea:infinito",
+  "area": "Hay huecos tan grandes como quieras entre primos: n! + 2, n! + 3, …, n! + n son n − 1 números compuestos seguidos.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "primos",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-21",
+  "frase_id": null,
+  "tema": "huecos arbitrariamente largos entre primos: n! + 2, …, n! + n",
+  "titulo": "Entre los primos hay desiertos tan **largos** como quieras",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18033684653887733",
+  "fb_id": "1382195514976052_122117112477500466",
+  "th_id": "18112620770363661"
  }
 ]
