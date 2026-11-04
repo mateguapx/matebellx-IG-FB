@@ -1,30 +1,12 @@
 {
  "top": [
   {
-   "titulo": "Un matemático es una máquina que convierte café en teoremas.",
-   "formato": "frase",
-   "hook": "asombro",
-   "tema": "frase de Alfréd Rényi",
-   "fondo": "geometria",
-   "score": 4.915,
-   "metricas": {
-    "reach": 344,
-    "shares": 3,
-    "saved": 4,
-    "follows": 2,
-    "profile_visits": 4,
-    "views": 530,
-    "likes": 23,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Alan Turing también buscó la ecuación de las **manchas** animales",
    "formato": "historia",
    "hook": "asombro",
    "tema": "Alan Turing y los patrones de la morfogénesis",
    "fondo": "ondas",
-   "score": 4.484,
+   "score": 5.0,
    "metricas": {
     "reach": 207,
     "shares": 0,
@@ -37,12 +19,30 @@
    }
   },
   {
+   "titulo": "Un matemático es una máquina que convierte café en teoremas.",
+   "formato": "frase",
+   "hook": "asombro",
+   "tema": "frase de Alfréd Rényi",
+   "fondo": "geometria",
+   "score": 5.0,
+   "metricas": {
+    "reach": 366,
+    "shares": 3,
+    "saved": 5,
+    "follows": 2,
+    "profile_visits": 4,
+    "views": 573,
+    "likes": 28,
+    "comments": 0
+   }
+  },
+  {
    "titulo": "En 1967, Mandelbrot preguntó cuánto **mide** la costa de Gran Bretaña",
    "formato": "naturaleza",
    "hook": "historia",
    "tema": "la costa de Gran Bretaña y la dimensión fractal",
    "fondo": "fractal",
-   "score": 3.976,
+   "score": 4.63,
    "metricas": {
     "reach": 55,
     "shares": 0,
@@ -57,20 +57,20 @@
  ],
  "bottom": [
   {
-   "titulo": "En 2005 midieron conchas de nautilo y **no** hallaron el número áureo",
+   "titulo": "Misma área, menos **cera**: el hexágono gana al cuadrado",
    "formato": "naturaleza",
-   "hook": "historia",
-   "tema": "las conchas de nautilo crecen en espiral logarítmica, pero no áurea (Falbo, 2005)",
-   "fondo": "geometria",
-   "score": 0.352,
+   "hook": "dato_preciso",
+   "tema": "hexágonos del panal: menos borde para la misma área (Hales, 1999)",
+   "fondo": "lissajous",
+   "score": 0.356,
    "metricas": {
-    "reach": 8,
+    "reach": 10,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 22,
-    "likes": 1,
+    "views": 23,
+    "likes": 0,
     "comments": 0
    }
   },
@@ -98,7 +98,7 @@
    "hook": "metafora",
    "tema": "Aquiles y la tortuga: 100 + 10 + 1 + … = 1000/9",
    "fondo": "espiral",
-   "score": 0.284,
+   "score": 0.275,
    "metricas": {
     "reach": 7,
     "shares": 0,
