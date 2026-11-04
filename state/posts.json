@@ -3142,5 +3142,31 @@
   "ig_id": "18003904904809436",
   "fb_id": "1382195514976052_122116905093500466",
   "th_id": "18099225932418794"
+ },
+ {
+  "id": "20261104-0838-t4",
+  "ts": "2026-11-04T08:39:52+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "idea:demostracion",
+  "area": "Suma geométrica por resta: si S = 1 + r + … + rⁿ⁻¹, entonces S − rS = 1 − rⁿ y S = (1 − rⁿ)/(1 − r).",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-04",
+  "frase_id": null,
+  "tema": "suma geométrica por resta: S − rS = 1 − rⁿ",
+  "titulo": "¿Sabías que esta suma se resuelve **restándola** de sí misma?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18182962375432492",
+  "fb_id": "1382195514976052_122116937529500466",
+  "th_id": "18133234258882555"
  }
 ]

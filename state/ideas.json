@@ -242,7 +242,7 @@
   "formato": "demostracion",
   "idea": "Suma geométrica por resta: si S = 1 + r + … + rⁿ⁻¹, entonces S − rS = 1 − rⁿ y S = (1 − rⁿ)/(1 − r).",
   "creada": "20261026",
-  "usada": null
+  "usada": "2026-11-04T08:39:52+00:00"
  },
  {
   "id": "202610260350-05",
