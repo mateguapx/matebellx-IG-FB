@@ -3260,5 +3260,31 @@
   "ig_id": "17876513091594801",
   "fb_id": "1382195514976052_122117151081500466",
   "th_id": "17916292800498612"
+ },
+ {
+  "id": "20261105-0551-t3",
+  "ts": "2026-11-05T05:52:02+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:corazon",
+  "area": "curva del corazón x = 16 sen³t, y = 13 cos t − 5 cos 2t − 2 cos 3t − cos 4t",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explorar",
+  "curva_tipo": "corazon",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "curva del corazón: x usa sen³t = (3 sen t − sen 3t)/4 y y usa cuatro cosenos",
+  "titulo": "Este corazón late con cuatro **frecuencias**: $t$, $2t$, $3t$ y $4t$",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17915551716551287",
+  "fb_id": "1382195514976052_122117225181500466",
+  "th_id": "17895751011434769"
  }
 ]
