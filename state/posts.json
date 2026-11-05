@@ -3286,5 +3286,31 @@
   "ig_id": "17915551716551287",
   "fb_id": "1382195514976052_122117225181500466",
   "th_id": "17895751011434769"
+ },
+ {
+  "id": "20261105-0858-t4",
+  "ts": "2026-11-05T08:59:42+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "idea:historia",
+  "area": "1729, el número del taxi: Hardy contó que Ramanujan le dijo que es el menor número que se escribe de dos formas como suma de dos cubos: 1³ + 12³ = 9³ + 10³.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": "Bellxs de la historia",
+  "idea_id": "202610190351-10",
+  "frase_id": null,
+  "tema": "1729, el número del taxi de Hardy y Ramanujan",
+  "titulo": "Hardy llamó **aburrido** al taxi 1729. Ramanujan no estuvo de acuerdo",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18133995751665745",
+  "fb_id": "1382195514976052_122117259819500466",
+  "th_id": "18057670415584011"
  }
 ]
