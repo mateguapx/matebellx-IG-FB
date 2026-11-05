@@ -1,20 +1,20 @@
 {
  "top": [
   {
-   "titulo": "Alan Turing también buscó la ecuación de las **manchas** animales",
-   "formato": "historia",
+   "titulo": "Dos ruedas que giran a distinto **ritmo** dibujan cinco lazos",
+   "formato": "curva",
    "hook": "asombro",
-   "tema": "Alan Turing y los patrones de la morfogénesis",
-   "fondo": "ondas",
+   "tema": "epitrocoide R=5, r=3, d=5: cinco lazos en tres vueltas",
+   "fondo": "geometria",
    "score": 5.0,
    "metricas": {
-    "reach": 207,
+    "reach": 112,
     "shares": 0,
-    "saved": 3,
-    "follows": 1,
-    "profile_visits": 0,
-    "views": 386,
-    "likes": 22,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 1,
+    "views": 210,
+    "likes": 9,
     "comments": 0
    }
   },
@@ -26,31 +26,31 @@
    "fondo": "geometria",
    "score": 5.0,
    "metricas": {
-    "reach": 366,
+    "reach": 373,
     "shares": 3,
     "saved": 5,
     "follows": 2,
     "profile_visits": 4,
-    "views": 573,
+    "views": 583,
     "likes": 28,
     "comments": 0
    }
   },
   {
-   "titulo": "En 1967, Mandelbrot preguntó cuánto **mide** la costa de Gran Bretaña",
-   "formato": "naturaleza",
-   "hook": "historia",
-   "tema": "la costa de Gran Bretaña y la dimensión fractal",
-   "fondo": "fractal",
-   "score": 4.63,
+   "titulo": "Parece un archipiélago, pero es **una** sola pieza",
+   "formato": "curva",
+   "hook": "asombro",
+   "tema": "el conjunto de Mandelbrot es conexo (Douady y Hubbard, 1982)",
+   "fondo": "formulas",
+   "score": 3.708,
    "metricas": {
-    "reach": 55,
+    "reach": 23,
     "shares": 0,
-    "saved": 0,
-    "follows": 1,
-    "profile_visits": 4,
-    "views": 98,
-    "likes": 5,
+    "saved": 1,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 55,
+    "likes": 3,
     "comments": 0
    }
   }
@@ -62,7 +62,7 @@
    "hook": "dato_preciso",
    "tema": "hexágonos del panal: menos borde para la misma área (Hales, 1999)",
    "fondo": "lissajous",
-   "score": 0.356,
+   "score": 0.336,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -80,14 +80,14 @@
    "hook": "metafora",
    "tema": "1/89 contiene la sucesión de Fibonacci",
    "fondo": "espiral",
-   "score": 0.327,
+   "score": 0.306,
    "metricas": {
     "reach": 8,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 19,
+    "views": 23,
     "likes": 0,
     "comments": 0
    }
@@ -105,7 +105,7 @@
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 13,
+    "views": 18,
     "likes": 0,
     "comments": 0
    }
