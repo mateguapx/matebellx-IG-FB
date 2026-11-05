@@ -3234,5 +3234,31 @@
   "ig_id": "18033684653887733",
   "fb_id": "1382195514976052_122117112477500466",
   "th_id": "18112620770363661"
+ },
+ {
+  "id": "20261105-0004-t2",
+  "ts": "2026-11-05T00:05:51+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "libro:FINANCIERAS",
+  "area": "amortización de créditos",
+  "key": "FINANCIERAS",
+  "nivel": "bach",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "amortización con abono constante: los intereses bajan en escalera y suman i·C·(n+1)/2",
+  "titulo": "Si abonas lo mismo a la deuda, los intereses bajan en **escalera**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17876513091594801",
+  "fb_id": "1382195514976052_122117151081500466",
+  "th_id": "17916292800498612"
  }
 ]
