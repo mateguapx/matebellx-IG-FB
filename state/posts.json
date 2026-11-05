@@ -3402,5 +3402,31 @@
   "ig_id": "17954229270343194",
   "fb_id": "1382195514976052_122117433033500466",
   "th_id": "18104817548033325"
+ },
+ {
+  "id": "20261105-2355-t2",
+  "ts": "2026-11-05T23:56:21+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:lemniscata",
+  "area": "lemniscata de Bernoulli r² = cos 2θ (el símbolo de infinito)",
+  "key": "EDO",
+  "nivel": "uni",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "lemniscata",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "perímetro de la lemniscata y la constante ϖ = π/AGM(1, √2) (Gauss, 1799)",
+  "titulo": "¿Sabías que el símbolo del infinito tiene su propio **π**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18098648579679895",
+  "fb_id": "1382195514976052_122117458785500466",
+  "th_id": "18088936796313512"
  }
 ]
