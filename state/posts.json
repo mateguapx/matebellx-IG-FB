@@ -3376,5 +3376,31 @@
   "ig_id": "18133995751665745",
   "fb_id": "1382195514976052_122117259819500466",
   "th_id": "18057670415584011"
+ },
+ {
+  "id": "20261105-2117-t1",
+  "ts": "2026-11-05T21:18:39+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:Carl Friedrich Gauss",
+  "area": "Pocos, pero maduros.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "gauss-pauca",
+  "tema": "frase de Carl Friedrich Gauss",
+  "titulo": "Pocos, pero maduros.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17954229270343194",
+  "fb_id": "1382195514976052_122117433033500466",
+  "th_id": "18104817548033325"
  }
 ]
