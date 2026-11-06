@@ -3546,5 +3546,31 @@
   "ig_id": "17870907852660886",
   "fb_id": "1382195514976052_122117716893500466",
   "th_id": "18098988872214503"
+ },
+ {
+  "id": "20261106-2343-t2",
+  "ts": "2026-11-06T23:44:46+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "pregunta",
+  "tema_clave": "libro:EDO",
+  "area": "ecuaciones separables",
+  "key": "EDO",
+  "nivel": "uni",
+  "fondo": "funciones",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la ecuación separable y' = −x/y y sus soluciones: todos los círculos centrados en el origen",
+  "titulo": "¿Sabías que la ecuación $y'=-x/y$ esconde **todos** los círculos?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18131192224843217",
+  "fb_id": "1382195514976052_122117760339500466",
+  "th_id": "17936336811144950"
  }
 ]
