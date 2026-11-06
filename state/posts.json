@@ -3428,5 +3428,31 @@
   "ig_id": "18098648579679895",
   "fb_id": "1382195514976052_122117458785500466",
   "th_id": "18088936796313512"
+ },
+ {
+  "id": "20261106-0556-t3",
+  "ts": "2026-11-06T05:57:09+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:lissajous",
+  "area": "curva de Lissajous x = sen(a t + δ), y = sen(b t)",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "explorar",
+  "curva_tipo": "lissajous",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Lissajous 3:4: los toques en los bordes revelan la razón de frecuencias",
+  "titulo": "¿Sabías que esta curva **cuenta** sus propias frecuencias?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18114670991086364",
+  "fb_id": "1382195514976052_122117519103500466",
+  "th_id": "18016064186986381"
  }
 ]
