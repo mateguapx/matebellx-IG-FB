@@ -3454,5 +3454,31 @@
   "ig_id": "18114670991086364",
   "fb_id": "1382195514976052_122117519103500466",
   "th_id": "18016064186986381"
+ },
+ {
+  "id": "20261106-0905-t4",
+  "ts": "2026-11-06T09:06:34+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "historia",
+  "tema_clave": "las manchas animales y las ecuaciones de Turing",
+  "area": "las manchas animales y las ecuaciones de Turing",
+  "key": null,
+  "nivel": "general",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Murray (1988): con las ecuaciones de Turing, las colas manchadas terminan en anillos",
+  "titulo": "Murray explicó por qué tantas colas con manchas acaban en **anillos**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18077602265741975",
+  "fb_id": "1382195514976052_122117557683500466",
+  "th_id": "17991687078114867"
  }
 ]
