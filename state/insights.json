@@ -62,7 +62,7 @@
    "hook": "dato_preciso",
    "tema": "hexágonos del panal: menos borde para la misma área (Hales, 1999)",
    "fondo": "lissajous",
-   "score": 0.336,
+   "score": 0.327,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -98,7 +98,7 @@
    "hook": "metafora",
    "tema": "Aquiles y la tortuga: 100 + 10 + 1 + … = 1000/9",
    "fondo": "espiral",
-   "score": 0.275,
+   "score": 0.284,
    "metricas": {
     "reach": 7,
     "shares": 0,
