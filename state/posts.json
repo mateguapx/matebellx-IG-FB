@@ -3520,5 +3520,31 @@
   "ig_id": "18077602265741975",
   "fb_id": "1382195514976052_122117557683500466",
   "th_id": "17991687078114867"
+ },
+ {
+  "id": "20261106-2039-t1",
+  "ts": "2026-11-06T20:40:41+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "pregunta",
+  "tema_clave": "fractales en helechos, romanescos y costas",
+  "area": "fractales en helechos, romanescos y costas",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "el helecho de Barnsley: cuatro transformaciones afines",
+  "titulo": "¿Sabías que este helecho se dibuja con solo **cuatro** reglas?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17870907852660886",
+  "fb_id": "1382195514976052_122117716893500466",
+  "th_id": "18098988872214503"
  }
 ]
