@@ -3675,5 +3675,31 @@
   "ig_id": "18433305508146732",
   "fb_id": "1382195514976052_122117851707500466",
   "th_id": "18105755135377773"
+ },
+ {
+  "id": "20261107-1913-t1",
+  "ts": "2026-11-07T19:14:29+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "pregunta",
+  "tema_clave": "la catenaria en puentes y arcos",
+  "area": "la catenaria en puentes y arcos",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la catenaria invertida como arco: Hooke (1676) y la ecuación de 1691",
+  "titulo": "¿Sabías que una cadena colgante, al revés, es un arco **perfecto**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17896066446432808",
+  "fb_id": "1382195514976052_122118018183500466",
+  "th_id": "18108612083625496"
  }
 ]
