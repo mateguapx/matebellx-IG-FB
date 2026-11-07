@@ -3572,5 +3572,31 @@
   "ig_id": "18131192224843217",
   "fb_id": "1382195514976052_122117760339500466",
   "th_id": "17936336811144950"
+ },
+ {
+  "id": "20261107-0518-t3",
+  "ts": "2026-11-07T05:19:02+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:epitrocoide",
+  "area": "espirógrafo exterior (epitrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "epitrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "epitrocoide R=9, r=4, d=5 y el Spirograph de Denys Fisher (1965)",
+  "titulo": "Una rueda que gira por **fuera** de otra borda estos nueve lazos",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17897759148613618",
+  "fb_id": "1382195514976052_122117824605500466",
+  "th_id": "17979873090132446"
  }
 ]
