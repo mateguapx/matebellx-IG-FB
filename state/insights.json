@@ -37,20 +37,20 @@
    }
   },
   {
-   "titulo": "Parece un archipiélago, pero es **una** sola pieza",
-   "formato": "curva",
+   "titulo": "Hardy llamó **aburrido** al taxi 1729. Ramanujan no estuvo de acuerdo",
+   "formato": "historia",
    "hook": "asombro",
-   "tema": "el conjunto de Mandelbrot es conexo (Douady y Hubbard, 1982)",
+   "tema": "1729, el número del taxi de Hardy y Ramanujan",
    "fondo": "formulas",
-   "score": 3.708,
+   "score": 4.835,
    "metricas": {
-    "reach": 23,
+    "reach": 127,
     "shares": 0,
     "saved": 1,
     "follows": 0,
-    "profile_visits": 0,
-    "views": 55,
-    "likes": 3,
+    "profile_visits": 5,
+    "views": 215,
+    "likes": 6,
     "comments": 0
    }
   }
@@ -62,7 +62,7 @@
    "hook": "dato_preciso",
    "tema": "hexágonos del panal: menos borde para la misma área (Hales, 1999)",
    "fondo": "lissajous",
-   "score": 0.327,
+   "score": 0.318,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -80,7 +80,7 @@
    "hook": "metafora",
    "tema": "1/89 contiene la sucesión de Fibonacci",
    "fondo": "espiral",
-   "score": 0.306,
+   "score": 0.297,
    "metricas": {
     "reach": 8,
     "shares": 0,
@@ -98,7 +98,7 @@
    "hook": "metafora",
    "tema": "Aquiles y la tortuga: 100 + 10 + 1 + … = 1000/9",
    "fondo": "espiral",
-   "score": 0.284,
+   "score": 0.267,
    "metricas": {
     "reach": 7,
     "shares": 0,
