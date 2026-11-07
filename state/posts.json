@@ -3701,5 +3701,31 @@
   "ig_id": "17896066446432808",
   "fb_id": "1382195514976052_122118018183500466",
   "th_id": "18108612083625496"
+ },
+ {
+  "id": "20261107-2227-t2",
+  "ts": "2026-11-07T22:28:55+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:rosa",
+  "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+  "key": "PRECALCULO",
+  "nivel": "bach",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": "rosa",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
+  "titulo": "Un trébol de **cuatro** hojas que no depende de la suerte",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18034740818887993",
+  "fb_id": "1382195514976052_122118049287500466",
+  "th_id": "18008758793792555"
  }
 ]
