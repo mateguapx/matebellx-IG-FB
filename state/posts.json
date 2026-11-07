@@ -3598,5 +3598,31 @@
   "ig_id": "17897759148613618",
   "fb_id": "1382195514976052_122117824605500466",
   "th_id": "17979873090132446"
+ },
+ {
+  "id": "20261107-0820-t4",
+  "ts": "2026-11-07T08:21:44+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "Carl Friedrich Gauss de niño",
+  "area": "Carl Friedrich Gauss de niño",
+  "key": null,
+  "nivel": "general",
+  "fondo": "probabilidad",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Gauss a los 18 años y el polígono regular de 17 lados (30 de marzo de 1796)",
+  "titulo": "A sus 18, Gauss probó que el **17**-ágono se traza con regla y compás",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18433305508146732",
+  "fb_id": "1382195514976052_122117851707500466",
+  "th_id": "18105755135377773"
  }
 ]
