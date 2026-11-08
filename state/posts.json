@@ -3753,5 +3753,31 @@
   "ig_id": "18110135936252674",
   "fb_id": "1382195514976052_122118115035500466",
   "th_id": "18135181888764550"
+ },
+ {
+  "id": "20261108-0837-t4",
+  "ts": "2026-11-08T08:38:29+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "asombro",
+  "tema_clave": "idea:infinito",
+  "area": "Argumento diagonal de Cantor (1891): cualquier lista de números reales deja fuera uno, el que cambia el n-ésimo decimal del n-ésimo número; los reales no se pueden contar.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-19",
+  "frase_id": null,
+  "tema": "la construcción diagonal de Cantor: cambiar el n-ésimo decimal del n-ésimo número",
+  "titulo": "Haz la lista infinita que quieras: siempre te faltará un **número**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17990923896079513",
+  "fb_id": "1382195514976052_122118145941500466",
+  "th_id": "17960870388014878"
  }
 ]
