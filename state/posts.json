@@ -3831,5 +3831,31 @@
   "ig_id": "17990923896079513",
   "fb_id": "1382195514976052_122118145941500466",
   "th_id": "17960870388014878"
+ },
+ {
+  "id": "20261108-1915-t1",
+  "ts": "2026-11-08T19:16:17+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "√2 es irracional",
+  "area": "√2 es irracional",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "√2 es irracional: si p² = 2q², p y q serían pares",
+  "titulo": "Ninguna fracción, por grande que sea, da **exactamente** $\\sqrt{2}$",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18136193194738586",
+  "fb_id": "1382195514976052_122118283737500466",
+  "th_id": "18160571092510240"
  }
 ]
