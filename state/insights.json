@@ -1,24 +1,6 @@
 {
  "top": [
   {
-   "titulo": "Dos ruedas que giran a distinto **ritmo** dibujan cinco lazos",
-   "formato": "curva",
-   "hook": "asombro",
-   "tema": "epitrocoide R=5, r=3, d=5: cinco lazos en tres vueltas",
-   "fondo": "geometria",
-   "score": 5.0,
-   "metricas": {
-    "reach": 112,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 1,
-    "views": 210,
-    "likes": 9,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Un matemático es una máquina que convierte café en teoremas.",
    "formato": "frase",
    "hook": "asombro",
@@ -42,34 +24,70 @@
    "hook": "asombro",
    "tema": "1729, el número del taxi de Hardy y Ramanujan",
    "fondo": "formulas",
-   "score": 4.835,
+   "score": 5.0,
    "metricas": {
-    "reach": 127,
+    "reach": 137,
     "shares": 0,
     "saved": 1,
     "follows": 0,
     "profile_visits": 5,
-    "views": 215,
-    "likes": 6,
+    "views": 240,
+    "likes": 9,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Cinco **pétalos** iguales, y solo hizo falta un coseno",
+   "formato": "curva",
+   "hook": "asombro",
+   "tema": "rosa polar de 5 pétalos r = cos 5θ y su área π/4",
+   "fondo": "rejilla",
+   "score": 3.48,
+   "metricas": {
+    "reach": 18,
+    "shares": 0,
+    "saved": 1,
+    "follows": 0,
+    "profile_visits": 1,
+    "views": 47,
+    "likes": 2,
     "comments": 0
    }
   }
  ],
  "bottom": [
   {
-   "titulo": "Misma área, menos **cera**: el hexágono gana al cuadrado",
-   "formato": "naturaleza",
-   "hook": "dato_preciso",
-   "tema": "hexágonos del panal: menos borde para la misma área (Hales, 1999)",
-   "fondo": "lissajous",
-   "score": 0.318,
+   "titulo": "¿Sabías que esta espiral cruza cada radio con el **mismo** ángulo?",
+   "formato": "curva",
+   "hook": "pregunta",
+   "tema": "la espiral áurea corta todos los radios con el mismo ángulo de 72.97°",
+   "fondo": "formulas",
+   "score": 0.38,
    "metricas": {
-    "reach": 10,
+    "reach": 12,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
     "views": 23,
+    "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Gira la cuerda como quieras: $PA\\cdot PB$ **nunca** cambia",
+   "formato": "identidad",
+   "hook": "dato_preciso",
+   "tema": "potencia de un punto: PA·PB constante en la circunferencia",
+   "fondo": "geometria",
+   "score": 0.327,
+   "metricas": {
+    "reach": 9,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 21,
     "likes": 0,
     "comments": 0
    }
@@ -88,24 +106,6 @@
     "follows": 0,
     "profile_visits": 0,
     "views": 23,
-    "likes": 0,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Zenón partió la carrera en **migajas** que suman $1000/9$ metros",
-   "formato": "demostracion",
-   "hook": "metafora",
-   "tema": "Aquiles y la tortuga: 100 + 10 + 1 + … = 1000/9",
-   "fondo": "espiral",
-   "score": 0.267,
-   "metricas": {
-    "reach": 7,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 18,
     "likes": 0,
     "comments": 0
    }
