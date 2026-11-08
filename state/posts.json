@@ -3857,5 +3857,31 @@
   "ig_id": "18136193194738586",
   "fb_id": "1382195514976052_122118283737500466",
   "th_id": "18160571092510240"
+ },
+ {
+  "id": "20261108-2237-t2",
+  "ts": "2026-11-08T22:38:45+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "asombro",
+  "tema_clave": "libro:EDO",
+  "area": "existencia y unicidad",
+  "key": "EDO",
+  "nivel": "uni",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "falla de unicidad: y' = 3y^(2/3), y(0) = 0 tiene infinitas soluciones",
+  "titulo": "Misma ecuación, mismo inicio, y aun así **infinitas** soluciones",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18108418220236542",
+  "fb_id": "1382195514976052_122118320385500466",
+  "th_id": "18112704551229147"
  }
 ]
