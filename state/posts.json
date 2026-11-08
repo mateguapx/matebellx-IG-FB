@@ -3727,5 +3727,31 @@
   "ig_id": "18034740818887993",
   "fb_id": "1382195514976052_122118049287500466",
   "th_id": "18008758793792555"
+ },
+ {
+  "id": "20261108-0515-t3",
+  "ts": "2026-11-08T05:16:50+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:hipotrocoide",
+  "area": "espirógrafo interior (hipotrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": "hipotrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "hipotrocoide R=12, r=5, d=4: doce puntas en cinco vueltas",
+  "titulo": "Una rueda de radio 5 gira dentro de otra de 12 y borda **doce** puntas",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18110135936252674",
+  "fb_id": "1382195514976052_122118115035500466",
+  "th_id": "18135181888764550"
  }
 ]
