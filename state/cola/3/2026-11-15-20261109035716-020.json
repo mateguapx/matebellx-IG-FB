@@ -1,0 +1,36 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:rosa",
+ "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+ "key": null,
+ "nivel": "general",
+ "fondo": "rejilla",
+ "curva_tipo": "rosa",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 975370,
+ "modo": "explotar",
+ "fecha": "2026-11-15",
+ "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
+ "slides": [
+  {
+   "title": "Ocho **pétalos** que cubren exactamente la mitad del círculo",
+   "text": "Con $k=4$ par salen $2k=8$ pétalos, y su área total es $\\pi/2$.",
+   "display": "r=\\cos(4\\theta)",
+   "curva": {
+    "tipo": "rosa",
+    "params": {
+     "k": 4.0
+    }
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: la rosa r = cos 4θ.\nCuando k es par, la rosa polar tiene 2k pétalos: aquí, ocho.\nLo sorprendente es su área. Con ½∫cos²(4θ) dθ de 0 a 2π se obtiene π/2: la mitad exacta del círculo unitario que la contiene. Y vale π/2 para cualquier k par, tenga 4, 8 o 24 pétalos.\nDedícale esta flor a quien tú sabes.\n#matebellx #mateguapo #ecuaciondeldia #rosapolar",
+ "threads": "r = cos 4θ dibuja una flor de ocho pétalos 💛 Y su área es exactamente π/2, la mitad del círculo que la rodea. Lo más bonito: con cualquier k par pasa lo mismo, sin importar cuántos pétalos tenga. ¿A quién le regalarías esta flor?"
+}

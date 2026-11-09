@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "pregunta",
+ "tema_clave": "libro:PRECALCULO",
+ "area": "sucesiones y series",
+ "key": "PRECALCULO",
+ "nivel": "bach",
+ "fondo": "funciones",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 431458,
+ "modo": "explotar",
+ "fecha": "2026-11-17",
+ "tema": "suma de Fibonacci: F₁ + … + Fₙ = Fₙ₊₂ − 1 por telescopio",
+ "slides": [
+  {
+   "title": "¿Sabías que sumar los primeros Fibonacci da otro Fibonacci **menos** 1?",
+   "text": "$1+1+2+3+5+8=20=21-1$. Cada término es la resta de los dos que le siguen, y todo se cancela.",
+   "display": "\\begin{aligned}F_k&=F_{k+2}-F_{k+1}\\\\\\sum_{k=1}^{n}F_k&=F_{n+2}-F_2=F_{n+2}-1\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Suma los primeros números de Fibonacci y mira lo que pasa: 1 + 1 + 2 + 3 + 5 + 8 = 20, y el siguiente después del 13 es 21.\nComo cada número es la suma de los dos anteriores, también es la resta de los dos que le siguen: Fₖ = Fₖ₊₂ − Fₖ₊₁. Al sumar, los términos se cancelan en cadena y solo quedan el último y el primero.\nMándaselo a alguien que siempre va dos pasos adelante.\n#matebellx #mateguapo #fibonacci #sucesiones",
+ "threads": "Suma 1 + 1 + 2 + 3 + 5 + 8 y te da 20. El Fibonacci dos lugares adelante es 21 💛 Siempre pasa: la suma de los primeros n es Fₙ₊₂ − 1. El truco es escribir cada uno como resta de los dos siguientes, y todo se cancela en cadena. ¿Lo pruebas con más términos?"
+}

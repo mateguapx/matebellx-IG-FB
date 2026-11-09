@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:espiral_arquimedes",
+ "area": "espiral de Arquímedes r = θ",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": "espiral_arquimedes",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 993928,
+ "modo": "explotar",
+ "fecha": "2026-11-11",
+ "tema": "Arquímedes: la primera vuelta de la espiral encierra un tercio del círculo",
+ "slides": [
+  {
+   "title": "La primera vuelta de esta espiral encierra **un tercio** del círculo",
+   "text": "Arquímedes lo probó en Sobre las espirales: área $\\tfrac{1}{3}\\pi(2\\pi)^2$ dentro del círculo de radio $2\\pi$.",
+   "display": "r=\\theta",
+   "curva": {
+    "tipo": "espiral_arquimedes",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: la espiral de Arquímedes, r = θ.\nCada vuelta se aleja del centro la misma distancia, 2π, como una cuerda enrollada con cuidado.\nHace más de 2200 años, Arquímedes demostró que el área encerrada por la primera vuelta es exactamente un tercio del círculo de radio 2π. Hoy sale con una integral: ½∫θ² dθ de 0 a 2π = 4π³/3.\nGuárdalo para cuando olvides por qué amas las matemáticas.\n#matebellx #mateguapo #ecuaciondeldia #arquimedes",
+ "threads": "La espiral de Arquímedes es r = θ: cada vuelta se separa lo mismo de la anterior 💛 Y Arquímedes, sin cálculo, probó que su primera vuelta encierra justo un tercio del círculo que la contiene. Hoy lo comprobamos con una integral de una línea. ¿Te imaginas hacerlo sin ella?"
+}

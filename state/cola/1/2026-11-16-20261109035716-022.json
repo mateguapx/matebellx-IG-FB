@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "pregunta",
+ "tema_clave": "idea:historia",
+ "area": "Katherine Johnson calculó trayectorias para la NASA; en 1962 John Glenn pidió que ella verificara a mano los cálculos de la computadora antes de su vuelo orbital.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "funciones",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-07",
+ "frase_id": null,
+ "semilla": 416774,
+ "modo": "explotar",
+ "fecha": "2026-11-16",
+ "tema": "Katherine Johnson verificó a mano la órbita de John Glenn (1962)",
+ "slides": [
+  {
+   "title": "¿Sabías que John Glenn pidió que **ella** revisara su órbita?",
+   "text": "Katherine Johnson verificó a mano los cálculos de la computadora para la Friendship 7, en 1962.",
+   "display": "r(\\theta)=\\frac{a(1-e^2)}{1+e\\cos\\theta}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Antes de subir a la nave, John Glenn quiso la firma de una matemática.\nEn 1962 la NASA ya usaba computadoras electrónicas para calcular la órbita de la Friendship 7. Glenn pidió que Katherine Johnson revisara esos números a mano: si ella decía que estaban bien, él estaba listo.\nLa órbita es una elipse como la de la fórmula. Glenn dio tres vueltas a la Tierra.\nMándaselo a alguien en quien confías los cálculos importantes.\n#matebellx #mateguapo #katherinejohnson #mujeresenlaciencia",
+ "threads": "En 1962, antes de convertirse en el primer estadounidense en orbitar la Tierra, John Glenn pidió algo: que Katherine Johnson revisara a mano los cálculos de la computadora 💛 Si ella daba el visto bueno, él volaba. Y voló. ¿En quién confías tú para las cuentas importantes?"
+}

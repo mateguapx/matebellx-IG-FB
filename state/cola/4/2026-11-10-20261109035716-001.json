@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "asombro",
+ "tema_clave": "idea:historia",
+ "area": "Maryam Mirzakhani, nacida en Teherán, fue en 2014 la primera mujer en ganar la Medalla Fields, por su trabajo sobre superficies de Riemann y sus espacios de moduli.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-07",
+ "frase_id": null,
+ "semilla": 462461,
+ "modo": "explotar",
+ "fecha": "2026-11-10",
+ "tema": "Maryam Mirzakhani, Medalla Fields 2014 y el conteo de geodésicas simples",
+ "slides": [
+  {
+   "title": "En 2014, Mirzakhani fue la primera **mujer** con la Medalla Fields",
+   "text": "Probó que en una superficie de género $g$ las geodésicas simples de largo $\\le L$ crecen como $L^{6g-6}$.",
+   "display": "s_X(L)\\sim c_X\\,L^{6g-6}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Una mujer de Teherán cambió para siempre la lista de la Medalla Fields.\nEn 2014, Maryam Mirzakhani se convirtió en la primera mujer en recibirla, por su trabajo sobre superficies de Riemann y sus espacios de moduli.\nUno de sus resultados más famosos cuenta cuántos caminos cerrados simples caben en una superficie curva: crecen como L elevado a 6g − 6.\nMándaselo a alguien que también mira el mundo con curiosidad.\n#matebellx #mateguapo #mujeresenlaciencia #historiadelasmatematicas",
+ "threads": "En 2014, Maryam Mirzakhani, nacida en Teherán, fue la primera mujer en ganar la Medalla Fields 💛 Estudiaba superficies curvas y contó cuántos caminos cerrados sin cruces caben en ellas: crecen como L^(6g−6). ¿A quién le mandarías esta historia?"
+}

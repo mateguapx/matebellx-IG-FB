@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "identidad",
+ "hook": "asombro",
+ "tema_clave": "idea:identidad",
+ "area": "Fórmula BBP (Bailey, Borwein y Plouffe, 1995): π = ∑ 16⁻ᵏ (4/(8k+1) − 2/(8k+4) − 1/(8k+5) − 1/(8k+6)); permite calcular un dígito hexadecimal de π sin calcular los anteriores.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "lissajous",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-14",
+ "frase_id": null,
+ "semilla": 209260,
+ "modo": "explotar",
+ "fecha": "2026-11-14",
+ "tema": "fórmula BBP (1995): un dígito hexadecimal de π sin los anteriores",
+ "slides": [
+  {
+   "title": "Esta fórmula salta a una cifra de $\\pi$ **sin** ver las anteriores",
+   "text": "Bailey, Borwein y Plouffe, 1995. Funciona en base 16: da cifras hexadecimales de $\\pi$.",
+   "display": "\\pi=\\sum_{k=0}^{\\infty}\\frac{1}{16^k}\\left(\\frac{4}{8k+1}-\\frac{2}{8k+4}-\\frac{1}{8k+5}-\\frac{1}{8k+6}\\right)",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Durante siglos, para conocer la cifra un millón de π había que calcular las 999 999 anteriores.\nEn 1995, David Bailey, Peter Borwein y Simon Plouffe publicaron esta serie. Gracias al 16ᵏ, permite saltar directo a una cifra de π en base 16 (o en binario) sin pasar por las demás.\nFue hallada con ayuda de computadora, buscando relaciones entre constantes.\nMándaselo a alguien que siempre va directo al punto.\n#matebellx #mateguapo #pi #identidades",
+ "threads": "Esto me parece magia de la buena 💛 La fórmula BBP de 1995 permite calcular una cifra de π muy lejana sin calcular las anteriores. El truco: funciona en base 16, por eso aparece 16ᵏ. Durante siglos se creyó que eso era imposible. ¿Qué cifra de π te gustaría conocer?"
+}

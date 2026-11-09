@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "pregunta",
+ "tema_clave": "idea:demostracion",
+ "area": "El producto de cuatro enteros consecutivos más 1 es un cuadrado perfecto: n(n + 1)(n + 2)(n + 3) + 1 = (n² + 3n + 1)²; por ejemplo 1·2·3·4 + 1 = 25 = 5².",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202611090350-02",
+ "frase_id": null,
+ "semilla": 71665,
+ "modo": "explorar",
+ "fecha": "2026-11-16",
+ "tema": "n(n + 1)(n + 2)(n + 3) + 1 = (n² + 3n + 1)²",
+ "slides": [
+  {
+   "title": "¿Sabías que 4 números **seguidos** multiplicados, más 1, dan un cuadrado?",
+   "text": "Con $m=n^2+3n+1$, el número de en medio. Por ejemplo, $1\\cdot2\\cdot3\\cdot4+1=25=5^2$.",
+   "display": "\\begin{aligned}n(n+3)&=m-1\\\\(n+1)(n+2)&=m+1\\\\(m-1)(m+1)+1&=m^2\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Prueba con cualquier cuatro números seguidos: 1·2·3·4 + 1 = 25 = 5². 2·3·4·5 + 1 = 121 = 11². 3·4·5·6 + 1 = 361 = 19².\nEl secreto está en agruparlos: el primero con el cuarto da n² + 3n, y los dos del centro dan n² + 3n + 2. Si llamas m al número de en medio, n² + 3n + 1, tienes (m − 1)(m + 1) + 1 = m².\nMándaselo a alguien que siempre busca el patrón.\n#matebellx #mateguapo #algebra #demostracion",
+ "threads": "Haz la prueba: 1·2·3·4 + 1 = 25, 2·3·4·5 + 1 = 121, 3·4·5·6 + 1 = 361 💛 Todos son cuadrados. El truco es juntar el primero con el último y los dos del centro: quedan dos números que se diferencian en 2, y (m − 1)(m + 1) + 1 = m². ¿Lo probaste con otros?"
+}

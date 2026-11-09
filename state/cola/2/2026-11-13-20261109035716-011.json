@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "historia",
+ "tema_clave": "libro:LINEAL",
+ "area": "matrices e inversas",
+ "key": "LINEAL",
+ "nivel": "uni",
+ "fondo": "rejilla",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 148226,
+ "modo": "explotar",
+ "fecha": "2026-11-13",
+ "tema": "Cayley (1858) y la unicidad de la matriz inversa",
+ "slides": [
+  {
+   "title": "Cayley definió la inversa en 1858. Que sea **única** cabe en una línea",
+   "text": "Si $B$ y $C$ invierten a $A$, son la misma matriz: solo hace falta la asociatividad.",
+   "display": "B=BI=B(AC)=(BA)C=IC=C",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Una de las demostraciones más cortas del álgebra lineal.\nEn su memoria de 1858 sobre la teoría de matrices, Arthur Cayley trató a las matrices como objetos que se suman, se multiplican y se invierten.\nSi BA = I y AC = I, entonces B = B(AC) = (BA)C = C. No hay que calcular ninguna entrada: la asociatividad hace todo el trabajo.\nGuárdalo para cuando te pregunten por qué se dice LA inversa.\n#matebellx #mateguapo #algebralineal #matrices",
+ "threads": "¿Por qué decimos “la” inversa y no “una” inversa? 💛 Si B y C invierten a la misma matriz A, entonces B = B(AC) = (BA)C = C. Una línea, sin calcular nada, solo asociatividad. Arthur Cayley armó esta álgebra de matrices en 1858. ¿Te la habían demostrado así?"
+}

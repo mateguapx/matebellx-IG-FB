@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "asombro",
+ "tema_clave": "libro:ALGEBRA",
+ "area": "ecuaciones y desigualdades",
+ "key": "ALGEBRA",
+ "nivel": "bach",
+ "fondo": "funciones",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 869619,
+ "modo": "explotar",
+ "fecha": "2026-11-12",
+ "tema": "fórmula general de segundo grado completando el cuadrado (al-Juarismi)",
+ "slides": [
+  {
+   "title": "Toda ecuación de segundo grado se resuelve **completando** un cuadrado",
+   "text": "Hacia el año 820, al-Juarismi resolvió así $x^2+10x=39$ con cuadrados dibujados.",
+   "display": "\\begin{aligned}ax^2+bx+c&=0\\\\\\left(x+\\tfrac{b}{2a}\\right)^2&=\\tfrac{b^2-4ac}{4a^2}\\\\x&=\\tfrac{-b\\pm\\sqrt{b^2-4ac}}{2a}\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "La fórmula general no se memoriza: se construye.\nDivide entre a, pasa c al otro lado y suma (b/2a)² a ambos lados. Lo de la izquierda se vuelve un cuadrado perfecto, (x + b/2a)², y basta sacar raíz.\nHace unos 1200 años, al-Juarismi lo hacía literalmente: dibujaba un cuadrado de lado x, le pegaba rectángulos y completaba la esquina que faltaba. Para x² + 10x = 39 obtuvo x = 3.\nMándaselo a quien todavía canta la fórmula para recordarla.\n#matebellx #mateguapo #algebra #demostracion",
+ "threads": "La fórmula general de segundo grado sale de un truco precioso: completar un cuadrado 💛 Al sumar (b/2a)² a ambos lados, la izquierda se vuelve (x + b/2a)² y solo falta sacar raíz. Al-Juarismi lo hacía con dibujos hacia el año 820: para x² + 10x = 39 le salió x = 3. ¿Te la enseñaron así?"
+}

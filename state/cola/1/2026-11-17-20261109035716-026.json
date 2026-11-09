@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "pregunta",
+ "tema_clave": "idea:historia",
+ "area": "Gauss tenía 19 años cuando, en 1796, demostró que el polígono regular de 17 lados se construye con regla y compás, porque 17 es un primo de Fermat 2^(2²) + 1.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "red",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-09",
+ "frase_id": null,
+ "semilla": 268252,
+ "modo": "explorar",
+ "fecha": "2026-11-17",
+ "tema": "Gauss (24 años) y la recuperación de Ceres en 1801",
+ "slides": [
+  {
+   "title": "¿Sabías que, a los 24 años, Gauss encontró un astro **perdido**?",
+   "text": "Piazzi halló Ceres en enero de 1801 y lo perdió. Con el cálculo de Gauss, von Zach lo volvió a ver.",
+   "display": "\\min_{\\theta}\\ \\sum_{i}\\big(y_i-f(x_i;\\theta)\\big)^2",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Un astro se pierde y un joven de 24 años calcula dónde reaparecerá.\nEl 1 de enero de 1801, Giuseppe Piazzi descubrió Ceres, pero solo pudo seguirlo unas semanas. Con esos pocos datos, Carl Friedrich Gauss calculó su órbita, y en diciembre de 1801 Franz Xaver von Zach lo encontró cerca de donde Gauss había dicho.\nLas ideas que usó las publicó en 1809: el método de mínimos cuadrados.\nMándaselo a alguien que siempre te encuentra.\n#matebellx #mateguapo #gauss #historiadelasmatematicas",
+ "threads": "En 1801, Piazzi descubrió Ceres y, semanas después, lo perdió de vista 💛 Con unos cuantos datos, Gauss, de 24 años, calculó su órbita. En diciembre, von Zach apuntó el telescopio donde Gauss dijo y ahí estaba. Las ideas de ese cálculo dieron el método de mínimos cuadrados. ¿Conocías esta historia?"
+}

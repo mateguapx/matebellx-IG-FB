@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "historia",
+ "tema_clave": "libro:LINEAL",
+ "area": "ortogonalidad y Gram-Schmidt",
+ "key": "LINEAL",
+ "nivel": "uni",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 350813,
+ "modo": "explorar",
+ "fecha": "2026-11-16",
+ "tema": "Gram-Schmidt: lleva el nombre de Gram (1883) y Schmidt (1907), pero Laplace ya lo usaba",
+ "slides": [
+  {
+   "title": "Lleva el nombre de Gram y Schmidt, pero Laplace ya lo **usaba** antes",
+   "text": "Restar la sombra de $v_2$ sobre $u_1$ deja solo lo perpendicular. Gram, 1883; Schmidt, 1907.",
+   "display": "\\begin{aligned}u_2&=v_2-\\frac{\\langle v_2,u_1\\rangle}{\\langle u_1,u_1\\rangle}\\,u_1\\\\\\langle u_2,u_1\\rangle&=\\langle v_2,u_1\\rangle-\\langle v_2,u_1\\rangle=0\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "El método de Gram-Schmidt tiene una historia más vieja que su nombre.\nJørgen Pedersen Gram lo usó en 1883 y Erhard Schmidt lo formuló en 1907, pero Laplace ya empleaba la misma idea a principios del siglo XIX.\nLa idea es geométrica: a v₂ le quitas su proyección sobre u₁ y lo que queda es perpendicular. La prueba de que ⟨u₂, u₁⟩ = 0 es una sola resta.\nGuárdalo para cuando necesites poner orden en tus vectores.\n#matebellx #mateguapo #algebralineal #demostracion",
+ "threads": "Gram-Schmidt se llama así por Gram (1883) y Schmidt (1907), pero Laplace ya usaba la idea antes 💛 Y la idea es preciosa: a un vector le quitas su sombra sobre otro, y lo que queda es perpendicular. Comprobarlo es una resta. ¿Qué otro teorema crees que lleva el nombre equivocado?"
+}

@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "pregunta",
+ "tema_clave": "libro:MULTIVARIABLE",
+ "area": "cambio de variables y jacobiano",
+ "key": "MULTIVARIABLE",
+ "nivel": "uni",
+ "fondo": "funciones",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 521917,
+ "modo": "explotar",
+ "fecha": "2026-11-15",
+ "tema": "integral de Gauss con el jacobiano r de las coordenadas polares",
+ "slides": [
+  {
+   "title": "¿Sabías que $\\int e^{-x^2}dx=\\sqrt{\\pi}$ sale de pasar a **polares**?",
+   "text": "Se eleva al cuadrado, se pasa a polares y el jacobiano $r$ hace integrable a $e^{-r^2}$.",
+   "display": "\\begin{aligned}I^2&=\\iint_{\\mathbb{R}^2}e^{-(x^2+y^2)}\\,dx\\,dy\\\\&=\\int_0^{2\\pi}\\!\\!\\int_0^{\\infty}e^{-r^2}\\,r\\,dr\\,d\\theta=\\pi\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "La integral de e^(−x²) no tiene antiderivada elemental, y aun así sabemos su valor exacto.\nEl truco: multiplicarla por sí misma. I² se vuelve una integral doble sobre todo el plano, y en polares dx dy = r dr dθ. Ese factor r, el jacobiano, es justo la derivada que faltaba: e^(−r²)·r sí se integra.\nResultado: I² = π, así que I = √π.\nGuárdalo para cuando el cálculo te parezca solo cuentas.\n#matebellx #mateguapo #calculo #demostracion",
+ "threads": "Uno de los trucos más bellos del cálculo 💛 La integral de e^(−x²) no tiene antiderivada elemental. Pero si la elevas al cuadrado y pasas a polares, aparece un factor r (el jacobiano) que la vuelve fácil. Sale I² = π, entonces I = √π. ¿Te lo enseñaron así?"
+}

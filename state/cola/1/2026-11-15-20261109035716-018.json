@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "asombro",
+ "tema_clave": "idea:demostracion",
+ "area": "Teorema de Tales: un ángulo inscrito en un semicírculo es recto; trazando el radio al vértice salen dos triángulos isósceles y 2α + 2β = 180°.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "trig",
+ "curva_tipo": null,
+ "serie": "Domingo de demostraciones",
+ "idea_id": "202610190351-04",
+ "frase_id": null,
+ "semilla": 486999,
+ "modo": "explorar",
+ "fecha": "2026-11-15",
+ "tema": "teorema de Tales: el ángulo inscrito en un semicírculo es recto",
+ "slides": [
+  {
+   "title": "Desde cualquier punto del círculo, el diámetro se ve a **90°**",
+   "text": "El radio al vértice parte el triángulo en dos isósceles, y sus ángulos suman $2\\alpha+2\\beta=180^\\circ$.",
+   "display": "\\begin{aligned}2\\alpha+2\\beta&=180^\\circ\\\\\\alpha+\\beta&=90^\\circ\\end{aligned}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Domingo de demostraciones: el teorema de Tales.\nTraza un diámetro y une sus extremos con cualquier punto del círculo. El ángulo en ese punto siempre mide 90°.\nLa prueba: el radio que va al punto crea dos triángulos isósceles, con ángulos α, α y β, β. Los ángulos del triángulo grande suman 2α + 2β = 180°, así que el ángulo del punto, α + β, mide 90°.\nMándaselo a alguien que siempre encuentra el ángulo correcto.\n#matebellx #mateguapo #geometria #demostracion",
+ "threads": "Dibuja un círculo, traza un diámetro y une sus extremos con cualquier punto del borde 💛 El ángulo ahí siempre es recto. ¿Por qué? El radio a ese punto forma dos triángulos isósceles; sus ángulos suman 2α + 2β = 180°, así que α + β = 90°. ¿No es elegante?"
+}

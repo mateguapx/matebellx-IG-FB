@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:corazon",
+ "area": "curva del corazón x = 16 sen³t, y = 13 cos t − 5 cos 2t − 2 cos 3t − cos 4t",
+ "key": null,
+ "nivel": "general",
+ "fondo": "rejilla",
+ "curva_tipo": "corazon",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 163178,
+ "modo": "explotar",
+ "fecha": "2026-11-16",
+ "tema": "curva del corazón: solo se detiene en t = 0 y t = π, sus dos puntas",
+ "slides": [
+  {
+   "title": "¿Sabías que este corazón solo se **detiene** dos veces, en sus puntas?",
+   "text": "En $t=0$ y $t=\\pi$ las dos velocidades valen 0: ahí nacen la hendidura y la punta de abajo.",
+   "display": "\\begin{aligned}x&=16\\sin^3 t\\\\ y&=13\\cos t-5\\cos 2t-2\\cos 3t-\\cos 4t\\end{aligned}",
+   "curva": {
+    "tipo": "corazon",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: por qué este corazón tiene puntas.\nImagina un punto que recorre la curva x = 16 sen³t, y = 13 cos t − 5 cos 2t − 2 cos 3t − cos 4t. Casi todo el tiempo avanza, pero en t = 0 y t = π su velocidad horizontal y su velocidad vertical valen cero al mismo tiempo.\nAhí el trazo se frena, da la vuelta y forma un pico: la hendidura de arriba y la punta de abajo.\nDedícale este corazón a quien te hace detenerte.\n#matebellx #mateguapo #ecuaciondeldia #corazon",
+ "threads": "Si un punto recorre esta curva del corazón, solo se detiene dos veces: en t = 0 y en t = π 💛 Ahí sus dos velocidades valen cero a la vez y el trazo forma un pico: la hendidura de arriba y la punta de abajo. ¿Quién te hace detenerte a ti?"
+}

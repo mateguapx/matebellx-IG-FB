@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "pregunta",
+ "tema_clave": "idea:demostracion",
+ "area": "Infinitas ternas pitagóricas: (m² − n²)² + (2mn)² = (m² + n²)² para cualesquiera enteros m > n > 0; con m = 2, n = 1 sale 3, 4, 5 y con m = 3, n = 2 sale 5, 12, 13.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": "Domingo de demostraciones",
+ "idea_id": "202611090350-07",
+ "frase_id": null,
+ "semilla": 215795,
+ "modo": "explotar",
+ "fecha": "2026-11-15",
+ "tema": "fórmula de Euclides para ternas pitagóricas: (m² − n²)² + (2mn)² = (m² + n²)²",
+ "slides": [
+  {
+   "title": "¿Sabías que hay **infinitos** triángulos rectángulos de lados enteros?",
+   "text": "Con $m=2,\\ n=1$ sale 3, 4, 5; con $m=3,\\ n=2$ sale 5, 12, 13. Cada par $m>n$ da uno.",
+   "display": "(m^2-n^2)^2+(2mn)^2=(m^2+n^2)^2",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Domingo de demostraciones: una fábrica de triángulos rectángulos.\nElige dos enteros m > n > 0. Los números m² − n², 2mn y m² + n² siempre cumplen Pitágoras. La prueba es desarrollar: ambos lados dan m⁴ + 2m²n² + n⁴.\nCon m = 4, n = 1 sale 15, 8, 17; con m = 4, n = 3 sale 7, 24, 25. Euclides ya describía esta construcción en sus Elementos.\nMándaselo a alguien con quien formas un ángulo perfecto.\n#matebellx #mateguapo #pitagoras #demostracion",
+ "threads": "Elige dos números enteros m > n. Calcula m² − n², 2mn y m² + n² 💛 Siempre forman un triángulo rectángulo: con 2 y 1 sale 3, 4, 5; con 3 y 2 sale 5, 12, 13. La prueba es solo desarrollar los cuadrados. ¿Qué triángulo te sale con tus números favoritos?"
+}

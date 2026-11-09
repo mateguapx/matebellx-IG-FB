@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "asombro",
+ "tema_clave": "la paradoja de Zenón",
+ "area": "la paradoja de Zenón",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 878119,
+ "modo": "explotar",
+ "fecha": "2026-11-11",
+ "tema": "lámpara de Thomson (1954): infinitos encendidos en 2 minutos",
+ "slides": [
+  {
+   "title": "Una lámpara se prende y apaga **infinitas** veces en solo 2 minutos",
+   "text": "James F. Thomson, 1954: tras 2 minutos, ¿queda prendida o apagada? Nada en la serie lo decide.",
+   "display": "1+\\tfrac{1}{2}+\\tfrac{1}{4}+\\tfrac{1}{8}+\\cdots=2",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Una paradoja que Zenón habría disfrutado.\nPrendes una lámpara; al minuto la apagas, al medio minuto la prendes, al cuarto la apagas… Los tiempos suman 1 + 1/2 + 1/4 + … = 2 minutos, pero el botón se presiona infinitas veces.\nEl filósofo James F. Thomson la propuso en 1954: al minuto 2, ¿la lámpara está prendida o apagada? La sucesión prendida, apagada, prendida… no tiene último término.\nMándaselo a quien siempre quiere la última palabra.\n#matebellx #mateguapo #infinito #paradojas",
+ "threads": "Imagina una lámpara: la prendes, al minuto la apagas, al medio minuto la prendes, al cuarto la apagas… 💛 Todo eso cabe en 2 minutos, porque 1 + 1/2 + 1/4 + … = 2. Pero al llegar al minuto 2, ¿está prendida o apagada? El filósofo James Thomson lo planteó en 1954 y la serie no lo decide. ¿Tú qué dices?"
+}

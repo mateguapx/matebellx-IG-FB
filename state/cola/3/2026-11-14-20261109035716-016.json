@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:mariposa",
+ "area": "mariposa de Fay r = e^(sen θ) − 2cos 4θ + sen⁵((2θ − π)/24)",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": "mariposa",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 41182,
+ "modo": "explotar",
+ "fecha": "2026-11-14",
+ "tema": "mariposa de Temple H. Fay (American Mathematical Monthly, 1989)",
+ "slides": [
+  {
+   "title": "¿Sabías que esta **mariposa** se publicó en 1989 como una ecuación?",
+   "text": "Temple H. Fay la presentó en The American Mathematical Monthly. Tarda $24\\pi$ en cerrar el dibujo.",
+   "display": "r=e^{\\sin\\theta}-2\\cos 4\\theta+\\sin^5\\!\\left(\\tfrac{2\\theta-\\pi}{24}\\right)",
+   "curva": {
+    "tipo": "mariposa",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: la mariposa de Fay.\nEn 1989, el matemático Temple H. Fay publicó en The American Mathematical Monthly una curva polar que, al trazarse, despliega alas, antenas y manchas.\nLa mezcla de una exponencial, un coseno y un seno a la quinta hace que el dibujo tarde 24π en repetirse, y cada vuelta añade un trazo nuevo.\nDedícale esta mariposa a quien te las provoca.\n#matebellx #mateguapo #ecuaciondeldia #curvas",
+ "threads": "Esta mariposa no es un dibujo: es una sola ecuación polar 💛 La publicó Temple H. Fay en 1989, y mezcla una exponencial, un coseno y un seno a la quinta. Tarda 24π en cerrar el trazo, y en cada vuelta salen alas nuevas. ¿A quién le provocas mariposas? 🦋"
+}

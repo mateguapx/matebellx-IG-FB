@@ -1,0 +1,37 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:julia",
+ "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": "julia",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 78333,
+ "modo": "explotar",
+ "fecha": "2026-11-13",
+ "tema": "conjunto de Julia c = −1, la basílica, y su ciclo 0 → −1 → 0",
+ "slides": [
+  {
+   "title": "Una sola regla, $z^2-1$, y aparece esta **basílica** infinita",
+   "text": "El 0 va a $-1$ y regresa a $0$: ese ciclo de periodo 2 da forma a sus bulbos.",
+   "display": "z_{n+1}=z_n^2-1+0\\,i",
+   "curva": {
+    "tipo": "julia",
+    "params": {
+     "c_re": -1.0,
+     "c_im": 0.0
+    }
+   },
+   "layout": "curva"
+  }
+ ],
+ "caption": "Ecuación del día: el conjunto de Julia de z → z² − 1, conocido como la basílica.\nToma un número complejo, elévalo al cuadrado y réstale 1. Repite. Los puntos que nunca se escapan al infinito forman esta figura de bulbos encadenados.\nEl 0 sigue un ciclo perfecto: 0² − 1 = −1 y (−1)² − 1 = 0. Ese vaivén de periodo 2 organiza toda la figura.\nMándaselo a alguien que vuelve siempre a ti.\n#matebellx #mateguapo #ecuaciondeldia #fractales",
+ "threads": "Elevar al cuadrado y restar 1. Eso es todo 💛 Si lo repites en los números complejos, los puntos que no escapan dibujan esta “basílica” de bulbos sin fin. El 0 va a −1 y vuelve a 0, una y otra vez. ¿Qué ves tú en ella?"
+}

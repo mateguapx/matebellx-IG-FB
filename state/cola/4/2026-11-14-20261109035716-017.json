@@ -1,0 +1,32 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "frase",
+ "hook": "asombro",
+ "tema_clave": "frase:Euclides",
+ "area": "No hay camino real hacia la geometría.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": "euclides-camino",
+ "semilla": 7722,
+ "modo": "explotar",
+ "fecha": "2026-11-14",
+ "tema": "frase de Euclides",
+ "caption": "«No hay camino real hacia la geometría.»\n— Euclides, según Proclo, al rey Ptolomeo\n\nGuárdala para cuando necesites recordar por qué amas las matemáticas.\n#matebellx #mateguapo #frasescelebres",
+ "threads": "«No hay camino real hacia la geometría.»\n— Euclides, según Proclo, al rey Ptolomeo 💛",
+ "slides": [
+  {
+   "layout": "frase",
+   "title": "No hay camino real hacia la geometría.",
+   "text": "",
+   "display": "",
+   "autor": "Euclides",
+   "fuente": "según Proclo, al rey Ptolomeo"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "asombro",
+ "tema_clave": "libro:PROBABILIDAD",
+ "area": "distribución normal",
+ "key": "PROBABILIDAD",
+ "nivel": "bach",
+ "fondo": "red",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 327350,
+ "modo": "explotar",
+ "fecha": "2026-11-14",
+ "tema": "tablero de Galton: caminos C(n,k)/2ⁿ y de Moivre (1733)",
+ "slides": [
+  {
+   "title": "Cada canica elige **izquierda** o derecha; juntas dibujan una campana",
+   "text": "De Moivre probó en 1733 que, con muchas filas, esa cuenta se acerca a la campana de Gauss.",
+   "display": "P(k)=\\frac{\\binom{n}{k}}{2^n}",
+   "layout": "normal"
+  }
+ ],
+ "caption": "Deja caer canicas entre filas de clavos y mira cómo se acomodan.\nEn cada clavo, la canica va a la izquierda o a la derecha con la misma probabilidad. Tras n filas, llegar a la casilla k exige elegir k veces la derecha: hay C(n, k) caminos de 2ⁿ posibles.\nPor eso al centro se juntan más: hay más caminos que llegan ahí. En 1733, Abraham de Moivre mostró que estas cuentas se acercan a la curva normal.\nMándaselo a alguien que ve orden en el caos.\n#matebellx #mateguapo #probabilidad #estadistica",
+ "threads": "El tablero de Galton es hipnótico 💛 Cada canica choca con clavos y va a la izquierda o a la derecha al azar. Pero hay más caminos al centro que a las orillas: exactamente C(n, k) de 2ⁿ. Por eso, juntas, forman una campana. De Moivre lo vio en 1733. ¿Lo has visto en vivo?"
+}

@@ -1,12 +1,5 @@
 [
  {
-  "id": "202610190351-00",
-  "formato": "demostracion",
-  "idea": "√2 es irracional: si √2 = p/q en mínimos términos, p² = 2q² obliga a p y q a ser pares, contradicción (prueba clásica griega).",
-  "creada": "20261019",
-  "usada": null
- },
- {
   "id": "202610190351-01",
   "formato": "demostracion",
   "idea": "Hay infinitos primos (Euclides, Elementos IX.20): p₁·p₂·…·pₙ + 1 no es divisible por ninguno de la lista, así que siempre falta un primo.",
@@ -14,18 +7,102 @@
   "usada": "2026-10-26T07:27:10+00:00"
  },
  {
-  "id": "202610190351-02",
-  "formato": "demostracion",
-  "idea": "Pitágoras por reacomodo: el cuadrado de lado a+b contiene cuatro triángulos y un cuadrado c²; (a+b)² = c² + 2ab da a² + b² = c².",
-  "creada": "20261019",
-  "usada": null
- },
- {
   "id": "202610190351-03",
   "formato": "demostracion",
   "idea": "La suma de los primeros n impares es n²: cada impar 2k−1 es una escuadra en forma de L que agranda el cuadrado de (k−1)² a k².",
   "creada": "20261019",
   "usada": "2026-11-03T09:02:59+00:00"
+ },
+ {
+  "id": "202610190351-09",
+  "formato": "historia",
+  "idea": "Ada Lovelace publicó en 1843 la Nota G: un procedimiento para calcular números de Bernoulli con la Máquina Analítica de Babbage, considerado el primer programa publicado.",
+  "creada": "20261019",
+  "usada": "2026-11-02T22:58:19+00:00"
+ },
+ {
+  "id": "202610190351-10",
+  "formato": "historia",
+  "idea": "1729, el número del taxi: Hardy contó que Ramanujan le dijo que es el menor número que se escribe de dos formas como suma de dos cubos: 1³ + 12³ = 9³ + 10³.",
+  "creada": "20261019",
+  "usada": "2026-11-05T08:59:42+00:00"
+ },
+ {
+  "id": "202610190351-19",
+  "formato": "infinito",
+  "idea": "La trompeta de Gabriel (Torricelli, 1643): girar y = 1/x desde x = 1 da un sólido de volumen π pero de superficie infinita.",
+  "creada": "20261019",
+  "usada": "2026-11-03T20:44:18+00:00"
+ },
+ {
+  "id": "202610190351-27",
+  "formato": "naturaleza",
+  "idea": "Cigarras periódicas de Norteamérica: emergen cada 13 o 17 años, ambos primos; una hipótesis es que así coinciden poco con depredadores de ciclos cortos (mcm(13,17) = 221).",
+  "creada": "20261019",
+  "usada": "2026-11-01T08:44:38+00:00"
+ },
+ {
+  "id": "202610190351-28",
+  "formato": "naturaleza",
+  "idea": "Arcoíris a 42°: Descartes (1637) calculó que la luz que se refleja una vez dentro de la gota se concentra a unos 42° del punto opuesto al Sol.",
+  "creada": "20261019",
+  "usada": "2026-10-27T19:54:02+00:00"
+ },
+ {
+  "id": "202610260350-02",
+  "formato": "demostracion",
+  "idea": "Cada fila del triángulo de Pascal suma 2ⁿ: C(n,0) + C(n,1) + … + C(n,n) cuenta todos los subconjuntos de n objetos, y cada objeto se elige o no.",
+  "creada": "20261026",
+  "usada": "2026-10-30T08:05:39+00:00"
+ },
+ {
+  "id": "202610260350-03",
+  "formato": "demostracion",
+  "idea": "Principio del palomar: en cualquier grupo de 367 personas dos cumplen años el mismo día, porque solo hay 366 fechas posibles.",
+  "creada": "20261026",
+  "usada": "2026-10-31T08:01:15+00:00"
+ },
+ {
+  "id": "202610260350-04",
+  "formato": "demostracion",
+  "idea": "Suma geométrica por resta: si S = 1 + r + … + rⁿ⁻¹, entonces S − rS = 1 − rⁿ y S = (1 − rⁿ)/(1 − r).",
+  "creada": "20261026",
+  "usada": "2026-11-04T08:39:52+00:00"
+ },
+ {
+  "id": "202610260350-19",
+  "formato": "infinito",
+  "idea": "Argumento diagonal de Cantor (1891): cualquier lista de números reales deja fuera uno, el que cambia el n-ésimo decimal del n-ésimo número; los reales no se pueden contar.",
+  "creada": "20261026",
+  "usada": "2026-11-08T08:38:29+00:00"
+ },
+ {
+  "id": "202610260350-21",
+  "formato": "infinito",
+  "idea": "Hay huecos tan grandes como quieras entre primos: n! + 2, n! + 3, …, n! + n son n − 1 números compuestos seguidos.",
+  "creada": "20261026",
+  "usada": "2026-11-04T21:01:33+00:00"
+ },
+ {
+  "id": "202610260350-27",
+  "formato": "naturaleza",
+  "idea": "Ley de Snell: sen θ₁ / sen θ₂ = n₂ / n₁; Fermat (1662) la dedujo pidiendo que la luz siga el camino de menor tiempo, por eso una pajilla se ve quebrada en el vaso.",
+  "creada": "20261026",
+  "usada": "2026-10-31T18:57:14+00:00"
+ },
+ {
+  "id": "202610190351-00",
+  "formato": "demostracion",
+  "idea": "√2 es irracional: si √2 = p/q en mínimos términos, p² = 2q² obliga a p y q a ser pares, contradicción (prueba clásica griega).",
+  "creada": "20261019",
+  "usada": null
+ },
+ {
+  "id": "202610190351-02",
+  "formato": "demostracion",
+  "idea": "Pitágoras por reacomodo: el cuadrado de lado a+b contiene cuatro triángulos y un cuadrado c²; (a+b)² = c² + 2ab da a² + b² = c².",
+  "creada": "20261019",
+  "usada": null
  },
  {
   "id": "202610190351-04",
@@ -61,20 +138,6 @@
   "idea": "Évariste Galois murió en 1832 a los 20 años tras un duelo; la víspera escribió a Auguste Chevalier una carta que resume su teoría: la quíntica general no se resuelve por radicales.",
   "creada": "20261019",
   "usada": null
- },
- {
-  "id": "202610190351-09",
-  "formato": "historia",
-  "idea": "Ada Lovelace publicó en 1843 la Nota G: un procedimiento para calcular números de Bernoulli con la Máquina Analítica de Babbage, considerado el primer programa publicado.",
-  "creada": "20261019",
-  "usada": "2026-11-02T22:58:19+00:00"
- },
- {
-  "id": "202610190351-10",
-  "formato": "historia",
-  "idea": "1729, el número del taxi: Hardy contó que Ramanujan le dijo que es el menor número que se escribe de dos formas como suma de dos cubos: 1³ + 12³ = 9³ + 10³.",
-  "creada": "20261019",
-  "usada": "2026-11-05T08:59:42+00:00"
  },
  {
   "id": "202610190351-11",
@@ -133,13 +196,6 @@
   "usada": null
  },
  {
-  "id": "202610190351-19",
-  "formato": "infinito",
-  "idea": "La trompeta de Gabriel (Torricelli, 1643): girar y = 1/x desde x = 1 da un sólido de volumen π pero de superficie infinita.",
-  "creada": "20261019",
-  "usada": "2026-11-03T20:44:18+00:00"
- },
- {
   "id": "202610190351-20",
   "formato": "infinito",
   "idea": "Copo de nieve de Koch (1904): su perímetro crece por 4/3 en cada paso y es infinito, pero su área es exactamente 8/5 de la del triángulo inicial.",
@@ -189,20 +245,6 @@
   "usada": null
  },
  {
-  "id": "202610190351-27",
-  "formato": "naturaleza",
-  "idea": "Cigarras periódicas de Norteamérica: emergen cada 13 o 17 años, ambos primos; una hipótesis es que así coinciden poco con depredadores de ciclos cortos (mcm(13,17) = 221).",
-  "creada": "20261019",
-  "usada": "2026-11-01T08:44:38+00:00"
- },
- {
-  "id": "202610190351-28",
-  "formato": "naturaleza",
-  "idea": "Arcoíris a 42°: Descartes (1637) calculó que la luz que se refleja una vez dentro de la gota se concentra a unos 42° del punto opuesto al Sol.",
-  "creada": "20261019",
-  "usada": "2026-10-27T19:54:02+00:00"
- },
- {
   "id": "202610190351-29",
   "formato": "naturaleza",
   "idea": "Teselado de Penrose (1974): dos piezas cubren el plano sin repetirse nunca; en 1982 Shechtman halló cuasicristales con esa simetría (Nobel de Química 2011).",
@@ -222,27 +264,6 @@
   "idea": "Suma telescópica: 1/(1·2) + 1/(2·3) + 1/(3·4) + … = 1, porque 1/(n(n+1)) = 1/n − 1/(n+1) y todo se cancela menos el primer 1.",
   "creada": "20261026",
   "usada": null
- },
- {
-  "id": "202610260350-02",
-  "formato": "demostracion",
-  "idea": "Cada fila del triángulo de Pascal suma 2ⁿ: C(n,0) + C(n,1) + … + C(n,n) cuenta todos los subconjuntos de n objetos, y cada objeto se elige o no.",
-  "creada": "20261026",
-  "usada": "2026-10-30T08:05:39+00:00"
- },
- {
-  "id": "202610260350-03",
-  "formato": "demostracion",
-  "idea": "Principio del palomar: en cualquier grupo de 367 personas dos cumplen años el mismo día, porque solo hay 366 fechas posibles.",
-  "creada": "20261026",
-  "usada": "2026-10-31T08:01:15+00:00"
- },
- {
-  "id": "202610260350-04",
-  "formato": "demostracion",
-  "idea": "Suma geométrica por resta: si S = 1 + r + … + rⁿ⁻¹, entonces S − rS = 1 − rⁿ y S = (1 − rⁿ)/(1 − r).",
-  "creada": "20261026",
-  "usada": "2026-11-04T08:39:52+00:00"
  },
  {
   "id": "202610260350-05",
@@ -343,25 +364,11 @@
   "usada": null
  },
  {
-  "id": "202610260350-19",
-  "formato": "infinito",
-  "idea": "Argumento diagonal de Cantor (1891): cualquier lista de números reales deja fuera uno, el que cambia el n-ésimo decimal del n-ésimo número; los reales no se pueden contar.",
-  "creada": "20261026",
-  "usada": "2026-11-08T08:38:29+00:00"
- },
- {
   "id": "202610260350-20",
   "formato": "infinito",
   "idea": "Conjunto de Cantor: quitar tercios medios una y otra vez deja longitud total 0, pero tantos puntos como la recta, y su dimensión es log 2 / log 3 ≈ 0.6309.",
   "creada": "20261026",
   "usada": null
- },
- {
-  "id": "202610260350-21",
-  "formato": "infinito",
-  "idea": "Hay huecos tan grandes como quieras entre primos: n! + 2, n! + 3, …, n! + n son n − 1 números compuestos seguidos.",
-  "creada": "20261026",
-  "usada": "2026-11-04T21:01:33+00:00"
  },
  {
   "id": "202610260350-22",
@@ -399,13 +406,6 @@
   "usada": null
  },
  {
-  "id": "202610260350-27",
-  "formato": "naturaleza",
-  "idea": "Ley de Snell: sen θ₁ / sen θ₂ = n₂ / n₁; Fermat (1662) la dedujo pidiendo que la luz siga el camino de menor tiempo, por eso una pajilla se ve quebrada en el vaso.",
-  "creada": "20261026",
-  "usada": "2026-10-31T18:57:14+00:00"
- },
- {
   "id": "202610260350-28",
   "formato": "naturaleza",
   "idea": "Las pompas de jabón son esféricas porque la esfera encierra el mayor volumen con la menor superficie (desigualdad isoperimétrica, probada en 3D por Schwarz en 1884).",
@@ -417,6 +417,90 @@
   "formato": "naturaleza",
   "idea": "Galileo (1638): un chorro de agua o una pelota lanzada dibuja una parábola y = x·tan θ − g x²/(2v² cos² θ); a 45° llega más lejos, sin aire.",
   "creada": "20261026",
+  "usada": null
+ },
+ {
+  "id": "202611090350-00",
+  "formato": "demostracion",
+  "idea": "Hay infinitos primos de la forma 4k + 3: si fueran solo p₁, …, pₙ, el número N = 4p₁·…·pₙ − 1 deja residuo 3 al dividir entre 4, así que tiene un factor primo de esa forma que no está en la lista.",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-01",
+  "formato": "demostracion",
+  "idea": "n³ − n siempre es múltiplo de 6: n³ − n = (n − 1)·n·(n + 1) son tres enteros consecutivos, y entre ellos hay siempre un par y un múltiplo de 3 (por ejemplo 5³ − 5 = 120).",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-02",
+  "formato": "demostracion",
+  "idea": "El producto de cuatro enteros consecutivos más 1 es un cuadrado perfecto: n(n + 1)(n + 2)(n + 3) + 1 = (n² + 3n + 1)²; por ejemplo 1·2·3·4 + 1 = 25 = 5².",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-03",
+  "formato": "demostracion",
+  "idea": "La suma de los ángulos interiores de un polígono de n lados es (n − 2)·180°: desde un vértice salen n − 3 diagonales que lo parten en n − 2 triángulos (el hexágono suma 720°).",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-04",
+  "formato": "demostracion",
+  "idea": "Suma de cuadrados de Fibonacci: 1² + 1² + 2² + 3² + 5² + 8² = 8·13 = 104; los cuadrados de lado Fₖ se acomodan en un rectángulo de Fₙ por Fₙ₊₁.",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-05",
+  "formato": "demostracion",
+  "idea": "Regla del 9: un número y la suma de sus cifras dejan el mismo residuo al dividir entre 9, porque 10 ≡ 1 (mod 9) y entonces cada 10ᵏ ≡ 1; así 9 divide a 7 245 porque 7 + 2 + 4 + 5 = 18.",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-06",
+  "formato": "demostracion",
+  "idea": "Lema del apretón de manos: en cualquier fiesta, la cantidad de personas que dieron un número impar de apretones es par, porque la suma de todos los apretones contados por persona es 2 veces el total (Euler, 1736).",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-07",
+  "formato": "demostracion",
+  "idea": "Infinitas ternas pitagóricas: (m² − n²)² + (2mn)² = (m² + n²)² para cualesquiera enteros m > n > 0; con m = 2, n = 1 sale 3, 4, 5 y con m = 3, n = 2 sale 5, 12, 13.",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-08",
+  "formato": "demostracion",
+  "idea": "Si eliges 6 números del 1 al 10, dos de ellos son consecutivos y por lo tanto no tienen divisores comunes: las parejas {1,2}, {3,4}, …, {9,10} son solo 5 cajas (argumento de Erdős para n + 1 números de 1 a 2n).",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-09",
+  "formato": "demostracion",
+  "idea": "Área del círculo cortando gajos: al partir el círculo en sectores muy finos y alternarlos, se forma casi un rectángulo de base πr (media circunferencia) y altura r, así que el área es πr².",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-10",
+  "formato": "demostracion",
+  "idea": "Apretones de manos entre n personas: cada una saluda a n − 1 y cada saludo se cuenta dos veces, así que hay n(n − 1)/2; en una reunión de 10 personas son 45 saludos.",
+  "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611090350-11",
+  "formato": "demostracion",
+  "idea": "e es irracional (Fourier, 1815): si e = p/q, al multiplicar e = ∑ 1/k! por q! la parte después del término q sería un entero entre 0 y 1/q, lo cual es imposible.",
+  "creada": "20261109",
   "usada": null
  }
 ]
