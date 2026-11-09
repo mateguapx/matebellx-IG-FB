@@ -3909,5 +3909,31 @@
   "ig_id": "17884560135535291",
   "fb_id": "1382195514976052_122118389391500466",
   "th_id": "18109758983258029"
+ },
+ {
+  "id": "20261109-0908-t4",
+  "ts": "2026-11-09T09:09:56+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "historia",
+  "tema_clave": "hay infinitos números primos",
+  "area": "hay infinitos números primos",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Goldbach (1730): los números de Fermat son coprimos y por eso hay infinitos primos",
+  "titulo": "En 1730, Goldbach probó de otra forma que los primos son **infinitos**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18118105883022830",
+  "fb_id": "1382195514976052_122118434943500466",
+  "th_id": "18097754345149927"
  }
 ]
