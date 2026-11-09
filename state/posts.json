@@ -4013,5 +4013,31 @@
   "ig_id": "18118105883022830",
   "fb_id": "1382195514976052_122118434943500466",
   "th_id": "18097754345149927"
+ },
+ {
+  "id": "20261109-2339-t1",
+  "ts": "2026-11-09T23:40:30+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:Hermann Weyl",
+  "area": "Mi trabajo siempre ha intentado unir lo verdadero con lo bello; pero cuando tuve que elegir uno u otro, casi siempre elegí lo bello.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "weyl-bello",
+  "tema": "frase de Hermann Weyl",
+  "titulo": "Mi trabajo siempre ha intentado unir lo verdadero con lo bello; pero cuando tuve que elegir uno u otro, casi siempre elegí lo bello.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18113150252210647",
+  "fb_id": "1382195514976052_122118625491500466",
+  "th_id": "18644609983015034"
  }
 ]
