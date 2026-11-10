@@ -1,24 +1,6 @@
 {
  "top": [
   {
-   "titulo": "Un matemático es una máquina que convierte café en teoremas.",
-   "formato": "frase",
-   "hook": "asombro",
-   "tema": "frase de Alfréd Rényi",
-   "fondo": "geometria",
-   "score": 5.0,
-   "metricas": {
-    "reach": 375,
-    "shares": 3,
-    "saved": 5,
-    "follows": 2,
-    "profile_visits": 4,
-    "views": 584,
-    "likes": 28,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Hardy llamó **aburrido** al taxi 1729. Ramanujan no estuvo de acuerdo",
    "formato": "historia",
    "hook": "asombro",
@@ -26,13 +8,13 @@
    "fondo": "formulas",
    "score": 5.0,
    "metricas": {
-    "reach": 165,
+    "reach": 179,
     "shares": 0,
     "saved": 2,
     "follows": 0,
     "profile_visits": 5,
-    "views": 280,
-    "likes": 15,
+    "views": 302,
+    "likes": 17,
     "comments": 0
    }
   },
@@ -42,15 +24,33 @@
    "hook": "metafora",
    "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
    "fondo": "formulas",
-   "score": 3.497,
+   "score": 3.552,
    "metricas": {
-    "reach": 18,
+    "reach": 20,
     "shares": 1,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 47,
+    "views": 51,
     "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "¿Sabías que elevar un complejo al cuadrado **duplica** su ángulo?",
+   "formato": "curva",
+   "hook": "pregunta",
+   "tema": "conjunto de Julia c = −0.4 + 0.6i: elevar al cuadrado duplica el ángulo",
+   "fondo": "rejilla",
+   "score": 3.414,
+   "metricas": {
+    "reach": 15,
+    "shares": 0,
+    "saved": 2,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 45,
+    "likes": 5,
     "comments": 0
    }
   }
@@ -98,7 +98,7 @@
    "hook": "pregunta",
    "tema": "el helecho de Barnsley: cuatro transformaciones afines",
    "fondo": "fractal",
-   "score": 0.342,
+   "score": 0.37,
    "metricas": {
     "reach": 12,
     "shares": 0,
