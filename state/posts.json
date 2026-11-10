@@ -4039,5 +4039,31 @@
   "ig_id": "18113150252210647",
   "fb_id": "1382195514976052_122118625491500466",
   "th_id": "18644609983015034"
+ },
+ {
+  "id": "20261110-0150-t2",
+  "ts": "2026-11-10T01:51:43+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "historia",
+  "tema_clave": "libro:ALGEBRA",
+  "area": "factorización",
+  "key": "ALGEBRA",
+  "nivel": "bach",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "método de factorización de Fermat: 2 027 651 281 = 45041² − 1020²",
+  "titulo": "Fermat partió 2 027 651 281 en dos con una **resta** de cuadrados",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18121999544007605",
+  "fb_id": "1382195514976052_122118646911500466",
+  "th_id": "18082638446383124"
  }
 ]
