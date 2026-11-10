@@ -4091,5 +4091,31 @@
   "ig_id": "17893742805685011",
   "fb_id": "1382195514976052_122118694671500466",
   "th_id": "17933734716166321"
+ },
+ {
+  "id": "20261110-0917-t4",
+  "ts": "2026-11-10T09:18:22+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:David Hilbert",
+  "area": "Debemos saber. Sabremos.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "hilbert-sabremos",
+  "tema": "frase de David Hilbert",
+  "titulo": "Debemos saber. Sabremos.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18104339126159433",
+  "fb_id": "1382195514976052_122118721575500466",
+  "th_id": "17958564711269517"
  }
 ]
