@@ -4182,5 +4182,31 @@
   "ig_id": "18168377917491982",
   "fb_id": "1382195514976052_122118876057500466",
   "th_id": "18140190718643615"
+ },
+ {
+  "id": "20261110-2351-t2",
+  "ts": "2026-11-10T23:52:17+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "libro:FINANCIERAS",
+  "area": "interés simple y compuesto",
+  "key": "FINANCIERAS",
+  "nivel": "bach",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "el interés compuesto siempre gana al simple: (1 + i)ⁿ ≥ 1 + ni",
+  "titulo": "Año tras año, el interés compuesto nunca pierde contra el **simple**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18120080635808083",
+  "fb_id": "1382195514976052_122118902517500466",
+  "th_id": "18149778046571686"
  }
 ]
