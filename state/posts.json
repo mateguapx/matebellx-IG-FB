@@ -4208,5 +4208,31 @@
   "ig_id": "18120080635808083",
   "fb_id": "1382195514976052_122118902517500466",
   "th_id": "18149778046571686"
+ },
+ {
+  "id": "20261111-0524-t3",
+  "ts": "2026-11-11T05:25:49+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:corazon",
+  "area": "curva del corazón x = 16 sen³t, y = 13 cos t − 5 cos 2t − 2 cos 3t − cos 4t",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": "corazon",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "curva del corazón: encierra un área de exactamente 180π",
+  "titulo": "Este **corazón** encierra un área de exactamente $180\\pi$",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18345759136287757",
+  "fb_id": "1382195514976052_122118953301500466",
+  "th_id": "17932587117466747"
  }
 ]
