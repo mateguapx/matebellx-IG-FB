@@ -4234,5 +4234,31 @@
   "ig_id": "18345759136287757",
   "fb_id": "1382195514976052_122118953301500466",
   "th_id": "17932587117466747"
+ },
+ {
+  "id": "20261111-0851-t4",
+  "ts": "2026-11-11T08:52:48+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "idea:historia",
+  "area": "Maryam Mirzakhani, nacida en Teherán, fue en 2014 la primera mujer en ganar la Medalla Fields, por su trabajo sobre superficies de Riemann y sus espacios de moduli.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-07",
+  "frase_id": null,
+  "tema": "Maryam Mirzakhani, Medalla Fields 2014 y el conteo de geodésicas simples",
+  "titulo": "En 2014, Mirzakhani fue la primera **mujer** con la Medalla Fields",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18114411455617296",
+  "fb_id": "1382195514976052_122118986085500466",
+  "th_id": "18164717962528806"
  }
 ]
