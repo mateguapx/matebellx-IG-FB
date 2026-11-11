@@ -4260,5 +4260,31 @@
   "ig_id": "18114411455617296",
   "fb_id": "1382195514976052_122118986085500466",
   "th_id": "18164717962528806"
+ },
+ {
+  "id": "20261111-2140-t1",
+  "ts": "2026-11-11T21:41:37+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "asombro",
+  "tema_clave": "la paradoja de Zenón",
+  "area": "la paradoja de Zenón",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "lámpara de Thomson (1954): infinitos encendidos en 2 minutos",
+  "titulo": "Una lámpara se prende y apaga **infinitas** veces en solo 2 minutos",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18127940414516149",
+  "fb_id": "1382195514976052_122119174539500466",
+  "th_id": "18429513478145491"
  }
 ]
