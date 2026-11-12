@@ -4312,5 +4312,31 @@
   "ig_id": "18107683244005942",
   "fb_id": "1382195514976052_122119206591500466",
   "th_id": "18161593357514109"
+ },
+ {
+  "id": "20261112-0629-t3",
+  "ts": "2026-11-12T06:29:51+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:espiral_arquimedes",
+  "area": "espiral de Arquímedes r = θ",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": "espiral_arquimedes",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Arquímedes: la primera vuelta de la espiral encierra un tercio del círculo",
+  "titulo": "La primera vuelta de esta espiral encierra **un tercio** del círculo",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18141752719724319",
+  "fb_id": "1382195514976052_122119265691500466",
+  "th_id": "18113005652462657"
  }
 ]
