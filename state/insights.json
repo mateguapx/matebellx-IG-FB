@@ -8,13 +8,31 @@
    "fondo": "formulas",
    "score": 5.0,
    "metricas": {
-    "reach": 179,
+    "reach": 195,
     "shares": 0,
     "saved": 2,
     "follows": 0,
     "profile_visits": 5,
-    "views": 302,
-    "likes": 17,
+    "views": 334,
+    "likes": 18,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Un futuro presidente de EE. UU. probó a Pitágoras con un **trapecio**",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "demostración de Pitágoras de James A. Garfield con un trapecio (1876)",
+   "fondo": "geometria",
+   "score": 3.729,
+   "metricas": {
+    "reach": 31,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 1,
+    "views": 72,
+    "likes": 3,
     "comments": 0
    }
   },
@@ -24,33 +42,15 @@
    "hook": "metafora",
    "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
    "fondo": "formulas",
-   "score": 3.552,
+   "score": 3.542,
    "metricas": {
-    "reach": 20,
+    "reach": 21,
     "shares": 1,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
     "views": 51,
     "likes": 2,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "¿Sabías que elevar un complejo al cuadrado **duplica** su ángulo?",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "conjunto de Julia c = −0.4 + 0.6i: elevar al cuadrado duplica el ángulo",
-   "fondo": "rejilla",
-   "score": 3.414,
-   "metricas": {
-    "reach": 15,
-    "shares": 0,
-    "saved": 2,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 45,
-    "likes": 5,
     "comments": 0
    }
   }
@@ -62,7 +62,7 @@
    "hook": "pregunta",
    "tema": "la ecuación separable y' = −x/y y sus soluciones: todos los círculos centrados en el origen",
    "fondo": "funciones",
-   "score": 0.391,
+   "score": 0.37,
    "metricas": {
     "reach": 12,
     "shares": 0,
@@ -75,37 +75,37 @@
    }
   },
   {
-   "titulo": "¿Sabías que esta espiral cruza cada radio con el **mismo** ángulo?",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "la espiral áurea corta todos los radios con el mismo ángulo de 72.97°",
-   "fondo": "formulas",
-   "score": 0.38,
+   "titulo": "Haz la lista infinita que quieras: siempre te faltará un **número**",
+   "formato": "infinito",
+   "hook": "asombro",
+   "tema": "la construcción diagonal de Cantor: cambiar el n-ésimo decimal del n-ésimo número",
+   "fondo": "fractal",
+   "score": 0.366,
    "metricas": {
-    "reach": 12,
+    "reach": 13,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 23,
+    "views": 29,
     "likes": 0,
     "comments": 0
    }
   },
   {
-   "titulo": "¿Sabías que este helecho se dibuja con solo **cuatro** reglas?",
-   "formato": "naturaleza",
-   "hook": "pregunta",
-   "tema": "el helecho de Barnsley: cuatro transformaciones afines",
-   "fondo": "fractal",
-   "score": 0.37,
+   "titulo": "Fermat partió 2 027 651 281 en dos con una **resta** de cuadrados",
+   "formato": "demostracion",
+   "hook": "historia",
+   "tema": "método de factorización de Fermat: 2 027 651 281 = 45041² − 1020²",
+   "fondo": "formulas",
+   "score": 0.241,
    "metricas": {
-    "reach": 12,
+    "reach": 7,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 38,
+    "views": 23,
     "likes": 0,
     "comments": 0
    }
