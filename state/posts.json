@@ -4455,5 +4455,31 @@
   "ig_id": "17993587047112557",
   "fb_id": "1382195514976052_122119295037500466",
   "th_id": "17913877089481243"
+ },
+ {
+  "id": "20261112-2139-t1",
+  "ts": "2026-11-12T21:40:56+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "asombro",
+  "tema_clave": "ondas, sonido y series de Fourier",
+  "area": "ondas, sonido y series de Fourier",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "timbre: el mismo La 440 Hz suena distinto por sus armónicos (Fourier, 1822)",
+  "titulo": "Violín y flauta tocan el mismo La; los delatan sus **armónicos**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18164135326501546",
+  "fb_id": "1382195514976052_122119500729500466",
+  "th_id": "18028769180931992"
  }
 ]
