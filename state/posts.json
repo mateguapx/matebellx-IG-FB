@@ -4286,5 +4286,31 @@
   "ig_id": "18127940414516149",
   "fb_id": "1382195514976052_122119174539500466",
   "th_id": "18429513478145491"
+ },
+ {
+  "id": "20261112-0114-t2",
+  "ts": "2026-11-12T01:15:06+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "libro:LINEAL",
+  "area": "espacios y subespacios vectoriales",
+  "key": "LINEAL",
+  "nivel": "uni",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la unión de dos subespacios solo es subespacio si uno contiene al otro",
+  "titulo": "Unir dos subespacios da un subespacio solo si uno **contiene** al otro",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18107683244005942",
+  "fb_id": "1382195514976052_122119206591500466",
+  "th_id": "18161593357514109"
  }
 ]
