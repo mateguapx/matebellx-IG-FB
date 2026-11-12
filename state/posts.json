@@ -4338,5 +4338,31 @@
   "ig_id": "18141752719724319",
   "fb_id": "1382195514976052_122119265691500466",
   "th_id": "18113005652462657"
+ },
+ {
+  "id": "20261112-0919-t4",
+  "ts": "2026-11-12T09:20:40+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "Maryam Mirzakhani",
+  "area": "Maryam Mirzakhani",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": "Bellxs de la historia",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Sophie Germain, Monsieur Le Blanc y su identidad a⁴ + 4b⁴",
+  "titulo": "Sophie Germain firmó como **Monsieur** Le Blanc para que la leyeran",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17993587047112557",
+  "fb_id": "1382195514976052_122119295037500466",
+  "th_id": "17913877089481243"
  }
 ]
