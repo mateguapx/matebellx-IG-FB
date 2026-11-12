@@ -4481,5 +4481,31 @@
   "ig_id": "18164135326501546",
   "fb_id": "1382195514976052_122119500729500466",
   "th_id": "18028769180931992"
+ },
+ {
+  "id": "20261112-2356-t2",
+  "ts": "2026-11-12T23:57:54+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "libro:ALGEBRA",
+  "area": "ecuaciones y desigualdades",
+  "key": "ALGEBRA",
+  "nivel": "bach",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "fórmula general de segundo grado completando el cuadrado (al-Juarismi)",
+  "titulo": "Toda ecuación de segundo grado se resuelve **completando** un cuadrado",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18042016376831802",
+  "fb_id": "1382195514976052_122119534155500466",
+  "th_id": "17997293541018705"
  }
 ]
