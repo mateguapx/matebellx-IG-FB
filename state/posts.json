@@ -4611,5 +4611,31 @@
   "ig_id": "18003442631812308",
   "fb_id": "1382195514976052_122119635579500466",
   "th_id": "18119061283835649"
+ },
+ {
+  "id": "20261113-2106-t1",
+  "ts": "2026-11-13T21:07:31+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "identidad",
+  "hook": "pregunta",
+  "tema_clave": "suma de cubos igual al cuadrado de la suma",
+  "area": "suma de cubos igual al cuadrado de la suma",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "3³ + 4³ + 5³ = 6³: cubos consecutivos que suman un cubo",
+  "titulo": "¿Sabías que tres **cubos** seguidos suman exactamente otro cubo?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18294174889292412",
+  "fb_id": "1382195514976052_122119776699500466",
+  "th_id": "18091094960273884"
  }
 ]
