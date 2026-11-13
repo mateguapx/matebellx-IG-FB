@@ -4533,5 +4533,31 @@
   "ig_id": "18111767924461214",
   "fb_id": "1382195514976052_122119588599500466",
   "th_id": "18087284126334464"
+ },
+ {
+  "id": "20261113-0906-t4",
+  "ts": "2026-11-13T09:07:34+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "asombro",
+  "tema_clave": "idea:infinito",
+  "area": "Copo de nieve de Koch (1904): su perímetro crece por 4/3 en cada paso y es infinito, pero su área es exactamente 8/5 de la del triángulo inicial.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "lissajous",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-20",
+  "frase_id": null,
+  "tema": "copo de nieve de Koch: perímetro infinito y área 8/5 del triángulo",
+  "titulo": "Un copo de nieve con borde **infinito** que cabe en una hoja de papel",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18003442631812308",
+  "fb_id": "1382195514976052_122119635579500466",
+  "th_id": "18119061283835649"
  }
 ]
