@@ -4663,5 +4663,31 @@
   "ig_id": "18026363615929539",
   "fb_id": "1382195514976052_122119802637500466",
   "th_id": "18083970596365980"
+ },
+ {
+  "id": "20261114-0538-t3",
+  "ts": "2026-11-14T05:39:29+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:julia",
+  "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": "julia",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "conjunto de Julia c = −1, la basílica, y su ciclo 0 → −1 → 0",
+  "titulo": "Una sola regla, $z^2-1$, y aparece esta **basílica** infinita",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18133447684686466",
+  "fb_id": "1382195514976052_122119852665500466",
+  "th_id": "18004632740797053"
  }
 ]
