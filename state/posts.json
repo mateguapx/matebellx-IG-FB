@@ -4793,5 +4793,31 @@
   "ig_id": "18134121991687222",
   "fb_id": "1382195514976052_122120009091500466",
   "th_id": "17916459399508527"
+ },
+ {
+  "id": "20261114-2250-t2",
+  "ts": "2026-11-14T22:51:15+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "libro:PROBABILIDAD",
+  "area": "distribución normal",
+  "key": "PROBABILIDAD",
+  "nivel": "bach",
+  "fondo": "red",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "tablero de Galton: caminos C(n,k)/2ⁿ y de Moivre (1733)",
+  "titulo": "Cada canica elige **izquierda** o derecha; juntas dibujan una campana",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18121611412985822",
+  "fb_id": "1382195514976052_122120039937500466",
+  "th_id": "17997182432844565"
  }
 ]
