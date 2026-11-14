@@ -24,33 +24,33 @@
    "hook": "metafora",
    "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
    "fondo": "formulas",
-   "score": 3.525,
+   "score": 3.613,
    "metricas": {
-    "reach": 21,
+    "reach": 23,
     "shares": 1,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 51,
-    "likes": 2,
+    "views": 55,
+    "likes": 3,
     "comments": 0
    }
   },
   {
-   "titulo": "¿Sabías que elevar un complejo al cuadrado **duplica** su ángulo?",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "conjunto de Julia c = −0.4 + 0.6i: elevar al cuadrado duplica el ángulo",
-   "fondo": "rejilla",
-   "score": 3.4,
+   "titulo": "Ninguna fracción, por grande que sea, da **exactamente** $\\sqrt{2}$",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "√2 es irracional: si p² = 2q², p y q serían pares",
+   "fondo": "espiral",
+   "score": 3.429,
    "metricas": {
-    "reach": 16,
+    "reach": 15,
     "shares": 0,
-    "saved": 2,
+    "saved": 1,
     "follows": 0,
-    "profile_visits": 0,
+    "profile_visits": 1,
     "views": 49,
-    "likes": 5,
+    "likes": 4,
     "comments": 0
    }
   }
@@ -62,7 +62,7 @@
    "hook": "pregunta",
    "tema": "el helecho de Barnsley: cuatro transformaciones afines",
    "fondo": "fractal",
-   "score": 0.391,
+   "score": 0.403,
    "metricas": {
     "reach": 12,
     "shares": 0,
@@ -80,7 +80,7 @@
    "hook": "pregunta",
    "tema": "la ecuación separable y' = −x/y y sus soluciones: todos los círculos centrados en el origen",
    "fondo": "funciones",
-   "score": 0.36,
+   "score": 0.38,
    "metricas": {
     "reach": 12,
     "shares": 0,
@@ -98,7 +98,7 @@
    "hook": "historia",
    "tema": "método de factorización de Fermat: 2 027 651 281 = 45041² − 1020²",
    "fondo": "formulas",
-   "score": 0.235,
+   "score": 0.247,
    "metricas": {
     "reach": 7,
     "shares": 0,
