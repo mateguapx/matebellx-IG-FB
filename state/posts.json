@@ -4637,5 +4637,31 @@
   "ig_id": "18294174889292412",
   "fb_id": "1382195514976052_122119776699500466",
   "th_id": "18091094960273884"
+ },
+ {
+  "id": "20261114-0005-t2",
+  "ts": "2026-11-14T00:06:18+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "historia",
+  "tema_clave": "libro:LINEAL",
+  "area": "matrices e inversas",
+  "key": "LINEAL",
+  "nivel": "uni",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Cayley (1858) y la unicidad de la matriz inversa",
+  "titulo": "Cayley definió la inversa en 1858. Que sea **única** cabe en una línea",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18026363615929539",
+  "fb_id": "1382195514976052_122119802637500466",
+  "th_id": "18083970596365980"
  }
 ]
