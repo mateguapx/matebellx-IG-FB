@@ -4767,5 +4767,31 @@
   "ig_id": "17980248555135768",
   "fb_id": "1382195514976052_122119882401500466",
   "th_id": "18039233801657525"
+ },
+ {
+  "id": "20261114-1937-t1",
+  "ts": "2026-11-14T19:38:35+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "identidad",
+  "hook": "asombro",
+  "tema_clave": "idea:identidad",
+  "area": "Fórmula BBP (Bailey, Borwein y Plouffe, 1995): π = ∑ 16⁻ᵏ (4/(8k+1) − 2/(8k+4) − 1/(8k+5) − 1/(8k+6)); permite calcular un dígito hexadecimal de π sin calcular los anteriores.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "lissajous",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-14",
+  "frase_id": null,
+  "tema": "fórmula BBP (1995): un dígito hexadecimal de π sin los anteriores",
+  "titulo": "Esta fórmula salta a una cifra de $\\pi$ **sin** ver las anteriores",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18134121991687222",
+  "fb_id": "1382195514976052_122120009091500466",
+  "th_id": "17916459399508527"
  }
 ]

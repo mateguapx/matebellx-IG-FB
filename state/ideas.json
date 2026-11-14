@@ -333,7 +333,7 @@
   "formato": "identidad",
   "idea": "Fórmula BBP (Bailey, Borwein y Plouffe, 1995): π = ∑ 16⁻ᵏ (4/(8k+1) − 2/(8k+4) − 1/(8k+5) − 1/(8k+6)); permite calcular un dígito hexadecimal de π sin calcular los anteriores.",
   "creada": "20261026",
-  "usada": null
+  "usada": "2026-11-14T19:38:35+00:00"
  },
  {
   "id": "202610260350-15",
