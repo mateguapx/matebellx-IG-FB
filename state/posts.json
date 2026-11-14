@@ -4689,5 +4689,31 @@
   "ig_id": "18133447684686466",
   "fb_id": "1382195514976052_122119852665500466",
   "th_id": "18004632740797053"
+ },
+ {
+  "id": "20261114-0837-t4",
+  "ts": "2026-11-14T08:38:26+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:Eugene Wigner",
+  "area": "El milagro de que el lenguaje de las matemáticas sea el apropiado para formular las leyes de la física es un regalo maravilloso que no entendemos ni merecemos.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "wigner-regalo",
+  "tema": "frase de Eugene Wigner",
+  "titulo": "El milagro de que el lenguaje de las matemáticas sea el apropiado para formular las leyes de la física es un regalo maravilloso que no entendemos ni merecemos.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17980248555135768",
+  "fb_id": "1382195514976052_122119882401500466",
+  "th_id": "18039233801657525"
  }
 ]
