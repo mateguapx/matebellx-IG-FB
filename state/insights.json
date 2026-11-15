@@ -24,7 +24,7 @@
    "hook": "metafora",
    "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
    "fondo": "formulas",
-   "score": 3.613,
+   "score": 3.657,
    "metricas": {
     "reach": 23,
     "shares": 1,
@@ -42,7 +42,7 @@
    "hook": "asombro",
    "tema": "√2 es irracional: si p² = 2q², p y q serían pares",
    "fondo": "espiral",
-   "score": 3.429,
+   "score": 3.48,
    "metricas": {
     "reach": 15,
     "shares": 0,
@@ -57,37 +57,19 @@
  ],
  "bottom": [
   {
-   "titulo": "¿Sabías que este helecho se dibuja con solo **cuatro** reglas?",
-   "formato": "naturaleza",
+   "titulo": "¿Sabías que este **infinito** encierra un área de exactamente 1?",
+   "formato": "curva",
    "hook": "pregunta",
-   "tema": "el helecho de Barnsley: cuatro transformaciones afines",
-   "fondo": "fractal",
-   "score": 0.403,
+   "tema": "la lemniscata r² = cos 2θ encierra un área total de exactamente 1",
+   "fondo": "rejilla",
+   "score": 0.285,
    "metricas": {
-    "reach": 12,
+    "reach": 9,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 40,
-    "likes": 0,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "¿Sabías que la ecuación $y'=-x/y$ esconde **todos** los círculos?",
-   "formato": "identidad",
-   "hook": "pregunta",
-   "tema": "la ecuación separable y' = −x/y y sus soluciones: todos los círculos centrados en el origen",
-   "fondo": "funciones",
-   "score": 0.38,
-   "metricas": {
-    "reach": 12,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 28,
+    "views": 22,
     "likes": 0,
     "comments": 0
    }
@@ -98,7 +80,7 @@
    "hook": "historia",
    "tema": "método de factorización de Fermat: 2 027 651 281 = 45041² − 1020²",
    "fondo": "formulas",
-   "score": 0.247,
+   "score": 0.26,
    "metricas": {
     "reach": 7,
     "shares": 0,
@@ -106,6 +88,24 @@
     "follows": 0,
     "profile_visits": 0,
     "views": 26,
+    "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Toda ecuación de segundo grado se resuelve **completando** un cuadrado",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "fórmula general de segundo grado completando el cuadrado (al-Juarismi)",
+   "fondo": "funciones",
+   "score": 0.231,
+   "metricas": {
+    "reach": 6,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 17,
     "likes": 0,
     "comments": 0
    }
