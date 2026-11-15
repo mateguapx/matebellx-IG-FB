@@ -4819,5 +4819,31 @@
   "ig_id": "18121611412985822",
   "fb_id": "1382195514976052_122120039937500466",
   "th_id": "17997182432844565"
+ },
+ {
+  "id": "20261115-0536-t3",
+  "ts": "2026-11-15T05:37:46+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:mariposa",
+  "area": "mariposa de Fay r = e^(sen θ) − 2cos 4θ + sen⁵((2θ − π)/24)",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": "mariposa",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "mariposa de Temple H. Fay (American Mathematical Monthly, 1989)",
+  "titulo": "¿Sabías que esta **mariposa** se publicó en 1989 como una ecuación?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18089252267408543",
+  "fb_id": "1382195514976052_122120096847500466",
+  "th_id": "17977905108148347"
  }
 ]
