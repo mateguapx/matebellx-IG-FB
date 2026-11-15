@@ -4923,5 +4923,31 @@
   "ig_id": "18128628772842941",
   "fb_id": "1382195514976052_122120130813500466",
   "th_id": "18115007684229181"
+ },
+ {
+  "id": "20261115-2003-t1",
+  "ts": "2026-11-15T20:04:19+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "idea:demostracion",
+  "area": "Teorema de Tales: un ángulo inscrito en un semicírculo es recto; trazando el radio al vértice salen dos triángulos isósceles y 2α + 2β = 180°.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "trig",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": "202610190351-04",
+  "frase_id": null,
+  "tema": "teorema de Tales: el ángulo inscrito en un semicírculo es recto",
+  "titulo": "Desde cualquier punto del círculo, el diámetro se ve a **90°**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18101839064430100",
+  "fb_id": "1382195514976052_122120266707500466",
+  "th_id": "18031166963697155"
  }
 ]
