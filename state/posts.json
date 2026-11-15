@@ -4949,5 +4949,31 @@
   "ig_id": "18101839064430100",
   "fb_id": "1382195514976052_122120266707500466",
   "th_id": "18031166963697155"
+ },
+ {
+  "id": "20261115-2318-t2",
+  "ts": "2026-11-15T23:19:10+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "libro:MULTIVARIABLE",
+  "area": "cambio de variables y jacobiano",
+  "key": "MULTIVARIABLE",
+  "nivel": "uni",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "integral de Gauss con el jacobiano r de las coordenadas polares",
+  "titulo": "¿Sabías que $\\int e^{-x^2}dx=\\sqrt{\\pi}$ sale de pasar a **polares**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17977871301151137",
+  "fb_id": "1382195514976052_122120290341500466",
+  "th_id": "18084259007417438"
  }
 ]
