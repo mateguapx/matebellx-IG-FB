@@ -5104,5 +5104,31 @@
   "ig_id": "18024123659946727",
   "fb_id": "1382195514976052_122120385069500466",
   "th_id": "18046225373835464"
+ },
+ {
+  "id": "20261116-2335-t1",
+  "ts": "2026-11-16T23:36:56+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "pregunta",
+  "tema_clave": "idea:historia",
+  "area": "Katherine Johnson calculó trayectorias para la NASA; en 1962 John Glenn pidió que ella verificara a mano los cálculos de la computadora antes de su vuelo orbital.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-07",
+  "frase_id": null,
+  "tema": "Katherine Johnson verificó a mano la órbita de John Glenn (1962)",
+  "titulo": "¿Sabías que John Glenn pidió que **ella** revisara su órbita?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17924532786530434",
+  "fb_id": "1382195514976052_122120544645500466",
+  "th_id": "18128335342925675"
  }
 ]
