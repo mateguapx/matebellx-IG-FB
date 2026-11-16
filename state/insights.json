@@ -1,30 +1,12 @@
 {
  "top": [
   {
-   "titulo": "Hardy llamó **aburrido** al taxi 1729. Ramanujan no estuvo de acuerdo",
-   "formato": "historia",
-   "hook": "asombro",
-   "tema": "1729, el número del taxi de Hardy y Ramanujan",
-   "fondo": "formulas",
-   "score": 5.0,
-   "metricas": {
-    "reach": 195,
-    "shares": 0,
-    "saved": 2,
-    "follows": 0,
-    "profile_visits": 5,
-    "views": 334,
-    "likes": 18,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Un trébol de **cuatro** hojas que no depende de la suerte",
    "formato": "curva",
    "hook": "metafora",
    "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
    "fondo": "formulas",
-   "score": 3.657,
+   "score": 3.92,
    "metricas": {
     "reach": 23,
     "shares": 1,
@@ -42,7 +24,7 @@
    "hook": "asombro",
    "tema": "√2 es irracional: si p² = 2q², p y q serían pares",
    "fondo": "espiral",
-   "score": 3.48,
+   "score": 3.522,
    "metricas": {
     "reach": 15,
     "shares": 0,
@@ -53,18 +35,54 @@
     "likes": 4,
     "comments": 0
    }
+  },
+  {
+   "titulo": "Una rueda que gira por **fuera** de otra borda estos nueve lazos",
+   "formato": "curva",
+   "hook": "asombro",
+   "tema": "epitrocoide R=9, r=4, d=5 y el Spirograph de Denys Fisher (1965)",
+   "fondo": "geometria",
+   "score": 3.441,
+   "metricas": {
+    "reach": 16,
+    "shares": 0,
+    "saved": 1,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 34,
+    "likes": 3,
+    "comments": 0
+   }
   }
  ],
  "bottom": [
+  {
+   "titulo": "Cada canica elige **izquierda** o derecha; juntas dibujan una campana",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "tablero de Galton: caminos C(n,k)/2ⁿ y de Moivre (1733)",
+   "fondo": "red",
+   "score": 0.34,
+   "metricas": {
+    "reach": 7,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 21,
+    "likes": 0,
+    "comments": 0
+   }
+  },
   {
    "titulo": "¿Sabías que este **infinito** encierra un área de exactamente 1?",
    "formato": "curva",
    "hook": "pregunta",
    "tema": "la lemniscata r² = cos 2θ encierra un área total de exactamente 1",
    "fondo": "rejilla",
-   "score": 0.285,
+   "score": 0.336,
    "metricas": {
-    "reach": 9,
+    "reach": 10,
     "shares": 0,
     "saved": 0,
     "follows": 0,
@@ -75,30 +93,12 @@
    }
   },
   {
-   "titulo": "Fermat partió 2 027 651 281 en dos con una **resta** de cuadrados",
-   "formato": "demostracion",
-   "hook": "historia",
-   "tema": "método de factorización de Fermat: 2 027 651 281 = 45041² − 1020²",
-   "fondo": "formulas",
-   "score": 0.26,
-   "metricas": {
-    "reach": 7,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 26,
-    "likes": 0,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Toda ecuación de segundo grado se resuelve **completando** un cuadrado",
    "formato": "demostracion",
    "hook": "asombro",
    "tema": "fórmula general de segundo grado completando el cuadrado (al-Juarismi)",
    "fondo": "funciones",
-   "score": 0.231,
+   "score": 0.3,
    "metricas": {
     "reach": 6,
     "shares": 0,
