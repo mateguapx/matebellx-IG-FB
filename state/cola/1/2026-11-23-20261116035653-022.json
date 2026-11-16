@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "identidad",
+ "hook": "metafora",
+ "tema_clave": "la fórmula de De Moivre",
+ "area": "la fórmula de De Moivre",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 126184,
+ "modo": "explotar",
+ "fecha": "2026-11-23",
+ "tema": "raíces n-ésimas de la unidad como polígono regular (De Moivre)",
+ "caption": "La ecuación zⁿ = 1 tiene n soluciones, y todas se acomodan en un círculo, a la misma distancia una de otra.\nLa razón es la fórmula de De Moivre: elevar a la n multiplica el ángulo por n, así que los ángulos 2πk/n dan vueltas completas y caen en 1.\nCon n = 6 tienes un hexágono; con n = 12, un dodecágono.\nMándaselo a quien siempre te guarda un lugar en la mesa.\n#matebellx #mateguapo #numeroscomplejos #demoivre",
+ "threads": "zⁿ = 1 tiene n soluciones y todas se sientan en un círculo, repartidas por igual, como invitados en una mesa redonda 💛 Ninguna está más cerca del 1 que su vecina. Todo sale de la fórmula de De Moivre. ¿Cuántos invitados pondrías tú en tu mesa?",
+ "slides": [
+  {
+   "title": "Las raíces de $z^n=1$, como **invitados** en una mesa redonda",
+   "text": "Por De Moivre, $z_k^n=\\cos 2\\pi k+i\\sin 2\\pi k=1$, y juntas forman un polígono regular.",
+   "display": "z_k=e^{2\\pi i k/n},\\qquad k=0,1,\\dots,n-1",
+   "layout": "normal"
+  }
+ ]
+}

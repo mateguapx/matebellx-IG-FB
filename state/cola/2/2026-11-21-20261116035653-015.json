@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "identidad",
+ "hook": "asombro",
+ "tema_clave": "libro:PRECALCULO",
+ "area": "números complejos",
+ "key": "PRECALCULO",
+ "nivel": "bach",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 854519,
+ "modo": "explotar",
+ "fecha": "2026-11-21",
+ "tema": "i elevado a la i es un número real",
+ "caption": "Lo imaginario, elevado a lo imaginario, cae en la recta real.\nLa clave es escribir i como un giro: i = e^(iπ/2). Al elevar a la i, el exponente se vuelve i · iπ/2 = −π/2, un número real negativo. Resultado: i^i ≈ 0.2079.\nHay otros valores, e^(−π/2 − 2πk), pero todos son reales.\nMándaselo a alguien que diga que los imaginarios no existen.\n#matebellx #mateguapo #numeroscomplejos #precalculo",
+ "threads": "Dato que siempre sorprende: i elevado a la i es un número real 💛 Vale e^(−π/2), más o menos 0.2079. Sale de escribir i como e^(iπ/2) y multiplicar los exponentes: i por i da −1. Lo imaginario a lo imaginario termina siendo de lo más real. ¿Te lo esperabas?",
+ "slides": [
+  {
+   "title": "Una unidad imaginaria elevada a sí misma da un número **real**",
+   "text": "Como $i=e^{i\\pi/2}$, se tiene $i^i=e^{i\\cdot i\\pi/2}=e^{-\\pi/2}$ (valor principal).",
+   "display": "i^{\\,i} = e^{-\\pi/2} \\approx 0.2079",
+   "layout": "normal"
+  }
+ ]
+}

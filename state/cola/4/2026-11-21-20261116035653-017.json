@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "asombro",
+ "tema_clave": "Maryam Mirzakhani",
+ "area": "Maryam Mirzakhani",
+ "key": null,
+ "nivel": "general",
+ "fondo": "lissajous",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 725190,
+ "modo": "explotar",
+ "fecha": "2026-11-21",
+ "tema": "Mirzakhani dibujaba en grandes hojas: su hija decía que pintaba",
+ "caption": "Maryam Mirzakhani pensaba con las manos: dibujaba superficies y curvas en hojas enormes de papel extendidas en el suelo.\nSu hija, al verla, decía que mamá estaba pintando otra vez.\nEsas superficies eran hiperbólicas: una superficie cerrada con g ≥ 2 agujeros y curvatura −1 tiene área exactamente 2π(2g − 2), sin importar su forma.\nDedícaselo a alguien que piensa dibujando.\n#matebellx #mateguapo #mirzakhani #mujeresenciencia",
+ "threads": "Maryam Mirzakhani resolvía problemas dibujando en hojas gigantes sobre el suelo 💛 Su hija pequeña creía que estaba pintando. Y en cierto modo sí: pintaba superficies hiperbólicas, donde el área depende solo del número de agujeros. ¿Tú piensas mejor escribiendo o dibujando?",
+ "slides": [
+  {
+   "title": "Su hija creía que mamá **pintaba**. Eran superficies hiperbólicas",
+   "text": "Maryam Mirzakhani pensaba dibujando en hojas enormes extendidas en el suelo.",
+   "display": "\\text{Área} = 2\\pi\\,(2g-2)",
+   "layout": "normal"
+  }
+ ]
+}

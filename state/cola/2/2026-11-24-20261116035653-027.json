@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "identidad",
+ "hook": "metafora",
+ "tema_clave": "libro:LINEAL",
+ "area": "sistemas lineales y eliminación gaussiana",
+ "key": "LINEAL",
+ "nivel": "uni",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 761955,
+ "modo": "explotar",
+ "fecha": "2026-11-24",
+ "tema": "regla de Cramer (1750): cada incógnita es un cociente de determinantes",
+ "caption": "Un sistema de ecuaciones también se puede leer como geometría.\nEl determinante de A mide, con signo, el volumen del paralelepípedo que forman sus columnas. Si cambias la columna i por b, el volumen se multiplica exactamente por x_i. De ahí la regla de Cramer: x_i = det A_i / det A.\nGabriel Cramer la publicó en 1750. Para sistemas grandes conviene la eliminación gaussiana, pero esta es la más clara.\nMándaselo a tu compa de álgebra lineal.\n#matebellx #mateguapo #algebralineal #determinantes",
+ "threads": "La regla de Cramer tiene una lectura preciosa 💛 El determinante es un volumen con signo. Si en la matriz cambias la columna i por b, ese volumen queda multiplicado justo por x_i. Así cada incógnita es un cociente de dos volúmenes. ¿Te la enseñaron así o solo como fórmula?",
+ "slides": [
+  {
+   "title": "Cada incógnita es un cociente de dos **volúmenes**",
+   "text": "Regla de Cramer (1750): $A_i$ es $A$ con su columna $i$ cambiada por $b$. Vale si $\\det A\\ne 0$.",
+   "display": "A\\mathbf{x}=\\mathbf{b} \\;\\Longrightarrow\\; x_i=\\frac{\\det A_i}{\\det A}",
+   "layout": "normal"
+  }
+ ]
+}

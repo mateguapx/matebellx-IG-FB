@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "pregunta",
+ "tema_clave": "idea:historia",
+ "area": "Al-Juarismi escribió en Bagdad (c. 820) el libro de al-jabr, de donde viene la palabra álgebra; su nombre latinizado dio la palabra algoritmo. Resolvía x² + 10x = 39 completando el cuadrado.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "funciones",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-11",
+ "frase_id": null,
+ "semilla": 630099,
+ "modo": "explotar",
+ "fecha": "2026-11-23",
+ "tema": "al-Juarismi: de su libro viene álgebra y de su nombre, algoritmo",
+ "caption": "Dos palabras que usas en clase vienen de un mismo hombre.\nMuhammad ibn Musa al-Juarismi trabajó en Bagdad hacia el año 820. Su libro sobre al-jabr, «restaurar», dio nombre al álgebra. Su nombre, latinizado como Algoritmi, dio la palabra algoritmo.\nSu ejemplo más famoso: x² + 10x = 39, que resolvía con un cuadrado de lado x + 5.\nMándaselo a quien programa o enseña álgebra.\n#matebellx #mateguapo #historiadelasmatematicas #algebra",
+ "threads": "Cada vez que dices álgebra o algoritmo estás citando a la misma persona 💛 Al-Juarismi, en Bagdad, hacia el 820. Álgebra viene de al-jabr, del título de su libro; algoritmo viene de su nombre en latín. Mil doscientos años después seguimos hablando como él. ¿Lo sabías?",
+ "slides": [
+  {
+   "title": "¿Sabías que **álgebra** y algoritmo vienen del mismo sabio de Bagdad?",
+   "text": "Al-Juarismi, c. 820: de su libro de al-jabr viene álgebra; de su nombre latinizado, algoritmo.",
+   "display": "x^2+10x=39 \\;\\Rightarrow\\; (x+5)^2=64 \\;\\Rightarrow\\; x=3",
+   "layout": "normal"
+  }
+ ]
+}

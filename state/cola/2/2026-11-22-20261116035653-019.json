@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "metafora",
+ "tema_clave": "libro:LINEAL",
+ "area": "ortogonalidad y Gram-Schmidt",
+ "key": "LINEAL",
+ "nivel": "uni",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 950822,
+ "modo": "explotar",
+ "fecha": "2026-11-22",
+ "tema": "Gram-Schmidt sobre 1, x, x² da los polinomios de Legendre",
+ "caption": "Las funciones también pueden ser perpendiculares.\nSi el producto interior de dos polinomios es la integral de su producto entre −1 y 1, Gram-Schmidt endereza 1, x, x² uno por uno: a cada uno le quita su sombra sobre los anteriores. Sale 1, x, x² − 1/3…\nSalvo escala, son los polinomios de Legendre, los mismos que resuelven la ecuación de Legendre en física.\nMándaselo a tu compa de álgebra lineal.\n#matebellx #mateguapo #algebralineal #gramschmidt",
+ "threads": "Me parece precioso que los polinomios puedan estar en ángulo recto 💛 Con el producto interior ∫ f·g entre −1 y 1, Gram-Schmidt convierte 1, x, x² en 1, x, x² − 1/3. Y esos, salvo escala, son los polinomios de Legendre. ¿Te atreves a sacar el siguiente, el de x³?",
+ "slides": [
+  {
+   "title": "Pon $1$, $x$ y $x^2$ en **ángulo recto** y aparecen los de Legendre",
+   "text": "Con $\\langle f,g\\rangle=\\int_{-1}^{1}fg\\,dx$ sale $x^2-\\tfrac13$, múltiplo de $P_2=\\tfrac{3x^2-1}{2}$.",
+   "display": "\\begin{aligned} e_0&=1,\\qquad e_1=x \\\\ e_2&=x^2-\\frac{\\langle x^2,1\\rangle}{\\langle 1,1\\rangle}=x^2-\\frac13 \\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

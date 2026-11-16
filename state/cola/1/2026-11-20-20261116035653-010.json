@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "pregunta",
+ "tema_clave": "Paul Erdős",
+ "area": "Paul Erdős",
+ "key": null,
+ "nivel": "general",
+ "fondo": "primos",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 467054,
+ "modo": "explotar",
+ "fecha": "2026-11-20",
+ "tema": "Erdős y El Libro de las demostraciones perfectas",
+ "caption": "Paul Erdős decía que existe un Libro donde están guardadas las demostraciones más bellas de cada teorema.\nNo creía en él como algo religioso, pero lo usaba como el mayor elogio: «esta prueba es del Libro».\nUna de ellas es suya: entre cualquier número y su doble siempre hay un primo. Chebyshev ya lo había probado; la prueba de Erdős es más corta y elemental.\nMándaselo a alguien cuya forma de pensar te parece de Libro.\n#matebellx #mateguapo #erdos #numerosprimos",
+ "threads": "Paul Erdős hablaba de un Libro imaginario con la demostración más bella de cada teorema 💛 Cuando algo le encantaba, decía que era «del Libro». En 1998 Aigner y Ziegler publicaron Proofs from THE BOOK en su honor. ¿Cuál demostración pondrías tú en ese libro?",
+ "slides": [
+  {
+   "title": "¿Sabías que Erdős soñaba con un **libro** de pruebas perfectas?",
+   "text": "Aigner y Ziegler lo hicieron realidad en 1998. Una de sus favoritas: siempre hay un primo entre $n$ y $2n$.",
+   "display": "n \\ge 1 \\;\\Longrightarrow\\; \\exists\\, p \\text{ primo con } n < p \\le 2n",
+   "layout": "normal"
+  }
+ ]
+}

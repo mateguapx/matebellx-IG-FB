@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "historia",
+ "tema_clave": "idea:infinito",
+ "area": "Conjunto de Cantor: quitar tercios medios una y otra vez deja longitud total 0, pero tantos puntos como la recta, y su dimensión es log 2 / log 3 ≈ 0.6309.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-20",
+ "frase_id": null,
+ "semilla": 415466,
+ "modo": "explorar",
+ "fecha": "2026-11-19",
+ "tema": "conjunto de Cantor: longitud 0, tantos puntos como la recta",
+ "caption": "Quitar casi todo y que no quede menos.\nEmpieza con un segmento de longitud 1, quita su tercio central y repite en cada pedazo, para siempre. Lo que se borra suma exactamente 1. Aun así, lo que queda tiene tantos puntos como la recta entera.\nGeorg Cantor lo publicó en 1883; es uno de los primeros fractales.\nCompártelo con quien cree que el infinito es uno solo.\n#matebellx #mateguapo #infinito #fractales",
+ "threads": "Toma un segmento, borra el tercio de en medio, y repite en cada trozo para siempre 💛 Al final borraste longitud total 1, o sea todo. Pero lo que queda, el conjunto de Cantor, tiene tantos puntos como la recta entera. ¿Cómo se puede quitar todo y que quede tanto?",
+ "slides": [
+  {
+   "title": "Cantor borró tercios sin fin; quedaron tantos puntos como la **recta**",
+   "text": "Lo borrado mide 1 en total, pero lo que queda tiene dimensión $\\log 2/\\log 3\\approx 0.6309$.",
+   "display": "\\frac13+\\frac29+\\frac4{27}+\\cdots=\\sum_{n=0}^{\\infty}\\frac{2^n}{3^{n+1}}=1",
+   "layout": "normal"
+  }
+ ]
+}

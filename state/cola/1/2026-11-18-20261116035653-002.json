@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "identidad",
+ "hook": "asombro",
+ "tema_clave": "la fórmula de De Moivre",
+ "area": "la fórmula de De Moivre",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 844827,
+ "modo": "explotar",
+ "fecha": "2026-11-18",
+ "tema": "fórmula de De Moivre: elevar a la n multiplica el ángulo",
+ "caption": "Una potencia que, en realidad, es un giro.\nEl número cos θ + i sen θ vive en un círculo de radio 1. Multiplicarlo por sí mismo no lo agranda: lo hace girar otro θ. Por eso elevarlo a la n equivale a girar n veces.\nCon esta idea se calculan cos 3θ o sen 5θ sin una sola tabla.\nGuárdalo para cuando las potencias te parezcan aburridas.\n#matebellx #mateguapo #numeroscomplejos #trigonometria",
+ "threads": "Me encanta esta: (cos θ + i sen θ)ⁿ = cos nθ + i sen nθ 💛 En los complejos, elevar a la n no hace crecer nada, solo gira. Cada multiplicación suma el mismo ángulo otra vez, como manecillas que avanzan. ¿A quién se lo mandarías para que vea que las potencias también bailan?",
+ "slides": [
+  {
+   "title": "Elevar a la $n$ es solo **girar** $n$ veces el mismo ángulo",
+   "text": "Abraham de Moivre la usaba a inicios del siglo XVIII; Euler la escribió así en 1748.",
+   "display": "(\\cos\\theta + i\\sin\\theta)^n = \\cos n\\theta + i\\sin n\\theta",
+   "layout": "normal"
+  }
+ ]
+}

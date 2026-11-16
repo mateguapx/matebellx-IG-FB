@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "historia",
+ "tema_clave": "idea:historia",
+ "area": "Évariste Galois murió en 1832 a los 20 años tras un duelo; la víspera escribió a Auguste Chevalier una carta que resume su teoría: la quíntica general no se resuelve por radicales.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-08",
+ "frase_id": null,
+ "semilla": 718336,
+ "modo": "explorar",
+ "fecha": "2026-11-24",
+ "tema": "Galois y su carta a Chevalier la víspera del duelo",
+ "caption": "Évariste Galois tenía 20 años cuando, la noche anterior a un duelo, escribió a su amigo Auguste Chevalier.\nEn esa carta resumió su teoría: a cada ecuación le corresponde un grupo de simetrías, y la ecuación se resuelve con raíces solo si ese grupo tiene cierta estructura. Por eso ecuaciones como x⁵ − x − 1 = 0 no tienen fórmula con radicales.\nHoy esa idea se llama teoría de Galois.\nCompártelo con alguien que escribe con urgencia.\n#matebellx #mateguapo #galois #historiadelasmatematicas",
+ "threads": "Galois tenía 20 años y un duelo al día siguiente. Esa noche le escribió a su amigo Chevalier una carta con lo esencial de su teoría 💛 Explicaba cuándo una ecuación se puede resolver con raíces y cuándo no. Murió en 1832; sus ideas cambiaron el álgebra para siempre. ¿Qué habrías escrito tú esa noche?",
+ "slides": [
+  {
+   "title": "La víspera de su duelo, a los 20 años, Galois escribió una **carta**",
+   "text": "Ahí resumió cuándo una ecuación se resuelve por radicales. Murió el 31 de mayo de 1832.",
+   "display": "\\begin{gathered} x^5-x-1=0 \\\\ \\text{no se puede resolver con radicales} \\end{gathered}",
+   "layout": "normal"
+  }
+ ]
+}

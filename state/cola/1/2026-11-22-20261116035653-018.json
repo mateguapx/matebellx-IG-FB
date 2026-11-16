@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "dato_preciso",
+ "tema_clave": "la serie geométrica 1/2+1/4+… = 1",
+ "area": "la serie geométrica 1/2+1/4+… = 1",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": "Domingo de demostraciones",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 434316,
+ "modo": "explorar",
+ "fecha": "2026-11-22",
+ "tema": "serie geométrica 1/2 + 1/4 + … = 1 con 2S = 1 + S",
+ "caption": "Domingo de demostraciones: infinitos sumandos, resultado exacto.\nSi S = 1/2 + 1/4 + 1/8 + …, al duplicar todo obtienes 1 + 1/2 + 1/4 + …, que es 1 + S. Entonces 2S = 1 + S y S = 1.\nLa cuenta funciona porque la suma converge: tras n términos falta exactamente 1/2ⁿ, que se hace tan pequeño como quieras.\nGuárdalo para cuando alguien diga que lo infinito no se puede sumar.\n#matebellx #mateguapo #series #demostraciones",
+ "threads": "Come la mitad de un pastel, luego la mitad de lo que queda, y así para siempre 💛 Te comes exactamente un pastel, ni una migaja menos. La prueba cabe en una línea: si S es la suma, 2S = 1 + S, así que S = 1. ¿A quién le compartes el pastel?",
+ "slides": [
+  {
+   "title": "Cada pedazo es la mitad del anterior y todos suman **exactamente** 1",
+   "text": "Tras $n$ pasos falta justo $1/2^n$, y eso termina por ser menor que cualquier número positivo.",
+   "display": "\\begin{aligned} S &= \\tfrac12+\\tfrac14+\\tfrac18+\\cdots \\\\ 2S &= 1+\\tfrac12+\\tfrac14+\\cdots = 1+S \\\\ S &= 1 \\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

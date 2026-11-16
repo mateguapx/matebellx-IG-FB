@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "naturaleza",
+ "hook": "metafora",
+ "tema_clave": "las manchas animales y las ecuaciones de Turing",
+ "area": "las manchas animales y las ecuaciones de Turing",
+ "key": null,
+ "nivel": "general",
+ "fondo": "ondas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 594632,
+ "modo": "explotar",
+ "fecha": "2026-11-20",
+ "tema": "patrones de Turing: reacción-difusión (1952)",
+ "caption": "¿Quién pinta las manchas de un animal? Turing tuvo una respuesta matemática.\nEn 1952 publicó «The Chemical Basis of Morphogenesis»: dos sustancias que reaccionan entre sí y se difunden a distinta velocidad. De una mezcla uniforme, una pequeña perturbación hace nacer manchas y rayas.\nHoy se estudian patrones así en la piel de peces y otros animales.\nMándaselo a alguien que solo conoce a Turing por las computadoras.\n#matebellx #mateguapo #turing #matematicasenlanaturaleza",
+ "threads": "Además de las computadoras, Alan Turing se preguntó cómo se forman las manchas de los animales 💛 Su idea de 1952: dos sustancias que reaccionan y se difunden a velocidades distintas. Juntas, sin que nadie las dirija, dibujan manchas y rayas. ¿No es precioso que una ecuación pinte?",
+ "slides": [
+  {
+   "title": "Dos sustancias que se **persiguen** bastan para pintar manchas",
+   "text": "Alan Turing lo propuso en 1952: si dos sustancias se difunden a ritmos distintos, surgen patrones.",
+   "display": "\\begin{aligned} \\frac{\\partial u}{\\partial t} &= D_u \\nabla^2 u + f(u,v) \\\\ \\frac{\\partial v}{\\partial t} &= D_v \\nabla^2 v + g(u,v) \\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

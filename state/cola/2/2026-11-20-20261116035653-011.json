@@ -1,0 +1,37 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:julia",
+ "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+ "key": "CALCULO",
+ "nivel": "uni",
+ "fondo": "rejilla",
+ "curva_tipo": "julia",
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 25358,
+ "modo": "explorar",
+ "fecha": "2026-11-20",
+ "tema": "conejo de Douady: Julia con c ≈ −0.1226 + 0.7449i",
+ "caption": "Cada número c tiene su propio conjunto de Julia: los puntos z que, al repetir z → z² + c, no se escapan.\nCon c ≈ −0.1226 + 0.7449i aparece esta figura con orejas que se repiten en cada escala: el conejo de Douady. Para ese c, 0 → c → c² + c → 0 es un ciclo de período 3.\nGuárdalo para cuando estudies iteración y puntos fijos.\n#matebellx #mateguapo #fractales #numeroscomplejos",
+ "threads": "Escoge el número c ≈ −0.1226 + 0.7449i, repite z² + c y mira qué puntos no escapan 💛 Sale un conejo con orejas dentro de orejas, para siempre. Se llama conejo de Douady y la clave es que el 0 regresa a sí mismo cada tres pasos. ¿Lo ves o necesitas echarle imaginación?",
+ "slides": [
+  {
+   "title": "¿Sabías que este **conejo** sale de iterar $z^2+c$ con un solo $c$?",
+   "text": "Es el conejo de Douady: para el $c$ exacto, la órbita del 0 se repite cada 3 pasos.",
+   "display": "z_{n+1}=z_n^2-0.123+0.745\\,i",
+   "curva": {
+    "tipo": "julia",
+    "params": {
+     "c_re": -0.1226,
+     "c_im": 0.7449
+    }
+   },
+   "layout": "curva"
+  }
+ ]
+}
