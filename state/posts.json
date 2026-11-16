@@ -5001,5 +5001,31 @@
   "ig_id": "17973699990196283",
   "fb_id": "1382195514976052_122120347461500466",
   "th_id": "18191706544410528"
+ },
+ {
+  "id": "20261116-0901-t4",
+  "ts": "2026-11-16T09:02:15+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "idea:demostracion",
+  "area": "Infinitas ternas pitagóricas: (m² − n²)² + (2mn)² = (m² + n²)² para cualesquiera enteros m > n > 0; con m = 2, n = 1 sale 3, 4, 5 y con m = 3, n = 2 sale 5, 12, 13.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": "202611090350-07",
+  "frase_id": null,
+  "tema": "fórmula de Euclides para ternas pitagóricas: (m² − n²)² + (2mn)² = (m² + n²)²",
+  "titulo": "¿Sabías que hay **infinitos** triángulos rectángulos de lados enteros?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18024123659946727",
+  "fb_id": "1382195514976052_122120385069500466",
+  "th_id": "18046225373835464"
  }
 ]

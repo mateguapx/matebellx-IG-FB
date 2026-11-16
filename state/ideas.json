@@ -473,7 +473,7 @@
   "formato": "demostracion",
   "idea": "Infinitas ternas pitagóricas: (m² − n²)² + (2mn)² = (m² + n²)² para cualesquiera enteros m > n > 0; con m = 2, n = 1 sale 3, 4, 5 y con m = 3, n = 2 sale 5, 12, 13.",
   "creada": "20261109",
-  "usada": null
+  "usada": "2026-11-16T09:02:15+00:00"
  },
  {
   "id": "202611090350-08",
