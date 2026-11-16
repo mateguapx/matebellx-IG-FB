@@ -4975,5 +4975,31 @@
   "ig_id": "17977871301151137",
   "fb_id": "1382195514976052_122120290341500466",
   "th_id": "18084259007417438"
+ },
+ {
+  "id": "20261116-0535-t3",
+  "ts": "2026-11-16T05:36:47+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:rosa",
+  "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": "rosa",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
+  "titulo": "Ocho **pétalos** que cubren exactamente la mitad del círculo",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17973699990196283",
+  "fb_id": "1382195514976052_122120347461500466",
+  "th_id": "18191706544410528"
  }
 ]
