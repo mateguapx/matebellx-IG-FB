@@ -5248,5 +5248,31 @@
   "ig_id": "18120518300041985",
   "fb_id": "1382195514976052_122120644731500466",
   "th_id": "17920550289527059"
+ },
+ {
+  "id": "20261117-2244-t1",
+  "ts": "2026-11-17T22:45:32+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "pregunta",
+  "tema_clave": "idea:historia",
+  "area": "Gauss tenía 19 años cuando, en 1796, demostró que el polígono regular de 17 lados se construye con regla y compás, porque 17 es un primo de Fermat 2^(2²) + 1.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "red",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-09",
+  "frase_id": null,
+  "tema": "Gauss (24 años) y la recuperación de Ceres en 1801",
+  "titulo": "¿Sabías que, a los 24 años, Gauss encontró un astro **perdido**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18400178920167988",
+  "fb_id": "1382195514976052_122120810475500466",
+  "th_id": "18025283726723656"
  }
 ]
