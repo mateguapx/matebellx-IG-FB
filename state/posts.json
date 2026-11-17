@@ -5182,5 +5182,31 @@
   "ig_id": "18081500546418834",
   "fb_id": "1382195514976052_122120613825500466",
   "th_id": "18011554916782464"
+ },
+ {
+  "id": "20261117-1013-t4",
+  "ts": "2026-11-17T10:14:31+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "idea:demostracion",
+  "area": "El producto de cuatro enteros consecutivos más 1 es un cuadrado perfecto: n(n + 1)(n + 2)(n + 3) + 1 = (n² + 3n + 1)²; por ejemplo 1·2·3·4 + 1 = 25 = 5².",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202611090350-02",
+  "frase_id": null,
+  "tema": "n(n + 1)(n + 2)(n + 3) + 1 = (n² + 3n + 1)²",
+  "titulo": "¿Sabías que 4 números **seguidos** multiplicados, más 1, dan un cuadrado?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18120518300041985",
+  "fb_id": "1382195514976052_122120644731500466",
+  "th_id": "17920550289527059"
  }
 ]

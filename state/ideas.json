@@ -438,7 +438,7 @@
   "formato": "demostracion",
   "idea": "El producto de cuatro enteros consecutivos más 1 es un cuadrado perfecto: n(n + 1)(n + 2)(n + 3) + 1 = (n² + 3n + 1)²; por ejemplo 1·2·3·4 + 1 = 25 = 5².",
   "creada": "20261109",
-  "usada": null
+  "usada": "2026-11-17T10:14:31+00:00"
  },
  {
   "id": "202611090350-03",
