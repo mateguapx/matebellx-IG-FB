@@ -5130,5 +5130,31 @@
   "ig_id": "17924532786530434",
   "fb_id": "1382195514976052_122120544645500466",
   "th_id": "18128335342925675"
+ },
+ {
+  "id": "20261117-0214-t2",
+  "ts": "2026-11-17T02:16:00+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "historia",
+  "tema_clave": "libro:LINEAL",
+  "area": "ortogonalidad y Gram-Schmidt",
+  "key": "LINEAL",
+  "nivel": "uni",
+  "fondo": "geometria",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Gram-Schmidt: lleva el nombre de Gram (1883) y Schmidt (1907), pero Laplace ya lo usaba",
+  "titulo": "Lleva el nombre de Gram y Schmidt, pero Laplace ya lo **usaba** antes",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17912616102318982",
+  "fb_id": "1382195514976052_122120567973500466",
+  "th_id": "18030035975870539"
  }
 ]
