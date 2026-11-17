@@ -5156,5 +5156,31 @@
   "ig_id": "17912616102318982",
   "fb_id": "1382195514976052_122120567973500466",
   "th_id": "18030035975870539"
+ },
+ {
+  "id": "20261117-0713-t3",
+  "ts": "2026-11-17T07:14:52+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:corazon",
+  "area": "curva del corazón x = 16 sen³t, y = 13 cos t − 5 cos 2t − 2 cos 3t − cos 4t",
+  "key": null,
+  "nivel": "general",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": "corazon",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "curva del corazón: solo se detiene en t = 0 y t = π, sus dos puntas",
+  "titulo": "¿Sabías que este corazón solo se **detiene** dos veces, en sus puntas?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18081500546418834",
+  "fb_id": "1382195514976052_122120613825500466",
+  "th_id": "18011554916782464"
  }
 ]
