@@ -1,93 +1,75 @@
 {
  "top": [
   {
+   "titulo": "El milagro de que el lenguaje de las matemáticas sea el apropiado para formular las leyes de la física es un regalo maravilloso que no entendemos ni merecemos.",
+   "formato": "frase",
+   "hook": "asombro",
+   "tema": "frase de Eugene Wigner",
+   "fondo": "espiral",
+   "score": 4.837,
+   "metricas": {
+    "reach": 62,
+    "shares": 1,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 104,
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
    "titulo": "Un trébol de **cuatro** hojas que no depende de la suerte",
    "formato": "curva",
    "hook": "metafora",
    "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
    "fondo": "formulas",
-   "score": 3.876,
+   "score": 3.914,
    "metricas": {
-    "reach": 23,
+    "reach": 24,
     "shares": 1,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 55,
+    "views": 56,
     "likes": 3,
     "comments": 0
    }
   },
   {
-   "titulo": "Ninguna fracción, por grande que sea, da **exactamente** $\\sqrt{2}$",
-   "formato": "demostracion",
+   "titulo": "Misma ecuación, mismo inicio, y aun así **infinitas** soluciones",
+   "formato": "identidad",
    "hook": "asombro",
-   "tema": "√2 es irracional: si p² = 2q², p y q serían pares",
-   "fondo": "espiral",
-   "score": 3.571,
+   "tema": "falla de unicidad: y' = 3y^(2/3), y(0) = 0 tiene infinitas soluciones",
+   "fondo": "fractal",
+   "score": 3.648,
    "metricas": {
-    "reach": 15,
+    "reach": 17,
     "shares": 0,
     "saved": 1,
     "follows": 0,
-    "profile_visits": 1,
-    "views": 49,
-    "likes": 4,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Una rueda que gira por **fuera** de otra borda estos nueve lazos",
-   "formato": "curva",
-   "hook": "asombro",
-   "tema": "epitrocoide R=9, r=4, d=5 y el Spirograph de Denys Fisher (1965)",
-   "fondo": "geometria",
-   "score": 3.492,
-   "metricas": {
-    "reach": 16,
-    "shares": 0,
-    "saved": 1,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 34,
-    "likes": 3,
-    "comments": 0
+    "profile_visits": 2,
+    "views": 67,
+    "likes": 2,
+    "comments": 2
    }
   }
  ],
  "bottom": [
-  {
-   "titulo": "¿Sabías que este **infinito** encierra un área de exactamente 1?",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "la lemniscata r² = cos 2θ encierra un área total de exactamente 1",
-   "fondo": "rejilla",
-   "score": 0.398,
-   "metricas": {
-    "reach": 11,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 23,
-    "likes": 0,
-    "comments": 0
-   }
-  },
   {
    "titulo": "Fermat partió 2 027 651 281 en dos con una **resta** de cuadrados",
    "formato": "demostracion",
    "hook": "historia",
    "tema": "método de factorización de Fermat: 2 027 651 281 = 45041² − 1020²",
    "fondo": "formulas",
-   "score": 0.327,
+   "score": 0.365,
    "metricas": {
-    "reach": 7,
+    "reach": 8,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 26,
+    "views": 27,
     "likes": 0,
     "comments": 0
    }
@@ -106,6 +88,24 @@
     "follows": 0,
     "profile_visits": 0,
     "views": 19,
+    "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Ocho **pétalos** que cubren exactamente la mitad del círculo",
+   "formato": "curva",
+   "hook": "asombro",
+   "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
+   "fondo": "rejilla",
+   "score": 0.267,
+   "metricas": {
+    "reach": 7,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 17,
     "likes": 0,
     "comments": 0
    }
