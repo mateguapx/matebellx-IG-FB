@@ -5326,5 +5326,31 @@
   "ig_id": "17930340750431958",
   "fb_id": "1382195514976052_122120873145500466",
   "th_id": "18097349897690644"
+ },
+ {
+  "id": "20261118-0945-t4",
+  "ts": "2026-11-18T09:46:11+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "idea:historia",
+  "area": "Sofía Kovalévskaya ganó en 1888 el Premio Bordin de la Academia de Ciencias de París por su estudio del giro de un sólido rígido, y en 1889 fue nombrada profesora en Estocolmo.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-10",
+  "frase_id": null,
+  "tema": "Kovalévskaya y el tercer trompo integrable (Premio Bordin 1888)",
+  "titulo": "Euler y Lagrange resolvieron dos trompos. Kovalévskaya, el **tercero**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18003653103059852",
+  "fb_id": "1382195514976052_122120915985500466",
+  "th_id": "18077326586499524"
  }
 ]
