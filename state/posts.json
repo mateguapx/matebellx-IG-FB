@@ -5274,5 +5274,31 @@
   "ig_id": "18400178920167988",
   "fb_id": "1382195514976052_122120810475500466",
   "th_id": "18025283726723656"
+ },
+ {
+  "id": "20261118-0128-t2",
+  "ts": "2026-11-18T01:29:19+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "libro:PRECALCULO",
+  "area": "sucesiones y series",
+  "key": "PRECALCULO",
+  "nivel": "bach",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "suma de Fibonacci: F₁ + … + Fₙ = Fₙ₊₂ − 1 por telescopio",
+  "titulo": "¿Sabías que sumar los primeros Fibonacci da otro Fibonacci **menos** 1?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17923073610452362",
+  "fb_id": "1382195514976052_122120834331500466",
+  "th_id": "18130709095913649"
  }
 ]
