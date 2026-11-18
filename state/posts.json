@@ -5392,5 +5392,31 @@
   "ig_id": "18003653103059852",
   "fb_id": "1382195514976052_122120915985500466",
   "th_id": "18077326586499524"
+ },
+ {
+  "id": "20261118-2232-t1",
+  "ts": "2026-11-18T22:33:40+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "identidad",
+  "hook": "asombro",
+  "tema_clave": "la fórmula de De Moivre",
+  "area": "la fórmula de De Moivre",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "fórmula de De Moivre: elevar a la n multiplica el ángulo",
+  "titulo": "Elevar a la $n$ es solo **girar** $n$ veces el mismo ángulo",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18069228914788949",
+  "fb_id": "1382195514976052_122121056115500466",
+  "th_id": "18044349260841093"
  }
 ]
