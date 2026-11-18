@@ -5300,5 +5300,31 @@
   "ig_id": "17923073610452362",
   "fb_id": "1382195514976052_122120834331500466",
   "th_id": "18130709095913649"
+ },
+ {
+  "id": "20261118-0637-t3",
+  "ts": "2026-11-18T06:38:40+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:epitrocoide",
+  "area": "espirógrafo exterior (epitrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "epitrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "epitrocoide del espirógrafo con R = 5, r = 3",
+  "titulo": "¿Sabías que el **espirógrafo** de tu infancia dibuja ecuaciones?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17930340750431958",
+  "fb_id": "1382195514976052_122120873145500466",
+  "th_id": "18097349897690644"
  }
 ]
