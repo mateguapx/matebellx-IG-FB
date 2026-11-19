@@ -5470,5 +5470,31 @@
   "ig_id": "18054242294607087",
   "fb_id": "1382195514976052_122121126981500466",
   "th_id": "18133837414763459"
+ },
+ {
+  "id": "20261119-1003-t4",
+  "ts": "2026-11-19T10:04:31+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "idea:historia",
+  "area": "Fermat anotó en el margen de su Aritmética de Diofanto que xⁿ + yⁿ = zⁿ no tiene soluciones enteras positivas para n > 2; Andrew Wiles lo demostró en 1994, más de 350 años después.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": "Bellxs de la historia",
+  "idea_id": "202610260350-11",
+  "frase_id": null,
+  "tema": "último teorema de Fermat: anotado en un margen, probado por Wiles en 1994",
+  "titulo": "Fermat lo escribió en un **margen**. La prueba llegó 350 años después",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18079844528742008",
+  "fb_id": "1382195514976052_122121163593500466",
+  "th_id": "18079816568566958"
  }
 ]
