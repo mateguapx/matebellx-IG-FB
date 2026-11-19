@@ -24,7 +24,7 @@
    "hook": "metafora",
    "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
    "fondo": "formulas",
-   "score": 3.914,
+   "score": 3.96,
    "metricas": {
     "reach": 24,
     "shares": 1,
@@ -42,7 +42,7 @@
    "hook": "asombro",
    "tema": "falla de unicidad: y' = 3y^(2/3), y(0) = 0 tiene infinitas soluciones",
    "fondo": "fractal",
-   "score": 3.648,
+   "score": 3.68,
    "metricas": {
     "reach": 17,
     "shares": 0,
@@ -62,7 +62,7 @@
    "hook": "historia",
    "tema": "método de factorización de Fermat: 2 027 651 281 = 45041² − 1020²",
    "fondo": "formulas",
-   "score": 0.365,
+   "score": 0.38,
    "metricas": {
     "reach": 8,
     "shares": 0,
@@ -80,7 +80,7 @@
    "hook": "asombro",
    "tema": "fórmula general de segundo grado completando el cuadrado (al-Juarismi)",
    "fondo": "funciones",
-   "score": 0.327,
+   "score": 0.34,
    "metricas": {
     "reach": 7,
     "shares": 0,
