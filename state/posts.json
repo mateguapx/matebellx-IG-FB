@@ -5547,5 +5547,31 @@
   "ig_id": "18079844528742008",
   "fb_id": "1382195514976052_122121163593500466",
   "th_id": "18079816568566958"
+ },
+ {
+  "id": "20261119-2231-t1",
+  "ts": "2026-11-19T22:32:11+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "frase",
+  "hook": "asombro",
+  "tema_clave": "frase:Ada Lovelace",
+  "area": "La máquina analítica teje patrones algebraicos, así como el telar de Jacquard teje flores y hojas.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": "lovelace-telar",
+  "tema": "frase de Ada Lovelace",
+  "titulo": "La máquina analítica teje patrones algebraicos, así como el telar de Jacquard teje flores y hojas.",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17911703070668363",
+  "fb_id": "1382195514976052_122121307377500466",
+  "th_id": "18119510591045078"
  }
 ]
