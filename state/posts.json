@@ -5418,5 +5418,31 @@
   "ig_id": "18069228914788949",
   "fb_id": "1382195514976052_122121056115500466",
   "th_id": "18044349260841093"
+ },
+ {
+  "id": "20261119-0059-t2",
+  "ts": "2026-11-19T01:00:44+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "historia",
+  "tema_clave": "libro:ALGEBRA",
+  "area": "factorización",
+  "key": "ALGEBRA",
+  "nivel": "bach",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Euler (1732): 2^32 + 1 = 641 · 6 700 417",
+  "titulo": "Fermat creyó que $2^{32}+1$ era **primo**. Euler lo partió en dos",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18235479919322169",
+  "fb_id": "1382195514976052_122121075237500466",
+  "th_id": "17958583308302910"
  }
 ]
