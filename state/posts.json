@@ -5625,5 +5625,31 @@
   "ig_id": "17913061455657696",
   "fb_id": "1382195514976052_122121379521500466",
   "th_id": "18399296509165493"
+ },
+ {
+  "id": "20261120-0950-t4",
+  "ts": "2026-11-20T09:51:08+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "historia",
+  "tema_clave": "idea:infinito",
+  "area": "Conjunto de Cantor: quitar tercios medios una y otra vez deja longitud total 0, pero tantos puntos como la recta, y su dimensión es log 2 / log 3 ≈ 0.6309.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-20",
+  "frase_id": null,
+  "tema": "conjunto de Cantor: longitud 0, tantos puntos como la recta",
+  "titulo": "Cantor borró tercios sin fin; quedaron tantos puntos como la **recta**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18132880687697531",
+  "fb_id": "1382195514976052_122121415425500466",
+  "th_id": "18148917079579953"
  }
 ]
