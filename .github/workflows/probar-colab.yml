@@ -10,6 +10,7 @@ jobs:
       IG_TOKEN: ${{ secrets.IG_TOKEN }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       GITHUB_REPOSITORY: ${{ github.repository }}
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-python@v6
@@ -22,7 +23,7 @@ jobs:
           from bot import meta
           from bot.config import IG_COLABORADORES
           repo = os.environ["GITHUB_REPOSITORY"]
-          nombres = sorted(f["name"] for f in requests.get(f"https://api.github.com/repos/{repo}/contents?ref=media", timeout=30).json() if f["name"].endswith(".png"))[:2]
+          nombres = sorted(f["name"] for f in requests.get(f"https://api.github.com/repos/{repo}/contents?ref=media", headers={"Authorization": "Bearer " + os.environ["GH_TOKEN"]}, timeout=30).json() if f["name"].endswith(".png"))[:2]
           urls = [f"https://raw.githubusercontent.com/{repo}/media/{n}" for n in nombres]
           hijos = []
           for u in urls:
