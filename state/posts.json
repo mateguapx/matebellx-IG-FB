@@ -5573,5 +5573,31 @@
   "ig_id": "17911703070668363",
   "fb_id": "1382195514976052_122121307377500466",
   "th_id": "18119510591045078"
+ },
+ {
+  "id": "20261120-0104-t2",
+  "ts": "2026-11-20T01:05:45+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:rosa",
+  "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+  "key": "EDO",
+  "nivel": "uni",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "rosa",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "rosa r = cos(3θ/4): se cierra tras cuatro vueltas",
+  "titulo": "Esta rosa es un hilo que da **cuatro** vueltas antes de cerrarse",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18052686242818658",
+  "fb_id": "1382195514976052_122121330315500466",
+  "th_id": "18083716898423403"
  }
 ]
