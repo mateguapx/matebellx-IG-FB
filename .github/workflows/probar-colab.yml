@@ -1,0 +1,36 @@
+name: probar-colab
+# Prueba manual: crea (SIN publicar) un carrusel con colaboradores usando las imágenes de la rama media.
+# Sirve para confirmar que Meta acepta la invitación. Los contenedores sin publicar caducan solos en 24 h.
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  probar:
+    runs-on: ubuntu-24.04
+    env:
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      GITHUB_REPOSITORY: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - name: Crear contenedor con colaboradores (sin publicar)
+        run: |
+          python - <<'PY'
+          import json, os, requests
+          from bot import meta
+          from bot.config import IG_COLABORADORES
+          repo = os.environ["GITHUB_REPOSITORY"]
+          nombres = sorted(f["name"] for f in requests.get(f"https://api.github.com/repos/{repo}/contents?ref=media", timeout=30).json() if f["name"].endswith(".png"))[:2]
+          urls = [f"https://raw.githubusercontent.com/{repo}/media/{n}" for n in nombres]
+          hijos = []
+          for u in urls:
+              c = meta._ig_post(f"{meta.IG_ID()}/media", reintentar=True, image_url=u, is_carousel_item="true")["id"]
+              meta._wait_ready(c); hijos.append(c)
+          padre = meta._ig_post(f"{meta.IG_ID()}/media", media_type="CAROUSEL", children=",".join(hijos),
+                                collaborators=json.dumps(IG_COLABORADORES), caption="prueba (no se publica)")["id"]
+          meta._wait_ready(padre)
+          print("OK: contenedor con colaboradores", IG_COLABORADORES, "->", padre, "(no publicado)")
+          print(meta._ig_get(padre, fields="id,status_code"))
+          PY

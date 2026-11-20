@@ -90,15 +90,26 @@ def _ig_publicar(creation_id: str) -> str:
 
 
 # --- Instagram ---
-def publish_instagram(image_urls: list[str], caption: str) -> str:
-    """Carrusel (2-10 imágenes). Los posts 'imagen única + CTA' son carruseles de 2."""
+def publish_instagram(image_urls: list[str], caption: str, colaboradores: list[str] | None = None) -> str:
+    """Carrusel (2-10 imágenes). Los posts 'imagen única + CTA' son carruseles de 2.
+    `colaboradores`: usuarios de IG invitados como colaboradores (van en el contenedor padre). Si Meta rechaza
+    la invitación, el post se publica igual sin colaboración (crear un contenedor no publica nada)."""
     children = []
     for url in image_urls:
         c = _ig_post(f"{IG_ID()}/media", reintentar=True, image_url=url, is_carousel_item="true")["id"]
         _wait_ready(c)
         children.append(c)
     extra = {"caption": caption} if caption else {}
-    parent = _ig_post(f"{IG_ID()}/media", reintentar=True, media_type="CAROUSEL", children=",".join(children), **extra)["id"]
+    parent = None
+    if colaboradores:
+        try:
+            parent = _ig_post(f"{IG_ID()}/media", reintentar=True, media_type="CAROUSEL", children=",".join(children),
+                              collaborators=json.dumps(colaboradores), **extra)["id"]
+            print("IG colaboradores invitados:", ", ".join(colaboradores))
+        except RuntimeError as e:
+            print(f"::warning::IG no aceptó colaboradores {colaboradores}; se publica sin colaboración. {e}")
+    if parent is None:
+        parent = _ig_post(f"{IG_ID()}/media", reintentar=True, media_type="CAROUSEL", children=",".join(children), **extra)["id"]
     _wait_ready(parent)
     return _ig_publicar(parent)
 

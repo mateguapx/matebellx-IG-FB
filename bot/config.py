@@ -6,6 +6,10 @@ ROOT = Path(__file__).resolve().parent.parent
 GRAPH_VERSION = os.getenv("GRAPH_VERSION", "v26.0")
 
 HANDLE = os.getenv("PAGE_HANDLE", "@matebellx")
+# Colaboración en Instagram: en estos horarios el post invita como colaboradora a la cuenta indicada (máx. 3).
+# Si la cuenta acepta, el post aparece también en su perfil y le llega a su público. Vacío = sin colaboración.
+IG_COLABORADORES = [u.strip().lstrip("@") for u in os.getenv("IG_COLABORADORES", "mateguapx").split(",") if u.strip()][:3]
+COLAB_TIPOS = {int(t) for t in os.getenv("COLAB_TIPOS", "4").split(",") if t.strip()}
 LINK = "https://www.mateguapo.com/materiales-de-estudio"
 
 # Paleta Bellxs: negro profundo, crema y dorado

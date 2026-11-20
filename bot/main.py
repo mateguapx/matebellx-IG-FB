@@ -9,7 +9,7 @@ import json
 import os
 import re
 from datetime import datetime, timezone
-from .config import FB_CTA, LINK, POST_TYPES, PUBLICAR_DESCRIPCIONES, ROOT, TH_CTA, TH_LIMITE
+from .config import COLAB_TIPOS, FB_CTA, IG_COLABORADORES, LINK, POST_TYPES, PUBLICAR_DESCRIPCIONES, ROOT, TH_CTA, TH_LIMITE
 from . import cola, meta
 from .render import render_many, slide_html
 
@@ -121,7 +121,9 @@ def publish_step() -> None:
     ig = fb = None
     errores = []
     try:
-        ig = meta.publish_instagram(ig_urls, d["caption"])
+        tipo = (d.get("record") or {}).get("tipo")
+        colab = IG_COLABORADORES if tipo in COLAB_TIPOS else None
+        ig = meta.publish_instagram(ig_urls, d["caption"], colab)
         print("IG:", ig)
     except Exception as e:
         errores.append(f"Instagram: {e}")
