@@ -5704,5 +5704,31 @@
   "ig_id": "18132880687697531",
   "fb_id": "1382195514976052_122121415425500466",
   "th_id": "18148917079579953"
+ },
+ {
+  "id": "20261120-2204-t1",
+  "ts": "2026-11-20T22:05:05+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "pregunta",
+  "tema_clave": "Paul Erdős",
+  "area": "Paul Erdős",
+  "key": null,
+  "nivel": "general",
+  "fondo": "primos",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Erdős y El Libro de las demostraciones perfectas",
+  "titulo": "¿Sabías que Erdős soñaba con un **libro** de pruebas perfectas?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18121195736092587",
+  "fb_id": "1382195514976052_122121563439500466",
+  "th_id": "18113450047918417"
  }
 ]
