@@ -6,7 +6,7 @@
    "hook": "asombro",
    "tema": "frase de Eugene Wigner",
    "fondo": "espiral",
-   "score": 4.837,
+   "score": 4.908,
    "metricas": {
     "reach": 62,
     "shares": 1,
@@ -15,24 +15,6 @@
     "profile_visits": 0,
     "views": 104,
     "likes": 2,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Un trébol de **cuatro** hojas que no depende de la suerte",
-   "formato": "curva",
-   "hook": "metafora",
-   "tema": "rosa polar r = cos 2θ: cuatro pétalos con k par",
-   "fondo": "formulas",
-   "score": 3.96,
-   "metricas": {
-    "reach": 24,
-    "shares": 1,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 56,
-    "likes": 3,
     "comments": 0
    }
   },
@@ -53,36 +35,36 @@
     "likes": 2,
     "comments": 2
    }
+  },
+  {
+   "titulo": "Ninguna fracción, por grande que sea, da **exactamente** $\\sqrt{2}$",
+   "formato": "demostracion",
+   "hook": "asombro",
+   "tema": "√2 es irracional: si p² = 2q², p y q serían pares",
+   "fondo": "espiral",
+   "score": 3.545,
+   "metricas": {
+    "reach": 15,
+    "shares": 0,
+    "saved": 1,
+    "follows": 0,
+    "profile_visits": 1,
+    "views": 49,
+    "likes": 4,
+    "comments": 0
+   }
   }
  ],
  "bottom": [
   {
-   "titulo": "Fermat partió 2 027 651 281 en dos con una **resta** de cuadrados",
-   "formato": "demostracion",
-   "hook": "historia",
-   "tema": "método de factorización de Fermat: 2 027 651 281 = 45041² − 1020²",
-   "fondo": "formulas",
-   "score": 0.38,
+   "titulo": "Ocho **pétalos** que cubren exactamente la mitad del círculo",
+   "formato": "curva",
+   "hook": "asombro",
+   "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
+   "fondo": "rejilla",
+   "score": 0.306,
    "metricas": {
     "reach": 8,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 27,
-    "likes": 0,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Toda ecuación de segundo grado se resuelve **completando** un cuadrado",
-   "formato": "demostracion",
-   "hook": "asombro",
-   "tema": "fórmula general de segundo grado completando el cuadrado (al-Juarismi)",
-   "fondo": "funciones",
-   "score": 0.34,
-   "metricas": {
-    "reach": 7,
     "shares": 0,
     "saved": 0,
     "follows": 0,
@@ -93,14 +75,32 @@
    }
   },
   {
-   "titulo": "Ocho **pétalos** que cubren exactamente la mitad del círculo",
+   "titulo": "¿Sabías que el **espirógrafo** de tu infancia dibuja ecuaciones?",
    "formato": "curva",
-   "hook": "asombro",
-   "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
-   "fondo": "rejilla",
-   "score": 0.267,
+   "hook": "pregunta",
+   "tema": "epitrocoide del espirógrafo con R = 5, r = 3",
+   "fondo": "geometria",
+   "score": 0.245,
    "metricas": {
-    "reach": 7,
+    "reach": 6,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 13,
+    "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Euler y Lagrange resolvieron dos trompos. Kovalévskaya, el **tercero**",
+   "formato": "historia",
+   "hook": "asombro",
+   "tema": "Kovalévskaya y el tercer trompo integrable (Premio Bordin 1888)",
+   "fondo": "fractal",
+   "score": 0.245,
+   "metricas": {
+    "reach": 6,
     "shares": 0,
     "saved": 0,
     "follows": 0,
