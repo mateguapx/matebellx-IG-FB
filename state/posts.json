@@ -5859,5 +5859,31 @@
   "ig_id": "18132903019695274",
   "fb_id": "1382195514976052_122121675897500466",
   "th_id": "18112473835938993"
+ },
+ {
+  "id": "20261121-2043-t1",
+  "ts": "2026-11-21T20:44:49+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "metafora",
+  "tema_clave": "el hotel infinito de Hilbert",
+  "area": "el hotel infinito de Hilbert",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "el hotel infinito de Hilbert: n ↦ n + 1 y n ↦ 2n",
+  "titulo": "Un hotel **lleno** donde siempre cabe alguien más",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18026013023945743",
+  "fb_id": "1382195514976052_122121802503500466",
+  "th_id": "17969714697229850"
  }
 ]
