@@ -5885,5 +5885,31 @@
   "ig_id": "18026013023945743",
   "fb_id": "1382195514976052_122121802503500466",
   "th_id": "17969714697229850"
+ },
+ {
+  "id": "20261121-2340-t2",
+  "ts": "2026-11-21T23:41:44+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "asombro",
+  "tema_clave": "libro:PRECALCULO",
+  "area": "números complejos",
+  "key": "PRECALCULO",
+  "nivel": "bach",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "i elevado a la i es un número real",
+  "titulo": "Una unidad imaginaria elevada a sí misma da un número **real**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18115936481164967",
+  "fb_id": "1382195514976052_122121830163500466",
+  "th_id": "18648012619057798"
  }
 ]
