@@ -5730,5 +5730,31 @@
   "ig_id": "18121195736092587",
   "fb_id": "1382195514976052_122121563439500466",
   "th_id": "18113450047918417"
+ },
+ {
+  "id": "20261121-0034-t2",
+  "ts": "2026-11-21T00:35:07+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:julia",
+  "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+  "key": "CALCULO",
+  "nivel": "uni",
+  "fondo": "rejilla",
+  "modo": "explorar",
+  "curva_tipo": "julia",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "conejo de Douady: Julia con c ≈ −0.1226 + 0.7449i",
+  "titulo": "¿Sabías que este **conejo** sale de iterar $z^2+c$ con un solo $c$?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17923098414462083",
+  "fb_id": "1382195514976052_122121585981500466",
+  "th_id": "18115169054146047"
  }
 ]
