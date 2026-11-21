@@ -5782,5 +5782,31 @@
   "ig_id": "18099181313694153",
   "fb_id": "1382195514976052_122121647325500466",
   "th_id": "17893594275460203"
+ },
+ {
+  "id": "20261121-0914-t4",
+  "ts": "2026-11-21T09:15:20+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "naturaleza",
+  "hook": "metafora",
+  "tema_clave": "las manchas animales y las ecuaciones de Turing",
+  "area": "las manchas animales y las ecuaciones de Turing",
+  "key": null,
+  "nivel": "general",
+  "fondo": "ondas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "patrones de Turing: reacción-difusión (1952)",
+  "titulo": "Dos sustancias que se **persiguen** bastan para pintar manchas",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18132903019695274",
+  "fb_id": "1382195514976052_122121675897500466",
+  "th_id": "18112473835938993"
  }
 ]
