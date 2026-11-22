@@ -6041,5 +6041,31 @@
   "ig_id": "18093905474244516",
   "fb_id": "1382195514976052_122122063395500466",
   "th_id": "18099306491557355"
+ },
+ {
+  "id": "20261122-2357-t2",
+  "ts": "2026-11-22T23:58:53+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "metafora",
+  "tema_clave": "libro:LINEAL",
+  "area": "ortogonalidad y Gram-Schmidt",
+  "key": "LINEAL",
+  "nivel": "uni",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Gram-Schmidt sobre 1, x, x² da los polinomios de Legendre",
+  "titulo": "Pon $1$, $x$ y $x^2$ en **ángulo recto** y aparecen los de Legendre",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18105902306454398",
+  "fb_id": "1382195514976052_122122092675500466",
+  "th_id": "17973616809189778"
  }
 ]
