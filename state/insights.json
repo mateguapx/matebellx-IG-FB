@@ -8,13 +8,31 @@
    "fondo": "espiral",
    "score": 5.0,
    "metricas": {
-    "reach": 63,
+    "reach": 65,
     "shares": 1,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 108,
+    "views": 112,
     "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Cantor borró tercios sin fin; quedaron tantos puntos como la **recta**",
+   "formato": "infinito",
+   "hook": "historia",
+   "tema": "conjunto de Cantor: longitud 0, tantos puntos como la recta",
+   "fondo": "espiral",
+   "score": 5.0,
+   "metricas": {
+    "reach": 4880,
+    "shares": 1,
+    "saved": 39,
+    "follows": 9,
+    "profile_visits": 14,
+    "views": 14209,
+    "likes": 239,
     "comments": 0
    }
   },
@@ -33,24 +51,6 @@
     "profile_visits": 1,
     "views": 30,
     "likes": 6,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "¿Sabías que este corazón solo se **detiene** dos veces, en sus puntas?",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "curva del corazón: solo se detiene en t = 0 y t = π, sus dos puntas",
-   "fondo": "rejilla",
-   "score": 3.345,
-   "metricas": {
-    "reach": 15,
-    "shares": 0,
-    "saved": 1,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 37,
-    "likes": 1,
     "comments": 0
    }
   }
@@ -80,14 +80,14 @@
    "hook": "pregunta",
    "tema": "epitrocoide del espirógrafo con R = 5, r = 3",
    "fondo": "geometria",
-   "score": 0.278,
+   "score": 0.338,
    "metricas": {
-    "reach": 6,
+    "reach": 8,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 13,
+    "views": 16,
     "likes": 0,
     "comments": 0
    }
@@ -98,14 +98,14 @@
    "hook": "asombro",
    "tema": "Kovalévskaya y el tercer trompo integrable (Premio Bordin 1888)",
    "fondo": "fractal",
-   "score": 0.269,
+   "score": 0.327,
    "metricas": {
-    "reach": 6,
+    "reach": 8,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 17,
+    "views": 22,
     "likes": 0,
     "comments": 0
    }
