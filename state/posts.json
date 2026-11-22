@@ -5937,5 +5937,31 @@
   "ig_id": "18355110478269843",
   "fb_id": "1382195514976052_122121887571500466",
   "th_id": "18228178414340881"
+ },
+ {
+  "id": "20261122-0924-t4",
+  "ts": "2026-11-22T09:25:01+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "asombro",
+  "tema_clave": "Maryam Mirzakhani",
+  "area": "Maryam Mirzakhani",
+  "key": null,
+  "nivel": "general",
+  "fondo": "lissajous",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Mirzakhani dibujaba en grandes hojas: su hija decía que pintaba",
+  "titulo": "Su hija creía que mamá **pintaba**. Eran superficies hiperbólicas",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18142211335624671",
+  "fb_id": "1382195514976052_122121924573500466",
+  "th_id": "18137650969672616"
  }
 ]
