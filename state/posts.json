@@ -5911,5 +5911,31 @@
   "ig_id": "18115936481164967",
   "fb_id": "1382195514976052_122121830163500466",
   "th_id": "18648012619057798"
+ },
+ {
+  "id": "20261122-0550-t3",
+  "ts": "2026-11-22T05:51:33+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:hipotrocoide",
+  "area": "espirógrafo interior (hipotrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "hipotrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "hipotrocoide R = 7, r = 3: siete lazos tras tres vueltas",
+  "titulo": "Dos círculos y un lápiz bastan para tejer **siete** lazos perfectos",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18355110478269843",
+  "fb_id": "1382195514976052_122121887571500466",
+  "th_id": "18228178414340881"
  }
 ]
