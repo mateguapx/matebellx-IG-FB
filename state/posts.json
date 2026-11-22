@@ -6015,5 +6015,31 @@
   "ig_id": "18142211335624671",
   "fb_id": "1382195514976052_122121924573500466",
   "th_id": "18137650969672616"
+ },
+ {
+  "id": "20261122-2053-t1",
+  "ts": "2026-11-22T20:54:51+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "dato_preciso",
+  "tema_clave": "la serie geométrica 1/2+1/4+… = 1",
+  "area": "la serie geométrica 1/2+1/4+… = 1",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "serie geométrica 1/2 + 1/4 + … = 1 con 2S = 1 + S",
+  "titulo": "Cada pedazo es la mitad del anterior y todos suman **exactamente** 1",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18093905474244516",
+  "fb_id": "1382195514976052_122122063395500466",
+  "th_id": "18099306491557355"
  }
 ]
