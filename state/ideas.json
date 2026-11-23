@@ -326,7 +326,7 @@
   "formato": "demostracion",
   "idea": "Suma telescópica: 1/(1·2) + 1/(2·3) + 1/(3·4) + … = 1, porque 1/(n(n+1)) = 1/n − 1/(n+1) y todo se cancela menos el primer 1.",
   "creada": "20261026",
-  "usada": null
+  "usada": "2026-11-23T10:21:37+00:00"
  },
  {
   "id": "202610260350-05",

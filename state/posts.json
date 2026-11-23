@@ -6093,5 +6093,31 @@
   "ig_id": "17964896339997467",
   "fb_id": "1382195514976052_122122148307500466",
   "th_id": "18455752420122268"
+ },
+ {
+  "id": "20261123-1020-t4",
+  "ts": "2026-11-23T10:21:37+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "metafora",
+  "tema_clave": "idea:demostracion",
+  "area": "Suma telescópica: 1/(1·2) + 1/(2·3) + 1/(3·4) + … = 1, porque 1/(n(n+1)) = 1/n − 1/(n+1) y todo se cancela menos el primer 1.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": "Domingo de demostraciones",
+  "idea_id": "202610260350-01",
+  "frase_id": null,
+  "tema": "suma telescópica de 1/(n(n+1)) = 1",
+  "titulo": "Como **dominós**, cada término tumba al siguiente y queda 1",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18224892136348722",
+  "fb_id": "1382195514976052_122122188477500466",
+  "th_id": "17961240510018106"
  }
 ]
