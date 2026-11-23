@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "historia",
+ "tema_clave": "libro:LINEAL",
+ "area": "valores y vectores propios",
+ "key": "LINEAL",
+ "nivel": "uni",
+ "fondo": "rejilla",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 999140,
+ "modo": "explotar",
+ "fecha": "2026-11-29",
+ "tema": "Cauchy (1829): las matrices simétricas reales tienen valores propios reales",
+ "caption": "Una prueba de dos líneas que sostiene buena parte de la física y la estadística.\nEn 1829, Cauchy demostró que una matriz simétrica real solo tiene valores propios reales. Si Av = λv, multiplica por el conjugado transpuesto de v: obtienes v̄ᵀAv = λ‖v‖². Como A es real y simétrica, v̄ᵀAv coincide con su propio conjugado, así que es real, y entonces λ también.\nGuárdalo para tu próximo examen de álgebra lineal.\n#matebellx #mateguapo #algebralineal #valorespropios",
+ "threads": "Una de mis pruebas favoritas 💛 Si A es real y simétrica y Av = λv, entonces v̄ᵀAv = λ‖v‖². Pero ese número es igual a su propio conjugado, o sea, es real. Y como ‖v‖² es real y positivo, λ tiene que ser real. Cauchy lo probó en 1829. ¿La habías visto así de corta?",
+ "slides": [
+  {
+   "title": "Cauchy, 1829: si $A$ es simétrica, sus valores propios son **reales**",
+   "text": "El número $\\bar{v}^{T}Av$ es igual a su conjugado, así que $\\lambda$ no tiene parte imaginaria.",
+   "display": "\\begin{aligned}A\\mathbf{v}=\\lambda\\mathbf{v}\\ &\\Rightarrow\\ \\bar{\\mathbf{v}}^{T}\\!A\\mathbf{v}=\\lambda\\,\\|\\mathbf{v}\\|^2\\\\ \\overline{\\bar{\\mathbf{v}}^{T}\\!A\\mathbf{v}}=\\bar{\\mathbf{v}}^{T}\\!A\\mathbf{v}\\ &\\Rightarrow\\ \\lambda=\\bar{\\lambda}\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

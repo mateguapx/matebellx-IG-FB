@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "historia",
+ "tema_clave": "idea:demostracion",
+ "area": "Un polígono de n lados tiene n(n−3)/2 diagonales: cada vértice se une a n−3 vértices no vecinos y cada diagonal se cuenta dos veces (el decágono tiene 35).",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-05",
+ "frase_id": null,
+ "semilla": 301504,
+ "modo": "explotar",
+ "fecha": "2026-11-30",
+ "tema": "un polígono de n lados tiene n(n−3)/2 diagonales; el decágono, 35",
+ "caption": "Diez lados, treinta y cinco diagonales.\nDesde cada vértice de un polígono de n lados puedes trazar una diagonal hacia todos los vértices menos tres: él mismo y sus dos vecinos. Eso da n(n − 3) trazos, pero cada diagonal la contaste dos veces, una desde cada punta. Por eso hay n(n − 3)/2.\nEl hexágono tiene 9 y el decágono, 35.\nMándaselo a alguien con quien tengas mil conexiones.\n#matebellx #mateguapo #geometria #demostracion",
+ "threads": "¿Cuántas diagonales tiene un decágono? 35 💛 Cada uno de los 10 vértices se une con 7 que no son sus vecinos ni él mismo: 70 trazos. Pero cada diagonal se contó dos veces, una desde cada punta, así que son 35. ¿Cuántas tendrá un polígono de 20 lados?",
+ "slides": [
+  {
+   "title": "Un decágono esconde **35** diagonales",
+   "text": "Cada vértice mira a $n-3$ vértices no vecinos, y cada diagonal se cuenta desde sus dos puntas.",
+   "display": "\\begin{aligned}D&=\\frac{n(n-3)}{2}\\\\ D_{10}&=\\frac{10\\cdot 7}{2}=35\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

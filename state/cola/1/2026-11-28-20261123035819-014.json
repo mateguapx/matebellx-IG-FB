@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "dato_preciso",
+ "tema_clave": "idea:infinito",
+ "area": "0.999… = 1: si 1/3 = 0.333…, multiplicar por 3 da 0.999… = 1; no hay ningún número entre ellos.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-18",
+ "frase_id": null,
+ "semilla": 457808,
+ "modo": "explotar",
+ "fecha": "2026-11-28",
+ "tema": "0.999… = 1 con 10x − x = 9",
+ "caption": "Dos escrituras, un solo número.\nLlama x a 0.999… Entonces 10x = 9.999…, y al restar los dos, todos los nueves después del punto se cancelan: 9x = 9, así que x = 1.\nOtra forma de verlo: si 0.999… fuera menor que 1, existiría un número entre ellos, pero cualquier candidato pierde contra suficientes nueves.\nMándaselo a quien siempre te dice que casi es lo mismo.\n#matebellx #mateguapo #infinito #numerosreales",
+ "threads": "0.999… y 1 son el mismo número, no dos números muy cercanos 💛 Si x = 0.999…, entonces 10x = 9.999…, y al restar queda 9x = 9: x = 1. Y si fueran distintos, debería haber algo en medio, pero no hay nada. ¿Te convence o te sigue dando ruido?",
+ "slides": [
+  {
+   "title": "$0.999\\ldots$ no se acerca a 1: **es** 1",
+   "text": "Si fueran distintos habría un número entre ellos, y no existe ninguno.",
+   "display": "\\begin{aligned}x&=0.999\\ldots\\\\ 10x-x&=9.999\\ldots-0.999\\ldots=9\\\\ x&=1\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

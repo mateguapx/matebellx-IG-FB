@@ -91,6 +91,90 @@
   "usada": "2026-10-31T18:57:14+00:00"
  },
  {
+  "id": "202610190351-04",
+  "formato": "demostracion",
+  "idea": "Teorema de Tales: un ángulo inscrito en un semicírculo es recto; trazando el radio al vértice salen dos triángulos isósceles y 2α + 2β = 180°.",
+  "creada": "20261019",
+  "usada": "2026-11-15T20:04:19+00:00"
+ },
+ {
+  "id": "202610190351-07",
+  "formato": "historia",
+  "idea": "Maryam Mirzakhani, nacida en Teherán, fue en 2014 la primera mujer en ganar la Medalla Fields, por su trabajo sobre superficies de Riemann y sus espacios de moduli.",
+  "creada": "20261019",
+  "usada": "2026-11-11T08:52:48+00:00"
+ },
+ {
+  "id": "202610190351-20",
+  "formato": "infinito",
+  "idea": "Copo de nieve de Koch (1904): su perímetro crece por 4/3 en cada paso y es infinito, pero su área es exactamente 8/5 de la del triángulo inicial.",
+  "creada": "20261019",
+  "usada": "2026-11-13T09:07:34+00:00"
+ },
+ {
+  "id": "202610260350-07",
+  "formato": "historia",
+  "idea": "Katherine Johnson calculó trayectorias para la NASA; en 1962 John Glenn pidió que ella verificara a mano los cálculos de la computadora antes de su vuelo orbital.",
+  "creada": "20261026",
+  "usada": "2026-11-16T23:36:56+00:00"
+ },
+ {
+  "id": "202610260350-09",
+  "formato": "historia",
+  "idea": "Gauss tenía 19 años cuando, en 1796, demostró que el polígono regular de 17 lados se construye con regla y compás, porque 17 es un primo de Fermat 2^(2²) + 1.",
+  "creada": "20261026",
+  "usada": "2026-11-17T22:45:32+00:00"
+ },
+ {
+  "id": "202610260350-10",
+  "formato": "historia",
+  "idea": "Sofía Kovalévskaya ganó en 1888 el Premio Bordin de la Academia de Ciencias de París por su estudio del giro de un sólido rígido, y en 1889 fue nombrada profesora en Estocolmo.",
+  "creada": "20261026",
+  "usada": "2026-11-18T09:46:11+00:00"
+ },
+ {
+  "id": "202610260350-11",
+  "formato": "historia",
+  "idea": "Fermat anotó en el margen de su Aritmética de Diofanto que xⁿ + yⁿ = zⁿ no tiene soluciones enteras positivas para n > 2; Andrew Wiles lo demostró en 1994, más de 350 años después.",
+  "creada": "20261026",
+  "usada": "2026-11-19T10:04:31+00:00"
+ },
+ {
+  "id": "202610260350-14",
+  "formato": "identidad",
+  "idea": "Fórmula BBP (Bailey, Borwein y Plouffe, 1995): π = ∑ 16⁻ᵏ (4/(8k+1) − 2/(8k+4) − 1/(8k+5) − 1/(8k+6)); permite calcular un dígito hexadecimal de π sin calcular los anteriores.",
+  "creada": "20261026",
+  "usada": "2026-11-14T19:38:35+00:00"
+ },
+ {
+  "id": "202610260350-20",
+  "formato": "infinito",
+  "idea": "Conjunto de Cantor: quitar tercios medios una y otra vez deja longitud total 0, pero tantos puntos como la recta, y su dimensión es log 2 / log 3 ≈ 0.6309.",
+  "creada": "20261026",
+  "usada": "2026-11-20T09:51:08+00:00"
+ },
+ {
+  "id": "202610260350-29",
+  "formato": "naturaleza",
+  "idea": "Galileo (1638): un chorro de agua o una pelota lanzada dibuja una parábola y = x·tan θ − g x²/(2v² cos² θ); a 45° llega más lejos, sin aire.",
+  "creada": "20261026",
+  "usada": "2026-11-10T21:08:11+00:00"
+ },
+ {
+  "id": "202611090350-02",
+  "formato": "demostracion",
+  "idea": "El producto de cuatro enteros consecutivos más 1 es un cuadrado perfecto: n(n + 1)(n + 2)(n + 3) + 1 = (n² + 3n + 1)²; por ejemplo 1·2·3·4 + 1 = 25 = 5².",
+  "creada": "20261109",
+  "usada": "2026-11-17T10:14:31+00:00"
+ },
+ {
+  "id": "202611090350-07",
+  "formato": "demostracion",
+  "idea": "Infinitas ternas pitagóricas: (m² − n²)² + (2mn)² = (m² + n²)² para cualesquiera enteros m > n > 0; con m = 2, n = 1 sale 3, 4, 5 y con m = 3, n = 2 sale 5, 12, 13.",
+  "creada": "20261109",
+  "usada": "2026-11-16T09:02:15+00:00"
+ },
+ {
   "id": "202610190351-00",
   "formato": "demostracion",
   "idea": "√2 es irracional: si √2 = p/q en mínimos términos, p² = 2q² obliga a p y q a ser pares, contradicción (prueba clásica griega).",
@@ -105,13 +189,6 @@
   "usada": null
  },
  {
-  "id": "202610190351-04",
-  "formato": "demostracion",
-  "idea": "Teorema de Tales: un ángulo inscrito en un semicírculo es recto; trazando el radio al vértice salen dos triángulos isósceles y 2α + 2β = 180°.",
-  "creada": "20261019",
-  "usada": "2026-11-15T20:04:19+00:00"
- },
- {
   "id": "202610190351-05",
   "formato": "demostracion",
   "idea": "Un polígono de n lados tiene n(n−3)/2 diagonales: cada vértice se une a n−3 vértices no vecinos y cada diagonal se cuenta dos veces (el decágono tiene 35).",
@@ -124,13 +201,6 @@
   "idea": "Sophie Germain escribió a Gauss firmando como Monsieur LeBlanc (1804); los primos p con 2p+1 también primo llevan su nombre (2, 3, 5, 11, 23…).",
   "creada": "20261019",
   "usada": null
- },
- {
-  "id": "202610190351-07",
-  "formato": "historia",
-  "idea": "Maryam Mirzakhani, nacida en Teherán, fue en 2014 la primera mujer en ganar la Medalla Fields, por su trabajo sobre superficies de Riemann y sus espacios de moduli.",
-  "creada": "20261019",
-  "usada": "2026-11-11T08:52:48+00:00"
  },
  {
   "id": "202610190351-08",
@@ -194,13 +264,6 @@
   "idea": "El hotel de Hilbert: un hotel lleno con infinitas habitaciones recibe a un huésped más moviendo a cada quien de la habitación n a la n+1.",
   "creada": "20261019",
   "usada": null
- },
- {
-  "id": "202610190351-20",
-  "formato": "infinito",
-  "idea": "Copo de nieve de Koch (1904): su perímetro crece por 4/3 en cada paso y es infinito, pero su área es exactamente 8/5 de la del triángulo inicial.",
-  "creada": "20261019",
-  "usada": "2026-11-13T09:07:34+00:00"
  },
  {
   "id": "202610190351-21",
@@ -280,39 +343,11 @@
   "usada": null
  },
  {
-  "id": "202610260350-07",
-  "formato": "historia",
-  "idea": "Katherine Johnson calculó trayectorias para la NASA; en 1962 John Glenn pidió que ella verificara a mano los cálculos de la computadora antes de su vuelo orbital.",
-  "creada": "20261026",
-  "usada": "2026-11-16T23:36:56+00:00"
- },
- {
   "id": "202610260350-08",
   "formato": "historia",
   "idea": "Brahmagupta, en su Brahmasphutasiddhanta (628), dio reglas para operar con el cero como número: a − a = 0 y a · 0 = 0.",
   "creada": "20261026",
   "usada": null
- },
- {
-  "id": "202610260350-09",
-  "formato": "historia",
-  "idea": "Gauss tenía 19 años cuando, en 1796, demostró que el polígono regular de 17 lados se construye con regla y compás, porque 17 es un primo de Fermat 2^(2²) + 1.",
-  "creada": "20261026",
-  "usada": "2026-11-17T22:45:32+00:00"
- },
- {
-  "id": "202610260350-10",
-  "formato": "historia",
-  "idea": "Sofía Kovalévskaya ganó en 1888 el Premio Bordin de la Academia de Ciencias de París por su estudio del giro de un sólido rígido, y en 1889 fue nombrada profesora en Estocolmo.",
-  "creada": "20261026",
-  "usada": "2026-11-18T09:46:11+00:00"
- },
- {
-  "id": "202610260350-11",
-  "formato": "historia",
-  "idea": "Fermat anotó en el margen de su Aritmética de Diofanto que xⁿ + yⁿ = zⁿ no tiene soluciones enteras positivas para n > 2; Andrew Wiles lo demostró en 1994, más de 350 años después.",
-  "creada": "20261026",
-  "usada": "2026-11-19T10:04:31+00:00"
  },
  {
   "id": "202610260350-12",
@@ -327,13 +362,6 @@
   "idea": "Fórmula de Machin (1706): π/4 = 4·arctan(1/5) − arctan(1/239); con ella John Machin calculó 100 decimales de π.",
   "creada": "20261026",
   "usada": null
- },
- {
-  "id": "202610260350-14",
-  "formato": "identidad",
-  "idea": "Fórmula BBP (Bailey, Borwein y Plouffe, 1995): π = ∑ 16⁻ᵏ (4/(8k+1) − 2/(8k+4) − 1/(8k+5) − 1/(8k+6)); permite calcular un dígito hexadecimal de π sin calcular los anteriores.",
-  "creada": "20261026",
-  "usada": "2026-11-14T19:38:35+00:00"
  },
  {
   "id": "202610260350-15",
@@ -362,13 +390,6 @@
   "idea": "0.999… = 1: si 1/3 = 0.333…, multiplicar por 3 da 0.999… = 1; no hay ningún número entre ellos.",
   "creada": "20261026",
   "usada": null
- },
- {
-  "id": "202610260350-20",
-  "formato": "infinito",
-  "idea": "Conjunto de Cantor: quitar tercios medios una y otra vez deja longitud total 0, pero tantos puntos como la recta, y su dimensión es log 2 / log 3 ≈ 0.6309.",
-  "creada": "20261026",
-  "usada": "2026-11-20T09:51:08+00:00"
  },
  {
   "id": "202610260350-22",
@@ -413,13 +434,6 @@
   "usada": null
  },
  {
-  "id": "202610260350-29",
-  "formato": "naturaleza",
-  "idea": "Galileo (1638): un chorro de agua o una pelota lanzada dibuja una parábola y = x·tan θ − g x²/(2v² cos² θ); a 45° llega más lejos, sin aire.",
-  "creada": "20261026",
-  "usada": "2026-11-10T21:08:11+00:00"
- },
- {
   "id": "202611090350-00",
   "formato": "demostracion",
   "idea": "Hay infinitos primos de la forma 4k + 3: si fueran solo p₁, …, pₙ, el número N = 4p₁·…·pₙ − 1 deja residuo 3 al dividir entre 4, así que tiene un factor primo de esa forma que no está en la lista.",
@@ -432,13 +446,6 @@
   "idea": "n³ − n siempre es múltiplo de 6: n³ − n = (n − 1)·n·(n + 1) son tres enteros consecutivos, y entre ellos hay siempre un par y un múltiplo de 3 (por ejemplo 5³ − 5 = 120).",
   "creada": "20261109",
   "usada": null
- },
- {
-  "id": "202611090350-02",
-  "formato": "demostracion",
-  "idea": "El producto de cuatro enteros consecutivos más 1 es un cuadrado perfecto: n(n + 1)(n + 2)(n + 3) + 1 = (n² + 3n + 1)²; por ejemplo 1·2·3·4 + 1 = 25 = 5².",
-  "creada": "20261109",
-  "usada": "2026-11-17T10:14:31+00:00"
  },
  {
   "id": "202611090350-03",
@@ -469,13 +476,6 @@
   "usada": null
  },
  {
-  "id": "202611090350-07",
-  "formato": "demostracion",
-  "idea": "Infinitas ternas pitagóricas: (m² − n²)² + (2mn)² = (m² + n²)² para cualesquiera enteros m > n > 0; con m = 2, n = 1 sale 3, 4, 5 y con m = 3, n = 2 sale 5, 12, 13.",
-  "creada": "20261109",
-  "usada": "2026-11-16T09:02:15+00:00"
- },
- {
   "id": "202611090350-08",
   "formato": "demostracion",
   "idea": "Si eliges 6 números del 1 al 10, dos de ellos son consecutivos y por lo tanto no tienen divisores comunes: las parejas {1,2}, {3,4}, …, {9,10} son solo 5 cajas (argumento de Erdős para n + 1 números de 1 a 2n).",
@@ -501,6 +501,216 @@
   "formato": "demostracion",
   "idea": "e es irracional (Fourier, 1815): si e = p/q, al multiplicar e = ∑ 1/k! por q! la parte después del término q sería un entero entre 0 y 1/q, lo cual es imposible.",
   "creada": "20261109",
+  "usada": null
+ },
+ {
+  "id": "202611230351-00",
+  "formato": "historia",
+  "idea": "Emmy Noether demostró en 1918 que cada simetría continua de la física trae una ley de conservación: si las leyes no cambian con el tiempo, la energía se conserva.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-01",
+  "formato": "historia",
+  "idea": "Se cuenta que Gauss, de niño, sumó del 1 al 100 en segundos emparejando extremos: 1 + 100 = 2 + 99 = … = 101, cincuenta veces, da 5050.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-02",
+  "formato": "historia",
+  "idea": "Euler quedó casi ciego en 1771 y siguió trabajando dictando a sus ayudantes; en 1775 produjo en promedio un artículo por semana.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-03",
+  "formato": "historia",
+  "idea": "Niels Henrik Abel probó en 1824 que no hay fórmula con radicales para la ecuación general de quinto grado; murió en 1829 a los 26 años.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-04",
+  "formato": "historia",
+  "idea": "Alan Turing, en 1936 y con 24 años, demostró en 'On Computable Numbers' que ningún programa puede decidir si cualquier otro programa termina (el problema de la parada).",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-05",
+  "formato": "historia",
+  "idea": "Grigori Perelman demostró la conjetura de Poincaré (2002-2003) y rechazó la Medalla Fields en 2006 y el Premio del Milenio de un millón de dólares en 2010.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-06",
+  "formato": "historia",
+  "idea": "Omar Jayam, el poeta de las Rubaiyat, resolvió hacia 1070 ecuaciones cúbicas cortando una parábola con un círculo.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-07",
+  "formato": "historia",
+  "idea": "Zu Chongzhi, en la China del siglo V, encontró 3.1415926 < π < 3.1415927 y la fracción 355/113, que da π con 6 decimales correctos; nadie lo superó en casi mil años.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-08",
+  "formato": "historia",
+  "idea": "Madhava de Sangamagrama, en la Kerala del siglo XIV, conocía la serie π/4 = 1 − 1/3 + 1/5 − 1/7 + …, unos 300 años antes que Leibniz (1674).",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-09",
+  "formato": "historia",
+  "idea": "Arquímedes encerró a π entre polígonos de 96 lados y obtuvo 223/71 < π < 22/7, sin álgebra ni decimales.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-10",
+  "formato": "historia",
+  "idea": "Marjorie Rice, ama de casa de San Diego sin estudios de matemáticas, descubrió entre 1976 y 1977 cuatro tipos nuevos de pentágonos que cubren el plano tras leer una columna de Martin Gardner.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-11",
+  "formato": "historia",
+  "idea": "Karen Uhlenbeck fue en 2019 la primera mujer en recibir el Premio Abel, por su trabajo en ecuaciones diferenciales parciales geométricas y teoría gauge.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-12",
+  "formato": "historia",
+  "idea": "John Nash obtuvo su doctorado en 1950 con una tesis de 28 páginas sobre juegos no cooperativos; le valió el Nobel de Economía de 1994.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-13",
+  "formato": "historia",
+  "idea": "Eratóstenes midió la Tierra hacia el 240 a. C.: la sombra en Alejandría marcaba 7.2°, 1/50 de círculo, así que la circunferencia era 50 veces la distancia a Siena.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-14",
+  "formato": "historia",
+  "idea": "Artur Avila, nacido en Río de Janeiro, fue en 2014 el primer latinoamericano en ganar la Medalla Fields, por su trabajo en sistemas dinámicos.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-15",
+  "formato": "historia",
+  "idea": "Florence Nightingale publicó en 1858 su diagrama de rosa (área polar) para mostrar que en la guerra de Crimea morían más soldados por enfermedades evitables que por heridas.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-16",
+  "formato": "infinito",
+  "idea": "La serie armónica 1 + 1/2 + 1/3 + … crece sin límite (Oresme, c. 1350, agrupando términos), pero para pasar de 10 hacen falta 12 367 términos.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-17",
+  "formato": "infinito",
+  "idea": "Paradoja de Galileo (1638): hay tantos cuadrados perfectos 1, 4, 9, 16, … como números naturales, aunque los cuadrados se vuelven cada vez más escasos.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-18",
+  "formato": "infinito",
+  "idea": "Constante de Brun (1919): la suma de los inversos de los primos gemelos 1/3 + 1/5 + 1/5 + 1/7 + 1/11 + 1/13 + … converge a un número cercano a 1.902, aunque no sepamos si son infinitos.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-19",
+  "formato": "infinito",
+  "idea": "La hipótesis del continuo no se puede probar ni refutar con los axiomas usuales: Gödel (1940) mostró que no se refuta y Paul Cohen (1963) que no se prueba.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-20",
+  "formato": "infinito",
+  "idea": "Gödel (1931): en cualquier sistema de axiomas consistente que contenga la aritmética hay afirmaciones verdaderas que no se pueden demostrar dentro de él.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-21",
+  "formato": "infinito",
+  "idea": "Curva de Peano (1890): una línea continua que pasa por todos los puntos de un cuadrado, llenándolo por completo.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-22",
+  "formato": "infinito",
+  "idea": "Paradoja de Banach-Tarski (1924): una esfera sólida se parte en un número finito de piezas que, solo moviéndolas, forman dos esferas iguales a la original (usando el axioma de elección).",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-23",
+  "formato": "infinito",
+  "idea": "El símbolo ∞ lo introdujo John Wallis en 1655, en su tratado De sectionibus conicis.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-24",
+  "formato": "infinito",
+  "idea": "Producto de Wallis (1656): π/2 = (2/1)(2/3)(4/3)(4/5)(6/5)(6/7)⋯, un producto infinito de fracciones simples que converge a la mitad de π.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-25",
+  "formato": "infinito",
+  "idea": "Función de Weierstrass (1872): una curva continua en todas partes que no tiene recta tangente en ningún punto.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-26",
+  "formato": "infinito",
+  "idea": "Jakob Bernoulli (1683), estudiando interés compuesto, llegó a (1 + 1/n)ⁿ cuando n crece sin fin: el límite es e = 2.71828…",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-27",
+  "formato": "infinito",
+  "idea": "Cantor (1874): los racionales se pueden contar uno por uno en una lista, aunque entre dos de ellos siempre haya infinitos más.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-28",
+  "formato": "infinito",
+  "idea": "La serie de Grandi 1 − 1 + 1 − 1 + … no tiene suma: sus sumas parciales saltan para siempre entre 1 y 0.",
+  "creada": "20261123",
+  "usada": null
+ },
+ {
+  "id": "202611230351-29",
+  "formato": "infinito",
+  "idea": "Todo número racional tiene decimales que terminan o se repiten para siempre: 1/7 = 0.142857142857…, con un bloque de 6 cifras, porque al dividir entre 7 solo hay 6 residuos posibles distintos de 0.",
+  "creada": "20261123",
   "usada": null
  }
 ]

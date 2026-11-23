@@ -1,0 +1,37 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:julia",
+ "area": "conjunto de Julia z → z² + c con c = c_re + i·c_im",
+ "key": "LINEAL",
+ "nivel": "uni",
+ "fondo": "geometria",
+ "curva_tipo": "julia",
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 658947,
+ "modo": "explotar",
+ "fecha": "2026-12-01",
+ "tema": "conjunto de Julia c = 0.28 + 0.53i: conexo porque c está en Mandelbrot",
+ "caption": "Un solo número complejo decide el destino de todo el dibujo.\nPara z → z² + c, el conjunto de Julia es conexo, de una sola pieza, exactamente cuando c pertenece al conjunto de Mandelbrot. Si c queda fuera, el fractal se desmorona en un polvo de Cantor de puntos aislados.\nAquí c = 0.28 + 0.53i está dentro: la órbita de 0 cae en un ciclo de periodo 4.\nGuárdalo para tu próxima clase de variable compleja.\n#matebellx #mateguapo #fractales #conjuntodejulia",
+ "threads": "Este fractal sale de repetir z → z² + c con c = 0.28 + 0.53i 💛 Lo increíble: si c está dentro del conjunto de Mandelbrot, el dibujo es de una sola pieza; si está fuera, se rompe en polvo. Fatou y Julia lo probaron hacia 1919. ¿Te imaginas que un solo número decida tanto?",
+ "slides": [
+  {
+   "title": "Si $c$ está en Mandelbrot, este fractal es de **una** sola pieza",
+   "text": "Teorema de Fatou y Julia: si $c$ queda fuera, la figura se rompe en polvo de puntos sueltos.",
+   "display": "z_{n+1}=z_n^2+0.28+0.53\\,i",
+   "curva": {
+    "tipo": "julia",
+    "params": {
+     "c_re": 0.28,
+     "c_im": 0.53
+    }
+   },
+   "layout": "curva"
+  }
+ ]
+}

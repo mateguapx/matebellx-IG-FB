@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:campana",
+ "area": "campana de Gauss (distribución normal)",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": "campana",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 305150,
+ "modo": "explorar",
+ "fecha": "2026-11-30",
+ "tema": "regla 68-95-99.7 de la campana de Gauss",
+ "caption": "Ecuación del día: la campana de Gauss.\nEl área total bajo la curva es 1. A un paso del centro, entre −1 y 1, queda el 68.27 %; a dos pasos, el 95.45 %; a tres, el 99.73 %. Más allá de tres pasos solo vive el 0.27 %.\nPor eso, en datos que siguen esta forma, lo extraordinario está siempre lejos del centro.\nMándaselo a alguien que está fuera de lo normal, en el mejor sentido.\n#matebellx #mateguapo #campanadegauss #estadistica",
+ "threads": "La campana de Gauss guarda proporciones exactas 💛 Entre −1 y 1 queda el 68.27 % del área; entre −2 y 2, el 95.45 %; entre −3 y 3, el 99.73 %. Lo que queda más allá de tres pasos es apenas el 0.27 %. ¿En qué datos de tu vida has visto esta campana?",
+ "slides": [
+  {
+   "title": "¿Sabías que entre −2 y 2 queda el **95.45 %** de esta campana?",
+   "text": "Entre −1 y 1 queda el 68.27 % del área, y entre −3 y 3, el 99.73 %.",
+   "display": "f(x)=\\frac{1}{\\sqrt{2\\pi}}\\,e^{-x^2/2}",
+   "curva": {
+    "tipo": "campana",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ]
+}

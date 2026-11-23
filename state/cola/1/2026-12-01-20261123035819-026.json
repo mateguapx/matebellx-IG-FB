@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "identidad",
+ "hook": "pregunta",
+ "tema_clave": "la fórmula de Euler para poliedros",
+ "area": "la fórmula de Euler para poliedros",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 332066,
+ "modo": "explorar",
+ "fecha": "2026-12-01",
+ "tema": "fórmula de Euler en el balón de futbol: 60 − 90 + 32 = 2",
+ "caption": "El balón clásico de 12 pentágonos y 20 hexágonos también obedece a Euler.\nTiene 60 vértices, 90 aristas y 32 caras, y 60 − 90 + 32 = 2. Lo mismo pasa con el cubo, 8 − 12 + 6 = 2, y con cualquier poliedro convexo, sin importar cuántas caras tenga.\nEuler anunció esta fórmula en 1750, en una carta a Christian Goldbach.\nMándaselo a quien siempre está pegado al futbol.\n#matebellx #mateguapo #euler #geometria",
+ "threads": "El balón de futbol clásico tiene 60 vértices, 90 aristas y 32 caras 💛 Y 60 − 90 + 32 = 2. No es casualidad: en todo poliedro convexo, vértices menos aristas más caras da 2. Euler lo escribió en una carta en 1750. ¿Lo comprobamos con un dado?",
+ "slides": [
+  {
+   "title": "¿Sabías que un balón de futbol cumple la **fórmula** de Euler?",
+   "text": "Euler la anunció en 1750 en una carta a Goldbach; vale para todo poliedro convexo.",
+   "display": "\\begin{aligned}V-A+C&=2\\\\ 60-90+32&=2\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

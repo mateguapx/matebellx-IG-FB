@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:espiral_aurea",
+ "area": "espiral logarítmica áurea r = φ^(2θ/π), la de los girasoles y los caracoles",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": "espiral_aurea",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 57195,
+ "modo": "explotar",
+ "fecha": "2026-11-28",
+ "tema": "la espiral áurea da infinitas vueltas hacia el centro con longitud finita",
+ "caption": "Ecuación del día: la espiral áurea, r = φ^(2θ/π).\nHacia adentro, el radio se divide entre φ cada cuarto de vuelta y nunca llega a cero: la espiral gira infinitas veces alrededor del centro. Aun así, la longitud de ese camino infinito es finita: 3.41… veces el radio del punto de partida.\nInfinitas vueltas que caben en un trayecto medible.\nDedícasela a quien siempre encuentra el camino de regreso.\n#matebellx #mateguapo #espiralaurea #ecuaciondeldia",
+ "threads": "Si caminas por esta espiral hacia el centro, das infinitas vueltas 💛 Y sin embargo, el camino completo mide algo finito: 3.41… veces la distancia a la que empezaste. El truco es que cada cuarto de vuelta el radio se divide entre φ. ¿No te parece increíble?",
+ "slides": [
+  {
+   "title": "¿Sabías que esta espiral da **infinitas** vueltas y mide algo finito?",
+   "text": "Desde cualquier punto hasta el centro, su longitud es $3.41\\ldots$ veces el radio de ese punto.",
+   "display": "r=\\varphi^{\\,2\\theta/\\pi}",
+   "curva": {
+    "tipo": "espiral_aurea",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ]
+}

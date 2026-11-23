@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "pregunta",
+ "tema_clave": "curva:cardioide",
+ "area": "cardioide r = 1 − cos θ (forma de corazón)",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": "cardioide",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 846210,
+ "modo": "explotar",
+ "fecha": "2026-11-29",
+ "tema": "el cuerpo principal del conjunto de Mandelbrot es una cardioide",
+ "caption": "Ecuación del día: la cardioide r = 1 − cos θ.\nSi miras el conjunto de Mandelbrot, la gran figura central no es un círculo deformado: es exactamente una cardioide, la mitad de grande que esta y girada. Sus puntos son los c para los que z² + c tiene un punto fijo que atrae a los demás, y su borde se escribe c = e^(it)/2 − e^(2it)/4.\nUn corazón en el centro del fractal más famoso.\nDedícasela a quien es el centro de tu caos.\n#matebellx #mateguapo #cardioide #mandelbrot",
+ "threads": "El conjunto de Mandelbrot tiene un corazón literal 💛 Su cuerpo principal es exactamente una cardioide, como r = 1 − cos θ pero a la mitad de tamaño. Su borde es c = e^(it)/2 − e^(2it)/4. Todo ese encaje infinito cuelga de esta curva sencilla. ¿Lo habías notado?",
+ "slides": [
+  {
+   "title": "¿Sabías que el cuerpo del conjunto de Mandelbrot es este **corazón**?",
+   "text": "Su borde es $c=\\tfrac{e^{it}}{2}-\\tfrac{e^{2it}}{4}$: la misma cardioide, girada y a la mitad de tamaño.",
+   "display": "r=1-\\cos\\theta",
+   "curva": {
+    "tipo": "cardioide",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ]
+}

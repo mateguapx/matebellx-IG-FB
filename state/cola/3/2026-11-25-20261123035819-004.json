@@ -1,0 +1,34 @@
+{
+ "tipo": 3,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "curva",
+ "hook": "asombro",
+ "tema_clave": "curva:lemniscata",
+ "area": "lemniscata de Bernoulli r² = cos 2θ (el símbolo de infinito)",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": "lemniscata",
+ "serie": "Ecuación del día",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 115711,
+ "modo": "explotar",
+ "fecha": "2026-11-25",
+ "tema": "la lemniscata se cruza a sí misma en ángulo recto",
+ "caption": "Ecuación del día: la lemniscata de Bernoulli, r² = cos 2θ.\nEl radio vale cero justo cuando cos 2θ = 0, es decir, en θ = 45° y θ = −45°. Por eso las dos ramas llegan al centro siguiendo esas dos direcciones y se cruzan formando una cruz perfecta de 90°.\nEl símbolo del infinito, visto de cerca, es una esquina exacta.\nMándaselo a esa persona con la que te cruzaste en el ángulo justo.\n#matebellx #mateguapo #lemniscata #ecuaciondeldia",
+ "threads": "Un detalle que casi nadie nota del infinito ∞ 💛 En la lemniscata r² = cos 2θ, el radio se hace cero en θ = 45° y θ = −45°. Así que las dos ramas pasan por el centro en esas direcciones y se cruzan en ángulo recto. ¿Te habías fijado en esa cruz?",
+ "slides": [
+  {
+   "title": "El infinito se cruza consigo mismo en un ángulo **recto**",
+   "text": "En el centro $r=0$ cuando $\\theta=\\pm 45^\\circ$: las dos ramas se cortan a $90^\\circ$.",
+   "display": "r^2=\\cos 2\\theta",
+   "curva": {
+    "tipo": "lemniscata",
+    "params": {}
+   },
+   "layout": "curva"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "historia",
+ "tema_clave": "idea:demostracion",
+ "area": "log₂ 3 es irracional: si fuera p/q, entonces 2ᵖ = 3^q, pero un lado es par y el otro impar.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": "Domingo de demostraciones",
+ "idea_id": "202610260350-05",
+ "frase_id": null,
+ "semilla": 448490,
+ "modo": "explotar",
+ "fecha": "2026-11-29",
+ "tema": "log₂ 3 es irracional por paridad",
+ "caption": "Domingo de demostraciones: una prueba que cabe en una servilleta.\nSi log₂ 3 fuera una fracción p/q con p y q enteros positivos, entonces 2^(p/q) = 3, y elevando a la q queda 2ᵖ = 3^q.\nPero 2ᵖ es par y 3^q es impar. No pueden ser iguales, así que log₂ 3 es irracional.\nMándaselo a alguien que cree que las demostraciones siempre son largas.\n#matebellx #mateguapo #demostracion #irracionales",
+ "threads": "Esta prueba es de mis favoritas por lo corta 💛 Si log₂ 3 = p/q, entonces 2ᵖ = 3^q. Pero el lado izquierdo es par y el derecho impar. Fin. log₂ 3 es irracional. ¿Te animas a probar lo mismo para log₂ 5?",
+ "slides": [
+  {
+   "title": "Una prueba de dos líneas: $\\log_2 3$ jamás será una **fracción**",
+   "text": "Ninguna potencia de 2 es potencia de 3: una siempre es par y la otra siempre impar.",
+   "display": "\\begin{aligned}\\log_2 3=\\tfrac{p}{q}\\ &\\Rightarrow\\ 2^{p}=3^{q}\\\\ \\text{par}\\ &\\neq\\ \\text{impar}\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

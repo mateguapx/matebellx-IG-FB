@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "pregunta",
+ "tema_clave": "la suma de impares da un cuadrado",
+ "area": "la suma de impares da un cuadrado",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 492548,
+ "modo": "explotar",
+ "fecha": "2026-11-26",
+ "tema": "Galileo: la caída recorre distancias en razón 1 : 3 : 5 : 7 y la suma da cuadrados",
+ "caption": "Una piedra que cae esconde una suma de impares.\nGalileo publicó en 1638, en sus Dos nuevas ciencias, que en intervalos iguales de tiempo un cuerpo que cae desde el reposo recorre distancias en proporción 1, 3, 5, 7… Al sumar los primeros n impares se obtiene n², así que la distancia total crece con el cuadrado del tiempo.\nUna ley de la física y un juego de números, en la misma línea.\nMándaselo a quien te hace caer cada vez más rápido.\n#matebellx #mateguapo #galileo #sumadeimpares",
+ "threads": "Galileo descubrió que una piedra que cae recorre, en segundos iguales, distancias en proporción 1, 3, 5, 7… 💛 Y sumar impares siempre da un cuadrado: 1 + 3 = 4, 1 + 3 + 5 = 9, 1 + 3 + 5 + 7 = 16. Por eso la distancia total crece como el tiempo al cuadrado. ¿A poco no es bonito?",
+ "slides": [
+  {
+   "title": "¿Sabías que una piedra que cae avanza en razón **1 : 3 : 5 : 7**?",
+   "text": "Galileo, 1638: sumar impares da cuadrados, por eso la distancia total crece como el tiempo al cuadrado.",
+   "display": "\\begin{aligned}1+3+5+\\cdots+(2n-1)&=n^2\\\\ 1+3+5+7&=16=4^2\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

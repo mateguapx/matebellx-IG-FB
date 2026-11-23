@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "identidad",
+ "hook": "historia",
+ "tema_clave": "idea:identidad",
+ "area": "Producto de Euler (1737): ∑ 1/nˢ = ∏ 1/(1 − p⁻ˢ) sobre todos los primos; la suma sobre todos los enteros se factoriza en los primos.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "fractal",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-16",
+ "frase_id": null,
+ "semilla": 147915,
+ "modo": "explotar",
+ "fecha": "2026-11-30",
+ "tema": "producto de Euler (1737): la suma sobre enteros se factoriza en primos",
+ "caption": "Una suma sobre todos los números, escrita solo con primos.\nEn 1737, Euler notó que cada factor 1/(1 − p⁻ˢ) es una serie geométrica: 1 + p⁻ˢ + p⁻²ˢ + … Al multiplicarlas para todos los primos, cada entero n aparece exactamente una vez, porque se factoriza en primos de una sola manera.\nDe aquí sale la función zeta que Riemann estudiaría en 1859.\nCompártelo con quien cree que los primos son solo una lista.\n#matebellx #mateguapo #euler #numerosprimos",
+ "threads": "Euler encontró en 1737 algo precioso 💛 Sumar 1/nˢ sobre todos los enteros es lo mismo que multiplicar 1/(1 − p⁻ˢ) sobre todos los primos. La razón: cada número se descompone en primos de una sola forma. Los primos son como el ADN de los enteros. ¿Lo conocías?",
+ "slides": [
+  {
+   "title": "En 1737, Euler descubrió que los **primos** esconden a los enteros",
+   "text": "Vale para $s>1$: al desarrollar el producto, cada $n$ aparece una vez, por su factorización única.",
+   "display": "\\sum_{n=1}^{\\infty}\\frac{1}{n^{s}}=\\prod_{p\\ \\text{primo}}\\frac{1}{1-p^{-s}}",
+   "layout": "normal"
+  }
+ ]
+}

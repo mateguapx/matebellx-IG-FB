@@ -1,0 +1,30 @@
+{
+ "tipo": 1,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "demostracion",
+ "hook": "historia",
+ "tema_clave": "el área del círculo desenrollando anillos",
+ "area": "el área del círculo desenrollando anillos",
+ "key": null,
+ "nivel": "general",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": "Domingo de demostraciones",
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 208860,
+ "modo": "explotar",
+ "fecha": "2026-11-29",
+ "tema": "área del círculo desenrollando anillos: el triángulo de Arquímedes",
+ "caption": "Domingo de demostraciones: el círculo como una cebolla.\nEn su Medida del círculo, Arquímedes probó que el área de un círculo es igual a la de un triángulo rectángulo con un cateto igual al radio y el otro igual a la circunferencia.\nPiensa el círculo como anillos delgados: córtalos y estíralos. El mayor mide 2πr y juntos forman ese triángulo: ½ · 2πr · r = πr².\nMándaselo a quien te enseñó la fórmula sin explicarte de dónde sale.\n#matebellx #mateguapo #arquimedes #demostracion",
+ "threads": "La fórmula πr² tiene una prueba preciosa 💛 Piensa el círculo como muchos anillos delgados, córtalos y estíralos uno sobre otro: forman un triángulo de base 2πr y altura r. Su área es ½ · 2πr · r = πr². Arquímedes ya sabía que el círculo y ese triángulo miden lo mismo. ¿Te la habían enseñado así?",
+ "slides": [
+  {
+   "title": "Arquímedes probó que un círculo mide lo mismo que un **triángulo**",
+   "text": "Desenrolla sus anillos: forman un triángulo de base $2\\pi r$ y altura $r$.",
+   "display": "A=\\tfrac12\\cdot 2\\pi r\\cdot r=\\pi r^2",
+   "layout": "normal"
+  }
+ ]
+}

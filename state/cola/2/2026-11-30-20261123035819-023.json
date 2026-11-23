@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "demostracion",
+ "hook": "asombro",
+ "tema_clave": "libro:FINANCIERAS",
+ "area": "interés simple y compuesto",
+ "key": "FINANCIERAS",
+ "nivel": "bach",
+ "fondo": "lissajous",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 548556,
+ "modo": "explotar",
+ "fecha": "2026-11-30",
+ "tema": "antes de un año, el interés simple supera al compuesto por convexidad",
+ "caption": "Lo que parece un empate, no lo es.\nCon una tasa anual i, el interés simple crece en línea recta, 1 + it, y el compuesto en curva, (1 + i)ᵗ. Ambos valen lo mismo en t = 0 y en t = 1, pero la curva es convexa, así que en medio queda por debajo.\nCon 12 % anual, a medio año: √1.12 = 1.0583 contra 1.06. Después del primer año, el compuesto toma la delantera para siempre.\nMándaselo a quien cree que el compuesto siempre gana.\n#matebellx #mateguapo #finanzas #interescompuesto",
+ "threads": "Dato que sorprende 💛 Antes de cumplir un año, el interés simple da más que el compuesto. Con 12 % anual, a los seis meses: simple da 1.06 y compuesto √1.12 = 1.0583. La curva (1 + i)ᵗ es convexa y queda bajo la recta entre 0 y 1. ¿Lo sabías?",
+ "slides": [
+  {
+   "title": "Durante el primer año, el interés simple le **gana** al compuesto",
+   "text": "La curva $(1+i)^t$ es convexa: entre $t=0$ y $t=1$ queda por debajo de la recta $1+it$.",
+   "display": "\\begin{aligned}(1+i)^{t}&<1+it\\quad(0<t<1)\\\\ \\sqrt{1.12}=1.0583\\ldots&<1.06\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

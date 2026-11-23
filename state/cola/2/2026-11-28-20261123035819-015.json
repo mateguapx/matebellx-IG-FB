@@ -1,0 +1,30 @@
+{
+ "tipo": 2,
+ "kind": "single",
+ "cta": "keyword",
+ "formato": "identidad",
+ "hook": "historia",
+ "tema_clave": "libro:GEOMETRIA",
+ "area": "la elipse",
+ "key": "GEOMETRIA",
+ "nivel": "bach",
+ "fondo": "geometria",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": null,
+ "frase_id": null,
+ "semilla": 894099,
+ "modo": "explotar",
+ "fecha": "2026-11-28",
+ "tema": "Kepler (1609): la órbita de Marte es una elipse con el Sol en un foco",
+ "caption": "Durante siglos se pensó que los planetas giraban en círculos.\nEn 1609, en su Astronomia nova, Johannes Kepler mostró, a partir de las observaciones de Tycho Brahe, que la órbita de Marte es una elipse con el Sol en uno de sus focos. Esa es su primera ley.\nEn la ecuación x²/a² + y²/b² = 1, los focos están a una distancia c = √(a² − b²) del centro.\nMándaselo a quien gira alrededor de tu mundo.\n#matebellx #mateguapo #kepler #elipse",
+ "threads": "En 1609 Kepler se atrevió a romper con los círculos perfectos 💛 Con los datos de Tycho Brahe descubrió que Marte recorre una elipse, y que el Sol no está en el centro sino en un foco, a una distancia c = √(a² − b²). ¿Sabías que nuestra órbita alrededor del Sol también es una elipse?",
+ "slides": [
+  {
+   "title": "En 1609, Kepler escribió que Marte recorre una **elipse**",
+   "text": "El Sol no está en el centro, sino en un foco, a una distancia $c=\\sqrt{a^2-b^2}$ de él.",
+   "display": "\\begin{aligned}\\frac{x^2}{a^2}+\\frac{y^2}{b^2}&=1\\\\ c^2&=a^2-b^2\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}

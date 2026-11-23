@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "historia",
+ "hook": "historia",
+ "tema_clave": "idea:historia",
+ "area": "Euler y los siete puentes de Königsberg (1736): demostró que no hay paseo que cruce cada puente una sola vez, porque haría falta tener 0 o 2 zonas con un número impar de puentes; ahí nace la teoría de grafos.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "formulas",
+ "curva_tipo": null,
+ "serie": "Bellxs de la historia",
+ "idea_id": "202610260350-06",
+ "frase_id": null,
+ "semilla": 857527,
+ "modo": "explotar",
+ "fecha": "2026-11-25",
+ "tema": "Euler y los siete puentes de Königsberg (1736)",
+ "caption": "Bellxs de la historia: Euler y los puentes de Königsberg.\nLa ciudad tenía siete puentes y la pregunta era si se podía pasear cruzando cada uno una sola vez. Euler notó que cada vez que entras a una zona debes salir, así que solo el inicio y el final pueden tocar un número impar de puentes. En Königsberg las cuatro zonas tenían 5, 3, 3 y 3: imposible.\nAhí nació la teoría de grafos.\nMándaselo a quien siempre busca el camino más corto.\n#matebellx #mateguapo #euler #grafos",
+ "threads": "En Königsberg había siete puentes y nadie lograba cruzarlos todos una sola vez 💛 Euler, en 1736, explicó por qué: cada zona que atraviesas usa un puente para entrar y otro para salir. Solo el inicio y el final pueden tener un número impar, y allí las cuatro zonas lo tenían. ¿Lo intentarías en un mapa?",
+ "slides": [
+  {
+   "title": "En 1736, Euler probó que nadie podía cruzar los **siete** puentes",
+   "text": "Las cuatro zonas tocaban un número impar de puentes; un paseo así admite cuando mucho dos.",
+   "display": "\\text{grados: } 5,\\ 3,\\ 3,\\ 3",
+   "layout": "normal"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "historia",
+ "tema_clave": "idea:infinito",
+ "area": "π es irracional (Lambert, 1761): sus decimales nunca se repiten en bloque; ninguna fracción p/q lo iguala.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "fractal",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610190351-23",
+ "frase_id": null,
+ "semilla": 471935,
+ "modo": "explorar",
+ "fecha": "2026-11-28",
+ "tema": "Lambert (1761): π es irracional",
+ "caption": "Ninguna fracción, por fina que sea, es exactamente π.\nJohann Heinrich Lambert lo demostró en 1761 con fracciones continuas de la tangente. 22/7 = 3.142857… y 355/113 = 3.1415929… se acercan muchísimo, pero se quedan en aproximaciones.\nComo π es irracional, sus decimales siguen y siguen sin caer nunca en un ciclo que se repita.\nGuárdalo para la próxima vez que alguien diga que π vale 3.14.\n#matebellx #mateguapo #pi #infinito",
+ "threads": "π no es 22/7 ni 3.14 ni ninguna fracción 💛 Lambert lo demostró en 1761: no existen enteros p y q con π = p/q. Por eso sus decimales nunca entran en un ciclo que se repita, como sí pasa con 1/7 = 0.142857142857… ¿Cuál es tu aproximación favorita de π?",
+ "slides": [
+  {
+   "title": "En 1761, Lambert probó que $\\pi$ **nunca** será una fracción",
+   "text": "Por eso sus decimales jamás caen en un bloque que se repita para siempre.",
+   "display": "\\pi\\neq\\frac{p}{q}\\quad\\text{para ningún par de enteros } p,\\ q",
+   "layout": "normal"
+  }
+ ]
+}

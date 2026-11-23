@@ -1,0 +1,30 @@
+{
+ "tipo": 4,
+ "kind": "single",
+ "cta": "follow",
+ "formato": "infinito",
+ "hook": "historia",
+ "tema_clave": "idea:infinito",
+ "area": "1 − 1/2 + 1/3 − 1/4 + … = ln 2, pero el teorema de Riemann dice que reordenando sus términos puede sumar cualquier número que elijas.",
+ "key": null,
+ "nivel": "general",
+ "fondo": "espiral",
+ "curva_tipo": null,
+ "serie": null,
+ "idea_id": "202610260350-23",
+ "frase_id": null,
+ "semilla": 313888,
+ "modo": "explotar",
+ "fecha": "2026-11-27",
+ "tema": "reordenar 1 − 1/2 + 1/3 − … cambia la suma (Riemann)",
+ "caption": "En lo infinito, el orden de los factores sí altera el producto… y la suma.\nLa serie 1 − 1/2 + 1/3 − 1/4 + … suma ln 2. Si tomas los mismos números pero después de cada positivo pones dos negativos, la suma baja a la mitad: (ln 2)/2.\nRiemann demostró que con estas series, cuya parte positiva y negativa crecen sin límite, cualquier número se alcanza con el orden correcto.\nGuárdalo para cuando alguien diga que el orden no importa.\n#matebellx #mateguapo #infinito #series",
+ "threads": "Esto me vuela la cabeza 💛 1 − 1/2 + 1/3 − 1/4 + … da ln 2. Pero si reacomodas los mismos números, uno positivo y luego dos negativos, la suma da la mitad. Riemann probó que, cambiando el orden, puedes hacer que sume lo que quieras. ¿Qué número elegirías?",
+ "slides": [
+  {
+   "title": "Reacomodas los mismos sumandos y la suma **cambia**",
+   "text": "Riemann probó que, reordenando esta serie, se puede obtener cualquier número que elijas.",
+   "display": "\\begin{aligned}1-\\tfrac12+\\tfrac13-\\tfrac14+\\cdots&=\\ln 2\\\\ 1-\\tfrac12-\\tfrac14+\\tfrac13-\\tfrac16-\\tfrac18+\\cdots&=\\tfrac12\\ln 2\\end{aligned}",
+   "layout": "normal"
+  }
+ ]
+}
