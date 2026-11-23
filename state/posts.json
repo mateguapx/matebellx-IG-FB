@@ -6067,5 +6067,31 @@
   "ig_id": "18105902306454398",
   "fb_id": "1382195514976052_122122092675500466",
   "th_id": "17973616809189778"
+ },
+ {
+  "id": "20261123-0637-t3",
+  "ts": "2026-11-23T06:38:39+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "metafora",
+  "tema_clave": "curva:rosa",
+  "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explorar",
+  "curva_tipo": "rosa",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "rosa r = cos 6θ: doce pétalos",
+  "titulo": "Un reloj de **doce** pétalos que cabe en una sola ecuación",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17964896339997467",
+  "fb_id": "1382195514976052_122122148307500466",
+  "th_id": "18455752420122268"
  }
 ]
