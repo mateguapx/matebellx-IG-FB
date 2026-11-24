@@ -6197,5 +6197,31 @@
   "ig_id": "18224892136348722",
   "fb_id": "1382195514976052_122122188477500466",
   "th_id": "17961240510018106"
+ },
+ {
+  "id": "20261124-0203-t1",
+  "ts": "2026-11-24T02:04:05+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "identidad",
+  "hook": "metafora",
+  "tema_clave": "la fórmula de De Moivre",
+  "area": "la fórmula de De Moivre",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "raíces n-ésimas de la unidad como polígono regular (De Moivre)",
+  "titulo": "Las raíces de $z^n=1$, como **invitados** en una mesa redonda",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18111935384216272",
+  "fb_id": "1382195514976052_122122377321500466",
+  "th_id": "18416762503094369"
  }
 ]
