@@ -6275,5 +6275,31 @@
   "ig_id": "17967809616214987",
   "fb_id": "1382195514976052_122122448985500466",
   "th_id": "18121004873060452"
+ },
+ {
+  "id": "20261124-1200-t4",
+  "ts": "2026-11-24T12:01:29+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "historia",
+  "tema_clave": "Hipatia de Alejandría",
+  "area": "Hipatia de Alejandría",
+  "key": null,
+  "nivel": "general",
+  "fondo": "fractal",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Hipatia y la Aritmética de Diofanto: partir 16 en dos cuadrados",
+  "titulo": "Hacia el año 400, Hipatia **explicaba** a Diofanto en Alejandría",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18222397195350418",
+  "fb_id": "1382195514976052_122122479561500466",
+  "th_id": "18134541604770094"
  }
 ]
