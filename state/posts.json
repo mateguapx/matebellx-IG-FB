@@ -6223,5 +6223,31 @@
   "ig_id": "18111935384216272",
   "fb_id": "1382195514976052_122122377321500466",
   "th_id": "18416762503094369"
+ },
+ {
+  "id": "20261124-0409-t2",
+  "ts": "2026-11-24T04:10:48+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "asombro",
+  "tema_clave": "libro:CALCULO",
+  "area": "integrales impropias",
+  "key": "CALCULO",
+  "nivel": "uni",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "trompeta de Gabriel: volumen π, área infinita (Torricelli, 1641)",
+  "titulo": "Se puede **llenar** de pintura, pero no alcanza para pintarla",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18119890024819230",
+  "fb_id": "1382195514976052_122122398297500466",
+  "th_id": "18120672322807477"
  }
 ]
