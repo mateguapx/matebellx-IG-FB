@@ -6249,5 +6249,31 @@
   "ig_id": "18119890024819230",
   "fb_id": "1382195514976052_122122398297500466",
   "th_id": "18120672322807477"
+ },
+ {
+  "id": "20261124-0906-t3",
+  "ts": "2026-11-24T09:07:45+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:corazon",
+  "area": "curva del corazón x = 16 sen³t, y = 13 cos t − 5 cos 2t − 2 cos 3t − cos 4t",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": "corazon",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "curva del corazón: simétrica porque x es impar y y es par",
+  "titulo": "¿Sabías que este corazón es **simétrico** gracias a un seno impar?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17967809616214987",
+  "fb_id": "1382195514976052_122122448985500466",
+  "th_id": "18121004873060452"
  }
 ]
