@@ -1,24 +1,6 @@
 {
  "top": [
   {
-   "titulo": "El milagro de que el lenguaje de las matemáticas sea el apropiado para formular las leyes de la física es un regalo maravilloso que no entendemos ni merecemos.",
-   "formato": "frase",
-   "hook": "asombro",
-   "tema": "frase de Eugene Wigner",
-   "fondo": "espiral",
-   "score": 5.0,
-   "metricas": {
-    "reach": 65,
-    "shares": 1,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 112,
-    "likes": 2,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Cantor borró tercios sin fin; quedaron tantos puntos como la **recta**",
    "formato": "infinito",
    "hook": "historia",
@@ -26,31 +8,49 @@
    "fondo": "espiral",
    "score": 5.0,
    "metricas": {
-    "reach": 4880,
-    "shares": 1,
-    "saved": 39,
-    "follows": 9,
-    "profile_visits": 14,
-    "views": 14209,
-    "likes": 239,
+    "reach": 5755,
+    "shares": 3,
+    "saved": 43,
+    "follows": 11,
+    "profile_visits": 19,
+    "views": 16695,
+    "likes": 267,
     "comments": 0
    }
   },
   {
-   "titulo": "Unir dos subespacios da un subespacio solo si uno **contiene** al otro",
-   "formato": "demostracion",
+   "titulo": "El milagro de que el lenguaje de las matemáticas sea el apropiado para formular las leyes de la física es un regalo maravilloso que no entendemos ni merecemos.",
+   "formato": "frase",
    "hook": "asombro",
-   "tema": "la unión de dos subespacios solo es subespacio si uno contiene al otro",
-   "fondo": "geometria",
-   "score": 3.48,
+   "tema": "frase de Eugene Wigner",
+   "fondo": "espiral",
+   "score": 4.793,
    "metricas": {
-    "reach": 12,
+    "reach": 65,
     "shares": 1,
     "saved": 0,
     "follows": 0,
-    "profile_visits": 1,
-    "views": 30,
-    "likes": 6,
+    "profile_visits": 0,
+    "views": 113,
+    "likes": 2,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "Una unidad imaginaria elevada a sí misma da un número **real**",
+   "formato": "identidad",
+   "hook": "asombro",
+   "tema": "i elevado a la i es un número real",
+   "fondo": "formulas",
+   "score": 3.8,
+   "metricas": {
+    "reach": 24,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 60,
+    "likes": 3,
     "comments": 0
    }
   }
@@ -62,9 +62,27 @@
    "hook": "asombro",
    "tema": "fórmula general de segundo grado completando el cuadrado (al-Juarismi)",
    "fondo": "funciones",
-   "score": 0.34,
+   "score": 0.327,
    "metricas": {
-    "reach": 7,
+    "reach": 8,
+    "shares": 0,
+    "saved": 0,
+    "follows": 0,
+    "profile_visits": 0,
+    "views": 21,
+    "likes": 0,
+    "comments": 0
+   }
+  },
+  {
+   "titulo": "La máquina analítica teje patrones algebraicos, así como el telar de Jacquard teje flores y hojas.",
+   "formato": "frase",
+   "hook": "asombro",
+   "tema": "frase de Ada Lovelace",
+   "fondo": "formulas",
+   "score": 0.317,
+   "metricas": {
+    "reach": 9,
     "shares": 0,
     "saved": 0,
     "follows": 0,
@@ -75,37 +93,19 @@
    }
   },
   {
-   "titulo": "¿Sabías que el **espirógrafo** de tu infancia dibuja ecuaciones?",
-   "formato": "curva",
-   "hook": "pregunta",
-   "tema": "epitrocoide del espirógrafo con R = 5, r = 3",
-   "fondo": "geometria",
-   "score": 0.338,
-   "metricas": {
-    "reach": 8,
-    "shares": 0,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 16,
-    "likes": 0,
-    "comments": 0
-   }
-  },
-  {
    "titulo": "Euler y Lagrange resolvieron dos trompos. Kovalévskaya, el **tercero**",
    "formato": "historia",
    "hook": "asombro",
    "tema": "Kovalévskaya y el tercer trompo integrable (Premio Bordin 1888)",
    "fondo": "fractal",
-   "score": 0.327,
+   "score": 0.308,
    "metricas": {
-    "reach": 8,
+    "reach": 9,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 22,
+    "views": 23,
     "likes": 0,
     "comments": 0
    }
