@@ -6341,5 +6341,31 @@
   "ig_id": "18222397195350418",
   "fb_id": "1382195514976052_122122479561500466",
   "th_id": "18134541604770094"
+ },
+ {
+  "id": "20261124-2342-t1",
+  "ts": "2026-11-24T23:43:04+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "historia",
+  "tema_clave": "idea:historia",
+  "area": "Évariste Galois murió en 1832 a los 20 años tras un duelo; la víspera escribió a Auguste Chevalier una carta que resume su teoría: la quíntica general no se resuelve por radicales.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explorar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-08",
+  "frase_id": null,
+  "tema": "Galois y su carta a Chevalier la víspera del duelo",
+  "titulo": "La víspera de su duelo, a los 20 años, Galois escribió una **carta**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18388008493300026",
+  "fb_id": "1382195514976052_122122639965500466",
+  "th_id": "17908527843352053"
  }
 ]
