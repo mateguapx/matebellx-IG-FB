@@ -6393,5 +6393,31 @@
   "ig_id": "18134407400490363",
   "fb_id": "1382195514976052_122122663905500466",
   "th_id": "18123842105056308"
+ },
+ {
+  "id": "20261125-0743-t3",
+  "ts": "2026-11-25T07:44:22+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:fourier",
+  "area": "sumas parciales de Fourier de la onda cuadrada con n términos",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explotar",
+  "curva_tipo": "fourier",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "fenómeno de Gibbs en la suma de Fourier de 25 términos",
+  "titulo": "Sumas 25 senos y, junto al salto, **siempre** queda un pico",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17945201067388529",
+  "fb_id": "1382195514976052_122122709727500466",
+  "th_id": "18029791625870014"
  }
 ]
