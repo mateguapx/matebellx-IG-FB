@@ -6419,5 +6419,31 @@
   "ig_id": "17945201067388529",
   "fb_id": "1382195514976052_122122709727500466",
   "th_id": "18029791625870014"
+ },
+ {
+  "id": "20261125-1053-t4",
+  "ts": "2026-11-25T10:54:24+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "pregunta",
+  "tema_clave": "idea:historia",
+  "area": "Al-Juarismi escribió en Bagdad (c. 820) el libro de al-jabr, de donde viene la palabra álgebra; su nombre latinizado dio la palabra algoritmo. Resolvía x² + 10x = 39 completando el cuadrado.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-11",
+  "frase_id": null,
+  "tema": "al-Juarismi: de su libro viene álgebra y de su nombre, algoritmo",
+  "titulo": "¿Sabías que **álgebra** y algoritmo vienen del mismo sabio de Bagdad?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18038169320897842",
+  "fb_id": "1382195514976052_122122743897500466",
+  "th_id": "17920509966536266"
  }
 ]
