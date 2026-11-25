@@ -6367,5 +6367,31 @@
   "ig_id": "18388008493300026",
   "fb_id": "1382195514976052_122122639965500466",
   "th_id": "17908527843352053"
+ },
+ {
+  "id": "20261125-0254-t2",
+  "ts": "2026-11-25T02:55:01+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "identidad",
+  "hook": "metafora",
+  "tema_clave": "libro:LINEAL",
+  "area": "sistemas lineales y eliminación gaussiana",
+  "key": "LINEAL",
+  "nivel": "uni",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "regla de Cramer (1750): cada incógnita es un cociente de determinantes",
+  "titulo": "Cada incógnita es un cociente de dos **volúmenes**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18134407400490363",
+  "fb_id": "1382195514976052_122122663905500466",
+  "th_id": "18123842105056308"
  }
 ]
