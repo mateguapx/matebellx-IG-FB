@@ -6484,5 +6484,31 @@
   "ig_id": "18038169320897842",
   "fb_id": "1382195514976052_122122743897500466",
   "th_id": "17920509966536266"
+ },
+ {
+  "id": "20261125-2326-t1",
+  "ts": "2026-11-25T23:27:24+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "identidad",
+  "hook": "historia",
+  "tema_clave": "idea:identidad",
+  "area": "Fórmula de Machin (1706): π/4 = 4·arctan(1/5) − arctan(1/239); con ella John Machin calculó 100 decimales de π.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "funciones",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-13",
+  "frase_id": null,
+  "tema": "fórmula de Machin y sus 100 decimales de π (1706)",
+  "titulo": "En 1706, John Machin calculó **100** decimales de $\\pi$ a mano",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18106450298375472",
+  "fb_id": "1382195514976052_122122879719500466",
+  "th_id": "18143104672745713"
  }
 ]
