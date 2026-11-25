@@ -8,13 +8,13 @@
    "fondo": "espiral",
    "score": 5.0,
    "metricas": {
-    "reach": 6047,
+    "reach": 6249,
     "shares": 4,
-    "saved": 44,
-    "follows": 13,
-    "profile_visits": 22,
-    "views": 17580,
-    "likes": 278,
+    "saved": 45,
+    "follows": 15,
+    "profile_visits": 25,
+    "views": 18092,
+    "likes": 284,
     "comments": 1
    }
   },
@@ -24,7 +24,7 @@
    "hook": "asombro",
    "tema": "frase de Eugene Wigner",
    "fondo": "espiral",
-   "score": 4.354,
+   "score": 4.228,
    "metricas": {
     "reach": 66,
     "shares": 1,
@@ -37,34 +37,34 @@
    }
   },
   {
-   "titulo": "Una unidad imaginaria elevada a sí misma da un número **real**",
-   "formato": "identidad",
-   "hook": "asombro",
-   "tema": "i elevado a la i es un número real",
+   "titulo": "Un reloj de **doce** pétalos que cabe en una sola ecuación",
+   "formato": "curva",
+   "hook": "metafora",
+   "tema": "rosa r = cos 6θ: doce pétalos",
    "fondo": "formulas",
-   "score": 3.833,
+   "score": 3.729,
    "metricas": {
-    "reach": 25,
+    "reach": 31,
     "shares": 0,
     "saved": 0,
-    "follows": 0,
+    "follows": 1,
     "profile_visits": 0,
-    "views": 61,
-    "likes": 3,
+    "views": 70,
+    "likes": 2,
     "comments": 0
    }
   }
  ],
  "bottom": [
   {
-   "titulo": "Toda ecuación de segundo grado se resuelve **completando** un cuadrado",
-   "formato": "demostracion",
+   "titulo": "Ocho **pétalos** que cubren exactamente la mitad del círculo",
+   "formato": "curva",
    "hook": "asombro",
-   "tema": "fórmula general de segundo grado completando el cuadrado (al-Juarismi)",
-   "fondo": "funciones",
-   "score": 0.327,
+   "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
+   "fondo": "rejilla",
+   "score": 0.295,
    "metricas": {
-    "reach": 8,
+    "reach": 10,
     "shares": 0,
     "saved": 0,
     "follows": 0,
@@ -75,14 +75,14 @@
    }
   },
   {
-   "titulo": "Ocho **pétalos** que cubren exactamente la mitad del círculo",
+   "titulo": "¿Sabías que el **espirógrafo** de tu infancia dibuja ecuaciones?",
    "formato": "curva",
-   "hook": "asombro",
-   "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
-   "fondo": "rejilla",
-   "score": 0.317,
+   "hook": "pregunta",
+   "tema": "epitrocoide del espirógrafo con R = 5, r = 3",
+   "fondo": "geometria",
+   "score": 0.295,
    "metricas": {
-    "reach": 9,
+    "reach": 10,
     "shares": 0,
     "saved": 0,
     "follows": 0,
@@ -98,14 +98,14 @@
    "hook": "asombro",
    "tema": "Kovalévskaya y el tercer trompo integrable (Premio Bordin 1888)",
    "fondo": "fractal",
-   "score": 0.265,
+   "score": 0.246,
    "metricas": {
     "reach": 10,
     "shares": 0,
     "saved": 0,
     "follows": 0,
     "profile_visits": 0,
-    "views": 25,
+    "views": 26,
     "likes": 0,
     "comments": 0
    }
