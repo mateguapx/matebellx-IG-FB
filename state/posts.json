@@ -6536,5 +6536,31 @@
   "ig_id": "18100322480128621",
   "fb_id": "1382195514976052_122122904733500466",
   "th_id": "17883959619548490"
+ },
+ {
+  "id": "20261126-0734-t3",
+  "ts": "2026-11-26T07:35:27+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:lemniscata",
+  "area": "lemniscata de Bernoulli r² = cos 2θ (el símbolo de infinito)",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explotar",
+  "curva_tipo": "lemniscata",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la lemniscata se cruza a sí misma en ángulo recto",
+  "titulo": "El infinito se cruza consigo mismo en un ángulo **recto**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18097012667690835",
+  "fb_id": "1382195514976052_122122984485500466",
+  "th_id": "18644628154017857"
  }
 ]
