@@ -6510,5 +6510,31 @@
   "ig_id": "18106450298375472",
   "fb_id": "1382195514976052_122122879719500466",
   "th_id": "18143104672745713"
+ },
+ {
+  "id": "20261126-0200-t2",
+  "ts": "2026-11-26T02:01:38+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:mariposa",
+  "area": "mariposa de Fay r = e^(sen θ) − 2cos 4θ + sen⁵((2θ − π)/24)",
+  "key": "PRECALCULO",
+  "nivel": "bach",
+  "fondo": "rejilla",
+  "modo": "explotar",
+  "curva_tipo": "mariposa",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "la mariposa de Fay se cierra tras 12 vueltas completas",
+  "titulo": "Esta **mariposa** necesita doce vueltas completas para cerrarse",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18100322480128621",
+  "fb_id": "1382195514976052_122122904733500466",
+  "th_id": "17883959619548490"
  }
 ]
