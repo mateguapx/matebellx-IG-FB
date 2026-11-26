@@ -8,31 +8,31 @@
    "fondo": "espiral",
    "score": 5.0,
    "metricas": {
-    "reach": 6249,
+    "reach": 6361,
     "shares": 4,
     "saved": 45,
     "follows": 15,
     "profile_visits": 25,
-    "views": 18092,
-    "likes": 284,
+    "views": 18416,
+    "likes": 288,
     "comments": 1
    }
   },
   {
-   "titulo": "El milagro de que el lenguaje de las matemáticas sea el apropiado para formular las leyes de la física es un regalo maravilloso que no entendemos ni merecemos.",
-   "formato": "frase",
-   "hook": "asombro",
-   "tema": "frase de Eugene Wigner",
-   "fondo": "espiral",
-   "score": 4.228,
+   "titulo": "Hacia el año 400, Hipatia **explicaba** a Diofanto en Alejandría",
+   "formato": "historia",
+   "hook": "historia",
+   "tema": "Hipatia y la Aritmética de Diofanto: partir 16 en dos cuadrados",
+   "fondo": "fractal",
+   "score": 4.65,
    "metricas": {
-    "reach": 66,
-    "shares": 1,
-    "saved": 0,
-    "follows": 0,
-    "profile_visits": 0,
-    "views": 114,
-    "likes": 2,
+    "reach": 3589,
+    "shares": 0,
+    "saved": 19,
+    "follows": 4,
+    "profile_visits": 10,
+    "views": 10141,
+    "likes": 123,
     "comments": 0
    }
   },
@@ -42,14 +42,14 @@
    "hook": "metafora",
    "tema": "rosa r = cos 6θ: doce pétalos",
    "fondo": "formulas",
-   "score": 3.729,
+   "score": 3.735,
    "metricas": {
-    "reach": 31,
+    "reach": 34,
     "shares": 0,
     "saved": 0,
     "follows": 1,
     "profile_visits": 0,
-    "views": 70,
+    "views": 75,
     "likes": 2,
     "comments": 0
    }
@@ -62,7 +62,7 @@
    "hook": "asombro",
    "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
    "fondo": "rejilla",
-   "score": 0.295,
+   "score": 0.276,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -80,7 +80,7 @@
    "hook": "pregunta",
    "tema": "epitrocoide del espirógrafo con R = 5, r = 3",
    "fondo": "geometria",
-   "score": 0.295,
+   "score": 0.276,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -98,7 +98,7 @@
    "hook": "asombro",
    "tema": "Kovalévskaya y el tercer trompo integrable (Premio Bordin 1888)",
    "fondo": "fractal",
-   "score": 0.246,
+   "score": 0.242,
    "metricas": {
     "reach": 10,
     "shares": 0,
