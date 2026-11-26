@@ -6639,5 +6639,31 @@
   "ig_id": "18116181617612331",
   "fb_id": "1382195514976052_122123031003500466",
   "th_id": "18102965288554886"
+ },
+ {
+  "id": "20261126-2325-t1",
+  "ts": "2026-11-26T23:26:22+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "historia",
+  "tema_clave": "idea:infinito",
+  "area": "Primos gemelos: nadie sabe si hay infinitos pares como (11, 13); en 2013 Yitang Zhang probó que hay infinitos pares de primos a distancia menor que 70 millones.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610190351-21",
+  "frase_id": null,
+  "tema": "Yitang Zhang y los primos a distancia menor que 70 millones (2013)",
+  "titulo": "Nadie sabe si los primos **gemelos** se acaban algún día",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18110463335353938",
+  "fb_id": "1382195514976052_122123179491500466",
+  "th_id": "18104455610562099"
  }
 ]
