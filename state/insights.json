@@ -8,14 +8,32 @@
    "fondo": "espiral",
    "score": 5.0,
    "metricas": {
-    "reach": 6361,
+    "reach": 6420,
     "shares": 4,
-    "saved": 45,
-    "follows": 15,
-    "profile_visits": 25,
-    "views": 18416,
-    "likes": 288,
+    "saved": 46,
+    "follows": 16,
+    "profile_visits": 26,
+    "views": 18636,
+    "likes": 287,
     "comments": 1
+   }
+  },
+  {
+   "titulo": "¿Sabías que **álgebra** y algoritmo vienen del mismo sabio de Bagdad?",
+   "formato": "historia",
+   "hook": "pregunta",
+   "tema": "al-Juarismi: de su libro viene álgebra y de su nombre, algoritmo",
+   "fondo": "funciones",
+   "score": 5.0,
+   "metricas": {
+    "reach": 3274,
+    "shares": 0,
+    "saved": 24,
+    "follows": 3,
+    "profile_visits": 11,
+    "views": 9118,
+    "likes": 133,
+    "comments": 0
    }
   },
   {
@@ -24,33 +42,15 @@
    "hook": "historia",
    "tema": "Hipatia y la Aritmética de Diofanto: partir 16 en dos cuadrados",
    "fondo": "fractal",
-   "score": 4.65,
+   "score": 4.848,
    "metricas": {
-    "reach": 3589,
+    "reach": 3982,
     "shares": 0,
-    "saved": 19,
+    "saved": 23,
     "follows": 4,
     "profile_visits": 10,
-    "views": 10141,
-    "likes": 123,
-    "comments": 0
-   }
-  },
-  {
-   "titulo": "Un reloj de **doce** pétalos que cabe en una sola ecuación",
-   "formato": "curva",
-   "hook": "metafora",
-   "tema": "rosa r = cos 6θ: doce pétalos",
-   "fondo": "formulas",
-   "score": 3.735,
-   "metricas": {
-    "reach": 34,
-    "shares": 0,
-    "saved": 0,
-    "follows": 1,
-    "profile_visits": 0,
-    "views": 75,
-    "likes": 2,
+    "views": 11800,
+    "likes": 160,
     "comments": 0
    }
   }
@@ -62,7 +62,7 @@
    "hook": "asombro",
    "tema": "rosa r = cos 4θ: 8 pétalos que cubren la mitad del círculo",
    "fondo": "rejilla",
-   "score": 0.276,
+   "score": 0.255,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -80,7 +80,7 @@
    "hook": "pregunta",
    "tema": "epitrocoide del espirógrafo con R = 5, r = 3",
    "fondo": "geometria",
-   "score": 0.276,
+   "score": 0.255,
    "metricas": {
     "reach": 10,
     "shares": 0,
@@ -98,7 +98,7 @@
    "hook": "asombro",
    "tema": "Kovalévskaya y el tercer trompo integrable (Premio Bordin 1888)",
    "fondo": "fractal",
-   "score": 0.242,
+   "score": 0.223,
    "metricas": {
     "reach": 10,
     "shares": 0,
