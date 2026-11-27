@@ -6795,5 +6795,31 @@
   "ig_id": "18395449906225933",
   "fb_id": "1382195514976052_122123305797500466",
   "th_id": "18646460518002220"
+ },
+ {
+  "id": "20261127-2306-t1",
+  "ts": "2026-11-27T23:07:08+00:00",
+  "tipo": 1,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "historia",
+  "hook": "historia",
+  "tema_clave": "Maryam Mirzakhani",
+  "area": "Maryam Mirzakhani",
+  "key": null,
+  "nivel": "general",
+  "fondo": "lissajous",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Mirzakhani: puntaje perfecto en la Olimpiada de 1995 y el conteo de geodésicas",
+  "titulo": "En 1995, Mirzakhani sacó un puntaje **perfecto** en la Olimpiada",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18051760373824634",
+  "fb_id": "1382195514976052_122123450235500466",
+  "th_id": "18026147780927416"
  }
 ]
