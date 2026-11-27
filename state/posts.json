@@ -6665,5 +6665,31 @@
   "ig_id": "18110463335353938",
   "fb_id": "1382195514976052_122123179491500466",
   "th_id": "18104455610562099"
+ },
+ {
+  "id": "20261127-0200-t2",
+  "ts": "2026-11-27T02:01:46+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "demostracion",
+  "hook": "metafora",
+  "tema_clave": "libro:FINANCIERAS",
+  "area": "tasas equivalentes",
+  "key": "FINANCIERAS",
+  "nivel": "bach",
+  "fondo": "fractal",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "tasas equivalentes: 1 % mensual equivale a 12.68 % anual",
+  "titulo": "Dos tasas son **equivalentes** si llegan al mismo lugar en un año",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18036220571885096",
+  "fb_id": "1382195514976052_122123202291500466",
+  "th_id": "18117468449586203"
  }
 ]
