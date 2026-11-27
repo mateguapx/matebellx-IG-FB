@@ -6691,5 +6691,31 @@
   "ig_id": "18036220571885096",
   "fb_id": "1382195514976052_122123202291500466",
   "th_id": "18117468449586203"
+ },
+ {
+  "id": "20261127-0730-t3",
+  "ts": "2026-11-27T07:31:50+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:hipotrocoide",
+  "area": "espirógrafo interior (hipotrocoide) con radios R, r y distancia d",
+  "key": null,
+  "nivel": "general",
+  "fondo": "geometria",
+  "modo": "explorar",
+  "curva_tipo": "hipotrocoide",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "hipotrocoide R = 11, r = 4, d = 6: once lazos tras cuatro vueltas",
+  "titulo": "Una rueda da **cuatro** vueltas por dentro y deja once lazos",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "17962408923014224",
+  "fb_id": "1382195514976052_122123253669500466",
+  "th_id": "17918941320541459"
  }
 ]
