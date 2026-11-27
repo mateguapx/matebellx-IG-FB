@@ -6717,5 +6717,31 @@
   "ig_id": "17962408923014224",
   "fb_id": "1382195514976052_122123253669500466",
   "th_id": "17918941320541459"
+ },
+ {
+  "id": "20261127-1032-t4",
+  "ts": "2026-11-27T10:33:23+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "demostracion",
+  "hook": "pregunta",
+  "tema_clave": "la suma de impares da un cuadrado",
+  "area": "la suma de impares da un cuadrado",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "Galileo: la caída recorre distancias en razón 1 : 3 : 5 : 7 y la suma da cuadrados",
+  "titulo": "¿Sabías que una piedra que cae avanza en razón **1 : 3 : 5 : 7**?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18395449906225933",
+  "fb_id": "1382195514976052_122123305797500466",
+  "th_id": "18646460518002220"
  }
 ]
