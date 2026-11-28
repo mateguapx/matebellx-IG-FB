@@ -6847,5 +6847,31 @@
   "ig_id": "18122319862952131",
   "fb_id": "1382195514976052_122123473545500466",
   "th_id": "18132840727842529"
+ },
+ {
+  "id": "20261128-0659-t3",
+  "ts": "2026-11-28T07:00:43+00:00",
+  "tipo": 3,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "curva",
+  "hook": "asombro",
+  "tema_clave": "curva:espiral_arquimedes",
+  "area": "espiral de Arquímedes r = θ",
+  "key": null,
+  "nivel": "general",
+  "fondo": "formulas",
+  "modo": "explorar",
+  "curva_tipo": "espiral_arquimedes",
+  "serie": "Ecuación del día",
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "espiral de Arquímedes: vueltas separadas siempre por 2π",
+  "titulo": "Una espiral cuyas vueltas guardan **siempre** la misma distancia",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18650159734011724",
+  "fb_id": "1382195514976052_122123513025500466",
+  "th_id": "18080850824742214"
  }
 ]
