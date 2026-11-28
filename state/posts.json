@@ -6821,5 +6821,31 @@
   "ig_id": "18051760373824634",
   "fb_id": "1382195514976052_122123450235500466",
   "th_id": "18026147780927416"
+ },
+ {
+  "id": "20261128-0145-t2",
+  "ts": "2026-11-28T01:46:43+00:00",
+  "tipo": 2,
+  "kind": "single",
+  "cta": "keyword",
+  "formato": "curva",
+  "hook": "pregunta",
+  "tema_clave": "curva:rosa",
+  "area": "rosa polar r = cos(kθ); k entero da k pétalos si es impar y 2k si es par; k fraccionario da rosas entrelazadas",
+  "key": "ALGEBRA",
+  "nivel": "bach",
+  "fondo": "geometria",
+  "modo": "explorar",
+  "curva_tipo": "rosa",
+  "serie": null,
+  "idea_id": null,
+  "frase_id": null,
+  "tema": "rosa r = cos 7θ: siete pétalos, no catorce",
+  "titulo": "¿Sabías que $r=\\cos 7\\theta$ tiene **siete** pétalos y no catorce?",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18122319862952131",
+  "fb_id": "1382195514976052_122123473545500466",
+  "th_id": "18132840727842529"
  }
 ]
