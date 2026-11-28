@@ -6873,5 +6873,31 @@
   "ig_id": "18650159734011724",
   "fb_id": "1382195514976052_122123513025500466",
   "th_id": "18080850824742214"
+ },
+ {
+  "id": "20261128-0948-t4",
+  "ts": "2026-11-28T09:49:26+00:00",
+  "tipo": 4,
+  "kind": "single",
+  "cta": "follow",
+  "formato": "infinito",
+  "hook": "historia",
+  "tema_clave": "idea:infinito",
+  "area": "1 − 1/2 + 1/3 − 1/4 + … = ln 2, pero el teorema de Riemann dice que reordenando sus términos puede sumar cualquier número que elijas.",
+  "key": null,
+  "nivel": "general",
+  "fondo": "espiral",
+  "modo": "explotar",
+  "curva_tipo": null,
+  "serie": null,
+  "idea_id": "202610260350-23",
+  "frase_id": null,
+  "tema": "reordenar 1 − 1/2 + 1/3 − … cambia la suma (Riemann)",
+  "titulo": "Reacomodas los mismos sumandos y la suma **cambia**",
+  "respuesta": "",
+  "puntaje_idea": null,
+  "ig_id": "18205293274382392",
+  "fb_id": "1382195514976052_122123540697500466",
+  "th_id": "18118766519104196"
  }
 ]
